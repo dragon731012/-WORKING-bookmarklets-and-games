@@ -1,0 +1,2 @@
+# THESE ARE NOT MINE AND I AM NOT RESPONSIBLE FOR ANYTHING INVOLVING THEM
+some working bookmarklets for school
