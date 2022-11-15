@@ -1,1 +1,1 @@
-javascript:var a=prompt("What do you want me to say?");alert(a)
+javascript:var a=prompt("What do you want me to say?");alert(a);alert("made by dragonmaster73101 (dragonmaster731012 on github)")
