@@ -1,1 +1,1 @@
-javascript:(var a=prompt("What bookmarklet would you like to activate? click=1 color=2 cloak=3");function() {  if (a == 1) {alert("clicking")} else {    alert("sorry not working");  }})()
+javascript:(function()var a=prompt("What bookmarklet would you like to activate? click=1 color=2 cloak=3"); {  if (a == 1) {alert("clicking")} else {    alert("sorry not working");  }})()
