@@ -1,1 +1,1 @@
-javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0
+javascript:(function() {  if (document.body.contentEditable === 'false' || document.body.contentEditable === 'inherit') {    document.body.contentEditable = 'true'; document.designMode='on';  } else {    document.body.contentEditable = 'false'; document.designMode='off';  }})()
