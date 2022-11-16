@@ -1,1 +1,1 @@
-javascript:var a=prompt("What bookmarklet would you like to activate? click=1 mini=2 fs=3 x=4"); (function() { if (a == 1) {alert("clicking")} else if (a==2) {alert("mini")} else if (a==3) {alert("fs")} else if (a==4) {alert("x")} else if (a==5) {alert("edit")}{ alert("PLease type one of the numbers."); }})();
+javascript:v=prompt("pain=1 color=2 none=3") if (v==1) {function a(e){var n=e.childNodes;for(var i in n){a(n[i]);if(n[i].style) n[i].style.backgroundImage="url(http://redroom.org/wp-content/uploads/2016/11/optical-gifs-my-eyes-my-eyessssssssss.gif)";}};a(document);}
