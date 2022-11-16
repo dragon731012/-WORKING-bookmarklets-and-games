@@ -1,1 +1,1 @@
-javascript:alert("use at your own risk");a=prompt("ready? if yes write 1, if no write anything other than one.");{if (a==1){while (true) {while(1)location.reload(1)} else {alert("Program stopped.")}}
+javascript:alert("use at your own risk");a=prompt("ready? if yes write 1, if no write anything other than one.");{if (a==1){while (true) {while(1)location.reload(1)}} else {alert("Program stopped.")}}()
