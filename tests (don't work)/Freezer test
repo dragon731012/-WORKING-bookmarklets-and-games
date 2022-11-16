@@ -1,0 +1,1 @@
+javascript:alert("use at your own risk");a=prompt("ready? yes=1 anything else=no");if (a==1) {while (true) {location.reload(1)} else {alert("program stopped.")}
