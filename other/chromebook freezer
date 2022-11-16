@@ -1,1 +1,0 @@
-javascript:var b=prompt("how many seconds do you want to freeze your chromebook for?");onbeforeunload = function(){localStorage.x=1};setTimeout(function(){while(1)location.reload(1)}, (b*3.333333))
