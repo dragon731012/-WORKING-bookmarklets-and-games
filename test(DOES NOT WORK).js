@@ -1,1 +1,1 @@
-javascript:v=prompt("pain=1 color=2 none=3") if (v==1) {function a(e){var n=e.childNodes;for(var i in n){a(n[i]);if(n[i].style) n[i].style.backgroundImage="url(http://redroom.org/wp-content/uploads/2016/11/optical-gifs-my-eyes-my-eyessssssssss.gif)";}};a(document);}
+javascript:v=prompt("pain=1 color=2 none=3") if (v==1) {function a(e){var n=e.childNodes;for(var i in n){a(n[i]);if(n[i].style) n[i].style.backgroundImage="url(http://redroom.org/wp-content/uploads/2016/11/optical-gifs-my-eyes-my-eyessssssssss.gif)"}};a(document);}
