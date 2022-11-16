@@ -1,1 +1,1 @@
-javascript:alert("use at your own risk");a=prompt("ready? IF NO RELOAD NOW.");while (true) {location.reload(1)}
+javascript:alert("use at your own risk");a=prompt("ready? IF NO RELOAD NOW.");while (true) {while(1)location.reload(1)}
