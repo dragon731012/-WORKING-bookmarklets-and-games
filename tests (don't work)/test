@@ -1,1 +1,1 @@
-javascript: (() => {return '<input id="button" type="submit" name="button" onclick="myFunction();" value="enter"/><script>function myFunction(){alert("The button was pressed");};   </script>';})();
+javascript: (() => {return '<button onClick="alert("button clicked")">Click me to get alerted</button>';})();
