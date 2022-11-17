@@ -1,1 +1,1 @@
-javascript: (() => {return '<button onclick="alert("hi")">Click</button>';})();
+javascript: (() => {return '<button onclick="background-color: #3498db">Click</button>';})();
