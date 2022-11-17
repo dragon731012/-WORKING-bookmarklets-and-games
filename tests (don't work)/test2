@@ -1,1 +1,1 @@
-javascript: (() => {return '<button><p onclick="alert("hi");">click for hi</p></button>';})();
+javascript: (() => {return '';})();
