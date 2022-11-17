@@ -1,1 +1,1 @@
-javascript: (() => {return '
+javascript: (() => {return '';})();
