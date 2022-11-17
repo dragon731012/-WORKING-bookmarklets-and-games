@@ -1,1 +1,1 @@
-javascript: (() => {return '<h1></h1>';})();
+javascript: var a=hi;(() => {return '<p><var>a</var></p>';})();
