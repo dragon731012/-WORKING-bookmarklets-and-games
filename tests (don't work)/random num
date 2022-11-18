@@ -1,1 +1,1 @@
-javascript:m=prompt("how high do you want the max to be?);l=prompt("how low do you want the mininum to be?");var a=Math.round(Math.random()*((m)-(l)))+1; alert(a)
+javascript:m=prompt("how high do you want the max to be?);l=prompt("how low do you want the mininum to be?");var a=Math.round(Math.random()*(1-l00)+1; alert(a)
