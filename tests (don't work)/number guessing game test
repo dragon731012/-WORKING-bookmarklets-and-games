@@ -1,1 +1,1 @@
-javascript:function getRandomNumberBetween(min,max){ return Math.floor(Math.random()*(max-min+1)+min); };a=getRandomNumberBetween(0,21);alert(a)
+javascript:function getRandomNumberBetween(min,max){ return Math.floor(Math.random()*(max-min+1)+min); };a=getRandomNumberBetween(0,21);while (true){v=prompt("What number do you guess?");if (v==a){alert("You got it!")} else if (v>a){alert("too high.")} else if (v<a){alert("too low.")}}
