@@ -1,1 +1,1 @@
-javascript:m=prompt("how high do you want the max to be?);l=prompt("how low do you want the mininum to be?");Math.round(Math.random()*(100-l)+1
+javascript:l=prompt("what do you want the max to be? ex: 1-6 max:7");m=prompt("what do you want the min to be? ex: 1-6 min=0");function getRandomNumberBetween(min,max){ return Math.floor(Math.random()*(max-min+1)+min); };a=getRandomNumberBetween(0,21)
