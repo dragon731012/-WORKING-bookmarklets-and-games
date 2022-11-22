@@ -1,5 +1,5 @@
 javascript:
-var start = confrim("Would you like to play Untiteld Game");
+var start = confirm("Would you like to play Untiteld Game");
 if(start == true){
 var random = Math.floor(Math.random() * 11);
 alert(random);
