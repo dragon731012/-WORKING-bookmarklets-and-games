@@ -1,7 +1,7 @@
 javascript:
 var start = confirm("Would you like to play Untiteld Game");
 if(start == true){
-var random = Math.floor(Math.random() * 11); + 1
+var random = Math.floor(Math.random() * 11) + 1;
 alert(random);
 }
 else{
