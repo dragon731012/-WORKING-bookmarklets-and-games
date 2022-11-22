@@ -44,33 +44,33 @@ if(random == 9){
 if(random == 10){
 	 
 }
-if(random == 11){
+if(randomtruth == 11){
 
 }
-if(random == 12){
+if(randomtruth == 12){
 	 
 }
-if(random == 13){
+if(randomtruth == 13){
 	 
 }
-if(random == 14){
+if(randomtruth == 14){
 	 
 }
-if(random == 15){
+if(randomtruth == 15){
 	 
 }
-if(random == 16){
+if(randomtruth == 16){
 	 
 }
-if(random == 17){
+if(randomtruth == 17){
 	 
 }
-if(random == 18){
+if(randomtruth == 18){
 	 
 }
-if(random == 19){
+if(randomtruth == 19){
 	 
 }
-if(random == 20){
+if(randomtruth == 20){
 	 
 }
