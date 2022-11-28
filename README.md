@@ -2,3 +2,5 @@
 the ones that say they are mine are acctualy mine though, but I am still not resposible for them.
 some working bookmarklets for school
 If you find an issue, please tell me in discussions (https://github.com/dragon731012/-WORKING-bookmarklets-and-games/discussions).
+
+Here is some Html Test https://github.com/Rubiksdude27/Html-Tests
