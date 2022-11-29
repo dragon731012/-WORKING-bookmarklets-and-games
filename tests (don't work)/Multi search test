@@ -1,0 +1,1 @@
+javascript: alert("by dragonmaster73101”);const list=[];var h=prompt(“how many times do you want to search?”);var x=0;while (x<h){var w=prompt(“what do you want to search?”);list.push(w);x=x+1};var y=0;while (y<h){alert(list[y])};
