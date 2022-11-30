@@ -1,1 +1,0 @@
-javascript:var x1=prompt('what is the x coordinate of the first point?');var y1=prompt('what is the y coordinate of the first point?');var x2=prompt('what is the x coordinate of the second point?');var y2=prompt('what is the y coordinate of the second point?');var st=y2-y1;var sb=x2-x1;alert('the slope of the line is '+st+'/'+sb+'.');alert('by dragonmaster73101');
