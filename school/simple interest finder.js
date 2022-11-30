@@ -1,0 +1,1 @@
+javascript:var b=prompt("how much is the loan? do not include the $ sign. just write the number.");var i=prompt("what is the intrest? please write it as percent but without the percent sign.");var t=prompt("how much years?");var percent=i/100;var e=b*percent*t;alert("the answer is "+e+".");
