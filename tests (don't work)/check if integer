@@ -1,0 +1,14 @@
+'10.0' % 1; // returns 0
+10 % 1; // returns 0
+'10.5' % 1; // returns 0.5
+10.5 % 1; // returns 0.5
+
+num % 1 != 0
+// 23 % 1 = 0
+// 23.5 % 1 = 0.5
+
+Number.isInteger(23);  // true
+Number.isInteger(1.5); // false
+Number.isInteger("x"); // false: 
+
+string.indexOf(".") == -1;
