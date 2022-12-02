@@ -1,1 +1,1 @@
-javascript: alert("by dragonmaster73101”);const list=[];var h=prompt(“how many times do you want to search?”);var x=0;while (x<h){var w=prompt(“what do you want to search?”);list.push(w);x=x+1};var y=0;while (y<h){window.open(list[y])};
+javascript:const list=[];alert("multisearch");var h=prompt('how many times do you want to search?');var hm=h;while (hm>0){var a=prompt("what web page do you want to go to?");list.push(a);hm=hm-1;}alert("your searches are "+list+".");var hn=0;while (hn<h){window.open(list[hn]);hn=hn+1;}alert("by dragonmaster73101");
