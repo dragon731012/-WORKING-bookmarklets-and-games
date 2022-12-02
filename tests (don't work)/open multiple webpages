@@ -1,0 +1,1 @@
+javascript:const list=[];alert("multisearch");var h=prompt('how many websites do you want to open?');var hm=h;while (hm>0){var a=prompt("what web page do you want to go to?");list.push(a);hm=hm-1;}alert("your searches are "+list+".");var hn=0;while (hn<h){window.open(list[hn]);hn=hn+1;}alert("by dragonmaster73101");
