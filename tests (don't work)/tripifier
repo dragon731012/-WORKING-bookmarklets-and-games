@@ -1,1 +1,1 @@
-javascript: var x=0;while (true){(function () { document.body.style.filter = 'blur(5px)'; })();x=x+1;(if x>5)}
+javascript: var x=0;while (true){(function () { document.body.style.filter = 'blur(5px)'; })();x=x+1;(if x>5){document.body.style.filter = 'blur(4px)';document.body.style.filter = 'blur(3px)';document.body.style.filter = 'blur(2px)';document.body.style.filter = 'blur(1px)';document.body.style.filter = 'blur(0px)';}}
