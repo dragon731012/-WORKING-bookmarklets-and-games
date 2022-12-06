@@ -1,1 +1,1 @@
-javascript:while (true) {}
+javascript:function bluron() {document.body.style.filter = 'blur(5px)'; })();} function bluroff(){document.body.style.filter = 'blur(0px)'; })();} while (true){setTimeout(bluron,1000);setTimeout(bluroff,1000);}
