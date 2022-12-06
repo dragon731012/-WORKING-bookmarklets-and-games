@@ -1,1 +1,1 @@
-javascript:const date = new Date();const month=getMonth();var day=getDay();var mill=getMilliseconds();var sec=getSeconds();var hrs=getHours();var min=getMinutes();var yr=getFullYear();alert("the date is "+month+"/"+day+"/"+yr+".");
+javascript:const date = new Date();var month=date.getMonth();var day=date.getDay();var mill=date.getMilliseconds();var sec=date.getSeconds();var hrs=date.getHours();var min=date.getMinutes();var yr=date.getFullYear();alert("the date is "+month+"/"+day+"/"+yr+".");
