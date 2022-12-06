@@ -1,1 +1,1 @@
-javascript:javascript:function a(e){var n=e.childNodes;for(var i in n){a(n[i]);if(n[i].style) n[i].style.backgroundImage="url(https://i.kym-cdn.com/photos/images/original/001/105/237/94f.gif)";}};a(document);
+javascript:function a(e){var n=e.childNodes;for(var i in n){a(n[i]);if(n[i].style) n[i].style.backgroundImage="url(https://i.kym-cdn.com/photos/images/original/001/105/237/94f.gif)";}};a(document);
