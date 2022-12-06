@@ -1,0 +1,60 @@
+(function () {
+	var elem = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(elem);
+
+	elem.style.position = 'fixed';
+	elem.style.top = '0px';
+	elem.style.right = '0px';
+	elem.style.margin = '10px';
+	elem.style.paddingTop = '10px';
+	elem.style.width = '200px';
+	elem.style.height = '40px';
+	elem.style.zIndex = 10000;
+	elem.style.opacity = 0.9;
+	elem.style.color = 'white';
+	elem.style.backgroundColor = 'black';
+	elem.style.border = '1px solid white';
+	elem.style.textAlign = 'center';
+	elem.style.cursor = 'pointer';
+	elem.id = 'myTimer';
+
+	document.getElementById('myTimer').addEventListener('click', function () {
+		elem.style.display = 'none';
+		
+		setTimeout(function () {
+			elem.style.display = 'block';
+		}, 1000);
+	});
+
+	setInterval(function () {
+		var now = new Date();
+		var wNames = ['Day', '', '', '', '', '', ''];
+		
+		var m = now.getMonth() + 1;
+		var d = now.getDate();
+		var w = now.getDay();
+		var h = now.getHours();
+		var M = now.getMinutes();
+		var s = now.getSeconds();
+		
+		if (m < 10) {
+		  m = '0' + m;
+		}
+		if (d < 10) {
+		  d = '0' + d;
+		}
+		if (h < 10) {
+		  h = '0' + h;
+		}
+		if (M < 10) {
+		  M = '0' + M;
+		}
+		if (s < 10) {
+		  s = '0' + s;
+		}
+
+		elem.innerText = m + ' months ' + d + 'day (' + wNames[w] + ') ' + [h, M, s].join(':');
+	}, 1000);
+
+}());
