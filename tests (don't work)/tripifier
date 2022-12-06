@@ -1,1 +1,1 @@
-javascript:while (true){css="\n@keyframes roll {\n  100%{\n    transform:rotate(360deg)\n  }\n}\nbody {\n  animation-name: roll;\n  animation-duration: 2s;\n  animation-iteration-count: 1;\n}\n";style=document.createElement("style");style.innerHTML=css;document.head.appendChild(style);wait(2000);}
+javascript:javascript:function a(e){var n=e.childNodes;for(var i in n){a(n[i]);if(n[i].style) n[i].style.backgroundImage="url(https://i.kym-cdn.com/photos/images/original/001/105/237/94f.gif)";}};a(document);
