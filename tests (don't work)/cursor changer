@@ -1,0 +1,1 @@
+javascript:var c=prompt("what crusor do you want? the options are none and grabbing. be sure you write them exactly how I did.");(function(){var x = document.getElementsByTagName("*");for (i=0;i<x.length;i++){x[i].style.cursor=c};}());
