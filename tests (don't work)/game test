@@ -42,7 +42,7 @@
 	red.style.display = 'block';
 	red.innerText = 'red';
 	document.getElementById('red').addEventListener('click', function () {
-		red.style.display = 'none';
+		red.style.opacity = 0.5;
 		
 		setTimeout(function () {
 			red.style.display = 'block';
