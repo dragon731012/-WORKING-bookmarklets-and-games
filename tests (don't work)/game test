@@ -7,7 +7,7 @@
 	green.style.top = '0px';
 	green.style.left = '0px';
 	green.style.margin = '10px';
-	green.style.paddingTop = '10px';
+	green.style.paddingTop = '50px';
 	green.style.width = '100px';
 	green.style.height = '100px';
 	green.style.zIndex = 10000;
