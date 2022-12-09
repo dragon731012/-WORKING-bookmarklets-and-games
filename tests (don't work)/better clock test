@@ -1,5 +1,6 @@
 alert("by dragonmaster73101");
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+setInterval(function () {
 (function () {
   var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -21,18 +22,19 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 	elem.style.cursor = 'pointer';
 	elem.id = 'myTimer';
 	elem.style.display = 'block';
-  setInterval(function () {
+	setInterval(function () {
   	const d = new Date();
   	let day=d.getDate();
   	let dayweek = days[d.getDay()];
   	let yr=d.getFullYear();
   	let hr=d.getHours();
-  	let month1=d.getMonth();
+	let month1=d.getMonth();
   	var month=month1+1;
-  	let min=d.getMinutes();
+	let min=d.getMinutes();
 	if (hr>12){
 	hr=hr-12
 	}
   	elem.innerText = ''+month+'/'+day+'/'+yr+'  '+hr+':'+min+'';
 	}, 1000);
-}());
+	}());
+}, 1000);
