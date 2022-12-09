@@ -25,7 +25,7 @@
 	body.appendChild(red);
 
 	red.style.position = 'fixed';
-	red.style.top = '0px';
+	red.style.top = '100px';
 	red.style.left = '0px';
 	red.style.margin = '10px';
 	red.style.paddingTop = '40px';
