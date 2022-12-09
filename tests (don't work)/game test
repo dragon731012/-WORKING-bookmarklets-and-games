@@ -25,8 +25,8 @@
 	body.appendChild(red);
 
 	red.style.position = 'fixed';
-	red.style.top = '110px';
-	red.style.left = '0px';
+	red.style.top = '0px';
+	red.style.left = '110px';
 	red.style.margin = '10px';
 	red.style.paddingTop = '40px';
 	red.style.width = '100px';
@@ -41,4 +41,25 @@
 	red.id = 'red';
 	red.style.display = 'block';
 	red.innerText = 'red';
+   var yellow = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(yellow);
+
+	yellow.style.position = 'fixed';
+	yellow.style.top = '110px';
+	yellow.style.left = '0px';
+	yellow.style.margin = '10px';
+	yellow.style.paddingTop = '40px';
+	yellow.style.width = '100px';
+	yellow.style.height = '100px';
+	yellow.style.zIndex = 10000;
+	yellow.style.opacity = 0.9;
+	yellow.style.color = 'black';
+	yellow.style.backgroundColor = 'yellow';
+	yellow.style.border = '0px solid white';
+	yellow.style.textAlign = 'center';
+	yellow.style.cursor = 'pointer';
+	yellow.id = 'yellow';
+	yellow.style.display = 'block';
+	yellow.innerText = 'yellow';
 }());
