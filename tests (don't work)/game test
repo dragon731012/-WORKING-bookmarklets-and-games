@@ -45,7 +45,7 @@
 		red.style.opacity = 0.5;
 		
 		setTimeout(function () {
-			red.style.display = 'block';
+			red.style.opacity = 0.9;
 		}, 1000);
 	});
    var yellow = document.createElement('div');
