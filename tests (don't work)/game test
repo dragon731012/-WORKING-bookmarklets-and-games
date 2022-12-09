@@ -25,7 +25,7 @@
 	body.appendChild(red);
 
 	red.style.position = 'fixed';
-	red.style.top = '100px';
+	red.style.top = '110px';
 	red.style.left = '0px';
 	red.style.margin = '10px';
 	red.style.paddingTop = '40px';
@@ -33,7 +33,7 @@
 	red.style.height = '100px';
 	red.style.zIndex = 10000;
 	red.style.opacity = 0.9;
-	red.style.color = 'red';
+	red.style.color = 'black';
 	red.style.backgroundColor = 'red';
 	red.style.border = '0px solid white';
 	red.style.textAlign = 'center';
