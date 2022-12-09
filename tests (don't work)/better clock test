@@ -30,6 +30,9 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
   	let month1=d.getMonth();
   	var month=month1+1;
   	let min=d.getMinutes();
+	if (min>12){
+	min=min-12
+	}
   	elem.innerText = ''+month+'/'+day+'/'+yr+'  '+hr+':'+min+'';
 	}, 1000);
 }());
