@@ -1,6 +1,5 @@
 alert("by dragonmaster73101");
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-setInterval(function () {
 (function () {
   var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -36,5 +35,4 @@ setInterval(function () {
 	}
   	elem.innerText = ''+month+'/'+day+'/'+yr+'  '+hr+':'+min+'';
 	}, 1000);
-	}());
-}, 1000);
+}());
