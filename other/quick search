@@ -1,0 +1,1 @@
+javascript:s=prompt("what do you want to search?");window.open("https://www.google.com/search?q="+s+"");
