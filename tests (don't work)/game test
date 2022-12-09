@@ -62,4 +62,25 @@
 	yellow.id = 'yellow';
 	yellow.style.display = 'block';
 	yellow.innerText = 'yellow';
+  var blue = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(blue);
+
+	blue.style.position = 'fixed';
+	blue.style.top = '110px';
+	blue.style.left = '110px';
+	blue.style.margin = '10px';
+	blue.style.paddingTop = '40px';
+	blue.style.width = '100px';
+	blue.style.height = '100px';
+	blue.style.zIndex = 10000;
+	blue.style.opacity = 0.9;
+	blue.style.color = 'black';
+	blue.style.backgroundColor = 'blue';
+	blue.style.border = '0px solid white';
+	blue.style.textAlign = 'center';
+	blue.style.cursor = 'pointer';
+	blue.id = 'blue';
+	blue.style.display = 'block';
+	blue.innerText = 'blue';
 }());
