@@ -5,7 +5,7 @@
 
 	elem.style.position = 'fixed';
 	elem.style.top = '0px';
-	elem.style.right = '1000px';
+	elem.style.right = '1200px';
 	elem.style.margin = '10px';
 	elem.style.paddingTop = '10px';
 	elem.style.width = '200px';
