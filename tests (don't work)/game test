@@ -42,10 +42,10 @@
 	red.style.display = 'block';
 	red.innerText = 'red';
 	document.getElementById('red').addEventListener('click', function () {
-		elem.style.display = 'none';
+		red.style.display = 'none';
 		
 		setTimeout(function () {
-			elem.style.display = 'block';
+			red.style.display = 'block';
 		}, 1000);
 	});
    var yellow = document.createElement('div');
