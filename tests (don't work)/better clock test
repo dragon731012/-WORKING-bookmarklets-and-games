@@ -35,6 +35,7 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 	}
 	if (min<10){
 	min='0'+min+''
+	}
   	elem.innerText = ''+month+'/'+day+'/'+yr+'  '+hr+':'+min+'';
 	}, 1000);
 }());
