@@ -24,6 +24,8 @@ function repeat(event){
 	color.innerText = 'by dragonmaster73101';
 	document.getElementById('me').addEventListener('click', function() {
 		window.open('https://github.com/dragon731012');
+	});
+	
 }());
 }
 
