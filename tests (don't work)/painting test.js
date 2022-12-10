@@ -15,17 +15,13 @@ function repeat(event){
 	color.style.zIndex = 10000;
 	color.style.opacity = 1;
 	color.style.color = '#d9d9d9';
-	color.style.backgroundColor = ''+clr+'';
+	color.style.backgroundColor = 'white';
 	color.style.border = '6px solid #d9d9d9';
 	color.style.textAlign = 'center';
 	color.style.cursor = 'pointer';
 	color.id = 'color';
 	color.style.display = 'circle';
-	color.innerText = '';
-	document.getElementById('color').addEventListener('click', function() {
-		clr=prompt("what color do you want? must be very broad, and with no caps or special charecters. ex: blue");
-		color.style.backgroundColor = ''+clr+'';
-	});
+	color.innerText = 'by dragonmaster73101';
 }());
 }
 
