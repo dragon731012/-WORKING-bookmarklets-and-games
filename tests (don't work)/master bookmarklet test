@@ -6,12 +6,12 @@ javascript:var a=prompt("What bookmarklet would you like to activate? click=1 mi
 	body.appendChild(elem);
 
 	elem.style.position = 'fixed';
-	elem.style.top = '0px';
-	elem.style.right = '0px';
-	elem.style.margin = '10px';
+	elem.style.top = '332.5px';
+	elem.style.right = '683px';
+	elem.style.margin = '0px';
 	elem.style.paddingTop = '10px';
-	elem.style.width = '1366px';
-	elem.style.height = '665px';
+	elem.style.width = '150px';
+	elem.style.height = '40';
 	elem.style.zIndex = 10000;
 	elem.style.opacity = 0.9;
 	elem.style.color = 'white';
