@@ -56,7 +56,7 @@ var start = 0;
 		var m = 1;
 		var click = 0;
 		const list = [];
-		setTimeout(function() {
+		setInterval(function() {
 			while (x < m) {
 				function randomInteger(min, max) {
 					return Math.floor(Math.random() * (max - min + 1)) + min;
