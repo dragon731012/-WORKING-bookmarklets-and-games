@@ -1,3 +1,25 @@
+(function () {
+	var color = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(color);
+	var l=screen.width;
+	color.style.position = 'fixed';
+	color.style.top = '500px';
+	color.style.left =''+l+'px';
+	color.style.margin = '10px';
+	color.style.paddingTop = '10px';
+	color.style.width = '10px';
+	color.style.height = '10px';
+	color.style.zIndex = 10000;
+	color.style.opacity = 1;
+	color.style.color = 'blue';
+	color.style.backgroundColor = 'blue';
+	color.style.border = '0px solid white';
+	color.style.textAlign = 'center';
+	color.id = 'draw';
+	color.style.display = 'marker';
+	color.innerText = '';
+
 function mousemove(event){
      var x=event.clientX;
      var y=event.clientY;
@@ -16,7 +38,7 @@ function mousemove(event){
 	elem.style.width = '10px';
 	elem.style.height = '10px';
 	elem.style.zIndex = 10000;
-	elem.style.opacity = 0.9;
+	elem.style.opacity = 1;
 	elem.style.color = 'blue';
 	elem.style.backgroundColor = 'blue';
 	elem.style.border = '0px solid white';
