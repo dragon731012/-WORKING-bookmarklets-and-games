@@ -1,4 +1,5 @@
-var clr=prompt("what color do you want? must be very broad, and with no caps or special charecters. ex: blue");
+alert("keyboard commands: c=color picker");
+var pen='none';
 function repeat(event){
 (function () {
 	var color = document.createElement('div');
@@ -53,17 +54,32 @@ function mousemove(event){
 	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
 	elem.id = 'paint';
-	elem.style.display = 'block';
+	elem.style.display = ''+pen+'';
 	elem.innerText = '';
 }());
 }
+elem.style.display='none';
 window.addEventListener("keydown", function(event) {
     if (event.key == "c"){
         clr=prompt("what color do you want? must be very broad, and with no caps or special charecters. ex: blue");
-	color.style.backgroundColor = ''+clr+'';
+	elem.style.display = 'block';
+    }
+});
+window.addEventListener("keydown", function(event) {
+    if (event.key == "u"){
+        alert("pen is up");
+	pen='none';
+	elem.style.display = 'none';
     }
 });
 
+window.addEventListener("keydown", function(event) {
+    if (event.key == "d"){
+        alert("pen is down");
+	pen='circle';
+	elem.style.display = 'circle';
+    }
+});
 
 window.addEventListener('mousemove', mousemove);
 repeat();
