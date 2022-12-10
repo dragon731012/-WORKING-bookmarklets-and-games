@@ -1,6 +1,8 @@
 function mousemove(event){
      var x=event.clientX;
      var y=event.clientY;
+     x=x-10;
+     y=y+10;
 (function () {
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
