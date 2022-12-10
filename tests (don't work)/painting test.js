@@ -25,6 +25,7 @@ function repeat(event){
 	color.innerText = '';
 	document.getElementById('color').addEventListener('click', function() {
 		x=x+1;
+		color.style.backgroundColor = ''+colors[x]+'';
 	});
 }());
 }
@@ -60,4 +61,5 @@ function mousemove(event){
 
 
 window.addEventListener('mousemove', mousemove);
-setInterval(repeat,0);
+repeat();
+setInterval(repeat,6000);
