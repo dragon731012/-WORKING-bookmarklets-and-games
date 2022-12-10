@@ -170,10 +170,9 @@ var start=0;
 			    function getRandomNumberBetween(min,max){ return Math.floor(Math.random()*(max-min+1)+min); };
 			    a=getRandomNumberBetween(1,4);
 			    list.push(a);
-			    x=x+1
+			    x=x+1;
 			    }
-			m=m+1
+			m=m+1;
 			}
-	       }
 	});
 }());
