@@ -168,7 +168,7 @@ var start=0;
 			while (true){
 			  while (x<m){
 			    function getRandomNumberBetween(min,max){ return Math.floor(Math.random()*(max-min+1)+min); };
-			    a=getRandomNumberBetween(1,4);
+			    var a=getRandomNumberBetween(1,4);
 			    list.push(a);
 			    x=x+1;
 			    }
