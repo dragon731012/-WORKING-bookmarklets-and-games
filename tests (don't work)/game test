@@ -22,7 +22,7 @@ var start=0
 	green.style.display = 'block';
 	green.innerText = 'green';
 	document.getElementById('green').addEventListener('click', function () {
-		(if start=1){
+		if (start=1){
 		  green.style.opacity = 1;
 		  setTimeout(function () {
 	          green.style.opacity = 0.8;
