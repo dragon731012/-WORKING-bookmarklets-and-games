@@ -14,10 +14,10 @@
 	color.style.opacity = 1;
 	color.style.color = 'blue';
 	color.style.backgroundColor = 'blue';
-	color.style.border = '0px solid white';
+	color.style.border = '2px solid white';
 	color.style.textAlign = 'center';
-	color.id = 'draw';
-	color.style.display = 'marker';
+	color.id = 'color';
+	color.style.display = 'block';
 	color.innerText = '';
 
 function mousemove(event){
@@ -44,7 +44,7 @@ function mousemove(event){
 	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
 	elem.id = 'draw';
-	elem.style.display = 'marker';
+	elem.style.display = 'block';
 	elem.innerText = '';
 
 }());
