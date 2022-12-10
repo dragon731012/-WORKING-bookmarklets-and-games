@@ -1,5 +1,4 @@
 alert("by dragonmaster73101");
-var start=0;
 (function () {
   var green = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -173,6 +172,5 @@ var start=0;
 			    x=x+1;
 			    }
 			m=m+1;
-			}
 	});
 }());
