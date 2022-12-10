@@ -24,6 +24,7 @@ function repeat(event){
 	color.style.display = 'circle';
 	color.innerText = '';
 	document.getElementById('color').addEventListener('click', function() {
+		alert("hi");
 		x=x+1;
 		color.style.backgroundColor = ''+colors[x]+'';
 	});
