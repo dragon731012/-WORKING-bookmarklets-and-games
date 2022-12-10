@@ -1,4 +1,4 @@
-var clr=0;
+var clr='blue';
 function repeat(event){
 (function () {
 	var color = document.createElement('div');
