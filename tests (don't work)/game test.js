@@ -70,6 +70,7 @@ var start = 0;
 				m = m + 1;
 			}
 		}, 100);
+		alert(list);
 	});
 		var green = document.createElement('div');
 	body.appendChild(green);
@@ -180,4 +181,3 @@ var start = 0;
 		}, 500);
 	});
 }());
-alert(list);
