@@ -171,6 +171,15 @@ alert("by dragonmaster73101");
 			    list.push(a);
 			    x=x+1;
 			    }
+			function checkFlag() {
+    				if(allclick === false) {
+       					window.setTimeout(allclick, 100); /* this checks the flag every 100 milliseconds*/
+    				} else {
+      				  m=m+1;
+				}
+			}
+			allclick();
+
 			m=m+1;
 	});
 }());
