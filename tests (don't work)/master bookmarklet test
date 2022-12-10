@@ -14,9 +14,9 @@ javascript:var a=prompt("What bookmarklet would you like to activate? click=1 mi
 	click.style.height = '30';
 	click.style.zIndex = 10000;
 	click.style.opacity = 0.7;
-	click.style.color = 'white';
+	click.style.color = 'gray';
 	click.style.backgroundColor = 'black';
-	click.style.border = '2px solid white';
+	click.style.border = '2px solid gray';
 	click.style.textAlign = 'center';
 	click.style.cursor = 'pointer';
 	click.id = 'click';
