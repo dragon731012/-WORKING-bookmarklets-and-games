@@ -1,6 +1,7 @@
 function mousemove(event){
      var x=event.clientX;
      var y=event.clientY;
+     x=x*-1;
 (function () {
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -8,7 +9,7 @@ function mousemove(event){
 
 	elem.style.position = 'fixed';
 	elem.style.top = ''+y+'px';
-	elem.style.right =''+x*-1+'px';
+	elem.style.right =''+x+'px';
 	elem.style.margin = '10px';
 	elem.style.paddingTop = '10px';
 	elem.style.width = '10px';
