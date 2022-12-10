@@ -183,7 +183,6 @@ alert("by dragonmaster73101");
 					m = m + 1;
 				}
 			}();
-			allclick();
 
 			m = m + 1;
 		}
