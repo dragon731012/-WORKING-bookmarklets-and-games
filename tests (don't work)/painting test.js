@@ -60,4 +60,4 @@ function mousemove(event){
 
 
 window.addEventListener('mousemove', mousemove);
-setInterval(repeat,4000);
+setInterval(repeat,1000);
