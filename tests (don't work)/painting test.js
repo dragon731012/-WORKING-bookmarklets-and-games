@@ -8,7 +8,7 @@ function mousemove(event){
 
 	elem.style.position = 'fixed';
 	elem.style.top = ''+y+'px';
-	elem.style.right =''+x+'px';
+	elem.style.left =''+x+'px';
 	elem.style.margin = '10px';
 	elem.style.paddingTop = '10px';
 	elem.style.width = '10px';
