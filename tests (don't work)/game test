@@ -1,5 +1,6 @@
 alert("by dragonmaster 73101");
 (function () {
+  var start=0
   var green = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(green);
