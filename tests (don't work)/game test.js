@@ -163,7 +163,7 @@ alert("by dragonmaster73101");
 			me.style.left='0px';
 			me.style.fontSize='15px';
 			start=1;
-			const list=[]
+			const list=[];
 			while (true){
 			  while (x<m){
 			    function getRandomNumberBetween(min,max){ return Math.floor(Math.random()*(max-min+1)+min); };
