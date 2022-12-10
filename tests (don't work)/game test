@@ -165,7 +165,9 @@ var start=0;
 			me.style.fontSize='15px';
 			start=1;
 			while (true){
-			
+			  function getRandomNumberBetween(min,max){ return Math.floor(Math.random()*(max-min+1)+min); };
+			  a=getRandomNumberBetween(1,4);
+			  alert("your random number is "+a+".")
 			}
 	});
 }());
