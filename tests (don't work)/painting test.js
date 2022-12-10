@@ -22,7 +22,7 @@ function mousemove(event){
 	elem.style.cursor = 'pointer';
 	elem.id = 'myTimer';
 	elem.style.display = 'circle';
-	elem.innerText = 'hi';
+	elem.innerText = '';
 
 }());
 }
