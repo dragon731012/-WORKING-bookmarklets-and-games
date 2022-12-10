@@ -1,7 +1,6 @@
 alert("by dragonmaster73101");
 var start=0;
 (function () {
-  var start=0
   var green = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(green);
@@ -23,12 +22,10 @@ var start=0;
 	green.style.display = 'block';
 	green.innerText = 'green';
 	document.getElementById('green').addEventListener('click', function () {
-		  if (start=1){
 		  green.style.opacity = 1;
 		  setTimeout(function () {
 	            green.style.opacity = 0.8;
 	          }, 500);
-		  }
 	});
     var red = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -167,5 +164,8 @@ var start=0;
 			me.style.left='0px';
 			me.style.fontSize='15px';
 			start=1;
+			while (true){
+			
+			}
 	});
 }());
