@@ -51,12 +51,12 @@ function mousemove(event){
 	elem.style.height = '10px';
 	elem.style.zIndex = 10000;
 	elem.style.opacity = 1;
-	elem.style.color = 'blue';
+	elem.style.color = ''+colors[x]+'';
 	elem.style.backgroundColor = ''+colors[x]+'';
 	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
 	elem.id = 'paint';
-	elem.style.display = 'circle';
+	elem.style.display = 'block';
 	elem.innerText = '';
 }());
 }
