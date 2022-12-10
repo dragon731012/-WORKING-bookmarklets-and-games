@@ -21,9 +21,8 @@ function mousemove(event){
 	elem.style.backgroundColor = 'blue';
 	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
-	elem.style.cursor = 'pointer';
-	elem.id = 'myTimer';
-	elem.style.display = 'circle';
+	elem.id = 'draw';
+	elem.style.display = 'marker';
 	elem.innerText = '';
 
 }());
