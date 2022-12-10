@@ -174,8 +174,9 @@ var start=0;
 				    var a=randomInteger(1,4);
 				    list.push(a);
 			    }
-			    
-			    m=m+1;
+			    if (clicks>=4){
+			    	m=m+1;
+			    }
 			}
 	});
 }());
