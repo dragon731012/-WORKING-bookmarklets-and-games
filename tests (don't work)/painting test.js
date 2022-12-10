@@ -57,6 +57,12 @@ function mousemove(event){
 	elem.innerText = '';
 }());
 }
+window.addEventListener("keydown", function(event) {
+    if (event.key == "c"){
+        clr=prompt("what color do you want? must be very broad, and with no caps or special charecters. ex: blue");
+	color.style.backgroundColor = ''+clr+'';
+    }
+});
 
 
 window.addEventListener('mousemove', mousemove);
