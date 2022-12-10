@@ -181,5 +181,6 @@ alert("by dragonmaster73101");
 			allclick();
 
 			m=m+1;
+			}
 	});
 }());
