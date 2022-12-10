@@ -1,7 +1,6 @@
 alert("by dragonmaster 73101");
 var start=0
 (function () {
-  var start=0
   var green = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(green);
@@ -22,6 +21,7 @@ var start=0
 	green.id = 'green';
 	green.style.display = 'block';
 	green.innerText = 'green';
+	var start=0
 	document.getElementById('green').addEventListener('click', function () {
 		if (start=1){
 		  green.style.opacity = 1;
