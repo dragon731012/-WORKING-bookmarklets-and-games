@@ -1,4 +1,3 @@
-const colors=['red','blue','green','orange','pink','purple','yellow'];
 var clr=0;
 function repeat(event){
 (function () {
@@ -16,7 +15,7 @@ function repeat(event){
 	color.style.zIndex = 10000;
 	color.style.opacity = 1;
 	color.style.color = '#d9d9d9';
-	color.style.backgroundColor = ''+colors[clr]+'';
+	color.style.backgroundColor = ''+clr+'';
 	color.style.border = '6px solid #d9d9d9';
 	color.style.textAlign = 'center';
 	color.style.cursor = 'pointer';
@@ -24,10 +23,8 @@ function repeat(event){
 	color.style.display = 'circle';
 	color.innerText = '';
 	document.getElementById('color').addEventListener('click', function() {
-		clr=x+1;
-		if (clr>6)
-		{clr=0;}
-		color.style.backgroundColor = ''+colors[clr]+'';
+		clr=propmt("what color do you want? must be very broad, and with no caps or special charecters. ex: blue");
+		color.style.backgroundColor = ''+clr+'';
 	});
 }());
 }
@@ -51,8 +48,8 @@ function mousemove(event){
 	elem.style.height = '10px';
 	elem.style.zIndex = 10000;
 	elem.style.opacity = 1;
-	elem.style.color = ''+colors[clr]+'';
-	elem.style.backgroundColor = ''+colors[clr]+'';
+	elem.style.color = ''+clr+'';
+	elem.style.backgroundColor = ''+clr+'';
 	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
 	elem.id = 'paint';
