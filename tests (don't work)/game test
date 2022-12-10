@@ -21,14 +21,11 @@ var start=0
 	green.id = 'green';
 	green.style.display = 'block';
 	green.innerText = 'green';
-	var start=0
 	document.getElementById('green').addEventListener('click', function () {
-		if (start=1){
 		  green.style.opacity = 1;
 		  setTimeout(function () {
 	            green.style.opacity = 0.8;
 	          }, 500);
-		  }
 	});
     var red = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -114,4 +111,25 @@ var start=0
 			blue.style.opacity = 0.8;
 		}, 500);
 	});
+	var start = document.createElement('div');
+		var body = document.getElementsByTagName('body')[0];
+		body.appendChild(start);
+
+		start.style.position = 'fixed';
+		start.style.top = '220px';
+		start.style.left = '0px';
+		start.style.margin = '10px';
+		start.style.paddingTop = '40px';
+		start.style.width = '130px';
+		start.style.height = '30px';
+		start.style.zIndex = 10000;
+		start.style.opacity = 0.8;
+		start.style.color = 'black';
+		start.style.backgroundColor = 'blue';
+		start.style.border = '0px solid white';
+		start.style.textAlign = 'center';
+		start.style.cursor = 'pointer';
+		start.id = 'white';
+		start.style.display = 'block';
+		start.innerText = 'start';
 }());
