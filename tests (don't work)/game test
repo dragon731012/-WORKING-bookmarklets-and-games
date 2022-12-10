@@ -134,5 +134,6 @@ var start=0
 		start.innerText = 'start';
 		document.getElementById('start').addEventListener('click', function () {
 			start.style.left = '-999999px';
+			start=1
 	});
 }());
