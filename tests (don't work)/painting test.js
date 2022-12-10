@@ -10,7 +10,7 @@ function repeat(event){
 	color.style.bottom = '0px';
 	color.style.right ='0px';
 	color.style.margin = '0px';
-	color.style.paddingTop = '10px';
+	color.style.paddingTop = '0px';
 	color.style.width = '1366px';
 	color.style.height = '20px';
 	color.style.zIndex = 10000;
