@@ -7,17 +7,17 @@ function repeat(event){
 	body.appendChild(color);
 
 	color.style.position = 'fixed';
-	color.style.top = '570px';
+	color.style.bottom = '0px';
 	color.style.right ='600px';
 	color.style.margin = '0px';
 	color.style.paddingTop = '10px';
-	color.style.width = '200px';
+	color.style.width = '1366px';
 	color.style.height = '50px';
 	color.style.zIndex = 10000;
 	color.style.opacity = 1;
-	color.style.color = 'black';
-	color.style.backgroundColor = 'white';
-	color.style.border = '6px solid black';
+	color.style.color = 'white';
+	color.style.backgroundColor = 'black';
+	color.style.border = '0px solid black';
 	color.style.textAlign = 'center';
 	color.style.cursor = 'pointer';
 	color.id = 'color';
