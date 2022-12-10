@@ -7,7 +7,7 @@ javascript:var a=prompt("What bookmarklet would you like to activate? click=1 mi
 
 	elem.style.position = 'fixed';
 	elem.style.top = '300px';
-	elem.style.right = '660px';
+	elem.style.right = '620px';
 	elem.style.margin = '0px';
 	elem.style.paddingTop = '5px';
 	elem.style.width = '150px';
