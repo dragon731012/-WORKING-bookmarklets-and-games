@@ -8,7 +8,7 @@ function repeat(event){
 
 	color.style.position = 'fixed';
 	color.style.top = '570px';
-	color.style.right ='500px';
+	color.style.right ='600px';
 	color.style.margin = '0px';
 	color.style.paddingTop = '10px';
 	color.style.width = '200px';
