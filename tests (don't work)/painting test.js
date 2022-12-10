@@ -13,9 +13,9 @@
 	color.style.height = '50px';
 	color.style.zIndex = 10000;
 	color.style.opacity = 1;
-	color.style.color = 'light gray';
+	color.style.color = '#d9d9d9';
 	color.style.backgroundColor = ''+colorcolor+'';
-	color.style.border = '6px solid gray';
+	color.style.border = '6px solid #d9d9d9';
 	color.style.textAlign = 'center';
 	color.style.cursor = 'pointer';
 	color.id = 'color';
