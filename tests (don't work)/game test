@@ -116,12 +116,12 @@ var start=0
 		body.appendChild(start);
 
 		start.style.position = 'fixed';
-		start.style.top = '220px';
+		start.style.top = '215px';
 		start.style.left = '0px';
 		start.style.margin = '10px';
 		start.style.paddingTop = '10px';
 		start.style.width = '130px';
-		start.style.height = '30px';
+		start.style.height = '40px';
 		start.style.zIndex = 10000;
 		start.style.opacity = 0.8;
 		start.style.color = 'black';
