@@ -6,7 +6,7 @@
 
 	color.style.position = 'fixed';
 	color.style.top = '600px';
-	color.style.right ='690px';
+	color.style.right ='730px';
 	color.style.margin = '0px';
 	color.style.paddingTop = '10px';
 	color.style.width = '50px';
