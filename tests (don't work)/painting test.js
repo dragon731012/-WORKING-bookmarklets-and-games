@@ -5,8 +5,8 @@
 	body.appendChild(color);
 
 	color.style.position = 'fixed';
-	color.style.top = '600px';
-	color.style.right ='730px';
+	color.style.top = '570px';
+	color.style.right ='770px';
 	color.style.margin = '0px';
 	color.style.paddingTop = '10px';
 	color.style.width = '50px';
