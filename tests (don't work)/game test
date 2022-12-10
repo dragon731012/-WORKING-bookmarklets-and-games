@@ -1,4 +1,4 @@
-alert("by dragonmaster 73101");
+alert("by dragonmaster73101");
 var start=0
 (function () {
   var green = document.createElement('div');
@@ -119,7 +119,7 @@ var start=0
 		start.style.top = '220px';
 		start.style.left = '0px';
 		start.style.margin = '10px';
-		start.style.paddingTop = '40px';
+		start.style.paddingTop = '20px';
 		start.style.width = '130px';
 		start.style.height = '30px';
 		start.style.zIndex = 10000;
