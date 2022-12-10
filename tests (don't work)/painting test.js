@@ -58,7 +58,6 @@ function mousemove(event){
 	elem.innerText = '';
 }());
 }
-elem.style.display='none';
 window.addEventListener("keydown", function(event) {
     if (event.key == "c"){
         clr=prompt("what color do you want? must be very broad, and with no caps or special charecters. ex: blue");
@@ -69,7 +68,6 @@ window.addEventListener("keydown", function(event) {
     if (event.key == "u"){
         alert("pen is up");
 	pen='none';
-	elem.style.display = 'none';
     }
 });
 
@@ -77,7 +75,6 @@ window.addEventListener("keydown", function(event) {
     if (event.key == "d"){
         alert("pen is down");
 	pen='circle';
-	elem.style.display = 'circle';
     }
 });
 
