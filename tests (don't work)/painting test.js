@@ -5,8 +5,8 @@
 	body.appendChild(color);
 
 	color.style.position = 'fixed';
-	color.style.top = '500px';
-	color.style.right ='500px';
+	color.style.top = '530px';
+	color.style.right ='570px';
 	color.style.margin = '0px';
 	color.style.paddingTop = '10px';
 	color.style.width = '50px';
@@ -15,7 +15,7 @@
 	color.style.opacity = 1;
 	color.style.color = ''+colorcolor+'';
 	color.style.backgroundColor = 'blue';
-	color.style.border = '2px solid white';
+	color.style.border = '10px solid white';
 	color.style.textAlign = 'center';
 	color.style.cursor = 'pointer';
 	color.id = 'color';
