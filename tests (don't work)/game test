@@ -133,6 +133,6 @@ var start=0
 		start.style.display = 'block';
 		start.innerText = 'start';
 		document.getElementById('start').addEventListener('click', function () {
-			start.style.display = none;
+			start.style.left = '-999999px';
 	});
 }());
