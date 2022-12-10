@@ -174,6 +174,7 @@ var start = 0;
 				}
 				var a = randomInteger(1, 4);
 				list.push(a);
+				x=x+1;
 			}
 			if (click >= 4) {
 				click = 0;
