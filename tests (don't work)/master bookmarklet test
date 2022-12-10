@@ -9,7 +9,7 @@ javascript:var a=prompt("What bookmarklet would you like to activate? click=1 mi
 	click.style.top = '300px';
 	click.style.right = '610px';
 	click.style.margin = '0px';
-	click.style.paddingTop = '3px';
+	click.style.paddingTop = '0px';
 	click.style.width = '100px';
 	click.style.height = '30';
 	click.style.zIndex = 10000;
