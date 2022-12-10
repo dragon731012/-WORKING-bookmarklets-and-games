@@ -57,28 +57,7 @@ alert("by dragonmaster73101");
 		var x = 0;
 		var m = 1;
 		var click = 0;
-		setTimeout(function() {
-			while (x < m) {
-				function getRandomNumberBetween(min, max) {
-					return Math.floor(Math.random() * (max - min + 1) + min);
-				}
-				var a = getRandomNumberBetween(1, 4);
-				list.push(a);
-				x = x + 1;
-			}
-
-			function allclick() {
-				if (allclick === false) {
-					window.setTimeout(allclick, 100); /* this checks the flag every 100 milliseconds*/
-				} else {
-					m = m + 1;
-				}
-			allclick();
-			}, 500);
-
-		}
-	});
-		var green = document.createElement('div');
+	var green = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(green);
 	green.style.position = 'fixed';
