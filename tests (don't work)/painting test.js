@@ -7,8 +7,8 @@ function mousemove(event){
 	body.appendChild(elem);
 
 	elem.style.position = 'fixed';
-	elem.style.top = '0px';
-	elem.style.right = '0px';
+	elem.style.top = ''+y+'px';
+	elem.style.right =''+x+'px';
 	elem.style.margin = '10px';
 	elem.style.paddingTop = '10px';
 	elem.style.width = '200px';
