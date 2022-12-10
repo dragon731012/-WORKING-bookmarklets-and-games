@@ -1,9 +1,10 @@
 alert("by dragonmaster 73101");
 (function () {
   var green = document.createElement('div');
+  	var start=false
+	var clickable=false
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(green);
-
 	green.style.position = 'fixed';
 	green.style.top = '0px';
 	green.style.left = '0px';
@@ -22,11 +23,13 @@ alert("by dragonmaster 73101");
 	green.style.display = 'block';
 	green.innerText = 'green';
 	document.getElementById('green').addEventListener('click', function () {
-		green.style.opacity = 1;
+		if (start=true){
+		  green.style.opacity = 1;
 		
-		setTimeout(function () {
-			green.style.opacity = 0.8;
-		}, 500);
+		  setTimeout(function () {
+		    green.style.opacity = 0.8;
+		  }, 500);
+		}
 	});
     var red = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
