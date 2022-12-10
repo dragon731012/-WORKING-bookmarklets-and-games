@@ -1,3 +1,4 @@
+alert("by dragonmaster 73101");
 (function () {
   var green = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -25,7 +26,7 @@
 		
 		setTimeout(function () {
 			green.style.opacity = 0.8;
-		}, 1000);
+		}, 700);
 	});
     var red = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -53,7 +54,7 @@
 		
 		setTimeout(function () {
 			red.style.opacity = 0.8;
-		}, 1000);
+		}, 700);
 	});
    var yellow = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -81,7 +82,7 @@
 		
 		setTimeout(function () {
 			yellow.style.opacity = 0.8;
-		}, 1000);
+		}, 700);
 	});
   var blue = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -109,6 +110,6 @@
 		
 		setTimeout(function () {
 			blue.style.opacity = 0.8;
-		}, 1000);
+		}, 700);
 	});
 }());
