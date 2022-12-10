@@ -1,7 +1,7 @@
 var howmany=prompt("how many divs/iframes do you want to make?");
 (function(){var color=document.createElement('div');var body=document.getElementsByTagName('body')[0];body.appendChild(color);color.style.position='fixed';color.style.bottom='0px';color.style.right='0px';color.style.margin='0px';color.style.paddingTop='0px';color.style.width='1366px';color.style.height='20px';color.style.zIndex=10000;color.style.opacity=0.8;color.style.color='white';color.style.backgroundColor='black';color.style.border='0px solid black';color.style.textAlign='center';color.style.cursor='pointer';color.id='color';color.style.display='circle';color.innerText='code by dragonmaster73101';document.getElementById('me').addEventListener('click',function(){window.open('https://github.com/dragon731012');});}());
 
-function create(event){
+function create(){
 (function () {
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -41,4 +41,5 @@ var x=0;
 while (x<howmany){
   create();
   x=x+1;
+}
 alert("done!");
