@@ -157,7 +157,9 @@ var start=0
 		me.id = 'me';
 		me.style.display = 'block';
 		me.innerText = 'by dragonmaster73101';
+		me.style.fontSize=10
 		document.getElementById('me').addEventListener('click', function () {
 			window.open('https://github.com/dragon731012')
+			
 	});
 }());
