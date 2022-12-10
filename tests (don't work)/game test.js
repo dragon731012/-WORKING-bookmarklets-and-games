@@ -65,7 +65,6 @@ var start = 0;
 				list.push(a);
 				x=x+1;
 			}
-			alert(list);
 			if (click >= 4) {
 				click = 0;
 				m = m + 1;
@@ -181,3 +180,4 @@ var start = 0;
 		}, 500);
 	});
 }());
+alert(list);
