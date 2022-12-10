@@ -56,7 +56,8 @@ alert("by dragonmaster73101");
 		const list = [];
 		var x = 0;
 		var m = 1;
-		while (true) {
+		var click = 0;
+		setTimeout(function() {
 			while (x < m) {
 				function getRandomNumberBetween(min, max) {
 					return Math.floor(Math.random() * (max - min + 1) + min);
@@ -72,10 +73,9 @@ alert("by dragonmaster73101");
 				} else {
 					m = m + 1;
 				}
-			}
 			allclick();
+			}, 500);
 
-			m = m + 1;
 		}
 	});
 		var green = document.createElement('div');
@@ -183,7 +183,7 @@ alert("by dragonmaster73101");
 	blue.innerText = 'blue';
 	document.getElementById('blue').addEventListener('click', function() {
 		blue.style.opacity = 1;
-
+		
 		setTimeout(function() {
 			blue.style.opacity = 0.8;
 		}, 500);
