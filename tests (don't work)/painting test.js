@@ -22,6 +22,8 @@ function repeat(event){
 	color.id = 'color';
 	color.style.display = 'circle';
 	color.innerText = 'by dragonmaster73101';
+	document.getElementById('me').addEventListener('click', function() {
+		window.open('https://github.com/dragon731012');
 }());
 }
 
@@ -62,4 +64,5 @@ window.addEventListener("keydown", function(event) {
 
 
 window.addEventListener('mousemove', mousemove);
+repeat();
 setInterval(repeat,6000);
