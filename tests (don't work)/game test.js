@@ -163,6 +163,10 @@ var start=0;
 			me.style.width='210px';
 			me.style.left='0px';
 			me.style.fontSize='15px';
-			start=1;
+			while (true){
+				function randomInteger(min, max) {
+  					return Math.floor(Math.random() * (max - min + 1)) + min;
+				}
+			}
 	});
 }());
