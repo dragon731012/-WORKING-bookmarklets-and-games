@@ -1,6 +1,6 @@
 const colors=['red','blue','green','orange','pink','purple','yellow'];
 var x=0;
-function repeat(event){
+function repeat(event,x){
 (function () {
 	var color = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
