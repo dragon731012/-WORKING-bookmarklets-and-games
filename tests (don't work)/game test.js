@@ -1,6 +1,6 @@
 alert("by dragonmaster73101");
-(function () {
-  var green = document.createElement('div');
+(function() {
+	var green = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(green);
 	green.style.position = 'fixed';
@@ -20,13 +20,13 @@ alert("by dragonmaster73101");
 	green.id = 'green';
 	green.style.display = 'block';
 	green.innerText = 'green';
-	document.getElementById('green').addEventListener('click', function () {
-		  green.style.opacity = 1;
-		  setTimeout(function () {
-	            green.style.opacity = 0.8;
-	          }, 500);
+	document.getElementById('green').addEventListener('click', function() {
+		green.style.opacity = 1;
+		setTimeout(function() {
+			green.style.opacity = 0.8;
+		}, 500);
 	});
-    var red = document.createElement('div');
+	var red = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(red);
 
@@ -47,14 +47,14 @@ alert("by dragonmaster73101");
 	red.id = 'red';
 	red.style.display = 'block';
 	red.innerText = 'red';
-	document.getElementById('red').addEventListener('click', function () {
+	document.getElementById('red').addEventListener('click', function() {
 		red.style.opacity = 1;
-		
-		setTimeout(function () {
+
+		setTimeout(function() {
 			red.style.opacity = 0.8;
 		}, 500);
 	});
-   var yellow = document.createElement('div');
+	var yellow = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(yellow);
 
@@ -75,14 +75,14 @@ alert("by dragonmaster73101");
 	yellow.id = 'yellow';
 	yellow.style.display = 'block';
 	yellow.innerText = 'yellow';
-	document.getElementById('yellow').addEventListener('click', function () {
+	document.getElementById('yellow').addEventListener('click', function() {
 		yellow.style.opacity = 1;
-		
-		setTimeout(function () {
+
+		setTimeout(function() {
 			yellow.style.opacity = 0.8;
 		}, 500);
 	});
-  var blue = document.createElement('div');
+	var blue = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(blue);
 
@@ -103,84 +103,89 @@ alert("by dragonmaster73101");
 	blue.id = 'blue';
 	blue.style.display = 'block';
 	blue.innerText = 'blue';
-	document.getElementById('blue').addEventListener('click', function () {
+	document.getElementById('blue').addEventListener('click', function() {
 		blue.style.opacity = 1;
-		
-		setTimeout(function () {
+
+		setTimeout(function() {
 			blue.style.opacity = 0.8;
 		}, 500);
 	});
 	var me = document.createElement('div');
-		var body = document.getElementsByTagName('body')[0];
-		body.appendChild(me);
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(me);
 
-		me.style.position = 'fixed';
-		me.style.top = '215px';
-		me.style.left = '125px';
-		me.style.margin = '10px';
-		me.style.paddingTop = '10px';
-		me.style.width = '85px';
-		me.style.height = '40px';
-		me.style.zIndex = 10000;
-		me.style.opacity = 1;
-		me.style.color = 'black';
-		me.style.backgroundColor = 'gray';
-		me.style.border = '0px solid white';
-		me.style.textAlign = 'center';
-		me.style.cursor = 'pointer';
-		me.id = 'me';
-		me.style.display = 'block';
-		me.innerText = 'by dragonmaster73101';
-		me.style.fontSize='8px';
-		document.getElementById('me').addEventListener('click', function () {
-			window.open('https://github.com/dragon731012')
-			
+	me.style.position = 'fixed';
+	me.style.top = '215px';
+	me.style.left = '125px';
+	me.style.margin = '10px';
+	me.style.paddingTop = '10px';
+	me.style.width = '85px';
+	me.style.height = '40px';
+	me.style.zIndex = 10000;
+	me.style.opacity = 1;
+	me.style.color = 'black';
+	me.style.backgroundColor = 'gray';
+	me.style.border = '0px solid white';
+	me.style.textAlign = 'center';
+	me.style.cursor = 'pointer';
+	me.id = 'me';
+	me.style.display = 'block';
+	me.innerText = 'by dragonmaster73101';
+	me.style.fontSize = '8px';
+	document.getElementById('me').addEventListener('click', function() {
+		window.open('https://github.com/dragon731012');
+
 	});
 	var start = document.createElement('div');
-		var body = document.getElementsByTagName('body')[0];
-		body.appendChild(start);
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(start);
 
-		start.style.position = 'fixed';
-		start.style.top = '215px';
-		start.style.left = '0px';
-		start.style.margin = '10px';
-		start.style.paddingTop = '10px';
-		start.style.width = '115px';
-		start.style.height = '40px';
-		start.style.zIndex = 10000;
-		start.style.opacity = 1;
-		start.style.color = 'black';
-		start.style.backgroundColor = 'gray';
-		start.style.border = '0px solid white';
-		start.style.textAlign = 'center';
-		start.style.cursor = 'pointer';
-		start.id = 'start';
-		start.style.display = 'block';
-		start.innerText = 'start';
-		document.getElementById('start').addEventListener('click', function () {
-			start.style.left = '-999999px';
-			me.style.width='210px';
-			me.style.left='0px';
-			me.style.fontSize='15px';
-			start=1;
-			const list=[];
-			while (true){
-			  while (x<m){
-			    function getRandomNumberBetween(min,max){ return Math.floor(Math.random()*(max-min+1)+min); };
-			    var a=getRandomNumberBetween(1,4);
-			    list.push(a);
-			    x=x+1;
-			    }
-			function checkFlag() {
-    				if(allclick === false) {
-       					window.setTimeout(allclick, 100); /* this checks the flag every 100 milliseconds*/
-    				} else {
-      				  m=m+1;
+	start.style.position = 'fixed';
+	start.style.top = '215px';
+	start.style.left = '0px';
+	start.style.margin = '10px';
+	start.style.paddingTop = '10px';
+	start.style.width = '115px';
+	start.style.height = '40px';
+	start.style.zIndex = 10000;
+	start.style.opacity = 1;
+	start.style.color = 'black';
+	start.style.backgroundColor = 'gray';
+	start.style.border = '0px solid white';
+	start.style.textAlign = 'center';
+	start.style.cursor = 'pointer';
+	start.id = 'start';
+	start.style.display = 'block';
+	start.innerText = 'start';
+	document.getElementById('start').addEventListener('click', function() {
+		start.style.left = '-999999px';
+		me.style.width = '210px';
+		me.style.left = '0px';
+		me.style.fontSize = '15px';
+		start = 1;
+		const list = [];
+		var x = 0;
+		var m = 1;
+		while (true) {
+			while (x < m) {
+				function getRandomNumberBetween(min, max) {
+					return Math.floor(Math.random() * (max - min + 1) + min);
+				}
+				var a = getRandomNumberBetween(1, 4);
+				list.push(a);
+				x = x + 1;
+			}
+
+			function allclick() {
+				if (allclick === false) {
+					window.setTimeout(allclick, 100); /* this checks the flag every 100 milliseconds*/
+				} else {
+					m = m + 1;
 				}
 			}
 			allclick();
 
-			m=m+1;
-			}
+			m = m + 1;
+		}
 	});
 }());
