@@ -23,7 +23,7 @@ function repeat(event){
 	color.style.display = 'circle';
 	color.innerText = '';
 	document.getElementById('color').addEventListener('click', function() {
-		var clr=prompt("what color do you want? must be very broad, and with no caps or special charecters. ex: blue");
+		clr=prompt("what color do you want? must be very broad, and with no caps or special charecters. ex: blue");
 		color.style.backgroundColor = ''+clr+'';
 	});
 }());
