@@ -8,13 +8,13 @@ function repeat(event){
 
 	color.style.position = 'fixed';
 	color.style.bottom = '0px';
-	color.style.right ='600px';
+	color.style.right ='0px';
 	color.style.margin = '0px';
 	color.style.paddingTop = '10px';
 	color.style.width = '1366px';
-	color.style.height = '50px';
+	color.style.height = '20px';
 	color.style.zIndex = 10000;
-	color.style.opacity = 1;
+	color.style.opacity = 0.8;
 	color.style.color = 'white';
 	color.style.backgroundColor = 'black';
 	color.style.border = '0px solid black';
