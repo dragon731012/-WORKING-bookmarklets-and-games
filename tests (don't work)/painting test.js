@@ -1,24 +1,28 @@
 (function () {
 	var color = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
+	var colorcolor=blue;
 	body.appendChild(color);
-	var l=screen.width;
+
 	color.style.position = 'fixed';
 	color.style.top = '500px';
-	color.style.left =''+l+'px';
-	color.style.margin = '10px';
+	color.style.right ='500px';
+	color.style.margin = '0px';
 	color.style.paddingTop = '10px';
-	color.style.width = '10px';
-	color.style.height = '10px';
+	color.style.width = '50px';
+	color.style.height = '50px';
 	color.style.zIndex = 10000;
 	color.style.opacity = 1;
-	color.style.color = 'blue';
+	color.style.color = ''+colorcolor+'';
 	color.style.backgroundColor = 'blue';
 	color.style.border = '2px solid white';
 	color.style.textAlign = 'center';
+	color.style.cursor = 'pointer';
 	color.id = 'color';
-	color.style.display = 'block';
+	color.style.display = 'circle';
 	color.innerText = '';
+
+}());
 
 function mousemove(event){
      var x=event.clientX;
@@ -43,8 +47,9 @@ function mousemove(event){
 	elem.style.backgroundColor = 'blue';
 	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
-	elem.id = 'draw';
-	elem.style.display = 'block';
+	elem.style.cursor = 'pointer';
+	elem.id = 'myTimer';
+	elem.style.display = 'circle';
 	elem.innerText = '';
 
 }());
