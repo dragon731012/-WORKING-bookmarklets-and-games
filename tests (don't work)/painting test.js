@@ -1,4 +1,4 @@
-alert("keyboard commands: c=color picker");
+alert("keyboard commands: c=color picker. u=pen up. d=pen down. reload to clear.");
 var pen='none';
 function repeat(event){
 (function () {
@@ -11,7 +11,7 @@ function repeat(event){
 	color.style.right ='770px';
 	color.style.margin = '0px';
 	color.style.paddingTop = '10px';
-	color.style.width = '50px';
+	color.style.width = '200px';
 	color.style.height = '50px';
 	color.style.zIndex = 10000;
 	color.style.opacity = 1;
