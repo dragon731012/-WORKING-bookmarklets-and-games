@@ -13,9 +13,9 @@
 	color.style.height = '50px';
 	color.style.zIndex = 10000;
 	color.style.opacity = 1;
-	color.style.color = ''+colorcolor+'';
-	color.style.backgroundColor = 'blue';
-	color.style.border = '10px solid white';
+	color.style.color = 'gray';
+	color.style.backgroundColor = ''+colorcolor+'';
+	color.style.border = '10px solid gray';
 	color.style.textAlign = 'center';
 	color.style.cursor = 'pointer';
 	color.id = 'color';
