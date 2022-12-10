@@ -1,3 +1,4 @@
+function repeat(event){
 (function () {
 	var color = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -23,6 +24,7 @@
 	color.innerText = '';
 
 }());
+}
 
 function mousemove(event){
      var x=event.clientX;
@@ -30,7 +32,6 @@ function mousemove(event){
      x=x-10;
      y=y-8;
 (function () {
-	if (color.mouseenter=false){alert("hi");
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(elem);
@@ -51,8 +52,6 @@ function mousemove(event){
 	elem.id = 'paint';
 	elem.style.display = 'circle';
 	elem.innerText = '';
-	}
-
 }());
 }
 
