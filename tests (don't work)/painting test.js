@@ -8,16 +8,16 @@ function mousemove(event){
 
 	elem.style.position = 'fixed';
 	elem.style.top = ''+y+'px';
-	elem.style.right =''+x+'px';
+	elem.style.right =''+x*-1+'px';
 	elem.style.margin = '10px';
 	elem.style.paddingTop = '10px';
-	elem.style.width = '200px';
-	elem.style.height = '40px';
+	elem.style.width = '10px';
+	elem.style.height = '10px';
 	elem.style.zIndex = 10000;
 	elem.style.opacity = 0.9;
-	elem.style.color = 'white';
-	elem.style.backgroundColor = 'black';
-	elem.style.border = '1px solid white';
+	elem.style.color = 'blue';
+	elem.style.backgroundColor = 'blue';
+	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
 	elem.id = 'myTimer';
