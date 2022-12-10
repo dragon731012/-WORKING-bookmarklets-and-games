@@ -1,3 +1,4 @@
+const colors=['red','blue','green','orange','pink','purple','yellow'];
 function repeat(event){
 (function () {
 	var color = document.createElement('div');
