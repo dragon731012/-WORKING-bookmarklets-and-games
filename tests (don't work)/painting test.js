@@ -1,9 +1,9 @@
 const colors=['red','blue','green','orange','pink','purple','yellow'];
+var x=0;
 function repeat(event){
 (function () {
 	var color = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
-	var x=0;
 	body.appendChild(color);
 
 	color.style.position = 'fixed';
@@ -24,7 +24,6 @@ function repeat(event){
 	color.style.display = 'circle';
 	color.innerText = '';
 	document.getElementById('color').addEventListener('click', function() {
-		alert("hi");
 		x=x+1;
 		color.style.backgroundColor = ''+colors[x]+'';
 	});
