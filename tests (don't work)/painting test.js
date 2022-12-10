@@ -25,6 +25,7 @@ function repeat(event){
 	color.innerText = '';
 	document.getElementById('color').addEventListener('click', function() {
 		x=x+1;
+		color.style.backgroundColor = ''+colors[x]+'';
 	});
 }());
 }
