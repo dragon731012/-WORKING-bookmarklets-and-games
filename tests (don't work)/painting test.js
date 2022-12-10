@@ -1,4 +1,4 @@
-var clr=propmt("what color do you want? must be very broad, and with no caps or special charecters. ex: blue");
+var clr=prompt("what color do you want? must be very broad, and with no caps or special charecters. ex: blue");
 function repeat(event){
 (function () {
 	var color = document.createElement('div');
@@ -23,7 +23,7 @@ function repeat(event){
 	color.style.display = 'circle';
 	color.innerText = '';
 	document.getElementById('color').addEventListener('click', function() {
-		var clr=propmt("what color do you want? must be very broad, and with no caps or special charecters. ex: blue");
+		var clr=prompt("what color do you want? must be very broad, and with no caps or special charecters. ex: blue");
 		color.style.backgroundColor = ''+clr+'';
 	});
 }());
