@@ -26,7 +26,7 @@ alert("by dragonmaster 73101");
 		
 		setTimeout(function () {
 			green.style.opacity = 0.8;
-		}, 700);
+		}, 500);
 	});
     var red = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -54,7 +54,7 @@ alert("by dragonmaster 73101");
 		
 		setTimeout(function () {
 			red.style.opacity = 0.8;
-		}, 700);
+		}, 500);
 	});
    var yellow = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -82,7 +82,7 @@ alert("by dragonmaster 73101");
 		
 		setTimeout(function () {
 			yellow.style.opacity = 0.8;
-		}, 700);
+		}, 500);
 	});
   var blue = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -110,6 +110,6 @@ alert("by dragonmaster 73101");
 		
 		setTimeout(function () {
 			blue.style.opacity = 0.8;
-		}, 700);
+		}, 500);
 	});
 }());
