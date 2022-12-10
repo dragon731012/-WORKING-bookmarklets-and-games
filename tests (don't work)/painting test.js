@@ -1,5 +1,5 @@
 const colors=['red','blue','green','orange','pink','purple','yellow'];
-var x=0;
+var clr=0;
 function repeat(event){
 (function () {
 	var color = document.createElement('div');
@@ -16,7 +16,7 @@ function repeat(event){
 	color.style.zIndex = 10000;
 	color.style.opacity = 1;
 	color.style.color = '#d9d9d9';
-	color.style.backgroundColor = ''+colors[x]+'';
+	color.style.backgroundColor = ''+colors[clr]+'';
 	color.style.border = '6px solid #d9d9d9';
 	color.style.textAlign = 'center';
 	color.style.cursor = 'pointer';
@@ -24,10 +24,10 @@ function repeat(event){
 	color.style.display = 'circle';
 	color.innerText = '';
 	document.getElementById('color').addEventListener('click', function() {
-		x=x+1;
-		if (x>6)
-		{x=0;}
-		color.style.backgroundColor = ''+colors[x]+'';
+		clr=x+1;
+		if (clr>6)
+		{clr=0;}
+		color.style.backgroundColor = ''+colors[clr]+'';
 	});
 }());
 }
@@ -51,8 +51,8 @@ function mousemove(event){
 	elem.style.height = '10px';
 	elem.style.zIndex = 10000;
 	elem.style.opacity = 1;
-	elem.style.color = ''+colors[x]+'';
-	elem.style.backgroundColor = ''+colors[x]+'';
+	elem.style.color = ''+colors[clr]+'';
+	elem.style.backgroundColor = ''+colors[clr]+'';
 	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
 	elem.id = 'paint';
@@ -63,4 +63,5 @@ function mousemove(event){
 
 
 window.addEventListener('mousemove', mousemove);
+repeat();
 setInterval(repeat,6000);
