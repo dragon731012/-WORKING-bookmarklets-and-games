@@ -1,7 +1,7 @@
 (function () {
 	var color = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
-	var colorcolor=blue;
+	var colorcolor='blue';
 	body.appendChild(color);
 
 	color.style.position = 'fixed';
