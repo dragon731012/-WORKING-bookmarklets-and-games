@@ -20,7 +20,7 @@
 	green.id = 'green';
 	green.style.display = 'block';
 	green.innerText = 'green';
-	document.getElementById('red').addEventListener('click', function () {
+	document.getElementById('green').addEventListener('click', function () {
 		green.style.opacity = 1;
 		
 		setTimeout(function () {
