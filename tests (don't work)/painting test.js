@@ -15,7 +15,7 @@
 	color.style.opacity = 1;
 	color.style.color = 'gray';
 	color.style.backgroundColor = ''+colorcolor+'';
-	color.style.border = '10px solid gray';
+	color.style.border = '6px solid gray';
 	color.style.textAlign = 'center';
 	color.style.cursor = 'pointer';
 	color.id = 'color';
@@ -47,8 +47,7 @@ function mousemove(event){
 	elem.style.backgroundColor = 'blue';
 	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
-	elem.style.cursor = 'pointer';
-	elem.id = 'myTimer';
+	elem.id = 'paint';
 	elem.style.display = 'circle';
 	elem.innerText = '';
 
