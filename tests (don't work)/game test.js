@@ -28,7 +28,6 @@ var start = 0;
 
 	});
 	var start = document.createElement('div');
-	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(start);
 
 	start.style.position = 'fixed';
@@ -73,7 +72,6 @@ var start = 0;
 		}, 100);
 	});
 		var green = document.createElement('div');
-	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(green);
 	green.style.position = 'fixed';
 	green.style.top = '0px';
@@ -99,9 +97,7 @@ var start = 0;
 		}, 500);
 	});
 	var red = document.createElement('div');
-	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(red);
-
 	red.style.position = 'fixed';
 	red.style.top = '0px';
 	red.style.left = '110px';
@@ -127,7 +123,6 @@ var start = 0;
 		}, 500);
 	});
 	var yellow = document.createElement('div');
-	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(yellow);
 
 	yellow.style.position = 'fixed';
@@ -155,7 +150,6 @@ var start = 0;
 		}, 500);
 	});
 	var blue = document.createElement('div');
-	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(blue);
 
 	blue.style.position = 'fixed';
@@ -175,9 +169,12 @@ var start = 0;
 	blue.id = 'blue';
 	blue.style.display = 'block';
 	blue.innerText = 'blue';
-	document.getElementById('blue').addEventListener('click', function() {
+	document.getElementById('blue').addEventListener('click', function(list,click) {
 		blue.style.opacity = 1;
-
+        if (list[click]==4){
+            list.shift();
+            alert("it works!");
+        }
 		setTimeout(function() {
 			blue.style.opacity = 0.8;
 		}, 500);
