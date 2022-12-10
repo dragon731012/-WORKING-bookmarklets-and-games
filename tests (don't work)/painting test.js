@@ -3,7 +3,7 @@ function repeat(event){
 (function () {
 	var color = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
-	var colorcolor='blue';
+	var x=0;
 	body.appendChild(color);
 
 	color.style.position = 'fixed';
@@ -16,14 +16,16 @@ function repeat(event){
 	color.style.zIndex = 10000;
 	color.style.opacity = 1;
 	color.style.color = '#d9d9d9';
-	color.style.backgroundColor = ''+colorcolor+'';
+	color.style.backgroundColor = ''+colors[x]+'';
 	color.style.border = '6px solid #d9d9d9';
 	color.style.textAlign = 'center';
 	color.style.cursor = 'pointer';
 	color.id = 'color';
 	color.style.display = 'circle';
 	color.innerText = '';
-
+	document.getElementById('color').addEventListener('click', function() {
+		x=x+1;
+	});
 }());
 }
 
