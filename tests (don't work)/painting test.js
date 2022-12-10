@@ -13,7 +13,7 @@
 	color.style.height = '50px';
 	color.style.zIndex = 10000;
 	color.style.opacity = 1;
-	color.style.color = 'gray';
+	color.style.color = 'light gray';
 	color.style.backgroundColor = ''+colorcolor+'';
 	color.style.border = '6px solid gray';
 	color.style.textAlign = 'center';
