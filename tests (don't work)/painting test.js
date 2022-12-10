@@ -52,7 +52,7 @@ function mousemove(event){
 	elem.style.zIndex = 10000;
 	elem.style.opacity = 1;
 	elem.style.color = 'blue';
-	elem.style.backgroundColor = 'blue';
+	elem.style.backgroundColor = ''+colors[x]+'';
 	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
 	elem.id = 'paint';
