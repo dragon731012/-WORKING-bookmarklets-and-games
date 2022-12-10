@@ -26,7 +26,7 @@ function repeat(event){
 	document.getElementById('color').addEventListener('click', function() {
 		x=x+1;
 		if (x>6)
-		{x=0}
+		{x=0;}
 		color.style.backgroundColor = ''+colors[x]+'';
 	});
 }());
