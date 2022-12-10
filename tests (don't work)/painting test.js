@@ -14,9 +14,9 @@ function repeat(event){
 	color.style.height = '50px';
 	color.style.zIndex = 10000;
 	color.style.opacity = 1;
-	color.style.color = '#d9d9d9';
+	color.style.color = 'black';
 	color.style.backgroundColor = 'white';
-	color.style.border = '6px solid #d9d9d9';
+	color.style.border = '6px solid black';
 	color.style.textAlign = 'center';
 	color.style.cursor = 'pointer';
 	color.id = 'color';
