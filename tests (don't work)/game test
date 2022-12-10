@@ -160,9 +160,9 @@ var start=0
 		start.innerText = 'start';
 		document.getElementById('start').addEventListener('click', function () {
 			start.style.left = '-999999px';
-			me.style.width='210px'
-			me.style.left='0px'
-			me.style.fontSize='15px'
-			start=1
+			me.style.width='210px';
+			me.style.left='0px';
+			me.style.fontSize='15px';
+			start=1;
 	});
 }());
