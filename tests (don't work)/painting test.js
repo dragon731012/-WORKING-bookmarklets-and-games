@@ -21,7 +21,7 @@ function mousemove(event){
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
 	elem.id = 'myTimer';
-	elem.style.display = 'block';
+	elem.style.display = 'circle';
 	elem.innerText = 'hi';
 
 }());
