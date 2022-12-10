@@ -1,6 +1,7 @@
 alert("by dragonmaster 73101");
 var start=0
 (function () {
+  var start=0
   var green = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(green);
@@ -25,7 +26,7 @@ var start=0
 		if (start=1){
 		  green.style.opacity = 1;
 		  setTimeout(function () {
-	          green.style.opacity = 0.8;
+	            green.style.opacity = 0.8;
 	          }, 500);
 		  }
 	});
