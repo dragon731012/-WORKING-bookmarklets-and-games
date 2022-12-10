@@ -34,7 +34,7 @@ function mousemove(event){
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(elem);
 
-	elem.style.position = 'bottom';
+	elem.style.position = 'absolute';
 	elem.style.top = ''+y+'px';
 	elem.style.left =''+x+'px';
 	elem.style.margin = '10px';
