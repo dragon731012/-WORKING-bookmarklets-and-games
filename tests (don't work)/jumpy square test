@@ -14,7 +14,7 @@
 	bg.style.opacity = 0.9;
 	bg.style.color = 'white';
 	bg.style.backgroundColor = 'black';
-	bg.style.border = '5px solid white';
+	bg.style.border = '0px solid white';
 	bg.style.textAlign = 'center';
 	bg.id = 'bg';
 	bg.style.display = 'block';
