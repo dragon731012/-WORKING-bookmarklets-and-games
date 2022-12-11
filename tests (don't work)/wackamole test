@@ -46,7 +46,7 @@ function mole(x,y){
 	elem.style.display = 'block';
 	document.getElementById('green').addEventListener('coin', function() {
 		score=score+1;
-		elem.style.left=-99999999999999999999999;
+		elem.style.left='-99999999999999999999999px';
 	});
 
 }());
