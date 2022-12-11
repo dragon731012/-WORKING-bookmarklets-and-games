@@ -1,4 +1,5 @@
 var xpos=80;
+var ypos=350;
 
 (function () {
 	var bg = document.createElement('div');
@@ -30,7 +31,7 @@ var xpos=80;
 	body.appendChild(you);
 
 	you.style.position = 'fixed';
-	you.style.top = '350px';
+	you.style.top = ''+ypos+'px';
 	you.style.left = ''+xpos+'px';
 	you.style.margin = '10px';
 	you.style.paddingTop = '10px';
@@ -53,6 +54,14 @@ var xpos=80;
             xpos=xpos+10;
             you.style.left = ''+xpos+'px';
         }
+	function moveup(){
+            ypos=ypos-10;
+            you.style.top = ''+ypos+'px';
+        }
+	function movedown(){
+            ypos=ypos+10;
+            you.style.top = ''+ypos+'px';
+        }
         window.addEventListener("keydown",function(event){
             if(event.key=="ArrowLeft"){
                 moveleft();
@@ -61,6 +70,16 @@ var xpos=80;
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowRight"){
                 moveright();
+            }
+        });
+	window.addEventListener("keydown",function(event){
+            if(event.key=="ArrowUp"){
+                moveup();
+            }
+        });
+	window.addEventListener("keydown",function(event){
+            if(event.key=="ArrowDown"){
+                movedown();
             }
         });
 }());
