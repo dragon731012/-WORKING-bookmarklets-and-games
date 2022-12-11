@@ -1,4 +1,4 @@
-xpos=80
+var xpos=80
 
 (function () {
 	var bg = document.createElement('div');
