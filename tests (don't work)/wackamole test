@@ -1,4 +1,4 @@
-alert("Coin Clicker. rules: click the coins as fast as bossible before the time runs out! errors: sorry, there is a bug where a coin appears and cannot be fixed. Im trying to fix that. if it happens, just start over.");
+javascript:alert("Coin Clicker. rules: click the coins as fast as bossible before the time runs out! errors: sorry, there is a bug where a coin appears and cannot be clicked. Im trying to fix that. if it happens, just start over.");
 var x=0;
 var points=0;
 var timer=31;
