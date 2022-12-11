@@ -8,8 +8,8 @@
 	elem.style.left = '0px';
 	elem.style.margin = '10px';
 	elem.style.paddingTop = '10px';
-	elem.style.width = '500px';
-	elem.style.height = '500px';
+	elem.style.width = '300px';
+	elem.style.height = '300px';
 	elem.style.zIndex = 10000;
 	elem.style.opacity = 0.9;
 	elem.style.color = 'green';
