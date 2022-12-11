@@ -135,7 +135,7 @@ var time = document.createElement('div');
 	}
 	time.style.position = 'fixed';
 	time.style.top = '350px';
-	time.style.left = '130px';
+	time.style.left = '150px';
 	time.style.margin = '10px';
 	time.style.paddingTop = '0px';
 	time.style.width = '140px';
