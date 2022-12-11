@@ -1,3 +1,4 @@
+xpos=80
 
 (function () {
 	var bg = document.createElement('div');
@@ -30,7 +31,7 @@
 
 	you.style.position = 'fixed';
 	you.style.top = '350px';
-	you.style.left = '80px';
+	you.style.left = xpos;
 	you.style.margin = '10px';
 	you.style.paddingTop = '10px';
 	you.style.width = '70px';
@@ -46,6 +47,11 @@
 	you.innerText = '';
 
 }());
+
+function moveleft(){
+    xpos=xpos-10;
+    you.style.left = xpos;
+}
 
 window.addEventListener("keydown",function(event){
     if(event.key=="Space"){
