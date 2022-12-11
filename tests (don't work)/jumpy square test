@@ -49,9 +49,18 @@ var xpos=80;
             xpos=xpos-10;
             you.style.left = ''+xpos+'px';
         }
+	function moveright(){
+            xpos=xpos-10;
+            you.style.left = ''+xpos+'px';
+        }
         window.addEventListener("keydown",function(event){
             if(event.key=="ArrowLeft"){
                 moveleft();
+            }
+        });
+	window.addEventListener("keydown",function(event){
+            if(event.key=="ArrowRight"){
+                moveright();
             }
         });
 }());
