@@ -71,6 +71,7 @@ cointcount=cointcount+1;
 	elem.style.display = 'block';
 	document.getElementById('coin'+x+'').addEventListener('click', function() {
 		points=points+1;
+		coincount=coincount-1;
 		elem.remove();
 		score.innerText = 'score: '+points+'';
 	});
