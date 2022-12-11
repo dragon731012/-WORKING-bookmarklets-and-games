@@ -57,7 +57,7 @@ function mole(x,y){
 	elem.style.top = ''+y+'px';
 	elem.style.left = ''+x+'px';
 	elem.style.margin = '10px';
-	elem.style.paddingTop = '10px';
+	elem.style.paddingTop = '0px';
 	elem.style.width = '40px';
 	elem.style.height = '40px';
 	elem.style.zIndex = 10000;
@@ -70,7 +70,7 @@ function mole(x,y){
 	elem.id = 'coin'+x+'';
 	elem.style.display = 'block';
 	document.getElementById('coin'+x+'').addEventListener('click', function() {
-		score=score+1;
+		points=points+1;
 		elem.style.left='-99999999999999999999999px';
 		score.innerText = 'score: '+points+'';
 	});
