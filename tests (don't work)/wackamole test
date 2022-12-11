@@ -2,7 +2,7 @@ var score=0;
 var x=0;
 
 (function () {
-	var elem = document.createElement('div');
+	var score = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(elem);
 
