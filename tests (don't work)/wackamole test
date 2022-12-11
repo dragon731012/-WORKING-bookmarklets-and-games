@@ -21,7 +21,7 @@
 	elem.style.display = 'block';
 }());
 
-function mole(x,y);
+function mole(x,y){
 (function () {
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
