@@ -8,8 +8,8 @@
 	elem.style.left = '0px';
 	elem.style.margin = '10px';
 	elem.style.paddingTop = '10px';
-	elem.style.width = '310px';
-	elem.style.height = '310px';
+	elem.style.width = '340px';
+	elem.style.height = '340px';
 	elem.style.zIndex = 10000;
 	elem.style.opacity = 1;
 	elem.style.color = 'green';
@@ -50,4 +50,4 @@ function makecoin(){
     var ry=Math.floor(Math.random()*(300-0+1)+0);
     mole(rx,ry);
 }
-setInterval(makecoin,Math.floor(Math.random()*(1000-500+1)+500));
+setInterval(makecoin,Math.floor(Math.random()*(2000-500+1)+500));
