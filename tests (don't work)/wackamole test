@@ -44,7 +44,7 @@ function mole(x,y){
 	elem.style.cursor = 'pointer';
 	elem.id = 'coin';
 	elem.style.display = 'block';
-	document.getElementById('green').addEventListener('coin', function() {
+	document.getElementById('coin').addEventListener('click', function() {
 		score=score+1;
 		elem.style.left='-99999999999999999999999px';
 	});
