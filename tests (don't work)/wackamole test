@@ -46,11 +46,12 @@ function mole(x,y){
 }());
 }
 function getRandomNumberBetween(min,max){ return Math.floor(Math.random()*(max-min+1)+min); };
-setInterval(function() {
-  var time=getRandomNumberBetween(500,1000);
+funtction do(){
+var time=getRandomNumberBetween(500,1000);
   setInterval(function() {
     rx=getRandomNumberBetween(300,300);
     ry=getRandomNumberBetween(300,300);
     mole(rx,ry);
   },time);
-},50);
+}
+setInterval(do,time);
