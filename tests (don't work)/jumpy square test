@@ -1,4 +1,3 @@
-var x=0;
 
 (function () {
 	var bg = document.createElement('div');
@@ -11,7 +10,7 @@ var x=0;
 	bg.style.margin = '10px';
 	bg.style.paddingTop = '10px';
 	bg.style.width = '300px';
-	bg.style.height = '300px';
+	bg.style.height = '500px';
 	bg.style.zIndex = 10000;
 	bg.style.opacity = 1;
 	bg.style.color = 'white';
@@ -25,46 +24,21 @@ var x=0;
 }());
 
 (function () {
-	var bg = document.createElement('div');
-	var body = document.getElementsByTagName('body')[0];
-	body.appendChild(bg);
-
-	bg.style.position = 'fixed';
-	bg.style.top = '230px';
-	bg.style.left = '0px';
-	bg.style.margin = '10px';
-	bg.style.paddingTop = '10px';
-	bg.style.width = '300px';
-	bg.style.height = '70px';
-	bg.style.zIndex = 10000;
-	bg.style.opacity = 1;
-	bg.style.color = 'gray';
-	bg.style.backgroundColor = 'gray';
-	bg.style.border = '0px solid white';
-	bg.style.textAlign = 'center';
-	bg.id = 'bgline';
-	bg.style.display = 'block';
-	bg.innerText = '';
-
-}());
-
-
-(function () {
 	var you = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(you);
 
 	you.style.position = 'fixed';
-	you.style.top = '205px';
-	you.style.left = '20px';
+	you.style.top = '350px';
+	you.style.left = '80px';
 	you.style.margin = '10px';
 	you.style.paddingTop = '10px';
-	you.style.width = '25px';
-	you.style.height = '25px';
+	you.style.width = '70px';
+	you.style.height = '120px';
 	you.style.zIndex = 10000;
 	you.style.opacity = 1;
-	you.style.color = 'white';
-	you.style.backgroundColor = 'white';
+	you.style.color = 'blue';
+	you.style.backgroundColor = 'blue';
 	you.style.border = '0px solid white';
 	you.style.textAlign = 'center';
 	you.id = 'you';
@@ -75,20 +49,6 @@ var x=0;
 
 window.addEventListener("keydown",function(event){
     if(event.key=="Space"){
-        function moveup() {
-	    you.style.top=you.style.top-10;
-	    x=x+1;
-	}
-	
-	function update(){
-	    if (x>6){
-	        clearInterval(moveup);
-		clearInterval(update);
-	    }
-	}
-	
-	setInterval(moveup,100);
-	setInterval(update,100);
-	
+        
     }
 });
