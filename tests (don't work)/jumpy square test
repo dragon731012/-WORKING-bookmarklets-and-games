@@ -28,12 +28,12 @@
 	body.appendChild(bg);
 
 	bg.style.position = 'fixed';
-	bg.style.top = '280px';
+	bg.style.top = '230px';
 	bg.style.left = '0px';
 	bg.style.margin = '10px';
 	bg.style.paddingTop = '10px';
 	bg.style.width = '300px';
-	bg.style.height = '5px';
+	bg.style.height = '1px';
 	bg.style.zIndex = 10000;
 	bg.style.opacity = 1;
 	bg.style.color = 'gray';
