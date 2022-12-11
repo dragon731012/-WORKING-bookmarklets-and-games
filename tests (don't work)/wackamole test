@@ -45,4 +45,7 @@ function mole(x,y){
 	elem.style.display = 'block';
 }());
 }
+while (true){
+	
+}
 mole(30,60);
