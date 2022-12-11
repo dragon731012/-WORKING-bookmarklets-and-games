@@ -72,9 +72,10 @@ function mole(x,y){
 	elem.style.display = 'block';
 	document.getElementById('coin'+x+'').addEventListener('click', function() {
 		points=points+1;
-		if (timermax>3){
-		    timermax=timermax-2;
-		    var timer=timermax;
+		timermax=timermax-2;
+		var timer=timermax;
+		if (timermax<3){
+		    var timermax=2
 		}
 		elem.style.left='-99999999999999999999999999999999999px';
 		score.innerText = 'score: '+points+'';
@@ -82,9 +83,6 @@ function mole(x,y){
 	x=x+1;
 }());
 }
-
-var timer=20;
-var timermax=20;
 
 function makecoin(){
     var rx=Math.floor(Math.random()*(300-0+1)+0);
