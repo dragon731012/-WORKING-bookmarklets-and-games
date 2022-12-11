@@ -5,11 +5,11 @@
 
 	bg.style.position = 'fixed';
 	bg.style.top = '0px';
-	bg.style.right = '0px';
+	bg.style.left = '0px';
 	bg.style.margin = '10px';
 	bg.style.paddingTop = '10px';
 	bg.style.width = '300px';
-	bg.style.height = '3000px';
+	bg.style.height = '300px';
 	bg.style.zIndex = 10000;
 	bg.style.opacity = 0.9;
 	bg.style.color = 'white';
