@@ -67,7 +67,7 @@ var x=0;
 	you.style.backgroundColor = 'white';
 	you.style.border = '0px solid white';
 	you.style.textAlign = 'center';
-	you.id = 'bg';
+	you.id = 'you';
 	you.style.display = 'block';
 	you.innerText = '';
 
@@ -78,7 +78,7 @@ window.addEventListener("keydown",function(event){
         function moveup() {
 	    you.style.top=you.style.top-10;
 	    x=x+1;
-	};
+	}
 	
 	function update(){
 	    if (x>6){
