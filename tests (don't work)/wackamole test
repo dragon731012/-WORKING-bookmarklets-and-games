@@ -46,6 +46,8 @@ function mole(x,y){
 }());
 }
 while (true){
-	
+  setInterval(function() {
+    
+  },100);
 }
 mole(30,60);
