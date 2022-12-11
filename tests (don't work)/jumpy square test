@@ -11,13 +11,62 @@
 	bg.style.width = '300px';
 	bg.style.height = '300px';
 	bg.style.zIndex = 10000;
-	bg.style.opacity = 0.9;
+	bg.style.opacity = 1;
 	bg.style.color = 'white';
 	bg.style.backgroundColor = 'black';
 	bg.style.border = '0px solid white';
 	bg.style.textAlign = 'center';
 	bg.id = 'bg';
 	bg.style.display = 'block';
-	bg.innerText = 'hi';
+	bg.innerText = '';
+
+}());
+
+(function () {
+	var bg = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(bg);
+
+	bg.style.position = 'fixed';
+	bg.style.top = '280px';
+	bg.style.left = '0px';
+	bg.style.margin = '10px';
+	bg.style.paddingTop = '10px';
+	bg.style.width = '300px';
+	bg.style.height = '10px';
+	bg.style.zIndex = 10000;
+	bg.style.opacity = 1;
+	bg.style.color = 'gray';
+	bg.style.backgroundColor = 'gray';
+	bg.style.border = '0px solid white';
+	bg.style.textAlign = 'center';
+	bg.id = 'bgline';
+	bg.style.display = 'block';
+	bg.innerText = '';
+
+}());
+
+
+(function () {
+	var you = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(you);
+
+	you.style.position = 'fixed';
+	you.style.top = '270px';
+	you.style.left = '20px';
+	you.style.margin = '10px';
+	you.style.paddingTop = '10px';
+	you.style.width = '40px';
+	you.style.height = '40px';
+	you.style.zIndex = 10000;
+	you.style.opacity = 1;
+	you.style.color = 'white';
+	you.style.backgroundColor = 'black';
+	you.style.border = '0px solid white';
+	you.style.textAlign = 'center';
+	you.id = 'bg';
+	you.style.display = 'block';
+	you.innerText = '';
 
 }());
