@@ -8,8 +8,8 @@
 	elem.style.left = '0px';
 	elem.style.margin = '10px';
 	elem.style.paddingTop = '10px';
-	elem.style.width = '300px';
-	elem.style.height = '300px';
+	elem.style.width = '310px';
+	elem.style.height = '310px';
 	elem.style.zIndex = 10000;
 	elem.style.opacity = 1;
 	elem.style.color = 'green';
@@ -36,8 +36,8 @@ function mole(x,y){
 	elem.style.height = '40px';
 	elem.style.zIndex = 10000;
 	elem.style.opacity = 1;
-	elem.style.color = 'brown';
-	elem.style.backgroundColor = 'brown';
+	elem.style.color = 'yellow';
+	elem.style.backgroundColor = 'yellow';
 	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
@@ -50,6 +50,4 @@ function makecoin(){
     var ry=Math.floor(Math.random()*(300-0+1)+0);
     mole(rx,ry);
 }
-setInterval(function() {
-    setInterval(makecoin,Math.floor(Math.random()*(1000-500+1)+500));
-},1000);
+setInterval(makecoin,Math.floor(Math.random()*(1000-500+1)+500));
