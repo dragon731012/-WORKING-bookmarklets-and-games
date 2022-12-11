@@ -76,6 +76,7 @@ function mole(x,y){
 	elem.style.display = 'block';
 	document.getElementById('coin'+x+'').addEventListener('click', function() {
 		points=points+1;
+		coincount=coincount-1;
 		elem.style.left='-99999999999999999999999px';
 		score.innerText = 'score: '+points+'';
 	});
