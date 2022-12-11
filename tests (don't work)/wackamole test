@@ -25,6 +25,28 @@ var cointcount=0;
 	score.innerText = 'score: '+points+'';
 }());
 
+(function(){
+var time = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(time);
+
+	time.style.position = 'fixed';
+	time.style.top = '350px';
+	time.style.left = '130px';
+	time.style.margin = '10px';
+	time.style.paddingTop = '0px';
+	time.style.width = '120px';
+	time.style.height = '30px';
+	time.style.zIndex = 10000;
+	time.style.opacity = 1;
+	time.style.color = 'black';
+	time.style.backgroundColor = 'white';
+	time.style.border = '5px solid black';
+	time.style.textAlign = 'center';
+	time.id = 'time';
+	time.style.display = 'block';
+}());
+
 (function () {
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -93,7 +115,10 @@ function makecoin(){
 
 function timer(){
     var timer=timer-1;
-    var time = document.createElement('div');
+}
+
+function check(){
+        var time = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(time);
 
@@ -116,3 +141,4 @@ function timer(){
 
 setInterval(makecoin,cointime);
 setInterval(timer,1000);
+setInterval(check,500);
