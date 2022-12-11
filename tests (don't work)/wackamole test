@@ -76,11 +76,14 @@ function mole(x,y){
 	x=x+1;
 }());
 }
+var cointime=3000;
+
 function makecoin(){
+    cointime=cointime-500;
     var rx=Math.floor(Math.random()*(300-0+1)+0);
     var ry=Math.floor(Math.random()*(300-0+1)+0);
     mole(rx,ry);
 }
 
-setInterval(makecoin,Math.floor(Math.random()*(2000-4000+1)+4000));
+setInterval(makecoin,cointime);
 setInterval(lose,100);
