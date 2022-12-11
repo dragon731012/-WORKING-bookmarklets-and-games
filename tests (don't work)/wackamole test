@@ -45,4 +45,4 @@ function mole(x,y){
 	elem.style.display = 'block';
 }());
 }
-mole(0,0);
+mole(30,60);
