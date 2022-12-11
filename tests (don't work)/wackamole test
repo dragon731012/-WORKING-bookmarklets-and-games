@@ -6,6 +6,29 @@ var x=0;
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(elem);
 
+	score.style.position = 'fixed';
+	score.style.top = '350px';
+	score.style.left = '0px';
+	score.style.margin = '10px';
+	score.style.paddingTop = '10px';
+	score.style.width = '120px';
+	score.style.height = '30px';
+	score.style.zIndex = 10000;
+	score.style.opacity = 1;
+	score.style.color = 'black';
+	score.style.backgroundColor = 'white';
+	score.style.border = '5px solid black';
+	score.style.textAlign = 'center';
+	score.id = 'score';
+	score.style.display = 'block';
+	score.innerText = 'score: '+score+'';
+}());
+
+(function () {
+	var elem = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(elem);
+
 	elem.style.position = 'fixed';
 	elem.style.top = '0px';
 	elem.style.left = '0px';
@@ -49,6 +72,7 @@ function mole(x,y){
 	document.getElementById('coin'+x+'').addEventListener('click', function() {
 		score=score+1;
 		elem.style.left='-99999999999999999999999px';
+		score.innerText = 'score: '+score+'';
 	});
 	x=x+1;
 }());
