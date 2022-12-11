@@ -24,10 +24,6 @@ var cointcount=0;
 	score.style.display = 'block';
 	score.innerText = 'score: '+points+'';
 	coincount=coincount+1;
-	if (coincount>8){
-	alert("game over.");
-	break;
-	}
 }());
 
 (function () {
@@ -88,4 +84,13 @@ function makecoin(){
     var ry=Math.floor(Math.random()*(300-0+1)+0);
     mole(rx,ry);
 }
+
+function lose(){
+  if (coincount>8){
+	alert("game over.");
+	break;
+  }
+}
+
 setInterval(makecoin,Math.floor(Math.random()*(2000-4000+1)+4000));
+setInterval(lose,100)
