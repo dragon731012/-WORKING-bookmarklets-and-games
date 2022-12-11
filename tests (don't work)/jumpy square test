@@ -83,10 +83,12 @@ window.addEventListener("keydown",function(event){
 	function update(){
 	    if (x>6){
 	        clearInterval(moveup);
+		clearInterval(update);
 	    }
 	}
 	
 	setInterval(moveup,100);
+	setInterval(update,100);
 	
     }
 });
