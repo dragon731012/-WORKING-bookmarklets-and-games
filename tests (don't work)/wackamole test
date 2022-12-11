@@ -1,5 +1,6 @@
 var x=0;
 var points=0;
+var cointcount=0;
 
 (function () {
 	var score = document.createElement('div');
@@ -79,10 +80,8 @@ cointcount=cointcount+1;
 }());
 }
 var cointime=3000;
-var cointcount=0;
 
 function makecoin(){
-    cointcount=cointcount+1;
     cointime=cointime-500;
     var rx=Math.floor(Math.random()*(300-0+1)+0);
     var ry=Math.floor(Math.random()*(300-0+1)+0);
@@ -90,7 +89,7 @@ function makecoin(){
 }
 
 function lose(){
-    if (cointcount>8){
+    if (cointcount>3){
         alert("game over");
         window.reload(1);
     }
