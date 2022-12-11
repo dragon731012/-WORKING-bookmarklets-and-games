@@ -68,9 +68,9 @@ function mole(x,y){
 	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
-	elem.id = 'coin';
+	elem.id = 'coin'+x+'';
 	elem.style.display = 'block';
-	document.getElementById('coin').addEventListener('click', function() {
+	document.getElementById('coin'+x+'').addEventListener('click', function() {
 		points=points+1;
 		timermax=timermax-2;
 		var timer=timermax;
