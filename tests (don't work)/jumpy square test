@@ -45,16 +45,13 @@ var xpos=80;
 	you.id = 'you';
 	you.style.display = 'block';
 	you.innerText = '';
-
+        function moveleft(){
+            xpos=xpos-10;
+            you.style.left = xpos;
+        }
+        window.addEventListener("keydown",function(event){
+            if(event.key=="ArrowLeft"){
+                moveleft();
+            }
+        });
 }());
-
-function moveleft(){
-    xpos=xpos-10;
-    you.style.left = xpos;
-}
-
-window.addEventListener("keydown",function(event){
-    if(event.key=="ArrowLeft"){
-        moveleft();
-    }
-});
