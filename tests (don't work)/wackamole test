@@ -99,7 +99,9 @@ var time = document.createElement('div');
         timer=timer-1;
 	if (timer=0){
 	alert("game over. your score was "+score+".");
-	break;
+	time.style.left = '-99999999px';
+	elem.style.left = '-99999999px';
+	score.style.left = '-99999999px';
 	}
 	time.style.position = 'fixed';
 	time.style.top = '350px';
