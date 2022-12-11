@@ -116,5 +116,5 @@ var time = document.createElement('div');
     }());
 }
 
-setInterval(makecoin,1500);
+makecoin();
 setInterval(check,1000);
