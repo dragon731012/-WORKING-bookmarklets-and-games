@@ -77,7 +77,7 @@ function mole(x,y){
 	x=x+1;
 }());
 }
-var cointime=3000;
+
 
 function makecoin(){
     var rx=Math.floor(Math.random()*(300-0+1)+0);
@@ -88,9 +88,12 @@ function makecoin(){
 function lose(){
     
 }
-
+var sus=0;
 function speedup(){
     cointime=cointime-500;
+    if (sus=0){
+        var cointime=3000;
+    }
 }
 
 setInterval(makecoin,cointime);
