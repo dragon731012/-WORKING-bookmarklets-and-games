@@ -90,7 +90,7 @@ function makecoin(){
 }
 
 function lose(){
-    if (cointcount>3){
+    if (cointcount>8){
         alert("game over");
         window.reload(1);
     }
