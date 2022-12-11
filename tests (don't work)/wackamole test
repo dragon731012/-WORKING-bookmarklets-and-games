@@ -44,4 +44,5 @@ function mole(x,y);
 	elem.id = 'myTimer';
 	elem.style.display = 'block';
 }());
+}
 mole(0,0);
