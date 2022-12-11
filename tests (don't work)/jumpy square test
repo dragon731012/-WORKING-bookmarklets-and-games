@@ -31,7 +31,7 @@ var xpos=80;
 
 	you.style.position = 'fixed';
 	you.style.top = '350px';
-	you.style.left = xpos;
+	you.style.left = ''+xpos+'px';
 	you.style.margin = '10px';
 	you.style.paddingTop = '10px';
 	you.style.width = '70px';
@@ -47,7 +47,7 @@ var xpos=80;
 	you.innerText = '';
         function moveleft(){
             xpos=xpos-10;
-            you.style.left = xpos;
+            you.style.left = ''+xpos+'px';
         }
         window.addEventListener("keydown",function(event){
             if(event.key=="ArrowLeft"){
