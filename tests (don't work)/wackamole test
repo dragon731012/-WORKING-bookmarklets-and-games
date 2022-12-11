@@ -30,7 +30,7 @@ var op='block';
 (function () {
 	var me = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
-	body.appendChild(score);
+	body.appendChild(me);
 
 	me.style.position = 'fixed';
 	me.style.top = '390px';
