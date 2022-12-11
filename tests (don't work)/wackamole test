@@ -1,6 +1,5 @@
 var x=0;
 var points=0;
-var cointcount=0;
 
 (function () {
 	var score = document.createElement('div');
@@ -23,7 +22,6 @@ var cointcount=0;
 	score.id = 'score';
 	score.style.display = 'block';
 	score.innerText = 'score: '+points+'';
-	coincount=coincount+1;
 }());
 
 (function () {
@@ -72,7 +70,6 @@ function mole(x,y){
 	elem.style.display = 'block';
 	document.getElementById('coin'+x+'').addEventListener('click', function() {
 		points=points+1;
-		coincount=coincount-1;
 		elem.style.left='-99999999999999999999999px';
 		score.innerText = 'score: '+points+'';
 	});
@@ -85,12 +82,5 @@ function makecoin(){
     mole(rx,ry);
 }
 
-function lose(){
-  if (coincount>8){
-	alert("game over.");
-	break;
-  }
-}
-
 setInterval(makecoin,Math.floor(Math.random()*(2000-4000+1)+4000));
-setInterval(lose,100)
+setInterval(lose,100);
