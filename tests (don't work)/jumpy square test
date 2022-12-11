@@ -33,7 +33,7 @@
 	bg.style.margin = '10px';
 	bg.style.paddingTop = '10px';
 	bg.style.width = '300px';
-	bg.style.height = '10px';
+	bg.style.height = '5px';
 	bg.style.zIndex = 10000;
 	bg.style.opacity = 1;
 	bg.style.color = 'gray';
@@ -53,7 +53,7 @@
 	body.appendChild(you);
 
 	you.style.position = 'fixed';
-	you.style.top = '270px';
+	you.style.top = '220px';
 	you.style.left = '20px';
 	you.style.margin = '10px';
 	you.style.paddingTop = '10px';
@@ -62,7 +62,7 @@
 	you.style.zIndex = 10000;
 	you.style.opacity = 1;
 	you.style.color = 'white';
-	you.style.backgroundColor = 'black';
+	you.style.backgroundColor = 'white';
 	you.style.border = '0px solid white';
 	you.style.textAlign = 'center';
 	you.id = 'bg';
