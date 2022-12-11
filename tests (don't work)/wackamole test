@@ -98,6 +98,10 @@ var time = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(time);
         timer=timer-1;
+	if (timer<0){
+	    alert("game over. your score was "+points+".");
+	    location.reload(1);
+	}
 	time.style.position = 'fixed';
 	time.style.top = '350px';
 	time.style.left = '130px';
