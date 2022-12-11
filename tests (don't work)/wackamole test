@@ -92,17 +92,13 @@ function makecoin(){
     mole(rx,ry);
 }
 
-function timer(){
-    var timer=timer-1;
-}
-
 function check(){
     
 (function(){
 var time = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(time);
-
+        timer=timer-1;
 	time.style.position = 'fixed';
 	time.style.top = '350px';
 	time.style.left = '130px';
@@ -123,5 +119,4 @@ var time = document.createElement('div');
 }
 
 setInterval(makecoin,1500);
-setInterval(timer,1000);
-setInterval(check,500);
+setInterval(check,1000);
