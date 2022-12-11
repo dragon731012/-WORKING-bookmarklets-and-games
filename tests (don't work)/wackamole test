@@ -14,7 +14,7 @@
 	elem.style.opacity = 1;
 	elem.style.color = 'green';
 	elem.style.backgroundColor = 'green';
-	elem.style.border = '0px solid white';
+	elem.style.border = '5px solid #008000';
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
 	elem.id = 'myTimer';
