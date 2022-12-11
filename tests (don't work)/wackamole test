@@ -100,7 +100,7 @@ var time = document.createElement('div');
         timer=timer-1;
 	if (timer<0){
 	    alert("game over. your score was "+points+".");
-	    var timer=9999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+	    var timer=9999999;
 	    clearInterval(check);
 	    time.style.left='-99999999999999999999999999999999999999999999999999999px';
 	    elem.style.left='-99999999999999999999999999999999999999999999999999999px';
