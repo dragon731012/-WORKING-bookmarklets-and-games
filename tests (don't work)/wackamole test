@@ -75,9 +75,9 @@ function mole(x,y){
 		timermax=timermax-2;
 		var timer=timermax;
 		if (timermax<3){
-		    var timermax=2
+		    var timermax=2;
 		}
-		mkecoin();
+		makecoin();
 		elem.style.left='-99999999999999999999999999999999999px';
 		score.innerText = 'score: '+points+'';
 	});
