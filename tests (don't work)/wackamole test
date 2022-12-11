@@ -68,9 +68,9 @@ function mole(x,y){
 	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
-	elem.id = 'coin'+x+'';
+	elem.id = 'coin';
 	elem.style.display = 'block';
-	document.getElementById('coin'+x+'').addEventListener('click', function() {
+	document.getElementById('coin').addEventListener('click', function() {
 		points=points+1;
 		timermax=timermax-2;
 		var timer=timermax;
@@ -100,8 +100,8 @@ var time = document.createElement('div');
         timer=timer-1;
 	if (timer<0){
 	    alert("game over. your score was "+points+".");
-	    timer=9999999999999999999999999999;
 	    clearInterval(check);
+	    timer=0;
 	    time.style.left='-99999999999999999999999999999999999999999999999999999px';
 	    elem.style.left='-99999999999999999999999999999999999999999999999999999px';
 	    score.style.left='-99999999999999999999999999999999999999999999999999999px';
