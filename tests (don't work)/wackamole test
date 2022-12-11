@@ -78,23 +78,7 @@ function mole(x,y){
 }());
 }
 
-var sus=0;
-
-function speedup(){
-    if (sus=0){
-        var cointime=3000;
-    }
-    else{
-        cointime=cointime-300;
-	sus=sus+1;
-    }
-}
-
 function makecoin(){
-    cointime=cointime-300;
-    if (cointime<400){
-       cointime=400;
-    }
     var rx=Math.floor(Math.random()*(300-0+1)+0);
     var ry=Math.floor(Math.random()*(300-0+1)+0);
     mole(rx,ry);
@@ -106,4 +90,3 @@ function lose(){
 
 setInterval(makecoin,cointime);
 setInterval(lose,100);
-setInterval(speedup,2000);
