@@ -53,7 +53,7 @@
 	body.appendChild(you);
 
 	you.style.position = 'fixed';
-	you.style.top = '210px';
+	you.style.top = '190px';
 	you.style.left = '20px';
 	you.style.margin = '10px';
 	you.style.paddingTop = '10px';
