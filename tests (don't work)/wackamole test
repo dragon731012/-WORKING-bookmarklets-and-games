@@ -1,4 +1,6 @@
 var score=0;
+var x=0;
+
 (function () {
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -42,13 +44,13 @@ function mole(x,y){
 	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
-	elem.id = 'coin';
+	elem.id = 'coin'+x+'';
 	elem.style.display = 'block';
-	document.getElementById('coin').addEventListener('click', function() {
+	document.getElementById('coin'+x+'').addEventListener('click', function() {
 		score=score+1;
 		elem.style.left='-99999999999999999999999px';
 	});
-
+	x=x+1;
 }());
 }
 function makecoin(){
