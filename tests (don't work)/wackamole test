@@ -3,11 +3,6 @@ var points=0;
 var cointcount=0;
 
 (function () {
-	coincount=coincount+1;
-	if (coincount>8){
-	alert("game over.");
-	break;
-	}
 	var score = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(score);
@@ -28,6 +23,11 @@ var cointcount=0;
 	score.id = 'score';
 	score.style.display = 'block';
 	score.innerText = 'score: '+points+'';
+	coincount=coincount+1;
+	if (coincount>8){
+	alert("game over.");
+	break;
+	}
 }());
 
 (function () {
