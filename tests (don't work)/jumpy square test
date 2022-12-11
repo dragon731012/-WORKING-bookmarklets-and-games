@@ -54,7 +54,7 @@ function moveleft(){
 }
 
 window.addEventListener("keydown",function(event){
-    if(event.key=="Space"){
-        
+    if(event.key=="ArrowLeft"){
+        moveleft();
     }
 });
