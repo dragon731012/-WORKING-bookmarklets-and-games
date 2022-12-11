@@ -6,7 +6,6 @@ var cointcount=0;
 	coincount=coincount+1;
 	if (coincount>8){
 	alert("game over.");
-	window.reload(1);
 	break;
 	}
 	var score = document.createElement('div');
