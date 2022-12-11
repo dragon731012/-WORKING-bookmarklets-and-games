@@ -73,7 +73,7 @@ function mole(x,y){
 		points=points+1;
 		if (timermax>3){
 		    timermax=timermax-2;
-		    timer=timermax;
+		    var timer=timermax;
 		}
 		elem.style.left='-99999999999999999999999999999999999px';
 		score.innerText = 'score: '+points+'';
@@ -92,7 +92,7 @@ function makecoin(){
 }
 
 function timer(){
-    timer=timer-1;
+    var timer=timer-1;
     var time = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(time);
