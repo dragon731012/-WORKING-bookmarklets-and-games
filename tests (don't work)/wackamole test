@@ -1,7 +1,7 @@
 var x=0;
 var points=0;
-var timer=20;
-var timermax=20;
+var timer=31;
+var timermax=31;
 
 (function () {
 	var score = document.createElement('div');
@@ -97,6 +97,10 @@ var time = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(time);
         timer=timer-1;
+	if (timer=0){
+	alert("game over. your score was "+score+".");
+	break;
+	}
 	time.style.position = 'fixed';
 	time.style.top = '350px';
 	time.style.left = '130px';
