@@ -1,6 +1,7 @@
 var x=0;
 var points=0;
-var cointcount=0;
+var timer=20;
+var timermax=20;
 
 (function () {
 	var score = document.createElement('div');
@@ -118,9 +119,9 @@ function timer(){
 }
 
 function check(){
-        score.innerText = 'timer: '+timer+'';
+    time.innerText = 'timer: '+timer+'';
 }
 
-setInterval(makecoin,cointime);
+setInterval(makecoin,1500);
 setInterval(timer,1000);
 setInterval(check,500);
