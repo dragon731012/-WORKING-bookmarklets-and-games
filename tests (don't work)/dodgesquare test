@@ -1,5 +1,6 @@
 var xpos=80;
 var ypos=350;
+var enemy xpos=0;
 
 (function () {
 	var bg = document.createElement('div');
@@ -83,3 +84,29 @@ var ypos=350;
             }
         });
 }());
+
+function makeenemy(){
+enemyxpos=
+(function () {
+	var enemy = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(enemy);
+
+	enemy.style.position = 'fixed';
+	enemy.style.top = '-120px';
+	enemy.style.left = ''+xpos+'px';
+	enemy.style.margin = '10px';
+	enemy.style.paddingTop = '10px';
+	enemy.style.width = '70px';
+	enemy.style.height = '120px';
+	enemy.style.zIndex = 10000;
+	enemy.style.opacity = 1;
+	enemy.style.color = 'red';
+	enemy.style.backgroundColor = 'blue';
+	enemy.style.border = '0px solid white';
+	enemy.style.textAlign = 'center';
+	enemy.id = 'enemy';
+	enemy.style.display = 'block';
+	enemy.innerText = '';
+}());
+}
