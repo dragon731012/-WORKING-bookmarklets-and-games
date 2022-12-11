@@ -1,3 +1,4 @@
+var score=0;
 (function () {
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -41,8 +42,13 @@ function mole(x,y){
 	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
-	elem.id = 'myTimer';
+	elem.id = 'coin';
 	elem.style.display = 'block';
+	document.getElementById('green').addEventListener('coin', function() {
+		score=score+1;
+		elem.style.left=-99999999999999999999999;
+	});
+
 }());
 }
 function makecoin(){
