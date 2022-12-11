@@ -103,6 +103,7 @@ var time = document.createElement('div');
 	    op='none';
 	    alert("game over. your score was "+points+".");
 	    clearInterval(check);
+	    window.location.reload(1);
         timer=99999999999999999999999999999999999;
 	}
 	time.style.position = 'fixed';
