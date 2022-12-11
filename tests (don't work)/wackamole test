@@ -48,7 +48,6 @@ var cointcount=0;
 }());
 
 function mole(x,y){
-cointcount=cointcount+1;
 (function () {
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -82,6 +81,7 @@ cointcount=cointcount+1;
 var cointime=3000;
 
 function makecoin(){
+    cointcount=cointcount+1;
     cointime=cointime-500;
     var rx=Math.floor(Math.random()*(300-0+1)+0);
     var ry=Math.floor(Math.random()*(300-0+1)+0);
