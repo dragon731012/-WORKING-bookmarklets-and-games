@@ -47,6 +47,7 @@ var points=0;
 }());
 
 function mole(x,y){
+cointcount=cointcount+1;
 (function () {
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -77,12 +78,21 @@ function mole(x,y){
 }());
 }
 var cointime=3000;
+var cointcount=0;
 
 function makecoin(){
+    cointcount=cointcount+1;
     cointime=cointime-500;
     var rx=Math.floor(Math.random()*(300-0+1)+0);
     var ry=Math.floor(Math.random()*(300-0+1)+0);
     mole(rx,ry);
+}
+
+function lose(){
+    if (cointcount>1){
+        alert("game over");
+        window.reload(1);
+    }
 }
 
 setInterval(makecoin,cointime);
