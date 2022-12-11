@@ -53,12 +53,12 @@
 	body.appendChild(you);
 
 	you.style.position = 'fixed';
-	you.style.top = '190px';
+	you.style.top = '205px';
 	you.style.left = '20px';
 	you.style.margin = '10px';
 	you.style.paddingTop = '10px';
-	you.style.width = '40px';
-	you.style.height = '40px';
+	you.style.width = '25px';
+	you.style.height = '25px';
 	you.style.zIndex = 10000;
 	you.style.opacity = 1;
 	you.style.color = 'white';
