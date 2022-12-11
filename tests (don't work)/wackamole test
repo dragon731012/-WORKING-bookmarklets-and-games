@@ -45,9 +45,11 @@ function mole(x,y){
 	elem.style.display = 'block';
 }());
 }
+function getRandomNumberBetween(min,max){ return Math.floor(Math.random()*(max-min+1)+min); };
 while (true){
   setInterval(function() {
-    
-  },100);
+    rx=getRandomNumberBetween(300,300);
+    ry=getRandomNumberBetween(300,300);
+    mole(rx,ry);
+  },1000);
 }
-mole(30,60);
