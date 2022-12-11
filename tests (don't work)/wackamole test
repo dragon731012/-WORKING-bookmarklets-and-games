@@ -4,7 +4,7 @@ var x=0;
 (function () {
 	var score = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
-	body.appendChild(elem);
+	body.appendChild(score);
 
 	score.style.position = 'fixed';
 	score.style.top = '350px';
