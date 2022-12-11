@@ -78,7 +78,17 @@ function mole(x,y){
 }());
 }
 
-var cointime=3000;
+var sus=0;
+
+function speedup(){
+    if (sus=0){
+        var cointime=3000;
+    }
+    else{
+        cointime=cointime-300;
+	sus=sus+1;
+    }
+}
 
 function makecoin(){
     cointime=cointime-300;
