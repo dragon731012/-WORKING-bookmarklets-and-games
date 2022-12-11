@@ -71,7 +71,6 @@ function mole(x,y){
 	elem.style.display = 'block';
 	document.getElementById('coin'+x+'').addEventListener('click', function() {
 		points=points+1;
-		coincount=coincount-1;
 		elem.style.left='-99999999999999999999999999999999999px';
 		score.innerText = 'score: '+points+'';
 	});
@@ -81,7 +80,6 @@ function mole(x,y){
 var cointime=3000;
 
 function makecoin(){
-    cointcount=cointcount+1;
     cointime=cointime-500;
     var rx=Math.floor(Math.random()*(300-0+1)+0);
     var ry=Math.floor(Math.random()*(300-0+1)+0);
@@ -89,10 +87,7 @@ function makecoin(){
 }
 
 function lose(){
-    if (cointcount>3){
-        alert("game over");
-        window.reload(1);
-    }
+    
 }
 
 setInterval(makecoin,cointime);
