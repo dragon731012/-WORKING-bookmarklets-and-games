@@ -71,6 +71,10 @@ function mole(x,y){
 	elem.style.display = 'block';
 	document.getElementById('coin'+x+'').addEventListener('click', function() {
 		points=points+1;
+		if (timermax>3){
+		    timermax=timermax-2;
+		    timer=timermax;
+		}
 		elem.style.left='-99999999999999999999999999999999999px';
 		score.innerText = 'score: '+points+'';
 	});
@@ -78,15 +82,37 @@ function mole(x,y){
 }());
 }
 
+var timer=20;
+var timermax=20;
+
 function makecoin(){
     var rx=Math.floor(Math.random()*(300-0+1)+0);
     var ry=Math.floor(Math.random()*(300-0+1)+0);
     mole(rx,ry);
 }
 
-function lose(){
-    
+function timer(){
+    timer=timer-1;
+    var time = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(time);
+
+	time.style.position = 'fixed';
+	time.style.top = '350px';
+	time.style.left = '130px';
+	time.style.margin = '10px';
+	time.style.paddingTop = '0px';
+	time.style.width = '120px';
+	time.style.height = '30px';
+	time.style.zIndex = 10000;
+	time.style.opacity = 1;
+	time.style.color = 'black';
+	time.style.backgroundColor = 'white';
+	time.style.border = '5px solid black';
+	time.style.textAlign = 'center';
+	time.id = 'time';
+	time.style.display = 'block';
 }
 
 setInterval(makecoin,cointime);
-setInterval(lose,100);
+setInterval(timer,1000);
