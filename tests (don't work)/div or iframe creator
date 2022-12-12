@@ -60,14 +60,14 @@ function create(){
         elem.style.display = 'block'; 
         elem.innerText = text; 
         }()); 
-        } 
-        var x=0; 
-        while (x<howmany){
+    } 
+    var x=0; 
+    while (x<howmany){
         create(); 
         x=x+1; 
         if (x!=howmany){ 
-        alert("next one...");
+            alert("next one...");
         } 
-        } 
-        alert("done!");
-        repeat();
+    }       
+    alert("done!");
+    repeat();
