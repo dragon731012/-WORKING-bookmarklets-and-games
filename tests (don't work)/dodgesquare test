@@ -1,6 +1,8 @@
 var xpos=80;
 var ypos=350;
-var enemy xpos=0;
+var enemyxpos=0;
+var enemyypos=-120;
+var enemyspeed=3;
 
 (function () {
 	var bg = document.createElement('div');
@@ -86,15 +88,15 @@ var enemy xpos=0;
 }());
 
 function makeenemy(){
-enemyxpos=
+enemyxpos=Math.floor(Math.random()*(300-0+1)+0);
 (function () {
 	var enemy = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(enemy);
 
 	enemy.style.position = 'fixed';
-	enemy.style.top = '-120px';
-	enemy.style.left = ''+xpos+'px';
+	enemy.style.top = ''+enemyypos+'px';
+	enemy.style.left = ''+enemyxpos+'px';
 	enemy.style.margin = '10px';
 	enemy.style.paddingTop = '10px';
 	enemy.style.width = '70px';
@@ -102,11 +104,18 @@ enemyxpos=
 	enemy.style.zIndex = 10000;
 	enemy.style.opacity = 1;
 	enemy.style.color = 'red';
-	enemy.style.backgroundColor = 'blue';
+	enemy.style.backgroundColor = 'red';
 	enemy.style.border = '0px solid white';
 	enemy.style.textAlign = 'center';
 	enemy.id = 'enemy';
 	enemy.style.display = 'block';
 	enemy.innerText = '';
+	function enemymove(){
+	    enemyypos=enemyypos-enemyspeed;
+	    enemyspeed=enemyspeed+0.25;
+	    enemy.style.top = ''+enemyypos+'px';
+	}
+	setInterval(enemymove,25);
 }());
 }
+
