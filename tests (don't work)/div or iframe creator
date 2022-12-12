@@ -11,7 +11,7 @@ const paddinglist=[];
 const seethroughlist=[];
 var count=0;
 
-function repeat(event){
+function repeat(){
 count=count+1;
 (function(){
     var color=document.createElement('div');
