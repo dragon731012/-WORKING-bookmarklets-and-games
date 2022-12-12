@@ -114,7 +114,7 @@ function makeenemy(){
 	    enemyypos=enemyypos+enemyspeed;
 	    enemy.style.top = ''+enemyypos+'px';
 	    if (enemyypos>400){
-	        enemy.parentNode.removeChild(element);
+	        enemy.parentNode.removeChild(enemy);
 		makeenemy();
 	    }
 	}
