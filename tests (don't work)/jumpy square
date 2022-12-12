@@ -59,3 +59,4 @@ var playerspeed=6;
             }
         });
 }());
+alert("working");
