@@ -115,8 +115,8 @@ enemyxpos=Math.floor(Math.random()*(300-0+1)+0);
 	    enemyspeed=enemyspeed+0.25;
 	    enemy.style.top = ''+enemyypos+'px';
 	}
-	setInterval(enemymove,100);
+	setInterval(enemymove,50);
 }());
 }
 
-setInterval(makeenemy,3000);
+setInterval(makeenemy,4000);
