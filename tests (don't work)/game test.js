@@ -25,7 +25,6 @@ var start = 0;
 	me.style.fontSize = '8px';
 	document.getElementById('me').addEventListener('click', function() {
 		window.open('https://github.com/dragon731012');
-
 	});
 	var start = document.createElement('div');
 	body.appendChild(start);
@@ -93,6 +92,10 @@ var start = 0;
 	green.innerText = 'green';
 	document.getElementById('green').addEventListener('click', function() {
 		green.style.opacity = 1;
+		if (list[click]==4){
+            list.shift();
+            alert("it works!");
+        }
 		setTimeout(function() {
 			green.style.opacity = 0.8;
 		}, 500);
@@ -118,7 +121,10 @@ var start = 0;
 	red.innerText = 'red';
 	document.getElementById('red').addEventListener('click', function() {
 		red.style.opacity = 1;
-
+if (list[click]==4){
+            list.shift();
+            alert("it works!");
+        }
 		setTimeout(function() {
 			red.style.opacity = 0.8;
 		}, 500);
@@ -145,7 +151,10 @@ var start = 0;
 	yellow.innerText = 'yellow';
 	document.getElementById('yellow').addEventListener('click', function() {
 		yellow.style.opacity = 1;
-
+if (list[click]==4){
+            list.shift();
+            alert("it works!");
+        }
 		setTimeout(function() {
 			yellow.style.opacity = 0.8;
 		}, 500);
