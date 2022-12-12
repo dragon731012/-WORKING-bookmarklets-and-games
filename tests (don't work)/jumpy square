@@ -1,5 +1,5 @@
-var xpos=150;
-var ypos=300;
+var xpos=0;
+var ypos=0;
 var playerspeed=6;
 
 (function () {
