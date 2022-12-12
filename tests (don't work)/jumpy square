@@ -1,11 +1,14 @@
+var xpos=150;
+var ypos=300;
+
 (function () {
 	var you = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(you);
 
 	you.style.position = 'fixed';
-	you.style.top = '0px';
-	you.style.right = '0px';
+	you.style.top = ''+ypos+'px';
+	you.style.right = ''+xpos+'0px';
 	you.style.margin = '10px';
 	you.style.paddingTop = '10px';
 	you.style.width = '200px';
@@ -18,4 +21,40 @@
 	you.style.textAlign = 'center';
 	you.id = 'you';
 	you.style.display = 'block';
+	function moveleft(){
+            xpos=xpos-playerspeed;
+            you.style.left = ''+xpos+'px';
+        }
+	function moveright(){
+            xpos=xpos+playerspeed;
+            you.style.left = ''+xpos+'px';
+        }
+	function moveup(){
+            ypos=ypos-playerspeed;
+            you.style.top = ''+ypos+'px';
+        }
+	function movedown(){
+            ypos=ypos+playerspeed;
+            you.style.top = ''+ypos+'px';
+        }
+        window.addEventListener("keydown",function(event){
+            if(event.key=="ArrowLeft"){
+                moveleft();
+            }
+        });
+	window.addEventListener("keydown",function(event){
+            if(event.key=="ArrowRight"){
+                moveright();
+            }
+        });
+	window.addEventListener("keydown",function(event){
+            if(event.key=="ArrowUp"){
+                moveup();
+            }
+        });
+	window.addEventListener("keydown",function(event){
+            if(event.key=="ArrowDown"){
+                movedown();
+            }
+        });
 }());
