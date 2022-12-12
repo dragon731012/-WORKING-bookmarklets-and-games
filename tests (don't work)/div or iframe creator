@@ -1,4 +1,15 @@
-javascript:
+const colorlist=[];
+const xlist=[];
+const ylist=[];
+const borderwidelist=[];
+const bordercolorlist=[];
+const widthlist=[];
+const heightlist=[];
+const textlist=[];
+const textcolorlist=[];
+const paddinglist=[];
+const seethroughlist=[];
+
 function repeat(event){
 (function(){
     var color=document.createElement('div');
@@ -33,6 +44,7 @@ function create(){
         var body = document.getElementsByTagName('body')[0];
         body.appendChild(elem);
         var color=prompt("what color do you want it to be?");
+        colorlist.push(color);
         var x=prompt("what do you want the x cord to be?");
         var y=prompt("what do you want the y cord to be?");
         var borderwide=prompt("how many pixels wide do you want the border to be?");
