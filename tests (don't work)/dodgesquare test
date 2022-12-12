@@ -111,11 +111,11 @@ enemyxpos=Math.floor(Math.random()*(300-0+1)+0);
 	enemy.style.display = 'block';
 	enemy.innerText = '';
 	function enemymove(){
-	    enemyypos=enemyypos-enemyspeed;
+	    enemyypos=enemyypos+enemyspeed;
 	    enemyspeed=enemyspeed+0.25;
 	    enemy.style.top = ''+enemyypos+'px';
 	}
-	setInterval(enemymove,1000);
+	setInterval(enemymove,100);
 }());
 }
 
