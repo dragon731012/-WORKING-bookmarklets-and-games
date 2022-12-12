@@ -22,40 +22,18 @@ var playerspeed=6;
 	you.style.textAlign = 'center';
 	you.id = 'you';
 	you.style.display = 'block';
-	function moveleft(){
-            xpos=xpos-playerspeed;
-            you.style.left = ''+xpos+'px';
-        }
-	function moveright(){
-            xpos=xpos+playerspeed;
-            you.style.left = ''+xpos+'px';
-        }
-	function moveup(){
+	function jump(){
             ypos=ypos-playerspeed;
             you.style.top = ''+ypos+'px';
         }
-	function movedown(){
-            ypos=ypos+playerspeed;
-            you.style.top = ''+ypos+'px';
-        }
         window.addEventListener("keydown",function(event){
-            if(event.key=="ArrowLeft"){
-                moveleft();
-            }
-        });
-	window.addEventListener("keydown",function(event){
-            if(event.key=="ArrowRight"){
-                moveright();
+            if(event.key=="Space"){
+                jump();
             }
         });
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
-                moveup();
-            }
-        });
-	window.addEventListener("keydown",function(event){
-            if(event.key=="ArrowDown"){
-                movedown();
+                jump();
             }
         });
 }());
