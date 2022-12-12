@@ -2,7 +2,8 @@ var xpos=80;
 var ypos=350;
 var enemyxpos=0;
 var enemyypos=-120;
-var enemyspeed=2;
+var enemyspeed=3;
+var enemynum=0;
 
 (function () {
 	var bg = document.createElement('div');
@@ -89,6 +90,7 @@ var enemyspeed=2;
 
 setInterval(function() {
 function makeenemy(){
+enemynum=enemynum+1;
 enemyxpos=Math.floor(Math.random()*(300-0+1)+0);
 enemyypos=-120;
 (function () {
@@ -109,7 +111,7 @@ enemyypos=-120;
 	enemy.style.backgroundColor = 'red';
 	enemy.style.border = '0px solid white';
 	enemy.style.textAlign = 'center';
-	enemy.id = 'enemy';
+	enemy.id = 'enemy'+enemynum+'';
 	enemy.style.display = 'block';
 	enemy.innerText = '';
 	function enemymove(){
@@ -117,7 +119,7 @@ enemyypos=-120;
 	    enemy.style.top = ''+enemyypos+'px';
 	    if (enemyypos>420){
 	        enemyxpos=-99999999999999999999999999999999999999999999999999;
-		enemyspeed=enemyspeed+0.05;
+		enemyspeed=enemyspeed+0.005;
 		enemy.style.left = ''+enemyxpos+'px';
 	    }
 	}
