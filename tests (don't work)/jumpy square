@@ -28,14 +28,18 @@ var jumptimes=0;
 	    ypos=ypos-6;
 	    jumptimes=jumptimes+1;
 	    you.style.top = ''+ypos+'px';
+	}
+	function checkup(){
 	    if (jumptimes>=jumpheight){
 	        jumptimes=0;
 	        clearInterval(goup);
 	    }
 	}
+	
         window.addEventListener("keydown",function(event){
             if(event.key=="Space"){
                 setInterval(goup,20);
+		setINterval(checkup,20);
             }
         });
 	window.addEventListener("keydown",function(event){
