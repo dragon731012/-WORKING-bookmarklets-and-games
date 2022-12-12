@@ -1,14 +1,3 @@
-const colourlist=[];
-const xlist=[];
-const ylist=[];
-const borderwidelist=[];
-const bordercolorlist=[];
-const widthlist=[];
-const heightlist=[];
-const textlist=[];
-const textcolorlist=[];
-const paddinglist=[];
-const seethroughlist=[];
 var count=0;
 
 function repeat(){
@@ -54,42 +43,21 @@ var howmany=prompt("how many divs/iframes do you want to make?");
 function create(){
     (function () {
     var colour=colourlist[count];
-    var x=xlist[count];
-    var y=ylist[count];
-    var borderwide=borderwidelist[count];
-    var bordercolor=bordercolorlist[count];
-    var width=widthlist[count];
-    var height=heightlist[count];
-    var text=textlist[count];
-    var textcolor=textcolorlist[count];
-    var padding=paddinglist[count];
-    var seethrough=seethroughlist[count];
     var color=document.createElement('div');
         var elem = document.createElement('div');
         var body = document.getElementsByTagName('body')[0];
         body.appendChild(elem);
         var color=prompt("what color do you want it to be?");
-        colorlist.push(color);
         var x=prompt("what do you want the x cord to be?");
-        xlist.push(x);
         var y=prompt("what do you want the y cord to be?");
-        ylist.push(y);
         var borderwide=prompt("how many pixels wide do you want the border to be?");
-        borderwidelist.push(borderwide);
         var bordercolor=prompt('what color do you want the border to be?');
-        bordercolorlist.push(bordercolor);
         var width=prompt("how many pixels wide do you want it to be?");
-        widthlist.push(width);
         var height=prompt("how many pixels high do you want it to be?");
-        heightlist.push(height);
         var text=prompt('what do you want the text to be?');
-        textlist.push(text);
         var textcolor=prompt("what color do you want the text to be?");
-        textcolorlist.push(textcolor);
         var padding=prompt("how far from the top do you want the text to be?");
-        paddinglist.push(padding);
         var seethrough=prompt("how transparent do you want it to be? 1 to 0. 1=none 0=not there");
-        seethroughlist.push(seethrough);
         elem.style.position = 'fixed';
         elem.style.top = ''+y+'px';
         elem.style.left = ''+x+'px';
@@ -114,6 +82,5 @@ function create(){
         sus=sus+1; 
         } 
     }       
-    alert("done! your code is on the next alert.");
-    alert("javascript:var howmany="+howmany+";const colorlist=["+colorlist+"];const xlist=["+xlist+"];const ylist=["+ylist+"];const borderwidelist=["+borderwidelist+"];const bordercolorlist=["+bordercolorlist+"];const widthlist=["+widthlist+"];const heightlist=["+heightlist+"];const textlist=["+textlist+"];const textcolorlist=["+textcolorlist+"];const paddinglist=["+paddinglist+"];const seethroughlist=["+seethroughlist+"];var count=0;function create(){count=count+1;(function () {var y=ylist[count];var x=xlist[count];var color=colorlist[count];var borderwide=borderwidelist[count];var bordercolor=bordercolorlist[count];var width=widthlist[count];var height=heightlist[count];var text=textlist[count];var textcolor=textcolorlist[count];var padding=paddinglist[count];var seethrough=seethroughlist[count];var elem = document.createElement('div');var body = document.getElementsByTagName('body')[0];body.appendChild(elem);elem.style.position = 'fixed';elem.style.top = ''+y+'px';elem.style.left = ''+x+'px';elem.style.margin = '0px';elem.style.paddingTop = ''+padding+'px';elem.style.width = ''+width+'px';elem.style.height = ''+height+'px';elem.style.zIndex = 10000;elem.style.opacity = seethrough;elem.style.color = textcolor; elem.style.backgroundColor = color; elem.style.border = ''+borderwide+'px solid '+bordercolor+''; elem.style.textAlign = 'center'; elem.id = 'elem'; elem.style.display = 'block'; elem.innerText = text; var sus=0; while (sus<howmany){create(); x=sus+1; }}");
+    alert("done!");
     repeat();
