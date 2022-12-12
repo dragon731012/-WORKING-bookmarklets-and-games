@@ -24,15 +24,13 @@ var jumptimes=0;
 	you.style.textAlign = 'center';
 	you.id = 'you';
 	you.style.display = 'block';
-	function jump(){
-	    function(goup){
-	        ypos=ypos-playerspeed;
-		jumptimes=jumptimes+1;
-		if (jumptimes=jumpheight){
-		    clearInterval(goup);
-		}
+	function(goup){
+	    ypos=ypos-playerspeed;
+	    jumptimes=jumptimes+1;
+	    if (jumptimes=jumpheight){
+	        clearInterval(goup);
 	    }
-        }
+	}
         window.addEventListener("keydown",function(event){
             if(event.key=="Space"){
                 setInterval(goup,100);
