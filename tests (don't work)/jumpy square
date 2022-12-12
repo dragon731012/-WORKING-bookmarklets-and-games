@@ -38,7 +38,7 @@ var jumptimes=0;
         });
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
-                jump();
+                setInterval(jump,300);
             }
         });
 }());
