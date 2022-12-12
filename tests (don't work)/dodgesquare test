@@ -3,6 +3,7 @@ var ypos=350;
 var enemyxpos=0;
 var enemyypos=-120;
 var enemyspeed=3;
+var playerspeed=10;
 
 (function () {
 	var bg = document.createElement('div');
@@ -50,19 +51,19 @@ var enemyspeed=3;
 	you.style.display = 'block';
 	you.innerText = '';
         function moveleft(){
-            xpos=xpos-10;
+            xpos=xpos-playerspeed;
             you.style.left = ''+xpos+'px';
         }
 	function moveright(){
-            xpos=xpos+10;
+            xpos=xpos+playerspeed;
             you.style.left = ''+xpos+'px';
         }
 	function moveup(){
-            ypos=ypos-10;
+            ypos=ypos-playerspeed;
             you.style.top = ''+ypos+'px';
         }
 	function movedown(){
-            ypos=ypos+10;
+            ypos=ypos+playerspeed;
             you.style.top = ''+ypos+'px';
         }
         window.addEventListener("keydown",function(event){
@@ -111,7 +112,7 @@ function makeenemy(){
 	enemy.style.display = 'block';
 	enemy.innerText = '';
 	function lose(){
-	    
+	    if xpos
 	}
 	function enemymove(){
 	    enemyypos=enemyypos+enemyspeed;
