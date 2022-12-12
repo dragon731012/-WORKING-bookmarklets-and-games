@@ -88,13 +88,12 @@ var enemyspeed=3;
 }());
 
 function makeenemy(){
-enemyxpos=Math.floor(Math.random()*(300-0+1)+0);
-enemyypos=-120;
 (function () {
 	var enemy = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(enemy);
-
+        enemyxpos=Math.floor(Math.random()*(300-0+1)+0);
+        enemyypos=-120;
 	enemy.style.position = 'fixed';
 	enemy.style.top = ''+enemyypos+'px';
 	enemy.style.left = ''+enemyxpos+'px';
@@ -114,7 +113,7 @@ enemyypos=-120;
 	function enemymove(){
 	    enemyypos=enemyypos+enemyspeed;
 	    enemy.style.top = ''+enemyypos+'px';
-	    if (enemyypos>420){
+	    if (enemyypos>400){
 	        enemyxpos=-99999999999999999999999999999999999999999999999999;
 		enemyspeed=enemyspeed+0.005;
 		enemyypos=-99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
