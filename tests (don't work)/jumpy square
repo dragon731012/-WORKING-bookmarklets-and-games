@@ -23,24 +23,12 @@ var jumptimes=0;
 	you.style.textAlign = 'center';
 	you.id = 'you';
 	you.style.display = 'block';
-	function goup(){
-	setInterval(function() {
-	if (jumptimes<1){
-	    ypos=ypos-6;
-	    jumptimes=jumptimes+1;
-	    you.style.top = ''+ypos+'px';
-	}
-	else{
-	    jumptimes=0;
-	    return;
-	}
-	}, 40);
-	}
-        window.addEventListener("keydown",function(event){
-            if(event.key=="Space"){
-                goup();
+        function goup(){
+            while (jumptimes<3){
+                ypos=ypos-6;
+                you.style.top = ''+ypos+'px';
             }
-        });
+        }
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
                 goup();
