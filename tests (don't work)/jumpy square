@@ -24,7 +24,7 @@ var jumptimes=0;
 	you.style.textAlign = 'center';
 	you.id = 'you';
 	you.style.display = 'block';
-	function(goup){
+	function goup(){
 	    ypos=ypos-playerspeed;
 	    jumptimes=jumptimes+1;
 	    if (jumptimes=jumpheight){
