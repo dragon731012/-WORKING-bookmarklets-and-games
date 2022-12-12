@@ -123,11 +123,12 @@ function makeenemy(){
                 );
             }
 
-            const el1 = document.getElementById('box1');
-            const el2 = document.getElementById('box2');
-            const el3 = document.getElementById('box3');
+            const el1 = document.getElementById('you');
+            const el2 = document.getElementById('enemy');
 
-            console.log(elementsOverlap(el1, el2));
+            if elementsOverlap(el1, el2)=true){
+	        alert("game over.");
+	    }
 	}
 	function enemymove(){
 	    enemyypos=enemyypos+enemyspeed;
