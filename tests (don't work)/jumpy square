@@ -25,26 +25,25 @@ var jumptimes=0;
 	you.id = 'you';
 	you.style.display = 'block';
 	function goup(){
+	setInterval(function() {
+	if (jumptimes<jumpheight){
 	    ypos=ypos-6;
 	    jumptimes=jumptimes+1;
 	    you.style.top = ''+ypos+'px';
 	}
-	function checkup(){
-	    if (jumptimes>=jumpheight){
-	        jumptimes=0;
-	        clearInterval(goup);
-	    }
+	else{
+	break;
 	}
-	
+	}, 40);
+	}
         window.addEventListener("keydown",function(event){
             if(event.key=="Space"){
-                setInterval(goup,20);
-		setINterval(checkup,20);
+                goup();
             }
         });
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
-                setInterval(goup,20);
+                goup();
             }
         });
 }());
