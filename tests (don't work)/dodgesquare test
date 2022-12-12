@@ -92,7 +92,7 @@ function makeenemy(){
 	var enemy = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(enemy);
-        enemyxpos=Math.floor(Math.random()*(300-0+1)+0);
+        enemyxpos=Math.floor(Math.random()*(230-0+1)+0);
         enemyypos=-120;
 	enemy.style.position = 'fixed';
 	enemy.style.top = ''+enemyypos+'px';
