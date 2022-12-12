@@ -1,7 +1,7 @@
 var xpos=70;
 var ypos=400;
 var playerspeed=6;
-var jumpheight=10;
+var jumpheight=1;
 var jumptimes=0;
 
 (function () {
