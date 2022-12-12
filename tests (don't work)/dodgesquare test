@@ -119,3 +119,4 @@ enemyxpos=Math.floor(Math.random()*(300-0+1)+0);
 }());
 }
 
+setInterval(makeenemy,3000);
