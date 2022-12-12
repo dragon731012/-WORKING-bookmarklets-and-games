@@ -114,8 +114,12 @@ enemyypos=-120;
 	enemy.innerText = '';
 	function enemymove(){
 	    enemyypos=enemyypos+enemyspeed;
-	    enemyspeed=enemyspeed+0.25;
+	    enemyspeed=enemyspeed+0.15;
 	    enemy.style.top = ''+enemyypos+'px';
+	    if (enemyypos>300){
+	        enemyxpos=-99999999999999999999999999999999999999999999999999;
+		enemy.style.left = ''+enemyxpos+'px';
+	    }
 	}
 	setInterval(enemymove,50);
 }());
