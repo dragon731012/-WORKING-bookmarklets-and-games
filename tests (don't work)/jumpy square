@@ -28,7 +28,7 @@ var jumptimes=0;
 	    ypos=ypos-6;
 	    jumptimes=jumptimes+1;
 	    you.style.top = ''+ypos+'px';
-	    if (jumptimes=jumpheight){
+	    if (jumptimes>=jumpheight){
 	        jumptimes=0;
 	        clearInterval(goup);
 	    }
