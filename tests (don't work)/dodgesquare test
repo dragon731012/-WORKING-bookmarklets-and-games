@@ -87,27 +87,6 @@ var enemyspeed=3;
         });
 }());
 
-function collide(){
-    function elementsOverlap(el1, el2) {
-    const domRect1 = el1.getBoundingClientRect();
-    const domRect2 = el2.getBoundingClientRect();
-
-    return !(
-      domRect1.top > domRect2.bottom ||
-      domRect1.right < domRect2.left ||
-      domRect1.bottom < domRect2.top ||
-      domRect1.left > domRect2.right
-    );
-  }
-
-  const el1 = document.getElementById('enemy');
-  const el2 = document.getElementById('you');
-  
-  if (elementsOverlap(el1, el2))=true){
-      alert("game over");
-  }
-}
-
 function makeenemy(){
 (function () {
 	var enemy = document.createElement('div');
@@ -131,7 +110,6 @@ function makeenemy(){
 	enemy.id = 'enemy';
 	enemy.style.display = 'block';
 	enemy.innerText = '';
-	setInterval(collide,50);
 	function enemymove(){
 	    enemyypos=enemyypos+enemyspeed;
 	    enemy.style.top = ''+enemyypos+'px';
