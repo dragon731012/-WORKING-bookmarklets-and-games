@@ -46,9 +46,13 @@ function create(){
         var color=prompt("what color do you want it to be?");
         colorlist.push(color);
         var x=prompt("what do you want the x cord to be?");
+        xlist.push(x);
         var y=prompt("what do you want the y cord to be?");
+        ylist.push(y);
         var borderwide=prompt("how many pixels wide do you want the border to be?");
+        borderwidelist.push(borderwide);
         var bordercolor=prompt('what color do you want the border to be?');
+        bordercolorlist.push(bordercolor);
         var width=prompt("how many pixels wide do you want it to be?");
         var height=prompt("how many pixels high do you want it to be?");
         var text=prompt('what do you want the text to be?');
