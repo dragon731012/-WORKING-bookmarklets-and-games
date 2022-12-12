@@ -88,7 +88,6 @@ var enemynum=0;
         });
 }());
 
-setInterval(function() {
 function makeenemy(){
 enemynum=enemynum+1;
 enemyxpos=Math.floor(Math.random()*(300-0+1)+0);
@@ -121,10 +120,10 @@ enemyypos=-120;
 	        enemyxpos=-99999999999999999999999999999999999999999999999999;
 		enemyspeed=enemyspeed+0.005;
 		enemy.style.left = ''+enemyxpos+'px';
+		makeenemy();
 	    }
 	}
 	setInterval(enemymove,50);
 }());
 }
 makeenemy();
-}, 8000);
