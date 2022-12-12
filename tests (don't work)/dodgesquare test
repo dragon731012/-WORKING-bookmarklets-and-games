@@ -114,10 +114,10 @@ enemyypos=-120;
 	enemy.innerText = '';
 	function enemymove(){
 	    enemyypos=enemyypos+enemyspeed;
-	    enemyspeed=enemyspeed+0.15;
 	    enemy.style.top = ''+enemyypos+'px';
-	    if (enemyypos>300){
+	    if (enemyypos>420){
 	        enemyxpos=-99999999999999999999999999999999999999999999999999;
+		enemyspeed=enemyspeed+0.15;
 		enemy.style.left = ''+enemyxpos+'px';
 	    }
 	}
