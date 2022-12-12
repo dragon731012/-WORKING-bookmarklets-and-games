@@ -1,6 +1,8 @@
 var xpos=70;
 var ypos=400;
 var playerspeed=6;
+var jumpheight=30;
+var jumptimes=0;
 
 (function () {
 	var you = document.createElement('div');
@@ -23,8 +25,11 @@ var playerspeed=6;
 	you.id = 'you';
 	you.style.display = 'block';
 	function jump(){
+	    while (jumptimes<jumpheight){
             ypos=ypos-playerspeed;
             you.style.top = ''+ypos+'px';
+	    jumptimes=jumptimes+1;
+	    }
         }
         window.addEventListener("keydown",function(event){
             if(event.key=="Space"){
