@@ -1,5 +1,5 @@
 var xpos=70;
-var ypos=200;
+var ypos=400;
 var playerspeed=6;
 
 (function () {
@@ -17,7 +17,7 @@ var playerspeed=6;
 	you.style.zIndex = 10000;
 	you.style.opacity = 1;
 	you.style.color = 'black';
-	you.style.backgroundColor = 'blue';
+	you.style.backgroundColor = 'black';
 	you.style.border = '0px solid white';
 	you.style.textAlign = 'center';
 	you.id = 'you';
