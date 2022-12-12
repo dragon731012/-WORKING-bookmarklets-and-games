@@ -126,7 +126,7 @@ function makeenemy(){
             const el1 = document.getElementById('you');
             const el2 = document.getElementById('enemy');
 
-            if elementsOverlap(el1, el2)=true){
+            if (elementsOverlap(el1, el2)=true){
 	        alert("game over.");
 	    }
 	}
@@ -139,6 +139,7 @@ function makeenemy(){
 	    }
 	}
 	setInterval(enemymove,50);
+	setInterval(lose,50);
 }());
 }
 makeenemy();
