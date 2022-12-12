@@ -85,14 +85,37 @@ function create(){
         elem.innerText = textlist[count]; 
         }()); 
     } 
-    var x=0; 
-    while (x<howmany){
+    var sus=0; 
+    while (sus<howmany){
         create(); 
-        x=x+1; 
-        if (x!=howmany){ 
-            alert("next one...");
+        x=sus+1; 
         } 
     }       
     alert("done! your code is on the next alert.");
-    alert("const colorlist=["+colorlist+"];const xlist=["+xlist+"];const ylist=["+ylist+"];const borderwidelist=["+borderwidelist+"];const bordercolorlist=["+bordercolorlist+"];const widthlist=["+widthlist+"];const heightlist=["+heightlist+"];const textlist=["+textlist+"];const textcolorlist=["+textcolorlist+"];const paddinglist=["+paddinglist+"];const seethroughlist=["+seethroughlist+"];var count=0;
+    
+    alert("var howmany="+howmany+";const colorlist=["+colorlist+"];const xlist=["+xlist+"];const ylist=["+ylist+"];const borderwidelist=["+borderwidelist+"];const bordercolorlist=["+bordercolorlist+"];const widthlist=["+widthlist+"];const heightlist=["+heightlist+"];const textlist=["+textlist+"];const textcolorlist=["+textcolorlist+"];const paddinglist=["+paddinglist+"];const seethroughlist=["+seethroughlist+"];var count=0;
+    function create(){count=count+1;(function () {var elem = document.createElement('div');var body = document.getElementsByTagName('body')[0];body.appendChild(elem);
+    elem.style.position = 'fixed';
+        elem.style.top = ''+ylist[count]+'px';
+        elem.style.left = ''+xlist[count]+'px';
+        elem.style.margin = '0px';
+        elem.style.paddingTop = ''+paddinglist[count]+'px';
+        elem.style.width = ''+widthlist[count]+'px';
+        elem.style.height = ''+heightlist[count]+'px';
+        elem.style.zIndex = 10000;
+        elem.style.opacity = seethroughlist[count];
+        elem.style.color = textcolorlist[count]; 
+        elem.style.backgroundColor = colorlist[count]; 
+        elem.style.border = ''+borderwidelist[count]+'px solid '+bordercolorlist[count]+''; 
+        elem.style.textAlign = 'center'; 
+        elem.id = 'elem'; 
+        elem.style.display = 'block'; 
+        elem.innerText = textlist[count]; 
+            var sus=0; 
+    while (sus<howmany){
+        create(); 
+        x=sus+1; 
+        } 
+    }
+    
     repeat();
