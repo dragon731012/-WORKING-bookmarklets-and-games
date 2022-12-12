@@ -1,6 +1,5 @@
 var xpos=70;
 var ypos=400;
-var playerspeed=6;
 var jumpheight=1;
 var jumptimes=0;
 
@@ -32,7 +31,7 @@ var jumptimes=0;
 	    you.style.top = ''+ypos+'px';
 	}
 	else{
-	break;
+	    jumptimes=0;
 	}
 	}, 40);
 	}
