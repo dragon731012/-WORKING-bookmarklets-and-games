@@ -90,6 +90,7 @@ var enemyspeed=3;
 setInterval(function() {
 function makeenemy(){
 enemyxpos=Math.floor(Math.random()*(300-0+1)+0);
+enemyypos=-120;
 (function () {
 	var enemy = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
