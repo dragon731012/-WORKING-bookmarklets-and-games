@@ -25,26 +25,22 @@ var jumptimes=0;
 	you.id = 'you';
 	you.style.display = 'block';
 	function jump(){
-	    while (jumptimes<jumpheight){
-	    function waiting(){
-            ypos=ypos-playerspeed;
-            you.style.top = ''+ypos+'px';
-	    jumptimes=jumptimes+1;
-	    if (jumptimes>=jumpheight){
-	    clearInterval(waiting);
-	    }
-	    }
-	    setInterval(waiting,100);
+	    function(goup){
+	        ypos=ypos-playerspeed;
+		jumptimes=jumptimes+1;
+		if (jumptimes=jumpheight){
+		    clearInterval(goup);
+		}
 	    }
         }
         window.addEventListener("keydown",function(event){
             if(event.key=="Space"){
-                jump();
+                goup();
             }
         });
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
-                jump();
+                goup();
             }
         });
 }());
