@@ -25,7 +25,7 @@ var jumptimes=0;
 	you.style.display = 'block';
 	function goup(){
 	setInterval(function() {
-	if (jumptimes<jumpheight){
+	if (jumptimes<1){
 	    ypos=ypos-6;
 	    jumptimes=jumptimes+1;
 	    you.style.top = ''+ypos+'px';
