@@ -12,7 +12,7 @@ var enemyspeed=3;
 	bg.style.position = 'fixed';
 	bg.style.top = '0px';
 	bg.style.left = '0px';
-	bg.style.margin = '10px';
+	bg.style.margin = '0px';
 	bg.style.paddingTop = '10px';
 	bg.style.width = '300px';
 	bg.style.height = '500px';
@@ -36,7 +36,7 @@ var enemyspeed=3;
 	you.style.position = 'fixed';
 	you.style.top = ''+ypos+'px';
 	you.style.left = ''+xpos+'px';
-	you.style.margin = '10px';
+	you.style.margin = '0px';
 	you.style.paddingTop = '10px';
 	you.style.width = '70px';
 	you.style.height = '120px';
@@ -97,7 +97,7 @@ function makeenemy(){
 	enemy.style.position = 'fixed';
 	enemy.style.top = ''+enemyypos+'px';
 	enemy.style.left = ''+enemyxpos+'px';
-	enemy.style.margin = '10px';
+	enemy.style.margin = '0px';
 	enemy.style.paddingTop = '10px';
 	enemy.style.width = '70px';
 	enemy.style.height = '120px';
@@ -111,12 +111,7 @@ function makeenemy(){
 	enemy.style.display = 'block';
 	enemy.innerText = '';
 	function lose(){
-	    if (enemyxpos < rect2.x + 70 &&
-                enemyxpos + 70 > xpos &&
-                enemyypos < rect2.y + 120 &&
-                enemyypos + 120 > ypos) {
-                alert("hi");
-            }
+	    
 	}
 	function enemymove(){
 	    enemyypos=enemyypos+enemyspeed;
