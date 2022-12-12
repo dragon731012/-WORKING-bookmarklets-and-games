@@ -1,5 +1,5 @@
-var xpos=0;
-var ypos=0;
+var xpos=70;
+var ypos=200;
 var playerspeed=6;
 
 (function () {
@@ -9,13 +9,13 @@ var playerspeed=6;
 
 	you.style.position = 'fixed';
 	you.style.top = ''+ypos+'px';
-	you.style.right = ''+xpos+'0px';
+	you.style.left = ''+xpos+'0px';
 	you.style.margin = '10px';
 	you.style.paddingTop = '10px';
-	you.style.width = '200px';
-	you.style.height = '200px';
+	you.style.width = '70px';
+	you.style.height = '70px';
 	you.style.zIndex = 10000;
-	you.style.opacity = 0.9;
+	you.style.opacity = 1;
 	you.style.color = 'black';
 	you.style.backgroundColor = 'blue';
 	you.style.border = '0px solid white';
