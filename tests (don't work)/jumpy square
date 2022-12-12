@@ -32,6 +32,7 @@ var jumptimes=0;
 	}
 	else{
 	    jumptimes=0;
+	    return;
 	}
 	}, 40);
 	}
