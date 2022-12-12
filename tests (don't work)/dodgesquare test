@@ -87,6 +87,7 @@ var enemyspeed=3;
         });
 }());
 
+setInterval(function() {
 function makeenemy(){
 enemyxpos=Math.floor(Math.random()*(300-0+1)+0);
 (function () {
@@ -118,5 +119,5 @@ enemyxpos=Math.floor(Math.random()*(300-0+1)+0);
 	setInterval(enemymove,50);
 }());
 }
-
-setInterval(makeenemy,4000);
+makeenemy();
+}, 4000);
