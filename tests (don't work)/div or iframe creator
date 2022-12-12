@@ -1,4 +1,4 @@
-const colorlist=[];
+const colourlist=[];
 const xlist=[];
 const ylist=[];
 const borderwidelist=[];
@@ -14,6 +14,14 @@ var count=0;
 function repeat(){
 count=count+1;
 (function(){
+    var colour=colourlist[count];
+    var x=xlist[count];
+    var y=ylist[count];
+    var borderwide=borderwidelist[count];
+    var bordercolor=bordercolorlist[count];
+    var width=widthlist[count];
+    var height=heightlist[count];
+    var text=textlist[count];
     var color=document.createElement('div');
     var body=document.getElementsByTagName('body')[0];
     body.appendChild(color);color.style.position='fixed';
