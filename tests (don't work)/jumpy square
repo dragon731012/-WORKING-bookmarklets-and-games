@@ -34,6 +34,7 @@ function makeyou() {
 				}
 				else{
 					jumping=1;
+					return;
 				}
 			}, 15);
 		}
