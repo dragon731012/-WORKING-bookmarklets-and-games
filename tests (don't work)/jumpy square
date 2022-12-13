@@ -50,11 +50,12 @@ function makeyou() {
 	        }
 	        else{
 		    clearInterval(downwait);
+		    clearTimeout(wait);
 		}
 	    }
 	    
 	    setInterval(downwait,15);
-	    
+	    setTimeout(wait,999999999999999999999999999999999999999999);
         }
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
@@ -118,6 +119,6 @@ function makeenemy(){
 	    }
 	}
 	setInterval(move,20);
-}());
+	}());
 }
 makeenemy();
