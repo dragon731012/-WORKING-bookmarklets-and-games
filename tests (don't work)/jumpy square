@@ -1,7 +1,5 @@
 var xpos = 70;
 var ypos = 400;
-var jumpheight = 32000;
-var jumptimes = 0;
 var enemyspeed = 5;
 var enemyxpos = -40;
 var enemyypos = 480;
