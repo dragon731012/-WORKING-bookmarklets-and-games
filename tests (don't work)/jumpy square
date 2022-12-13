@@ -111,8 +111,9 @@ function makeenemy() {
 			enemyxpos = enemyxpos + enemyspeed;
 			enemy.style.right = '' + enemyxpos + 'px';
 			if (enemyxpos >= 1420) {
-				makeenemy();
 				enemy.parentNode.removeChild(enemy);
+				enemyspeed=enemyspeed+0.5;
+				makeenemy();
 			}
 		}
 		setInterval(move, 20);
