@@ -50,6 +50,7 @@ function makeyou() {
 				you.style.top = '' + ypos + 'px';
 			} 
 			else {
+			        var updone=0;
 				clearInterval(downwait);
 	                        return;
 			}
