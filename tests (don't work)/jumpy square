@@ -39,7 +39,7 @@ function makeyou() {
 					}
 				}
 				if (jumping==1){
-			    	if (ypos != 480){
+			    	if (ypos != 400){
 						if (jumping==1){
 					   		ypos=ypos+2.5;
 					    	you.style.top = '' + ypos + 'px';
