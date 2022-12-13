@@ -2,7 +2,7 @@ var xpos = 70;
 var ypos = 400;
 var enemyspeed = 5;
 var enemyxpos = -40;
-var enemyypos = 415;
+var enemyypos = 420;
 var jumping=0;
 
 function makeyou() {
@@ -33,8 +33,12 @@ function makeyou() {
 						ypos=ypos-2.5;
 						you.style.top = '' + ypos + 'px';
 					}
+					else{
+						jumping=1;
+						return;
+					}
 				}
-				else{
+				if (jumping==1){
 			    	if (ypos != 400){
 				   		ypos=ypos+2.5;
 				    	you.style.top = '' + ypos + 'px';
