@@ -7,7 +7,7 @@ var enemyxpos=-40;
 var enemyypos=480;
 var updone=0;
 
-(function () {
+function makeyou() {
 	var you = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(you);
@@ -58,7 +58,9 @@ var updone=0;
 	     	}
             }
         });
-}());
+}}
+
+makeyou();
 
 (function () {
 	var you = document.createElement('div');
@@ -114,5 +116,3 @@ function makeenemy(){
 }());
 }
 makeenemy();
-
-
