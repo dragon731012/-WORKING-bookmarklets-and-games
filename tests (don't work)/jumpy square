@@ -112,6 +112,7 @@ function makeenemy() {
 		enemy.style.display = 'block';
 	}());
 }
+makeenemy();
 function move() {
 	document.getElementById("enemy");
 	enemyxpos = enemyxpos + enemyspeed;
@@ -127,11 +128,11 @@ function move() {
 setInterval(move, 20);
 
 function colliding(){
-	if (xcord==enemyxcord){
-		if (ycord==enemyycord){
-			alert("game over);
+	if (xpos==enemyxpos){
+		if (ypos==enemyxpos){
+			alert("game over");
 		}
 	}
 }
 
-makeenemy();
+setInterval(colliding,20);
