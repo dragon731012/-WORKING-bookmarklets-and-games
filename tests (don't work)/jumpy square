@@ -127,8 +127,10 @@ function move() {
 setInterval(move, 20);
 
 function colliding(){
-	if (xcord==enemyxcord || ycord=enemyycord){
-		alert("game over);
+	if (xcord==enemyxcord){
+		if (ycord==enemyycord){
+			alert("game over);
+		}
 	}
 }
 
