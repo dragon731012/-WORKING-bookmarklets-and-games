@@ -115,6 +115,7 @@ function move() {
 	if (enemyxpos >= 500) {
 		document.getElementById("enemy");
 		enemy.parentNode.removeChild(enemy);
+		var enemyxpos = -40;
 		enemyspeed=enemyspeed+0.5;
 		makeenemy();
 	}
