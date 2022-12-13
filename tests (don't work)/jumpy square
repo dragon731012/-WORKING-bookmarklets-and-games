@@ -115,6 +115,7 @@ function goup() {
 				clearInterval(downwait);
 				clearInterval(upwait);
 				clearInterval(checkfordone);
+				interval=1;
 				return;
 			}
 		}
@@ -133,6 +134,5 @@ window.addEventListener("keydown", function(event) {
 		if (event.key == "ArrowUp") {
 		    interval=0;
 		    goup();
-		    interval=1;
 		}
 });
