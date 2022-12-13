@@ -52,10 +52,10 @@ function makeyou() {
 			}, 15);
 		}
 	}
+	goup();
 	window.addEventListener("keydown", function(event) {
 			if (event.key == "ArrowUp") {
 			    jumping=0;
-			    goup();
 			}
 	});
 }
