@@ -32,7 +32,7 @@ function makeyou() {
 		function upwait() {
 			if (ypos != 300) {
 				updone = 0;
-				ypos = ypos - 2.5;
+				ypos = ypos - 1.25;
 				you.style.top = '' + ypos + 'px';
 			} else {
 				updone = 1;
@@ -44,7 +44,7 @@ function makeyou() {
 
 		function downwait() {
 			if (ypos != 400) {
-				ypos = ypos + 2.5;
+				ypos = ypos + 1.25;
 				you.style.top = '' + ypos + 'px';
 			} else {
 				clearInterval(downwait);
