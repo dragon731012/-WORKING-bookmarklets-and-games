@@ -24,11 +24,11 @@ var jumptimes=0;
 	you.id = 'you';
 	you.style.display = 'block';
         function goup(){
-            while (jumptimes<jumpheight){
-                function up(){
+	    function up(){
                     ypos=ypos-6;
                     you.style.top = ''+ypos+'px';
                 }
+            while (jumptimes<jumpheight){
                 setTimeout(up,20);
             }
         }
