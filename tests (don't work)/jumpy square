@@ -65,9 +65,7 @@ function makeyou() {
 	}
 	window.addEventListener("keydown", function(event) {
 		if (event.key == "ArrowUp") {
-			if (ypos >= 400) {
-				goup();
-			}
+			goup();
 		}
 	});
 }
