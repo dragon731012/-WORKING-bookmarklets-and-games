@@ -53,7 +53,7 @@ function makeyou() {
 				clearInterval(downwait);
 				clearInterval(upwait);
 				clearInterval(checkfordone);
-				return;
+				break goup;
 			}
 		}
 
@@ -68,7 +68,7 @@ function makeyou() {
 	window.addEventListener("keydown", function(event) {
 		if (event.key == "ArrowUp") {
 		    updone=0;
-			goup();
+		    goup();
 		}
 	});
 }
