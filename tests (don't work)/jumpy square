@@ -50,10 +50,10 @@ var jumping=0;
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
 	        if (ypos>=400){
-		    if (jumping=0){
+		        if (jumping==0){
                         goup();
 	            }
-		}
+	     	}
             }
         });
 }());
