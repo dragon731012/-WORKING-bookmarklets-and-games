@@ -1,6 +1,6 @@
 var xpos = 70;
 var ypos = 400;
-var enemyspeed = 5;
+var enemyspeed = 8;
 var enemyxpos = -40;
 var enemyypos = 420;
 var jumping=0;
@@ -89,7 +89,7 @@ function makeenemy() {
 		var enemy = document.createElement('div');
 		var body = document.getElementsByTagName('body')[0];
 		body.appendChild(enemy);
-		var enemywidth=Math.floor(Math.random()*(70-40+1)+40);
+		var enemywidth=Math.floor(Math.random()*(100-40+1)+100);
 
 		enemy.style.position = 'fixed';
 		enemy.style.top = '' + enemyypos + 'px';
