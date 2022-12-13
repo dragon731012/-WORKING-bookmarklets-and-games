@@ -1,11 +1,11 @@
-var xpos=70;
-var ypos=400;
-var jumpheight=32000;
-var jumptimes=0;
-var enemyspeed=5;
-var enemyxpos=-40;
-var enemyypos=480;
-var updone=0;
+var xpos = 70;
+var ypos = 400;
+var jumpheight = 32000;
+var jumptimes = 0;
+var enemyspeed = 5;
+var enemyxpos = -40;
+var enemyypos = 480;
+var updone = 0;
 
 function makeyou() {
 	var you = document.createElement('div');
@@ -13,8 +13,8 @@ function makeyou() {
 	body.appendChild(you);
 
 	you.style.position = 'fixed';
-	you.style.top = ''+ypos+'px';
-	you.style.left = ''+xpos+'px';
+	you.style.top = '' + ypos + 'px';
+	you.style.left = '' + xpos + 'px';
 	you.style.margin = '10px';
 	you.style.paddingTop = '10px';
 	you.style.width = '70px';
@@ -27,50 +27,50 @@ function makeyou() {
 	you.style.textAlign = 'center';
 	you.id = 'you';
 	you.style.display = 'block';
-        function goup(){
-	   function wait(){}
-	   function upwait(){
-               if (ypos!=300){
-	            updone=0;
-	            ypos=ypos-5;
-		    you.style.top = ''+ypos+'px';
-                }
-	        else{
-		    updone=1;
-	            clearInterval(upwait);
-	        }
-	    }
-	    
-	    setInterval(upwait,15);
-	    
-	    function downwait(){
-	        if (ypos!=400){
-	            ypos=ypos+5;
-		    you.style.top = ''+ypos+'px';
-	        }
-	        else{
-		    clearInterval(downwait);
+
+	function goup() {
+		function upwait() {
+			if (ypos != 300) {
+				updone = 0;
+				ypos = ypos - 5;
+				you.style.top = '' + ypos + 'px';
+			} else {
+				updone = 1;
+				clearInterval(upwait);
+			}
 		}
-	    }
-	    function checkfordone(){
-	        if (updone==1){
-		    setInterval(downwait,15);
-		    clearInterval(checkfordone);
-	    }
-	    setInterval(checkfordone,15);
-        }
-	window.addEventListener("keydown",function(event){
-            if(event.key=="ArrowUp"){
-	        if (ypos>=400){
-                    goup();
-	     	}
-            }
-        });
+
+		setInterval(upwait, 15);
+
+		function downwait() {
+			if (ypos != 400) {
+				ypos = ypos + 5;
+				you.style.top = '' + ypos + 'px';
+			} else {
+				clearInterval(downwait);
+			}
+		}
+
+		function checkfordone() {
+			if (updone == 1) {
+				setInterval(downwait, 15);
+				clearInterval(checkfordone);
+			}
+		}
+		setInterval(checkfordone, 15);
+	}
+	window.addEventListener("keydown", function(event) {
+		if (event.key == "ArrowUp") {
+			if (ypos >= 400) {
+				goup();
+			}
+		}
+	});
 }
 
 makeyou();
 
-(function () {
+(function() {
 	var you = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(you);
@@ -92,35 +92,36 @@ makeyou();
 	you.style.display = 'block';
 }());
 
-function makeenemy(){
-(function () {
-	var enemy = document.createElement('div');
-	var body = document.getElementsByTagName('body')[0];
-	body.appendChild(enemy);
+function makeenemy() {
+	(function() {
+		var enemy = document.createElement('div');
+		var body = document.getElementsByTagName('body')[0];
+		body.appendChild(enemy);
 
-	enemy.style.position = 'fixed';
-	enemy.style.top = ''+enemyypos+'px';
-	enemy.style.right = ''+enemyxpos+'px';
-	enemy.style.margin = '0px';
-	enemy.style.paddingTop = '10px';
-	enemy.style.width = '40px';
-	enemy.style.height = '60px';
-	enemy.style.zIndex = 10000;
-	enemy.style.opacity = 1;
-	enemy.style.color = 'red';
-	enemy.style.backgroundColor = 'red';
-	enemy.style.border = '0px solid white';
-	enemy.style.textAlign = 'center';
-	enemy.id = 'enemy';
-	enemy.style.display = 'block';
-	function move(){
-	    enemyxpos=enemyxpos+enemyspeed;
-	    enemy.style.right = ''+enemyxpos+'px';
-	    if (enemyxpos>=1420){
-	        enemy.parentNode.removeChild(enemy);
-	    }
-	}
-	setInterval(move,20);
+		enemy.style.position = 'fixed';
+		enemy.style.top = '' + enemyypos + 'px';
+		enemy.style.right = '' + enemyxpos + 'px';
+		enemy.style.margin = '0px';
+		enemy.style.paddingTop = '10px';
+		enemy.style.width = '40px';
+		enemy.style.height = '60px';
+		enemy.style.zIndex = 10000;
+		enemy.style.opacity = 1;
+		enemy.style.color = 'red';
+		enemy.style.backgroundColor = 'red';
+		enemy.style.border = '0px solid white';
+		enemy.style.textAlign = 'center';
+		enemy.id = 'enemy';
+		enemy.style.display = 'block';
+
+		function move() {
+			enemyxpos = enemyxpos + enemyspeed;
+			enemy.style.right = '' + enemyxpos + 'px';
+			if (enemyxpos >= 1420) {
+				enemy.parentNode.removeChild(enemy);
+			}
+		}
+		setInterval(move, 20);
 	}());
 }
 makeenemy();
