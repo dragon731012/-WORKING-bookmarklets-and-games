@@ -27,16 +27,16 @@ function makeyou() {
 	you.id = 'you';
 	you.style.display = 'block';
 	function goup() {
-		while (ypos != 300){
-			setTimeout(function() {
+		setInterval(function() {
+			if (ypos != 300){
 				ypos=ypos-2.5;
-			}, 15);
-		}
-		while (ypos != 400){
-			setTimeout(function() {
+			}
+		}, 15);
+		setInterval(function() {
+			if (ypos != 400){
 				ypos=ypos+2.5;
-			}, 15);
-		}
+			}
+		}, 15);
 	}
 	window.addEventListener("keydown", function(event) {
 			if (event.key == "ArrowUp") {
