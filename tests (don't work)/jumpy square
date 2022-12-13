@@ -24,6 +24,7 @@ var jumptimes=0;
 	you.id = 'you';
 	you.style.display = 'block';
         function goup(){
+	    if (xpos=70){
 	    function up(){
                     ypos=ypos-0.005;
                     you.style.top = ''+ypos+'px';
@@ -43,6 +44,7 @@ var jumptimes=0;
 		jumptimes=jumptimes+1;
             }
 	    jumptimes=0;
+	    }
         }
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
