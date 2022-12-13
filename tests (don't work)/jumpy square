@@ -43,10 +43,15 @@ function makeyou() {
 		setInterval(upwait, 15);
 
 		function downwait() {
-			if (ypos != 400 || ypos != 397.5) {
+			if (ypos != 400) {
 				ypos = ypos + 2.5;
 				you.style.top = '' + ypos + 'px';
-			} else {
+			} 
+			else if (ypos != 397.5){
+				ypos = ypos + 2.5;
+				you.style.top = '' + ypos + 'px';
+			}
+			else {
 				clearInterval(downwait);
 			}
 		}
