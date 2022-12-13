@@ -30,7 +30,9 @@ var jumptimes=0;
                 }
             while (jumptimes<jumpheight){
                 setTimeout(up,20);
+		jumptimes=jumptimes+1;
             }
+	    jumptimes=0
         }
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
