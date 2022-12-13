@@ -120,7 +120,7 @@ function makeenemy() {
 
 function forever(){
 	makeenemy();
-	enemyspeed=enemyspeed+1;
+	enemyspeed=enemyspeed+0.5;
 }
 
 setInterval(forever,5000);
