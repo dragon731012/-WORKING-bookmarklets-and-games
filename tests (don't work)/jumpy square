@@ -37,12 +37,14 @@ var jumptimes=0;
 		jumptimes=jumptimes+1;
             }
 	    jumptimes=0;
-	    
 	    while (jumptimes<jumpheight){
                 setTimeout(down,50);
 		jumptimes=jumptimes+1;
             }
 	    jumptimes=0;
+	    var ypos=400;
+	    you.style.top = ''+ypos+'px';
+            
         }
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
