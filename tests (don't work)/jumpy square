@@ -28,17 +28,30 @@ function makeyou() {
 	you.id = 'you';
 	you.style.display = 'block';
         function goup(){
-	   function wait(){clearInterval(wait);}
-	    while (ypos!=300){
-	        setInterval(wait,15);
-	        ypos=ypos-0.005;
-		you.style.top = ''+ypos+'px';
+	   function upwait(){
+               if (ypos!=300){
+	            ypos=ypos-0.005;
+		    you.style.top = ''+ypos+'px';
+                }
+	        else{
+	            clearInterval(upwait);
+	        }
 	    }
-	    while (ypos!=400){
-	        setInterval(wait,15);
-	        ypos=ypos+0.005;
-		you.style.top = ''+ypos+'px';
+	    
+	    setInterval(upwait,15);
+	    
+	    function downwait(){
+	        if (ypos!=400){
+	            ypos=ypos+0.005;
+		    you.style.top = ''+ypos+'px';
+	        }
+	        else{
+		    clearInterval(downwait);
+		}
 	    }
+	    
+	    setInterval(downwait,15);
+	    
         }
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
