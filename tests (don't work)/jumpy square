@@ -29,7 +29,7 @@ var jumptimes=0;
                     you.style.top = ''+ypos+'px';
                 }
             while (jumptimes<jumpheight){
-                setTimeout(up,20);
+                setTimeout(up,50);
 		jumptimes=jumptimes+1;
             }
 	    jumptimes=0
