@@ -31,17 +31,17 @@ function makeyou() {
 	   function wait(){}
 	   function upwait(){
                if (ypos!=300){
+	            updone=0;
 	            ypos=ypos-5;
 		    you.style.top = ''+ypos+'px';
                 }
 	        else{
-		    clearTimeout(wait);
+		    updone=1;
 	            clearInterval(upwait);
 	        }
 	    }
 	    
 	    setInterval(upwait,15);
-	    setTimeout(wait,999999999999999999999999999999);
 	    
 	    function downwait(){
 	        if (ypos!=400){
@@ -50,12 +50,14 @@ function makeyou() {
 	        }
 	        else{
 		    clearInterval(downwait);
-		    clearTimeout(wait);
 		}
 	    }
-	    
-	    setInterval(downwait,15);
-	    setTimeout(wait,999999999999999999999999999999999999999999);
+	    function checkfordone(){
+	        if (updone==1){
+		    setInterval(downwait,15);
+		    clearInterval(checkfordone);
+	    }
+	    setInterval(checkfordone,15);
         }
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
