@@ -28,17 +28,20 @@ function makeyou() {
 	you.id = 'you';
 	you.style.display = 'block';
         function goup(){
+	   function wait(){}
 	   function upwait(){
                if (ypos!=300){
 	            ypos=ypos-5;
 		    you.style.top = ''+ypos+'px';
                 }
 	        else{
+		    clearTimeout(wait);
 	            clearInterval(upwait);
 	        }
 	    }
 	    
 	    setInterval(upwait,15);
+	    setTimeout(wait,999999999999999999999999999999);
 	    
 	    function downwait(){
 	        if (ypos!=400){
