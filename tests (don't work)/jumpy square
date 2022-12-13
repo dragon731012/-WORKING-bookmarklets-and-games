@@ -109,7 +109,7 @@ function makeenemy(){
 	        enemy.parentNode.removeChild(enemy);
 	    }
 	}
-	setInterval(move,20);
+	setInterval(move,5);
 }());
 }
 makeenemy();
