@@ -46,6 +46,7 @@ function makeyou() {
 				    	return;
 			    		break;
 			    	}
+				}
 		    }, 15);
 		}
 	}
