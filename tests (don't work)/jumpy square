@@ -112,7 +112,7 @@ function move() {
 	document.getElementById("enemy");
 	enemyxpos = enemyxpos + enemyspeed;
 	enemy.style.right = '' + enemyxpos + 'px';
-	if (enemyxpos >= 500) {
+	if (enemyxpos >= 1366) {
 		document.getElementById("enemy");
 		enemy.parentNode.removeChild(enemy);
 		enemyxpos = -40;
