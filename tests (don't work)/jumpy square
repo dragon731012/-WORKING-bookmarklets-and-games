@@ -28,11 +28,20 @@ var jumptimes=0;
                     ypos=ypos-0.005;
                     you.style.top = ''+ypos+'px';
                 }
+		function down(){
+                    ypos=ypos+0.005;
+                    you.style.top = ''+ypos+'px';
+                }
             while (jumptimes<jumpheight){
                 setTimeout(up,50);
 		jumptimes=jumptimes+1;
             }
-	    jumptimes=0
+	    jumptimes=0;
+	    
+	    while (jumptimes<jumpheight){
+                setTimeout(down,50);
+		jumptimes=jumptimes+1;
+            }
         }
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
