@@ -44,7 +44,6 @@ function makeyou() {
 		
 		    	    else{
 				    	return;
-			    		break;
 			    	}
 				}
 		    }, 15);
