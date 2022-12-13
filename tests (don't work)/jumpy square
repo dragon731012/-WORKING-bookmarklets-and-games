@@ -50,7 +50,6 @@ function makeyou() {
 				you.style.top = '' + ypos + 'px';
 			} 
 			else {
-			        updone=0;
 				clearInterval(downwait);
 	                        return;
 			}
@@ -66,6 +65,7 @@ function makeyou() {
 	}
 	window.addEventListener("keydown", function(event) {
 		if (event.key == "ArrowUp") {
+		    updone=0;
 			goup();
 		}
 	});
