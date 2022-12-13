@@ -70,19 +70,9 @@ function makeyou() {
 	}
 	window.addEventListener("keydown", function(event) {
 		if (event.key == "ArrowUp") {
+		    interval=0;
+		    goup();
 		    interval=1;
-			interval=0;
-			updone=0;
-		    xpos = 70;
-            ypos = 400;
-			jumpheight = 32000;
-			jumptimes = 0;
-			enemyspeed = 5;
-			enemyxpos = -40;
-			enemyypos = 480;
-			updone = 0;
-			interval=0;
-			goup();
 		}
 	});
 }
