@@ -106,18 +106,17 @@ function makeenemy() {
 		enemy.style.textAlign = 'center';
 		enemy.id = 'enemy';
 		enemy.style.display = 'block';
-		
-		function move() {
-			enemyxpos = enemyxpos + enemyspeed;
-			enemy.style.right = '' + enemyxpos + 'px';
-			if (enemyxpos >= 1420) {
-				enemy.parentNode.removeChild(enemy);
-				enemyspeed=enemyspeed+0.5;
-				makeenemy();
-			}
-		}
-		setInterval(move, 20);
 	}());
 }
+function move() {
+	enemyxpos = enemyxpos + enemyspeed;
+	enemy.style.right = '' + enemyxpos + 'px';
+	if (enemyxpos >= 1420) {
+		enemy.parentNode.removeChild(enemy);
+		enemyspeed=enemyspeed+0.5;
+		makeenemy();
+	}
+}
+setInterval(move, 20);
 
 makeenemy();
