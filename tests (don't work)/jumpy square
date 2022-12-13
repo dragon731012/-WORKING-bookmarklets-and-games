@@ -28,11 +28,11 @@ function makeyou() {
 	you.id = 'you';
 	you.style.display = 'block';
         function goup(){
-	    while (ypos!<=300){
+	    while (ypos!=300){
 	        ypos=ypos-0.005;
 		you.style.top = ''+ypos+'px';
 	    }
-	    while (ypos!>=400){
+	    while (ypos!=400){
 	        ypos=ypos+0.005;
 		you.style.top = ''+ypos+'px';
 	    }
