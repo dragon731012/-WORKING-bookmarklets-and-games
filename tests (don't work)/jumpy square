@@ -25,8 +25,11 @@ var jumptimes=0;
 	you.style.display = 'block';
         function goup(){
             while (jumptimes<3){
-                ypos=ypos-6;
-                you.style.top = ''+ypos+'px';
+                function up(){
+                    ypos=ypos-6;
+                    you.style.top = ''+ypos+'px';
+                }
+                setTimeout(up,20);
             }
         }
 	window.addEventListener("keydown",function(event){
