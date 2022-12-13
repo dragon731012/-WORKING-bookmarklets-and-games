@@ -28,46 +28,6 @@ function makeyou() {
 	you.style.textAlign = 'center';
 	you.id = 'you';
 	you.style.display = 'block';
-
-	function goup() {
-	    if (interval==0){
-		function upwait() {
-		        if (updone==0){
-               			if (ypos != 300) {
-					    	updone = 0;
-							ypos = ypos - 2.5;
-							you.style.top = '' + ypos + 'px';
-						} else {
-							updone = 1;
-			    			clearInterval(upwait);
-						}
-				}
-		}
-
-		setInterval(upwait, 15);
-
-		function downwait() {
-			if (ypos != 400) {
-				ypos = ypos + 2.5;
-				you.style.top = '' + ypos + 'px';
-			} 
-			else {
-				clearInterval(downwait);
-				clearInterval(upwait);
-				clearInterval(checkfordone);
-				return;
-			}
-		}
-
-		function checkfordone() {
-			if (updone == 1) {
-				setInterval(downwait, 15);
-				clearInterval(checkfordone);
-			}
-		}
-		setInterval(checkfordone, 15);
-	}
-	}
 }
 
 makeyou();
@@ -127,6 +87,48 @@ function makeenemy() {
 	}());
 }
 makeenemy();
+
+function goup() {
+	if (interval==0){
+		function upwait() {
+			if (updone==0){
+            	if (ypos != 300) {
+					updone = 0;
+					ypos = ypos - 2.5;
+					you.style.top = '' + ypos + 'px';
+					} 
+				else {
+					updone = 1;
+		    		clearInterval(upwait);
+					}
+			  }
+		 }
+
+		setInterval(upwait, 15);
+
+		function downwait() {
+			if (ypos != 400) {
+				ypos = ypos + 2.5;
+				you.style.top = '' + ypos + 'px';
+			} 
+			else {
+				clearInterval(downwait);
+				clearInterval(upwait);
+				clearInterval(checkfordone);
+				return;
+			}
+		}
+
+		function checkfordone() {
+			if (updone == 1) {
+				setInterval(downwait, 15);
+				clearInterval(checkfordone);
+			}
+		}
+		setInterval(checkfordone, 15);
+	}
+}
+
 window.addEventListener("keydown", function(event) {
 		if (event.key == "ArrowUp") {
 		    interval=0;
