@@ -40,12 +40,13 @@ function makeyou() {
 				}
 				if (jumping==1){
 			    	if (ypos != 400){
-				   		ypos=ypos+2.5;
-				    	you.style.top = '' + ypos + 'px';
-			    	}
-		   	    	else{
-						return;
-						
+						if (jumping==1){
+					   		ypos=ypos+2.5;
+					    	you.style.top = '' + ypos + 'px';
+				    	}
+			   	    	else{
+							return;
+						}
 					}
 				}
 			}, 15);
