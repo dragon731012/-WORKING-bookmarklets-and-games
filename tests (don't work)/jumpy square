@@ -47,6 +47,7 @@ function makeyou() {
 					    	you.style.top = '' + ypos + 'px';
 				    	}
 			   	    	else{
+							jumping=0;
 							return;
 						}
 					}
