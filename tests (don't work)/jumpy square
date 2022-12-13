@@ -2,7 +2,6 @@ var xpos=70;
 var ypos=400;
 var jumpheight=32000;
 var jumptimes=0;
-var jumping=0;
 
 (function () {
 	var you = document.createElement('div');
@@ -25,7 +24,6 @@ var jumping=0;
 	you.id = 'you';
 	you.style.display = 'block';
         function goup(){
-	    jumping=1;
 	    function up(){
                     ypos=ypos-0.005;
                     you.style.top = ''+ypos+'px';
@@ -45,14 +43,11 @@ var jumping=0;
 		jumptimes=jumptimes+1;
             }
 	    jumptimes=0;
-	    jumping=0;
         }
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
 	        if (ypos>=400){
-		        if (jumping==0){
-                        goup();
-	            }
+                    goup();
 	     	}
             }
         });
