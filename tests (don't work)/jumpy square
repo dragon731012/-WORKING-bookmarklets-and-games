@@ -105,11 +105,11 @@ function makeenemy(){
 	function move(){
 	    enemyxpos=enemyxpos+enemyspeed;
 	    enemy.style.right = ''+enemyxpos+'px';
-	    if (enemyxpos=1420){
+	    if (enemyxpos>=1420){
 	        enemy.parentNode.removeChild(enemy);
 	    }
 	}
-	setInterval(move,5);
+	setInterval(move,20);
 }());
 }
 makeenemy();
