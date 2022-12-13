@@ -81,7 +81,7 @@ var enemyypos=480;
 	you.style.display = 'block';
 }());
 
-function makeenemy(speed){
+function makeenemy(){
 (function () {
 	var enemy = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -112,6 +112,6 @@ function makeenemy(speed){
 	setInterval(move,20);
 }());
 }
-
+makeenemy();
 
 
