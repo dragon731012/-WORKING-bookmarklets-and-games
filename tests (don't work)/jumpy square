@@ -57,7 +57,9 @@ function makeyou() {
 	goup();
 	window.addEventListener("keydown", function(event) {
 			if (event.key == "ArrowUp") {
-			    jumping=0;
+				if (ypos == 400){
+			    	jumping=0;
+				}
 			}
 	});
 }
