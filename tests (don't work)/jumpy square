@@ -5,7 +5,7 @@ var jumptimes=0;
 var enemyspeed=5;
 var enemyxpos=-40;
 var enemyypos=480;
-
+var updone=0;
 
 (function () {
 	var you = document.createElement('div');
@@ -29,26 +29,27 @@ var enemyypos=480;
 	you.style.display = 'block';
         function goup(){
 	    function up(){
-                    ypos=ypos-0.005;
-                    you.style.top = ''+ypos+'px';
-                }
+	            if (updone==0){
+	                updone=0;
+                        ypos=ypos-6;
+                        you.style.top = ''+ypos+'px';
+			if (ypos<=300){
+			    updone=1;
+			    clearInterval(up);
+			}
+                    }
+		}
 		function down(){
-                    ypos=ypos+0.005;
-                    you.style.top = ''+ypos+'px';
+		    if (updone==1){
+                        ypos=ypos+6;
+                        you.style.top = ''+ypos+'px';
+			if (ypos>=400){
+			    updone=0;
+			    clearInterval(down);
+		    }
                 }
-            while (jumptimes<jumpheight){
-                setTimeout(up,50);
-		jumptimes=jumptimes+1;
-            }
-	    jumptimes=0;
-	    while (jumptimes<jumpheight){
-                setTimeout(down,50);
-		jumptimes=jumptimes+1;
-            }
-	    jumptimes=0;
-	    var ypos=400;
-	    you.style.top = ''+ypos+'px';
-            
+            setInterval(up,20);
+	    setInterval(down,20);
         }
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
