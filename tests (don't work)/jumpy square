@@ -28,28 +28,14 @@ function makeyou() {
 	you.id = 'you';
 	you.style.display = 'block';
         function goup(){
-	    function up(){
-	            if (updone==0){
-	                updone=0;
-                        ypos=ypos-6;
-                        you.style.top = ''+ypos+'px';
-			if (ypos<=300){
-			    updone=1;
-			    clearInterval(up);
-			}
-                    }
-		}
-		function down(){
-		    if (updone==1){
-                        ypos=ypos+6;
-                        you.style.top = ''+ypos+'px';
-			if (ypos>=400){
-			    updone=0;
-			    clearInterval(down);
-		    }
-                }
-            setInterval(up,20);
-	    setInterval(down,20);
+	    while (ypos!<=300){
+	        ypos=ypos-0.005;
+		you.style.top = ''+ypos+'px';
+	    }
+	    while (ypos!>=400){
+	        ypos=ypos+0.005;
+		you.style.top = ''+ypos+'px';
+	    }
         }
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowUp"){
@@ -58,7 +44,7 @@ function makeyou() {
 	     	}
             }
         });
-}}
+}
 
 makeyou();
 
