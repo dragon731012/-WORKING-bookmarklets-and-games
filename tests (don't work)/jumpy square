@@ -44,7 +44,6 @@ function makeyou() {
 				    	you.style.top = '' + ypos + 'px';
 			    	}
 		   	    	else{
-						jumping=0;
 						return;
 						
 					}
@@ -54,6 +53,7 @@ function makeyou() {
 	}
 	window.addEventListener("keydown", function(event) {
 			if (event.key == "ArrowUp") {
+			    jumping=0;
 			    goup();
 			}
 	});
