@@ -126,4 +126,8 @@ function move() {
 }
 setInterval(move, 20);
 
+function colliding(){
+
+}
+
 makeenemy();
