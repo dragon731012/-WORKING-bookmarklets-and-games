@@ -6,6 +6,7 @@ var enemyspeed = 5;
 var enemyxpos = -40;
 var enemyypos = 480;
 var updone = 0;
+var interval=0;
 
 function makeyou() {
 	var you = document.createElement('div');
@@ -29,6 +30,7 @@ function makeyou() {
 	you.style.display = 'block';
 
 	function goup() {
+	    if (interval=0){
 		function upwait() {
 		        if (updone==0){
                			if (ypos != 300) {
@@ -53,7 +55,7 @@ function makeyou() {
 				clearInterval(downwait);
 				clearInterval(upwait);
 				clearInterval(checkfordone);
-				break goup;
+				return;
 			}
 		}
 
@@ -65,9 +67,12 @@ function makeyou() {
 		}
 		setInterval(checkfordone, 15);
 	}
+	}
 	window.addEventListener("keydown", function(event) {
 		if (event.key == "ArrowUp") {
 		    updone=0;
+			interval=1;
+			interval=0;
 		    goup();
 		}
 	});
