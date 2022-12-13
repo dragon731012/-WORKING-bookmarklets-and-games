@@ -28,67 +28,7 @@ function makeyou() {
 	you.style.textAlign = 'center';
 	you.id = 'you';
 	you.style.display = 'block';
-}
-
-makeyou();
-
-(function() {
-	var you = document.createElement('div');
-	var body = document.getElementsByTagName('body')[0];
-	body.appendChild(you);
-
-	you.style.position = 'fixed';
-	you.style.top = '480px';
-	you.style.left = '0px';
-	you.style.margin = '0px';
-	you.style.paddingTop = '10px';
-	you.style.width = '999999px';
-	you.style.height = '5px';
-	you.style.zIndex = 10000;
-	you.style.opacity = 1;
-	you.style.color = 'gray';
-	you.style.backgroundColor = 'gray';
-	you.style.border = '0px solid white';
-	you.style.textAlign = 'center';
-	you.id = 'you';
-	you.style.display = 'block';
-}());
-
-function makeenemy() {
-	(function() {
-		var enemy = document.createElement('div');
-		var body = document.getElementsByTagName('body')[0];
-		body.appendChild(enemy);
-
-		enemy.style.position = 'fixed';
-		enemy.style.top = '' + enemyypos + 'px';
-		enemy.style.right = '' + enemyxpos + 'px';
-		enemy.style.margin = '0px';
-		enemy.style.paddingTop = '10px';
-		enemy.style.width = '40px';
-		enemy.style.height = '60px';
-		enemy.style.zIndex = 10000;
-		enemy.style.opacity = 1;
-		enemy.style.color = 'red';
-		enemy.style.backgroundColor = 'red';
-		enemy.style.border = '0px solid white';
-		enemy.style.textAlign = 'center';
-		enemy.id = 'enemy';
-		enemy.style.display = 'block';
-
-		function move() {
-			enemyxpos = enemyxpos + enemyspeed;
-			enemy.style.right = '' + enemyxpos + 'px';
-			if (enemyxpos >= 1420) {
-				enemy.parentNode.removeChild(enemy);
-			}
-		}
-		setInterval(move, 20);
-	}());
-}
-makeenemy();
-
-function goup() {
+	function goup() {
 	if (interval==0){
 		function upwait() {
 			if (updone==0){
@@ -136,3 +76,62 @@ window.addEventListener("keydown", function(event) {
 		    goup();
 		}
 });
+}
+
+makeyou();
+
+(function() {
+	var you = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(you);
+
+	you.style.position = 'fixed';
+	you.style.top = '480px';
+	you.style.left = '0px';
+	you.style.margin = '0px';
+	you.style.paddingTop = '10px';
+	you.style.width = '999999px';
+	you.style.height = '5px';
+	you.style.zIndex = 10000;
+	you.style.opacity = 1;
+	you.style.color = 'gray';
+	you.style.backgroundColor = 'gray';
+	you.style.border = '0px solid white';
+	you.style.textAlign = 'center';
+	you.id = 'you';
+	you.style.display = 'block';
+}());
+
+function makeenemy() {
+	(function() {
+		var enemy = document.createElement('div');
+		var body = document.getElementsByTagName('body')[0];
+		body.appendChild(enemy);
+
+		enemy.style.position = 'fixed';
+		enemy.style.top = '' + enemyypos + 'px';
+		enemy.style.right = '' + enemyxpos + 'px';
+		enemy.style.margin = '0px';
+		enemy.style.paddingTop = '10px';
+		enemy.style.width = '40px';
+		enemy.style.height = '60px';
+		enemy.style.zIndex = 10000;
+		enemy.style.opacity = 1;
+		enemy.style.color = 'red';
+		enemy.style.backgroundColor = 'red';
+		enemy.style.border = '0px solid white';
+		enemy.style.textAlign = 'center';
+		enemy.id = 'enemy';
+		enemy.style.display = 'block';
+		
+		function move() {
+			enemyxpos = enemyxpos + enemyspeed;
+			enemy.style.right = '' + enemyxpos + 'px';
+			if (enemyxpos >= 1420) {
+				enemy.parentNode.removeChild(enemy);
+			}
+		}
+		setInterval(move, 20);
+	}());
+}
+makeenemy();
