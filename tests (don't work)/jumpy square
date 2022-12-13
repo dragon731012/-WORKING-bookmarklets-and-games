@@ -60,7 +60,7 @@ var jumptimes=0;
 
 	you.style.position = 'fixed';
 	you.style.top = '470px';
-	you.style.left = '500px';
+	you.style.left = '0px';
 	you.style.margin = '10px';
 	you.style.paddingTop = '10px';
 	you.style.width = '999999px';
