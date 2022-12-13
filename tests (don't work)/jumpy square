@@ -48,7 +48,6 @@ function makeyou() {
 				    	}
 					}
 		   	    	else{
-						jumping=0;
 						return;
 					}
 				}
