@@ -4,7 +4,6 @@ var enemyspeed = 8;
 var enemyxpos = -40;
 var enemyypos = 420;
 var jumping=0;
-var allowedtojump=1;
 
 function makeyou() {
 	var you = document.createElement('div');
@@ -28,7 +27,6 @@ function makeyou() {
 	you.style.display = 'block';
 	function goup() {
 		if (jumping==0){
-			allowedtojump=0;
 			setInterval(function() {
 				if (jumping==0){
 					if (ypos != 220){
@@ -48,11 +46,10 @@ function makeyou() {
 					   		ypos=ypos+2.5;
 					    	you.style.top = '' + ypos + 'px';
 				    	}
-					}
-			   	    else{
-						jumping=0;
-						allowedtojump=1;
-						return;
+			   	    	else{
+							jumping=0;
+							return;
+						}
 					}
 				}
 			}, 15);
@@ -61,9 +58,7 @@ function makeyou() {
 	goup();
 	window.addEventListener("keydown", function(event) {
 			if (event.key == "ArrowUp") {
-			    if (allowedtojump==1){
-			    	jumping=0;
-				}
+			    jumping=0;
 			}
 	});
 }
