@@ -59,7 +59,7 @@ function makeyou() {
 				clearInterval(checkfordone);
 			}
 		}
-		setInterval(checkfordone, 2);
+		setInterval(checkfordone, 15);
 	}
 	window.addEventListener("keydown", function(event) {
 		if (event.key == "ArrowUp") {
