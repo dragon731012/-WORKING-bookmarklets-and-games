@@ -51,7 +51,9 @@ function makeyou() {
 			} 
 			else {
 				clearInterval(downwait);
-	                        return;
+				clearInterval(upwait);
+				clearInterval(checkfordone);
+				return;
 			}
 		}
 
