@@ -28,11 +28,14 @@ function makeyou() {
 	you.id = 'you';
 	you.style.display = 'block';
         function goup(){
+	   function wait(){clearInterval(wait);}
 	    while (ypos!=300){
+	        setInterval(wait,15);
 	        ypos=ypos-0.005;
 		you.style.top = ''+ypos+'px';
 	    }
 	    while (ypos!=400){
+	        setInterval(wait,15);
 	        ypos=ypos+0.005;
 		you.style.top = ''+ypos+'px';
 	    }
