@@ -1,6 +1,6 @@
 var xpos=70;
 var ypos=400;
-var jumpheight=1;
+var jumpheight=30;
 var jumptimes=0;
 
 (function () {
