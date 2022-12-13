@@ -123,4 +123,4 @@ function forever(){
 	enemyspeed=enemyspeed+0.5;
 }
 
-setInterval(forever,5000);
+setInterval(forever,100);
