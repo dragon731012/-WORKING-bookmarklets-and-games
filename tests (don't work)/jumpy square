@@ -2,6 +2,10 @@ var xpos=70;
 var ypos=400;
 var jumpheight=32000;
 var jumptimes=0;
+var enemyspeed=5;
+var enemyxpos=-40;
+var enemyypos=480;
+
 
 (function () {
 	var you = document.createElement('div');
@@ -76,3 +80,38 @@ var jumptimes=0;
 	you.id = 'you';
 	you.style.display = 'block';
 }());
+
+function makeenemy(speed){
+(function () {
+	var enemy = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(enemy);
+
+	enemy.style.position = 'fixed';
+	enemy.style.top = ''+enemyypos+'px';
+	enemy.style.right = ''+enemyxpos+'px';
+	enemy.style.margin = '0px';
+	enemy.style.paddingTop = '10px';
+	enemy.style.width = '40px';
+	enemy.style.height = '60px';
+	enemy.style.zIndex = 10000;
+	enemy.style.opacity = 1;
+	enemy.style.color = 'red';
+	enemy.style.backgroundColor = 'red';
+	enemy.style.border = '0px solid white';
+	enemy.style.textAlign = 'center';
+	enemy.id = 'enemy';
+	enemy.style.display = 'block';
+	function move(){
+	    enemyxpos=enemyxpos+enemyspeed;
+	    enemy.style.right = ''+enemyxpos+'px';
+	    if (enemy.style.left=-40){
+	        enemy.parentNode.removeChild(enemy);
+	    }
+	}
+	setInterval(move,20);
+}());
+}
+
+
+
