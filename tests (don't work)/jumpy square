@@ -5,8 +5,6 @@ var jumptimes = 0;
 var enemyspeed = 5;
 var enemyxpos = -40;
 var enemyypos = 480;
-var updone = 0;
-var sussy=0;
 
 function makeyou() {
 	var you = document.createElement('div');
@@ -29,52 +27,22 @@ function makeyou() {
 	you.id = 'you';
 	you.style.display = 'block';
 	function goup() {
-	if (sussy==0){
-		function upwait() {
-			if (updone==0){
-            	if (ypos != 300) {
-					updone = 0;
-					ypos = ypos - 2.5;
-					you.style.top = '' + ypos + 'px';
-					} 
-				else {
-					updone = 1;
-		    		clearInterval(upwait);
-					}
-			  }
-		 }
-
-		setInterval(upwait, 15);
-
-		function downwait() {
-			if (ypos != 400) {
-				ypos = ypos + 2.5;
-				you.style.top = '' + ypos + 'px';
-			} 
-			else {
-				clearInterval(downwait);
-				clearInterval(upwait);
-				clearInterval(checkfordone);
-				sussy=1;
-			}
+		while (ypos != 300){
+			setTimeout(function() {
+				ypos=ypos-2.5;
+			}, 15);
 		}
-
-		function checkfordone() {
-			if (updone == 1) {
-				setInterval(downwait, 15);
-				clearInterval(checkfordone);
-			}
+		while (ypos != 400){
+			setTimeout(function() {
+				ypos=ypos+2.5;
+			}, 15);
 		}
-		setInterval(checkfordone, 15);
 	}
-}
-
-window.addEventListener("keydown", function(event) {
-		if (event.key == "ArrowUp") {
-		    sussy=0;
-		    goup();
-		}
-});
+	window.addEventListener("keydown", function(event) {
+			if (event.key == "ArrowUp") {
+			    goup();
+			}
+	});
 }
 
 makeyou();
