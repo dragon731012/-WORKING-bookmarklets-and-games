@@ -68,13 +68,6 @@ function makeyou() {
 		setInterval(checkfordone, 15);
 	}
 	}
-	window.addEventListener("keydown", function(event) {
-		if (event.key == "ArrowUp") {
-		    interval=0;
-		    goup();
-		    interval=1;
-		}
-	});
 }
 
 makeyou();
@@ -134,3 +127,10 @@ function makeenemy() {
 	}());
 }
 makeenemy();
+window.addEventListener("keydown", function(event) {
+		if (event.key == "ArrowUp") {
+		    interval=0;
+		    goup();
+		    interval=1;
+		}
+});
