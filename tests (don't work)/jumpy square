@@ -2,7 +2,7 @@ var xpos = 70;
 var ypos = 400;
 var enemyspeed = 5;
 var enemyxpos = -40;
-var enemyypos = 480;
+var enemyypos = 415;
 var jumping=0;
 
 function makeyou() {
@@ -82,13 +82,14 @@ function makeenemy() {
 		var enemy = document.createElement('div');
 		var body = document.getElementsByTagName('body')[0];
 		body.appendChild(enemy);
+		var enemywidth=Math.floor(Math.random()*(70-40+1)+40);
 
 		enemy.style.position = 'fixed';
 		enemy.style.top = '' + enemyypos + 'px';
 		enemy.style.right = '' + enemyxpos + 'px';
 		enemy.style.margin = '0px';
 		enemy.style.paddingTop = '10px';
-		enemy.style.width = '40px';
+		enemy.style.width = ''+enemywidth+'px';
 		enemy.style.height = '60px';
 		enemy.style.zIndex = 10000;
 		enemy.style.opacity = 1;
