@@ -6,7 +6,7 @@ var enemyspeed = 5;
 var enemyxpos = -40;
 var enemyypos = 480;
 var updone = 0;
-var interval=0;
+var sussy=0;
 
 function makeyou() {
 	var you = document.createElement('div');
@@ -29,7 +29,7 @@ function makeyou() {
 	you.id = 'you';
 	you.style.display = 'block';
 	function goup() {
-	if (interval==0){
+	if (sussy==0){
 		function upwait() {
 			if (updone==0){
             	if (ypos != 300) {
@@ -55,8 +55,7 @@ function makeyou() {
 				clearInterval(downwait);
 				clearInterval(upwait);
 				clearInterval(checkfordone);
-				interval=1;
-				return;
+				sussy=1;
 			}
 		}
 
@@ -72,7 +71,7 @@ function makeyou() {
 
 window.addEventListener("keydown", function(event) {
 		if (event.key == "ArrowUp") {
-		    interval=0;
+		    sussy=0;
 		    goup();
 		}
 });
