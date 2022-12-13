@@ -3,6 +3,7 @@ var ypos = 400;
 var enemyspeed = 5;
 var enemyxpos = -40;
 var enemyypos = 480;
+var jumping=0;
 
 function makeyou() {
 	var you = document.createElement('div');
@@ -25,14 +26,24 @@ function makeyou() {
 	you.id = 'you';
 	you.style.display = 'block';
 	function goup() {
-		setInterval(function() {
-			if (ypos != 300){
-				ypos=ypos-2.5;
-			}
-		}, 15);
+		if (jumping==0){
+			jumping=1;
+			setInterval(function() {
+				if (ypos != 300){
+					ypos=ypos-2.5;
+				}
+				else{
+					jumping=1;
+				}
+			}, 15);
+		}
+		if (jumping==1){
 		setInterval(function() {
 			if (ypos != 400){
 				ypos=ypos+2.5;
+			}
+			else{
+				jumping=0;
 			}
 		}, 15);
 	}
