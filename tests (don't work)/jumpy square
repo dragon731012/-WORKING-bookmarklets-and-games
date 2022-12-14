@@ -7,6 +7,7 @@ var jumping=0;
 var speedallowed=1;
 var playerspeed=2.5;
 var speedup=0;
+var enemywidth=0;
 
 function makeyou() {
 	var you = document.createElement('div');
@@ -98,8 +99,7 @@ function makeenemy() {
 		var enemy = document.createElement('div');
 		var body = document.getElementsByTagName('body')[0];
 		body.appendChild(enemy);
-		var enemywidth=Math.floor(Math.random()*(160-40+1)+160);
-
+		enemywidth=Math.floor(Math.random()*(160-40+1)+160);
 		enemy.style.position = 'fixed';
 		enemy.style.top = '' + enemyypos + 'px';
 		enemy.style.left = '' + enemyxpos + 'px';
@@ -135,7 +135,10 @@ function move() {
 }
 setInterval(move, 20);
 
-function collide() {
+function colliding() {
+	if (xpos < enemyxpos + enemywidth && xpos + 70 > enemyxpos && ypos < enemyypos + 60 && ypos + 70 > enemyypos) {
+    	alert("game over");
+	}
 }
 
 function tick(){
@@ -146,5 +149,5 @@ function tick(){
 	}
 }
 
-setInterval(colliding,15);
+setInterval(colliding,5);
 setInterval(tick,15);
