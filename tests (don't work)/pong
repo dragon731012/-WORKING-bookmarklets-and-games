@@ -5,6 +5,8 @@ var ypos=665/2;
 var ballspeed=3;
 var p1ypos=665/2;
 var p1xpos=80;
+var p1ymove=0;
+var playerspeed=2;
 
 (function () {
 	var ball = document.createElement('div');
@@ -55,6 +57,16 @@ var p1xpos=80;
 }());
 
 function move(){
+	if (p1ymove=1){
+		ypos=ypos+playerspeed;
+		p1.style.top = ''+ypos+'px';
+		p1.style.left = ''+xpos+'px';
+	}
+	if (p1ymove=-1){
+		ypos=ypos-playerspeed;
+		p1.style.top = ''+ypos+'px';
+		p1.style.left = ''+xpos+'px';
+	}
 	if (xmove==1){
 		xpos=xpos+ballspeed;
 		ball.style.top = ''+ypos+'px';
