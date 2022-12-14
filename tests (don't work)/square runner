@@ -76,13 +76,13 @@ var scorecount=0;
 	you.style.display = 'block';
 	you.innerText = '';
         function moveleft(){
-		    if (xpos>=0 && xpos<=300){
+		    if (xpos-12>=0){
    	    	     xpos=xpos-playerspeed;
         		 you.style.left = ''+xpos+'px';
 			}
         }
 	function moveright(){
-		if (xpos>=0 && xpos<=300){
+		if (xpos+10<=300){
             xpos=xpos+playerspeed;
             you.style.left = ''+xpos+'px';
 		}
