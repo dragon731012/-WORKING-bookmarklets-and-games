@@ -171,20 +171,18 @@ window.addEventListener("keyup", function(event) {
 });
 
 function ai(){
-	if (ballxpos>966){
-		if (ballypos>p2ypos){
-			while (ypos != ballypos){
-				p2ymove=1;
-			}
+	if (ypos>p2ypos){
+		while (ypos != ballypos){
+			p2ymove=1;
 		}
-		if (ballypos<p2ypos){
-			while (ypos != ballypos){
-				p2ymove=-1;
-			}
+	}
+	if (ypos<p2ypos){
+		while (ypos != ballypos){
+			p2ymove=-1;
 		}
-		if (ballypos==p2ypos){
-			p2ymove=0;
-		}
+	}
+	if (ypos==p2ypos){
+		p2ymove=0;
 	}
 }
 
