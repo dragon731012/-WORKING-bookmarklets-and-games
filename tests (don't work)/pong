@@ -4,6 +4,7 @@ var width = screen.width;
 var height = screen.height;
 var xpos=width/2;
 var ypos=height/2;
+var ballspeed=5;
 
 (function () {
 	var ball = document.createElement('div');
@@ -28,16 +29,16 @@ var ypos=height/2;
 	ball.innerText = '';
 	function move(){
 		if (xmove==1){
-			xpos=xpos+5;
+			xpos=xpos+ballspeed;
 		}
 		if (xmove==-1){
-			xpos=xpos-5;
+			xpos=xpos-ballspeed;
 		}
 		if (ymove==-1){
-			ypos=ypos-5;
+			ypos=ypos-ballspeed;
 		}
 		if (ymove==1){
-			ypos=ypos+5;
+			ypos=ypos+ballspeed;
 		}
 	}
 	setInterval(move,15);
