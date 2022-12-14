@@ -36,7 +36,7 @@ var scorecount=0;
 	body.appendChild(score);
 
 	score.style.position = 'fixed';
-	score.style.top = '300px';
+	score.style.top = '500px';
 	score.style.left = '0px';
 	score.style.margin = '0px';
 	score.style.paddingTop = '10px';
