@@ -7,6 +7,7 @@ var p1ypos=665/2;
 var p1xpos=80;
 var p1ymove=0;
 var playerspeed=6;
+var p2ymove=0;
 
 (function () {
 	var ball = document.createElement('div');
@@ -55,6 +56,44 @@ var playerspeed=6;
 	p1.style.display = 'block';
 	p1.innerText = '';
 }());
+
+(function () {
+	var p2 = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(p2);
+
+	p2.style.position = 'fixed';
+	p2.style.top = ''+p1ypos+'px';
+	p2.style.left = ''+p1xpos+'px';
+	p2.style.margin = '0px';
+	p2.style.paddingTop = '10px';
+	p2.style.width = '20px';
+	p2.style.height = '100px';
+	p2.style.zIndex = 10000;
+	p2.style.opacity = 1;
+	p2.style.color = 'white';
+	p2.style.backgroundColor = 'white';
+	p2.style.textAlign = 'center';
+	p2.style.cursor = 'pointer';
+	p2.style.border = '2px solid black';
+	p2.id = 'p2';
+	p2.style.display = 'block';
+	p2.innerText = '';
+}());
+
+function aimove(){
+	if (p2ymove==1){
+		p1ypos=p1ypos+playerspeed;
+		p1.style.top = ''+p1ypos+'px';
+	}
+	if (p2ymove==-1){
+		p1ypos=p1ypos-playerspeed;
+		p1.style.top = ''+p1ypos+'px';
+	}
+}
+
+function ai(){
+}
 
 function move(){
 	if (p1ymove==1){
