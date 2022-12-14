@@ -172,12 +172,12 @@ window.addEventListener("keyup", function(event) {
 
 function ai(){
 	if (ypos>p2ypos){
-		while (ypos != ballypos){
+		while (p2ypos != ypos){
 			p2ymove=1;
 		}
 	}
 	if (ypos<p2ypos){
-		while (ypos != ballypos){
+		while (p2ypos != ypos){
 			p2ymove=-1;
 		}
 	}
