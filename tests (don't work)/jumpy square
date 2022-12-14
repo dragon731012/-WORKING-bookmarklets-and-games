@@ -121,9 +121,6 @@ function move() {
 	enemy.style.left = '' + enemyxpos + 'px';
 	if (enemyxpos <= -160) {
 		speedup=speedup+1;
-		if (speedup>=5 && jumping==1){
-			playerspeed=playerspeed+2.5;
-		}
 		document.getElementById("enemy");
 		enemy.parentNode.removeChild(enemy);
 		enemyxpos = 1406;
@@ -139,4 +136,10 @@ function colliding(){
 	
 }
 
+function tick(){
+if (speedup>=5 && jumping==1){
+	playerspeed=5;
+}
+
 setInterval(colliding,15);
+setInterval(check,15);
