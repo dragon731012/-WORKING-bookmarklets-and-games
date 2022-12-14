@@ -93,7 +93,7 @@ function bounce(){
 }
 
 function colliding(){
-    if (xpos < rect2.x + rect2.width && xpos + 30 > rect2.x && ypos < rect2.y + rect2.height && ypos + 30 > rect2.y) {
+    if (xpos < p1xpos + 20 && xpos + 30 > p1xpos && ypos < p1ypos + 100 && ypos + 30 > p1ypos) {
         xmove=1;
     }
 }
