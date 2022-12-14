@@ -1,16 +1,17 @@
 var xpos = 70;
 var ypos = 400;
 var enemyspeed = 8;
-var enemyxpos = -40;
+var enemyxpos = 1406;
 var enemyypos = 420;
 var jumping=0;
-var pright=enemyxpos;
-var pcleft=ypos;
-var pcright=xpos+1366+70;
-var ptop=enemyypos;
-var pctop=ypos;
-var pbottom=enemyypos+665+60;
-var pcbottom=ypos+665+60;
+var x_pos_sq_1=xpos;
+var y_pos_sq_1=ypos;
+var square_1_height=70;
+var square_1_width=70;	
+var x_pos_sq_2=enemyxpos;
+var y_pos_sq_2=enemyypos;
+var square_2_height=60;
+var square_2_width=40;
 
 function makeyou() {
 	var you = document.createElement('div');
@@ -104,7 +105,7 @@ function makeenemy() {
 
 		enemy.style.position = 'fixed';
 		enemy.style.top = '' + enemyypos + 'px';
-		enemy.style.right = '' + enemyxpos + 'px';
+		enemy.style.left = '' + enemyxpos + 'px';
 		enemy.style.margin = '0px';
 		enemy.style.paddingTop = '10px';
 		enemy.style.width = ''+enemywidth+'px';
@@ -123,11 +124,11 @@ makeenemy();
 function move() {
 	document.getElementById("enemy");
 	enemyxpos = enemyxpos + enemyspeed;
-	enemy.style.right = '' + enemyxpos + 'px';
+	enemy.style.left = '' + enemyxpos + 'px';
 	if (enemyxpos >= 1366) {
 		document.getElementById("enemy");
 		enemy.parentNode.removeChild(enemy);
-		enemyxpos = -40;
+		enemyxpos = 1406;
 		enemyspeed=enemyspeed+0.5;
 		makeenemy();
 	}
@@ -137,18 +138,25 @@ setInterval(move, 20);
 var pleft=enemyxpos+1366+enemywidth;
 
 function colliding(){
-	pright=enemyxpos;
-    pleft=enemyxpos+1366+enemywidth;
-	pcleft=ypos;
-	pcright=xpos+1366+70;
-	ptop=enemyypos;
-	pctop=ypos;
-	pbottom=enemyypos+665+60;
-	pcbottom=ypos+665+60;
+	x_pos_sq_1=xpos;
+	y_pos_sq_1=ypos;
+	square_1_height=70;
+	square_1_width=70;
 	
-	if(((pleft < pcright) && (pright > pcleft) && (pbottom > pctop) && (ptop < pcbottom))){      
-        alert("game over"); 
-      }
+	x_pos_sq_2=enemyxpos;
+	y_pos_sq_2=enemyypos;
+	square_2_height=60;
+	square_2_width=enemywidth;
+	
+	let leftPos = x_pos_sq_1 + square_1_width > x_pos_sq_2 - square_2_width;
+   	let rightPos = x_pos_sq_1 - square_1_width < x_pos_sq_2 + square_2_width;
+	
+    let topPos = y_pos_sq_1 + square_1_height > y_pos_sq_2 - square_2_height;
+   	let bottomPos = y_pos_sq_1 - square_1_height < y_pos_sq_2 + square_2_height;
+
+	if(leftPos && rightPos && topPos && bottomPos){
+       	alert("game over");
+    }
 }
 
-setInterval(colliding,20);
+setInterval(colliding,15);
