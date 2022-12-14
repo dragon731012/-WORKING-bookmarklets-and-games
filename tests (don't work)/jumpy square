@@ -124,12 +124,6 @@ function move() {
 		if (speedup==5){
 			playerspeed=playerspeed+2.5;
 		}
-		if (speedup==10){
-			playerspeed=playerspeed+2.5;
-		}
-		if (speedup==15){
-			playerspeed=playerspeed+2.5;
-		}
 		document.getElementById("enemy");
 		enemy.parentNode.removeChild(enemy);
 		enemyxpos = 1406;
