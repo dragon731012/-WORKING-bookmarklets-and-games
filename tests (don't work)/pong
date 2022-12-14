@@ -187,7 +187,7 @@ window.addEventListener("keyup", function(event) {
 
 
 function movep2(){
-	if (xpos>alilevel){
+	if (xpos>400){
 		if (ypos<p2ypos){
 			if (p2ypos != ypos){
 				p2ymove=-1;
