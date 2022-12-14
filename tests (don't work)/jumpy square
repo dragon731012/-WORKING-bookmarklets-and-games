@@ -140,7 +140,7 @@ function colliding(){
 }
 
 function tick(){
-	if (speedup>=5 && jumping==1){
+	if (speedup>=5 && speedallowed==1){
 		playerspeed=5;
 	}
 }
