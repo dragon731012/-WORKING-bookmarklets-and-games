@@ -136,11 +136,6 @@ function move() {
 setInterval(move, 20);
 
 function collide() {
-	const a = you.getBoundingClientRect();
-    const b = enemy.getBoundingClientRect();
-	if (a.x < (b.x + b.width)) && ((a.x + a.width) > b.x) && (a.y < (b.y + b.height)) && ((a.y + a.height) > b.y){
-		alert("game over");
-	}
 }
 
 function tick(){
