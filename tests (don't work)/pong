@@ -137,10 +137,10 @@ function move(){
 
 function bounce(){
 	if (xpos>=1336){
-		xmove=xmove*-1;
+		alert("game over. you win");
 	}
 	if (xpos<=0){
-		xmove=xmove*-1;
+		alert("game over. you lose");
 	}
 	if (ypos>=635){
 		ymove=ymove*-1;
