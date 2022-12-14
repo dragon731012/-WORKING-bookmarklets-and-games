@@ -12,6 +12,7 @@ var playerspeed=6;
 var p2ymove=0;
 var p2ypos=665/2;
 var p2xpos=1366-80;
+var sussy=0;
 
 (function () {
 	var ball = document.createElement('div');
@@ -123,7 +124,8 @@ function move(){
 		ball.style.left = ''+xpos+'px';
 	}
 	if (ymove>-1 && ymove<0){
-		ypos=ypos-ymove*3;
+		sussy=ymove*3;
+		ypos=ypos-sussy;
 		ball.style.top = ''+ypos+'px';
 		ball.style.left = ''+xpos+'px';
 	}
