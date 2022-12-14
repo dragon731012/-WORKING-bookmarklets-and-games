@@ -121,7 +121,7 @@ function move() {
 	enemy.style.left = '' + enemyxpos + 'px';
 	if (enemyxpos <= -160) {
 		speedup=speedup+1;
-		if (speedup==5){
+		if (speedup==5 && jumping==1){
 			playerspeed=playerspeed+2.5;
 		}
 		document.getElementById("enemy");
