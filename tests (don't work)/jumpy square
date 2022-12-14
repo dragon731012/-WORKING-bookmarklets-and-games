@@ -137,8 +137,9 @@ function colliding(){
 }
 
 function tick(){
-if (speedup>=5 && jumping==1){
-	playerspeed=5;
+	if (speedup>=5 && jumping==1){
+		playerspeed=5;
+	}
 }
 
 setInterval(colliding,15);
