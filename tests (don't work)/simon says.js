@@ -131,7 +131,7 @@ alert("by dragonmaster73101");
 	start.style.margin = '10px';
 	start.style.paddingTop = '0px';
 	start.style.width = '210px';
-	start.style.height = '20px';
+	start.style.height = '25px';
 	start.style.zIndex = 10000;
 	start.style.opacity = 1;
 	start.style.color = 'black';
