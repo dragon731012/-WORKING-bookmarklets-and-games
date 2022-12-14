@@ -128,12 +128,18 @@ function move() {
 setInterval(move, 20);
 
 function colliding(){
-	var pngObject1Element = document.getElementById( "you" );
-	var pngObject2Element = document.getElementById( "enemy" );
-	var object1HitTest = new HitTest( pngObject1Element );
-	if( object1HitTest.toObject( pngObject2Element ) ) {
-    	alert("game over");
-	}
+	pright=enemyxpos;
+    pleft=enemyxpos+1366+enemywidth;
+	pcleft=ypos;
+	pcright=xpos+1366+70;
+	ptop=enemyypos;
+	pctop=ypos;
+	pbottom=enemyypos+665+60;
+	pcbottom=ypos+665+60;
+	
+	if(((pleft < pcright) && (pright > pcleft) && (pbottom > pctop) && (ptop < pcbottom))){      
+        alert("game over"); 
+      }
 }
 
 setInterval(colliding,20);
