@@ -4,6 +4,7 @@ var enemyspeed = 8;
 var enemyxpos = 1406;
 var enemyypos = 420;
 var jumping=0;
+var speedallowed=1;
 var playerspeed=2.5;
 var speedup=0;
 
@@ -29,6 +30,7 @@ function makeyou() {
 	you.style.display = 'block';
 	function goup() {
 		if (jumping==0){
+			speedallowed=0;
 			setInterval(function() {
 				if (jumping==0){
 					if (ypos != 220){
@@ -50,6 +52,7 @@ function makeyou() {
 				    	}
 					}
 		   	    	else{
+						speedallowed=1;
 						return;
 					}
 				}
