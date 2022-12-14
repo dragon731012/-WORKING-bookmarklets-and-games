@@ -1,9 +1,7 @@
 var xmove=0;
 var ymove=0;
-var width = screen.width;
-var height = screen.height;
-var xpos=width/2;
-var ypos=height/2;
+var xpos=1366/2;
+var ypos=665/2;
 var ballspeed=5;
 
 (function () {
