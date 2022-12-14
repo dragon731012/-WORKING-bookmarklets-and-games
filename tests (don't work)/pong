@@ -3,6 +3,8 @@ var ymove=1;
 var xpos=1366/2;
 var ypos=665/2;
 var ballspeed=3;
+var p1ypos=665/2;
+var p1xpos=80;
 
 (function () {
 	var ball = document.createElement('div');
@@ -26,6 +28,30 @@ var ballspeed=3;
 	ball.id = 'ball';
 	ball.style.display = 'block';
 	ball.innerText = '';
+}());
+
+(function () {
+	var p1 = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(p1);
+
+	p1.style.position = 'fixed';
+	p1.style.top = ''+p1ypos+'px';
+	p1.style.left = ''+p1xpos+'px';
+	p1.style.margin = '0px';
+	p1.style.paddingTop = '10px';
+	p1.style.width = '20px';
+	p1.style.height = '100px';
+	p1.style.zIndex = 10000;
+	p1.style.opacity = 1;
+	p1.style.color = 'white';
+	p1.style.backgroundColor = 'white';
+	p1.style.textAlign = 'center';
+	p1.style.cursor = 'pointer';
+	p1.style.border = '2px solid black';
+	p1.id = 'p1';
+	p1.style.display = 'block';
+	p1.innerText = '';
 }());
 
 function move(){
