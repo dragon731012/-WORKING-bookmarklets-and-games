@@ -22,6 +22,7 @@ var ballspeed=5;
 	ball.style.backgroundColor = 'white';
 	ball.style.textAlign = 'center';
 	ball.style.cursor = 'pointer';
+	ball.style.border = '2px solid black';
 	ball.id = 'ball';
 	ball.style.display = 'block';
 	ball.innerText = '';
