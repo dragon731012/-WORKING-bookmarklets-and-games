@@ -122,29 +122,34 @@ function move(){
 		ball.style.top = ''+ypos+'px';
 		ball.style.left = ''+xpos+'px';
 	}
+	if (ymove>-1 && ymove<0){
+		ypos=ypos-ymove*3;
+		ball.style.top = ''+ypos+'px';
+		ball.style.left = ''+xpos+'px';
+	}
 }
 
 function bounce(){
 	if (xpos>=1336){
-		xmove=-1;
+		xmove=xmove*-1;
 	}
 	if (xpos<=0){
-		xmove=1;
+		xmove=xmove*-1;
 	}
 	if (ypos>=635){
-		ymove=-1;
+		ymove=ymove*-1;
 	}
 	if (ypos<=0){
-		ymove=1;
+		ymove=ymove*1;
 	}
 }
 
 function colliding(){
     if (xpos < p1xpos + 20 && xpos + 30 > p1xpos && ypos < p1ypos + 100 && ypos + 30 > p1ypos) {
-        xmove=1;
+        xmove=xmove*-1;
     }
     if (xpos < p2xpos + 20 && xpos + 30 > p2xpos && ypos < p2ypos + 100 && ypos + 30 > p2ypos) {
-        xmove=-1;
+        xmove=xmove=*-1;
     }
 }
 
