@@ -188,3 +188,4 @@ window.addEventListener("keyup", function(event) {
 setInterval(colliding,5);
 setInterval(move,15);
 setInterval(bounce,5);
+setInterval(ai,15);
