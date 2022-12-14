@@ -31,15 +31,23 @@ var ballspeed=5;
 function move(){
 	if (xmove==1){
 		xpos=xpos+ballspeed;
+		ball.style.top = ''+ypos+'px';
+		ball.style.left = ''+xpos+'px';
 	}
 	if (xmove==-1){
 		xpos=xpos-ballspeed;
+		ball.style.top = ''+ypos+'px';
+		ball.style.left = ''+xpos+'px';
 	}
 	if (ymove==-1){
 		ypos=ypos-ballspeed;
+		ball.style.top = ''+ypos+'px';
+		ball.style.left = ''+xpos+'px';
 	}
 	if (ymove==1){
 		ypos=ypos+ballspeed;
+		ball.style.top = ''+ypos+'px';
+		ball.style.left = ''+xpos+'px';
 	}
 }
 setInterval(move,15);
