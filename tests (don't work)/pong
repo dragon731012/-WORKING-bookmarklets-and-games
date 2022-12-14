@@ -52,13 +52,13 @@ function move(){
 }
 
 function bounce(){
-	if (xpos>=1366){
+	if (xpos>=1336){
 		xmove=-1;
 	}
 	if (xpos<=0){
 		xmove=1;
 	}
-	if (ypos>=665){
+	if (ypos>=635){
 		ymove=-1;
 	}
 	if (ypos<=0){
