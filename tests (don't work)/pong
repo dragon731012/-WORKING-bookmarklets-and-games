@@ -1,23 +1,43 @@
+var xmove=1;
+var ymove=1;
+var width = screen.width;
+var height = screen.height;
+var xpos=width/2;
+var ypos=height/2;
+
 (function () {
 	var ball = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(ball);
 
 	ball.style.position = 'fixed';
-	ball.style.top = '0px';
-	ball.style.right = '0px';
+	ball.style.top = ''+ypos+'px';
+	ball.style.left = ''+xpos+'px';
 	ball.style.margin = '10px';
 	ball.style.paddingTop = '10px';
 	ball.style.width = '30px';
 	ball.style.height = '30px';
 	ball.style.zIndex = 10000;
-	ball.style.opacity = 0.9;
+	ball.style.opacity = 1;
 	ball.style.color = 'white';
 	ball.style.backgroundColor = 'white';
 	ball.style.textAlign = 'center';
 	ball.style.cursor = 'pointer';
 	ball.id = 'ball';
-	ball.style.display = 'circle';
+	ball.style.display = 'block';
 	ball.innerText = '';
-
+	function move(){
+		if (xmove==1){
+			xpos=xpos+5;
+		}
+		if (xmove==-1){
+			xpos=xpos-5;
+		}
+		if (ymove==-1){
+			ypos=ypos-5;
+		}
+		if (ymove==1){
+			ypos=ypos+5;
+		}
+	}
 }());
