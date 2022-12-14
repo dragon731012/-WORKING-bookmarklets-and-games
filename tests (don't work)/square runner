@@ -4,6 +4,7 @@ var enemyxpos=0;
 var enemyypos=-120;
 var enemyspeed=2;
 var playerspeed=12;
+var scorecount=0;
 
 (function () {
 	var bg = document.createElement('div');
@@ -26,6 +27,30 @@ var playerspeed=12;
 	bg.id = 'bg';
 	bg.style.display = 'block';
 	bg.innerText = '';
+
+}());
+
+(function () {
+	var score = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(score);
+
+	score.style.position = 'fixed';
+	score.style.top = '0px';
+	score.style.left = '0px';
+	score.style.margin = '0px';
+	score.style.paddingTop = '10px';
+	score.style.width = '300px';
+	score.style.height = '35px';
+	score.style.zIndex = 10000;
+	score.style.opacity = 1;
+	score.style.color = 'black';
+	score.style.backgroundColor = 'white';
+	score.style.border = '0px solid black';
+	score.style.textAlign = 'center';
+	score.id = 'score';
+	score.style.display = 'block';
+	score.innerText = 'score: '+scorecount+'';
 
 }());
 
@@ -97,7 +122,9 @@ function makeenemy(){
 		enemyypos=enemyypos+enemyspeed;
 		enemy.style.top = ''+enemyypos+'px';
 		if (enemyypos>380){
-	        enemy.parentNode.removeChild(enemy);
+			scorecount=scorecount+1;
+			score.innerText = 'score: '+scorecount+'';
+	        	enemy.parentNode.removeChild(enemy);
 			makeenemy();
 	    }
 	}
@@ -115,6 +142,8 @@ if (xpos < enemyxpos + 70 && xpos + 70 > enemyxpos && ypos < enemyypos + 120 && 
 		you.parentNode.removeChild(you);
 		document.getElementById("bg");
 		bg.parentNode.removeChild(bg);
+		document.getElementById("score");
+		score.parentNode.removeChild(score);
 		alert("Game over");
 	} 
 }
