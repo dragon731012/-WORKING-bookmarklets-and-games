@@ -10,6 +10,7 @@ var speedallowed=1;
 var playerspeed=2.5;
 var speedup=0;
 var enemywidth=0;
+var scorecount=0;
 
 function makeyou() {
 	var you = document.createElement('div');
@@ -126,6 +127,7 @@ function move() {
 	enemy.style.left = '' + enemyxpos + 'px';
 	if (enemyxpos <= -160) {
 		speedup=speedup+1;
+		scorecount=scorecount+1;
 		document.getElementById("enemy");
 		enemy.parentNode.removeChild(enemy);
 		enemyxpos = 1406;
@@ -136,6 +138,29 @@ function move() {
 	}
 }
 setInterval(move, 20);
+
+(function() {
+	var score = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(score);
+
+	score.style.position = 'fixed';
+	score.style.top = '0px';
+	score.style.left = '0px';
+	score.style.margin = '10px';
+	score.style.paddingTop = '0px';
+	score.style.width = '100px';
+	score.style.height = '20px';
+	score.style.zIndex = 10000;
+	score.style.opacity = 1;
+	score.style.color = 'black';
+	score.style.backgroundColor = 'white';
+	score.style.border = '4px solid black';
+	score.style.textAlign = 'center';
+	score.id = 'score';
+	score.innerText='score: '+scorecount+'';
+	score.style.display = 'block';
+}());
 
 function colliding() {
 	if (xpos < enemyxpos + enemywidth && xpos + 70 > enemyxpos && ypos < enemyypos + 60 && ypos + 70 > enemyypos) {
