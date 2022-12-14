@@ -111,8 +111,11 @@ if (xpos < enemyxpos + 70 && xpos + 70 > enemyxpos && ypos < enemyypos + 120 && 
 		alert("Game over");
 		enemyypos=enemyypos+9999999999999999999999999999999999999999999;
 		clearInterval(enemymove);
+		document.getElementById("enemy");
 		enemy.parentNode.removeChild(enemy);
+		document.getElementById("you");
 		you.parentNode.removeChild(you);
+		document.getElementById("bg");
 		bg.parentNode.removeChild(bg);
 		clearInterval(colliding);
 	} 
