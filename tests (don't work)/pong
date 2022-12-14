@@ -56,38 +56,14 @@ var playerspeed=2;
 	p1.innerText = '';
 }());
 
-window.addEventListener("keydown", function(event) {
-	if (event.key == "ArrowUp") {  
-		p1ymove=-1;
-	}
-});
-
-window.addEventListener("keyup", function(event) {
-	if (event.key == "ArrowUp") {  
-		p1ymove=0;
-	}
-});
-
-window.addEventListener("keydown", function(event) {
-	if (event.key == "ArrowDown") {  
-		p1ymove=1;
-	}
-});
-
-window.addEventListener("keyup", function(event) {
-	if (event.key == "ArrowDown") {  
-		p1ymove=0;
-	}
-});
-
 function move(){
 	if (p1ymove=1){
-		ypos=ypos+playerspeed;
+		p1ypos=p1ypos+playerspeed;
 		p1.style.top = ''+ypos+'px';
 		p1.style.left = ''+xpos+'px';
 	}
 	if (p1ymove=-1){
-		ypos=ypos-playerspeed;
+		p1ypos=p1ypos-playerspeed;
 		p1.style.top = ''+ypos+'px';
 		p1.style.left = ''+xpos+'px';
 	}
@@ -133,6 +109,30 @@ function colliding(){
         xmove=1;
     }
 }
+
+window.addEventListener("keydown", function(event) {
+	if (event.key == "ArrowUp") {  
+		p1ymove=-1;
+	}
+});
+
+window.addEventListener("keyup", function(event) {
+	if (event.key == "ArrowUp") {  
+		p1ymove=0;
+	}
+});
+
+window.addEventListener("keydown", function(event) {
+	if (event.key == "ArrowDown") {  
+		p1ymove=1;
+	}
+});
+
+window.addEventListener("keyup", function(event) {
+	if (event.key == "ArrowDown") {  
+		p1ymove=0;
+	}
+});
 
 setInterval(colliding,5);
 setInterval(move,15);
