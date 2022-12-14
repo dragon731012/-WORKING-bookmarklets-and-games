@@ -172,6 +172,6 @@ alert("by dragonmaster73101");
 	me.style.display = 'block';
 	me.innerText = 'by dragonmaster73101';
 	document.getElementById('me').addEventListener('click', function() {
-		window.open("github.com/dragon731012");
+		window.open("https://github.com/dragon731012");
 	});
 }());
