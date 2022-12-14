@@ -2,7 +2,7 @@ var xmove=1;
 var ymove=1;
 var xpos=1366/2;
 var ypos=665/2;
-var ballspeed=5;
+var ballspeed=3;
 
 (function () {
 	var ball = document.createElement('div');
