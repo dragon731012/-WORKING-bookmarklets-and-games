@@ -180,9 +180,6 @@ function movep2(){
 				p2ymove=1;
 			}
 		}
-		if (ypos==p2ypos){
-			p2move=0;
-		}
 	}
 	else{
 		p2move=0;
