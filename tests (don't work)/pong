@@ -12,7 +12,6 @@ var playerspeed=6;
 var p2ymove=0;
 var p2ypos=665/2;
 var p2xpos=1366-80;
-var sussy=0;
 var ailevel=400;
 
 (function () {
@@ -200,7 +199,7 @@ function movep2(){
 			}
 		}
 	}
-	if (xpos<=ailevel){
+	if (xpos<=400){
 		p2ymove=0;
 	}
 }
