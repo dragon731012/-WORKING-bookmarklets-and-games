@@ -73,25 +73,25 @@ function makeyou() {
 makeyou();
 
 (function() {
-	var you = document.createElement('div');
+	var ground = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
-	body.appendChild(you);
+	body.appendChild(ground);
 
-	you.style.position = 'fixed';
-	you.style.top = '480px';
-	you.style.left = '0px';
-	you.style.margin = '0px';
-	you.style.paddingTop = '10px';
-	you.style.width = '999999px';
-	you.style.height = '5px';
-	you.style.zIndex = 10000;
-	you.style.opacity = 1;
-	you.style.color = 'gray';
-	you.style.backgroundColor = 'gray';
-	you.style.border = '0px solid white';
-	you.style.textAlign = 'center';
-	you.id = 'you';
-	you.style.display = 'block';
+	ground.style.position = 'fixed';
+	ground.style.top = '480px';
+	ground.style.left = '0px';
+	ground.style.margin = '0px';
+	ground.style.paddingTop = '10px';
+	ground.style.width = '999999px';
+	ground.style.height = '5px';
+	ground.style.zIndex = 10000;
+	ground.style.opacity = 1;
+	ground.style.color = 'gray';
+	ground.style.backgroundColor = 'gray';
+	ground.style.border = '0px solid white';
+	ground.style.textAlign = 'center';
+	ground.id = 'ground';
+	ground.style.display = 'block';
 }());
 
 function makeenemy() {
@@ -138,6 +138,12 @@ setInterval(move, 20);
 function colliding() {
 	if (xpos < enemyxpos + enemywidth && xpos + 70 > enemyxpos && ypos < enemyypos + 60 && ypos + 70 > enemyypos) {
     	alert("game over");
+		document.getElementById("enemy");
+		enemy.parentNode.removeChild(enemy);
+		document.getElementById("you");
+		you.parentNode.removeChild(you);
+		document.getElementById("ground");
+		ground.parentNode.removeChild(ground);
 	}
 }
 
