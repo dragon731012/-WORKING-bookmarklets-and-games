@@ -109,6 +109,7 @@ makeenemy();
 function colliding() { 
 if (xpos < enemyxpos + 70 && xpos + 70 > enemyxpos && ypos < enemyypos + 120 && ypos + 120 > enemyypos) {
 		alert("Game over");
+		enemypos=enemypos+9999999999999999999999999999999999999999999;
 		clearInterval(enemymove);
 		enemy.parentNode.removeChild(enemy);
 		you.parentNode.removeChild(you);
