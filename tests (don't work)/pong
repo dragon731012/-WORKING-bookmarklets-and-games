@@ -184,6 +184,9 @@ function movep2(){
 			p2move=0;
 		}
 	}
+	else{
+		p2move=0;
+	}
 }
 
 setInterval(colliding,15);
