@@ -3,7 +3,7 @@ var ypos=350;
 var enemyxpos=0;
 var enemyypos=-120;
 var enemyspeed=2.5;
-var playerspeed=6;
+var playerspeed=4;
 var scorecount=0;
 var left=0;
 var right=0;
@@ -163,7 +163,7 @@ if (xpos < enemyxpos + 70 && xpos + 70 > enemyxpos && ypos < enemyypos + 120 && 
 		bg.parentNode.removeChild(bg);
 		document.getElementById("score");
 		score.parentNode.removeChild(score);
-		alert("Game over");
+		alert("game over. your score was "+scorecount+".");
 	} 
 }
 setInterval(colliding,5);
