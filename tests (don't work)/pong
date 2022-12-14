@@ -81,17 +81,20 @@ var p2xpos=1366-80;
 	p2.id = 'p2';
 	p2.style.display = 'block';
 	p2.innerText = '';
+	function p2move(){
+		if (p2ymove==1){
+			p2ypos=p2ypos+playerspeed;
+			p2.style.top = ''+p2ypos+'px';
+		}
+		if (p2ymove==-1){
+			p2ypos=p2ypos-playerspeed;
+			p2.style.top = ''+p2ypos+'px';
+		}
+	}
+	setInterval(p2move,15);
 }());
 
 function move(){
-	if (p2ymove==1){
-		p2ypos=p2ypos+playerspeed;
-		p2.style.top = ''+p2ypos+'px';
-	}
-	if (p2ymove==-1){
-		p2ypos=p2ypos-playerspeed;
-		p2.style.top = ''+p2ypos+'px';
-	}
 	if (p1ymove==1){
 		p1ypos=p1ypos+playerspeed;
 		p1.style.top = ''+p1ypos+'px';
