@@ -6,7 +6,7 @@
 
 3.click it when you want to run it
 
-# my and my colloberator's involvement with these
+# my and my contributor's involvement with these
 
 I only made some of these, and I am not responsible for any of them.
 
