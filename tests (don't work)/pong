@@ -57,11 +57,11 @@ var playerspeed=6;
 }());
 
 function move(){
-	if (p1ymove=1){
+	if (p1ymove==1){
 		p1ypos=p1ypos+playerspeed;
 		p1.style.top = ''+p1ypos+'px';
 	}
-	if (p1ymove=-1){
+	if (p1ymove==-1){
 		p1ypos=p1ypos-playerspeed;
 		p1.style.top = ''+p1ypos+'px';
 	}
