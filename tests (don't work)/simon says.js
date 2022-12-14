@@ -119,3 +119,32 @@ alert("by dragonmaster73101");
 		}, 500);
 	});
 }());
+
+(function () {
+	var start = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(start);
+
+	start.style.position = 'fixed';
+	start.style.top = '220px';
+	start.style.left = '0px';
+	start.style.margin = '10px';
+	start.style.paddingTop = '40px';
+	start.style.width = '100px';
+	start.style.height = '30px';
+	start.style.zIndex = 10000;
+	start.style.opacity = 1;
+	start.style.color = 'black';
+	start.style.backgroundColor = 'white';
+	start.style.border = '4px solid black';
+	start.style.textAlign = 'center';
+	start.style.cursor = 'pointer';
+	start.id = 'start';
+	start.style.display = 'block';
+	start.innerText = 'start';
+	document.getElementById('start').addEventListener('click', function() {
+
+
+
+});
+}());
