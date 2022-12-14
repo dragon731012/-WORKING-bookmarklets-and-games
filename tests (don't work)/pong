@@ -167,23 +167,24 @@ window.addEventListener("keyup", function(event) {
 	}
 });
 
-function ai(){
-	if (ypos>p2ypos){
-		while (p2ypos != ypos){
-			p2ymove=1;
-		}
-	}
+
+function movep2(){
 	if (ypos<p2ypos){
-		while (p2ypos != ypos){
+		if (p2ypos != ypos){
 			p2ymove=-1;
 		}
 	}
+	if (ypos>p2ypos){
+		if (p2ypos != ypos){
+			p2ymove=1;
+		}
+	}
 	if (ypos==p2ypos){
-		p2ymove=0;
+		p2move=0;
 	}
 }
 
-setInterval(colliding,100);
-setInterval(move,100);
-setInterval(bounce,100);
-setInterval(ai,100);
+setInterval(colliding,15);
+setInterval(move,15);
+setInterval(bounce,15);
+setInterval(movep2,5);
