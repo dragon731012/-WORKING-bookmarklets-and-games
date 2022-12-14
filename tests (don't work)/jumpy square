@@ -143,4 +143,4 @@ function tick(){
 }
 
 setInterval(colliding,15);
-setInterval(check,15);
+setInterval(tick,15);
