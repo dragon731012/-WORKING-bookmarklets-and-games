@@ -2,7 +2,7 @@ var xpos=80;
 var ypos=350;
 var enemyxpos=0;
 var enemyypos=-120;
-var enemyspeed=3;
+var enemyspeed=5;
 var playerspeed=12;
 
 (function () {
@@ -94,9 +94,11 @@ function makeenemy(){
 	enemy.style.display = 'block';
 	enemy.innerText = '';
 	function enemymove(){
-	    enemyypos=enemyypos+enemyspeed;
-	    enemy.style.top = ''+enemyypos+'px';
-	    if (enemyypos>380){
+		if (enemyspeed != 8){
+		    enemyypos=enemyypos+enemyspeed;
+		    enemy.style.top = ''+enemyypos+'px';
+	    }
+		if (enemyypos>380){
 	        enemy.parentNode.removeChild(enemy);
 		makeenemy();
 	    }
