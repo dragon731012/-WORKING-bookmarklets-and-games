@@ -151,7 +151,7 @@ function colliding(){
         xmove=xmove*-1;
     }
     if (xpos < p2xpos + 20 && xpos + 30 > p2xpos && ypos < p2ypos + 100 && ypos + 30 > p2ypos) {
-        xmove=xmove=*-1;
+        xmove=xmove*-1;
     }
 }
 
