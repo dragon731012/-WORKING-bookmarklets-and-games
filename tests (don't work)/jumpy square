@@ -30,7 +30,6 @@ function makeyou() {
 	you.style.display = 'block';
 	function goup() {
 		if (jumping==0){
-			speedallowed=0;
 			setInterval(function() {
 				if (jumping==0){
 					if (ypos != 220){
@@ -63,6 +62,7 @@ function makeyou() {
 	window.addEventListener("keydown", function(event) {
 			if (event.key == "ArrowUp") {
 				if (ypos == 400){
+					speedallowed=0;
 			    	jumping=0;
 				}
 			}
@@ -140,8 +140,10 @@ function colliding(){
 }
 
 function tick(){
-	if (speedup>=5 && speedallowed==1){
-		playerspeed=5;
+	if (speedup>=5){
+		if (speedallowed==1){
+			playerspeed=5;
+		}
 	}
 }
 
