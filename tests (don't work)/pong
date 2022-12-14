@@ -146,7 +146,7 @@ function bounce(){
 		ymove=ymove*-1;
 	}
 	if (ypos<=0){
-		ymove=ymove*1;
+		ymove=ymove*-1;
 	}
 }
 
