@@ -145,21 +145,21 @@ function move(){
 
 function bounce(){
 	if (xpos>=1336){
+		clearInterval(bounce);
 		alert("game over. you win");
 		ball.parentNode.removeChild(ball);
 		p1.parentNode.removeChild(p1);
 		p2.parentNode.removeChild(p2);
-		clearInterval(bounce);
 		clearInterval(move);
 		clearInterval(movep2);
 		clearInterval(colliding);
 	}
 	if (xpos<=0){
+		clearInterval(bounce);
 		alert("game over. you lose");
 		ball.parentNode.removeChild(ball);
 		p1.parentNode.removeChild(p1);
 		p2.parentNode.removeChild(p2);
-		clearInterval(bounce);
 		clearInterval(move);
 		clearInterval(movep2);
 		clearInterval(colliding);
