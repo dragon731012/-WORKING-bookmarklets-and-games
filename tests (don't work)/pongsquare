@@ -151,6 +151,7 @@ function bounce(){
 		ball.parentNode.removeChild(ball);
 		p1.parentNode.removeChild(p1);
 		p2.parentNode.removeChild(p2);
+		me.parentNode.removeChild(me);
 		clearInterval(move);
 		clearInterval(movep2);
 		clearInterval(colliding);
@@ -160,6 +161,7 @@ function bounce(){
 		xpos=99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
 		clearInterval(bounce);
 		ball.parentNode.removeChild(ball);
+		me.parentNode.removeChild(me);
 		p1.parentNode.removeChild(p1);
 		p2.parentNode.removeChild(p2);
 		clearInterval(move);
