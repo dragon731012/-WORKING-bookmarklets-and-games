@@ -8,6 +8,8 @@ var p1xpos=80;
 var p1ymove=0;
 var playerspeed=6;
 var p2ymove=0;
+var p2ypos=665/2;
+var p2xpos=1366-80;
 
 (function () {
 	var ball = document.createElement('div');
@@ -63,8 +65,8 @@ var p2ymove=0;
 	body.appendChild(p2);
 
 	p2.style.position = 'fixed';
-	p2.style.top = ''+p1ypos+'px';
-	p2.style.left = ''+p1xpos+'px';
+	p2.style.top = ''+p2ypos+'px';
+	p2.style.left = ''+p2xpos+'px';
 	p2.style.margin = '0px';
 	p2.style.paddingTop = '10px';
 	p2.style.width = '20px';
@@ -83,16 +85,17 @@ var p2ymove=0;
 
 function aimove(){
 	if (p2ymove==1){
-		p1ypos=p1ypos+playerspeed;
-		p1.style.top = ''+p1ypos+'px';
+		p2ypos=p2ypos+playerspeed;
+		p2.style.top = ''+p2ypos+'px';
 	}
 	if (p2ymove==-1){
-		p1ypos=p1ypos-playerspeed;
-		p1.style.top = ''+p1ypos+'px';
+		p2ypos=p1ypos-playerspeed;
+		p2.style.top = ''+p2ypos+'px';
 	}
 }
 
 function ai(){
+	
 }
 
 function move(){
