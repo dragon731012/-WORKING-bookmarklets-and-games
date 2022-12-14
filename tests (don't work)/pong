@@ -108,6 +108,7 @@ function ai(){
 		}
 		if (ballypos==p2ypos){
 			p2ymove=0;
+		}
 	}
 }
 
