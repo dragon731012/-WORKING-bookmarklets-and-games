@@ -30,7 +30,32 @@ var right=0;
 	bg.id = 'bg';
 	bg.style.display = 'block';
 	bg.innerText = '';
+}());
 
+(function () {
+	var me = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(me);
+
+	me.style.position = 'fixed';
+	me.style.top = '0px';
+	me.style.left = '0px';
+	me.style.margin = '0px';
+	me.style.paddingTop = '10px';
+	me.style.width = '300px';
+	me.style.height = '500px';
+	me.style.zIndex = 10000;
+	me.style.opacity = 1;
+	me.style.color = 'white';
+	me.style.backgroundColor = 'black';
+	me.style.border = '0px solid white';
+	me.style.textAlign = 'center';
+	me.id = 'me';
+	me.style.display = 'block';
+	me.innerText = 'by dragonmaster73101';
+	document.getElementById('me').addEventListener('click',function(){
+		window.open('https://github.com/dragon731012');
+	});
 }());
 
 (function () {
@@ -164,6 +189,8 @@ if (xpos < enemyxpos + 70 && xpos + 70 > enemyxpos && ypos < enemyypos + 120 && 
 		bg.parentNode.removeChild(bg);
 		document.getElementById("score");
 		score.parentNode.removeChild(score);
+		document.getElementById("me");
+		me.parentNode.removeChild(me);
 		alert("game over. your score was "+scorecount+".");
 	} 
 }
