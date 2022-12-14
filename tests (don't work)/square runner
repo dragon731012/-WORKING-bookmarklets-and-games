@@ -127,7 +127,7 @@ makeenemy();
 
 function colliding() { 
 	if (xpos < enemyxpos + 70 && xpos + 70 > enemyxpos && ypos < enemyypos + 120 && ypos + 120 > enemyypos) { 
-		alert("Game over. Your score was "+scorecount+".");
+		alert("Game over");
 	} 
 }
 setInterval(colliding,3);
