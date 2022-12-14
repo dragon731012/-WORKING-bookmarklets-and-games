@@ -155,7 +155,7 @@ alert("by dragonmaster73101");
 	body.appendChild(me);
 
 	me.style.position = 'fixed';
-	me.style.top = '220px';
+	me.style.top = '260px';
 	me.style.left = '0px';
 	me.style.margin = '10px';
 	me.style.paddingTop = '0px';
