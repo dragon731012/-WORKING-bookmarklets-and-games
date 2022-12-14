@@ -5,6 +5,8 @@ var enemyypos=-120;
 var enemyspeed=2.5;
 var playerspeed=12;
 var scorecount=0;
+var left=0;
+var right=0;
 
 (function () {
 	var bg = document.createElement('div');
@@ -75,26 +77,39 @@ var scorecount=0;
 	you.id = 'you';
 	you.style.display = 'block';
 	you.innerText = '';
-        function moveleft(){
+	function mover(){
+        if (right==1){
 		    if (xpos-12>=0){
    	    	     xpos=xpos-playerspeed;
         		 you.style.left = ''+xpos+'px';
 			}
         }
-	function moveright(){
-		if (xpos+10<=230){
-            xpos=xpos+playerspeed;
-            you.style.left = ''+xpos+'px';
-		}
-    }
+	    if (left==1){
+			if (xpos+10<=230){
+            	xpos=xpos+playerspeed;
+            	you.style.left = ''+xpos+'px';
+			}
+    	}
+	}
+	setInterval(mover,5);
         window.addEventListener("keydown",function(event){
             if(event.key=="ArrowLeft"){
-                moveleft();
+                left=1;
+            }
+        });
+		window.addEventListener("keyup",function(event){
+            if(event.key=="ArrowLeft"){
+                left=0;
             }
         });
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowRight"){
-                moveright();
+                right=1;
+            }
+        });
+		window.addEventListener("keyup",function(event){
+            if(event.key=="ArrowRight"){
+                right=0;
             }
         });
 }());
