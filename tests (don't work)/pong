@@ -26,19 +26,20 @@ var ballspeed=5;
 	ball.id = 'ball';
 	ball.style.display = 'block';
 	ball.innerText = '';
-	function move(){
-		if (xmove==1){
-			xpos=xpos+ballspeed;
-		}
-		if (xmove==-1){
-			xpos=xpos-ballspeed;
-		}
-		if (ymove==-1){
-			ypos=ypos-ballspeed;
-		}
-		if (ymove==1){
-			ypos=ypos+ballspeed;
-		}
-	}
-	setInterval(move,15);
 }());
+
+function move(){
+	if (xmove==1){
+		xpos=xpos+ballspeed;
+	}
+	if (xmove==-1){
+		xpos=xpos-ballspeed;
+	}
+	if (ymove==-1){
+		ypos=ypos-ballspeed;
+	}
+	if (ymove==1){
+		ypos=ypos+ballspeed;
+	}
+}
+setInterval(move,15);
