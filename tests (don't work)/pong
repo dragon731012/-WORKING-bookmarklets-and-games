@@ -88,25 +88,25 @@ var ailevel=400;
 
 function move(){
 	if (p2ymove==1){
-		if (p2ypos+playerspeed !>= 665){
+		if (p2ypos+playerspeed <= 665){
 			p2ypos=p2ypos+playerspeed;
 			p2.style.top = ''+p2ypos+'px';
 		}
 	}
 	if (p2ymove==-1){
-		if (p2ypos-playerspeed !<= 0){
+		if (p2ypos-playerspeed >= 0){
 			p2ypos=p2ypos-playerspeed;
 			p2.style.top = ''+p2ypos+'px';
 		}
 	}
 	if (p1ymove==1){
-		if (p1ypos+playerspeed !>= 665){
+		if (p1ypos+playerspeed <= 665){
 			p1ypos=p1ypos+playerspeed;
 			p1.style.top = ''+p1ypos+'px';
 		}
 	}
 	if (p1ymove==-1){
-		if (p1ypos-playerspeed !<= 0){
+		if (p1ypos-playerspeed >= 0){
 			p1ypos=p1ypos-playerspeed;
 			p1.style.top = ''+p1ypos+'px';
 		}
