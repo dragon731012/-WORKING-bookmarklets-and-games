@@ -183,7 +183,7 @@ function ai(){
 	}
 }
 
-setInterval(colliding,30);
-setInterval(move,30);
-setInterval(bounce,30);
-setInterval(ai,30);
+setInterval(colliding,100);
+setInterval(move,100);
+setInterval(bounce,100);
+setInterval(ai,100);
