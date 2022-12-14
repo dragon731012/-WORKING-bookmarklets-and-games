@@ -1,5 +1,6 @@
 alert("by dragonmaster73101");
 var start = 0;
+
 (function() {
 	var me = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -26,29 +27,8 @@ var start = 0;
 	document.getElementById('me').addEventListener('click', function() {
 		window.open('https://github.com/dragon731012');
 	});
-	var start = document.createElement('div');
-	body.appendChild(start);
+}());
 
-	start.style.position = 'fixed';
-	start.style.top = '215px';
-	start.style.left = '0px';
-	start.style.margin = '10px';
-	start.style.paddingTop = '10px';
-	start.style.width = '115px';
-	start.style.height = '40px';
-	start.style.zIndex = 10000;
-	start.style.opacity = 1;
-	start.style.color = 'black';
-	start.style.backgroundColor = 'gray';
-	start.style.border = '0px solid white';
-	start.style.textAlign = 'center';
-	start.style.cursor = 'pointer';
-	start.id = 'start';
-	start.style.display = 'block';
-	start.innerText = 'start';
-	document.getElementById('start').addEventListener('click', function() {
-		start.parentNode.removeChild(start);
-	});
 	var green = document.createElement('div');
 	body.appendChild(green);
 	green.style.position = 'fixed';
@@ -74,6 +54,8 @@ var start = 0;
 			green.style.opacity = 0.8;
 		}, 500);
 	});
+}());
+
 	var red = document.createElement('div');
 	body.appendChild(red);
 	red.style.position = 'fixed';
@@ -99,6 +81,8 @@ var start = 0;
 			red.style.opacity = 0.8;
 		}, 500);
 	});
+}());
+
 	var yellow = document.createElement('div');
 	body.appendChild(yellow);
 
@@ -125,6 +109,8 @@ var start = 0;
 			yellow.style.opacity = 0.8;
 		}, 500);
 	});
+}());
+
 	var blue = document.createElement('div');
 	body.appendChild(blue);
 
