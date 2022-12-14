@@ -82,7 +82,7 @@ var scorecount=0;
 			}
         }
 	function moveright(){
-		if (xpos+10<=250){
+		if (xpos+10<=230){
             xpos=xpos+playerspeed;
             you.style.left = ''+xpos+'px';
 		}
