@@ -101,7 +101,7 @@ function makeenemy() {
 		var enemy = document.createElement('div');
 		var body = document.getElementsByTagName('body')[0];
 		body.appendChild(enemy);
-		var enemywidth=Math.floor(Math.random()*(100-40+1)+100);
+		var enemywidth=Math.floor(Math.random()*(160-40+1)+160);
 
 		enemy.style.position = 'fixed';
 		enemy.style.top = '' + enemyypos + 'px';
@@ -125,7 +125,7 @@ function move() {
 	document.getElementById("enemy");
 	enemyxpos = enemyxpos - enemyspeed;
 	enemy.style.left = '' + enemyxpos + 'px';
-	if (enemyxpos <= -100) {
+	if (enemyxpos <= -160) {
 		document.getElementById("enemy");
 		enemy.parentNode.removeChild(enemy);
 		enemyxpos = 1406;
