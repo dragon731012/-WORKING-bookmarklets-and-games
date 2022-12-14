@@ -186,5 +186,4 @@ function ai(){
 setInterval(colliding,5);
 setInterval(move,15);
 setInterval(bounce,5);
-setInterval(aimove,15);
 setInterval(ai,15);
