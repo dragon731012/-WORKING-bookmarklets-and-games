@@ -150,7 +150,7 @@ setInterval(move, 20);
 	score.style.margin = '10px';
 	score.style.paddingTop = '0px';
 	score.style.width = '100px';
-	score.style.height = '20px';
+	score.style.height = '30px';
 	score.style.zIndex = 10000;
 	score.style.opacity = 1;
 	score.style.color = 'black';
