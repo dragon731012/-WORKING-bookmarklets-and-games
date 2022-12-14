@@ -10,7 +10,7 @@ var start = 0;
 	me.style.left = '125px';
 	me.style.margin = '10px';
 	me.style.paddingTop = '10px';
-	me.style.width = '85px';
+	me.style.width = '210px';
 	me.style.height = '40px';
 	me.style.zIndex = 10000;
 	me.style.opacity = 1;
@@ -51,28 +51,8 @@ var start = 0;
 		me.style.width = '210px';
 		me.style.left = '0px';
 		me.style.fontSize = '15px';
-		var x = 0;
-		var m = 1;
-		var click = 0;
-		const list = [];
-		setInterval(function() {
-			while (x < m) {
-				function randomInteger(min, max) {
-					return Math.floor(Math.random() * (max - min + 1)) + min;
-				}
-				var a = randomInteger(1, 4);
-				list.push(a);
-				x=x+1;
-			}
-			alert(list);
-			if (click >= 4) {
-				click = 0;
-				m = m + 1;
-			}
-		}, 100);
-		alert(list);
 	});
-		var green = document.createElement('div');
+	var green = document.createElement('div');
 	body.appendChild(green);
 	green.style.position = 'fixed';
 	green.style.top = '0px';
@@ -93,10 +73,6 @@ var start = 0;
 	green.innerText = 'green';
 	document.getElementById('green').addEventListener('click', function() {
 		green.style.opacity = 1;
-		if (list[click]==4){
-            list.shift();
-            alert("it works!");
-        }
 		setTimeout(function() {
 			green.style.opacity = 0.8;
 		}, 500);
@@ -122,10 +98,6 @@ var start = 0;
 	red.innerText = 'red';
 	document.getElementById('red').addEventListener('click', function() {
 		red.style.opacity = 1;
-if (list[click]==4){
-            list.shift();
-            alert("it works!");
-        }
 		setTimeout(function() {
 			red.style.opacity = 0.8;
 		}, 500);
@@ -152,10 +124,6 @@ if (list[click]==4){
 	yellow.innerText = 'yellow';
 	document.getElementById('yellow').addEventListener('click', function() {
 		yellow.style.opacity = 1;
-if (list[click]==4){
-            list.shift();
-            alert("it works!");
-        }
 		setTimeout(function() {
 			yellow.style.opacity = 0.8;
 		}, 500);
@@ -182,10 +150,6 @@ if (list[click]==4){
 	blue.innerText = 'blue';
 	document.getElementById('blue').addEventListener('click', function(list,click) {
 		blue.style.opacity = 1;
-        if (list[click]==4){
-            list.shift();
-            alert("it works!");
-        }
 		setTimeout(function() {
 			blue.style.opacity = 0.8;
 		}, 500);
