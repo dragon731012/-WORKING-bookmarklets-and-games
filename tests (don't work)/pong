@@ -89,7 +89,7 @@ function move(){
 		p2.style.top = ''+p2ypos+'px';
 	}
 	if (p2ymove==-1){
-		p2ypos=p1ypos-playerspeed;
+		p2ypos=p2ypos-playerspeed;
 		p2.style.top = ''+p2ypos+'px';
 	}
 	if (p1ymove==1){
