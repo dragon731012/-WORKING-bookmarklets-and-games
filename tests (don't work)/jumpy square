@@ -1,3 +1,5 @@
+javascript:function repeat(event){(function(){var color=document.createElement('div');var body=document.getElementsByTagName('body')[0];body.appendChild(color);color.style.position='fixed';color.style.bottom='0px';color.style.right='0px';color.style.margin='0px';color.style.paddingTop='0px';color.style.width='1366px';color.style.height='20px';color.style.zIndex=10000;color.style.opacity=0.8;color.style.color='white';color.style.backgroundColor='black';color.style.border='0px solid black';color.style.textAlign='center';color.style.cursor='pointer';color.id='color';color.style.display='circle';color.innerText='by dragonmaster73101';document.getElementById('me').addEventListener('click',function(){window.open('https://github.com/dragon731012');});}());}
+
 var xpos = 70;
 var ypos = 400;
 var enemyspeed = 8;
@@ -160,3 +162,5 @@ function tick(){
 
 setInterval(colliding,5);
 setInterval(tick,15);
+
+repeat();
