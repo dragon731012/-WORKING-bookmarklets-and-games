@@ -58,7 +58,6 @@ var playerspeed=12;
             xpos=xpos+playerspeed;
             you.style.left = ''+xpos+'px';
         }
-        }
         window.addEventListener("keydown",function(event){
             if(event.key=="ArrowLeft"){
                 moveleft();
