@@ -1,5 +1,15 @@
 var xmove=1;
-var ymove=1;
+var startnum=Math.random();
+function picknum(){
+	if (startnum==0){
+		startnum=Math.random();
+	}
+	else{
+		clearInterval(picknum);
+	}
+}
+setInterval(picknum,1);
+var ymove=startnum;
 var xpos=1366/2;
 var ypos=665/2;
 var ballspeed=3;
