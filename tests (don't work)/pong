@@ -129,7 +129,6 @@ function move(){
 		ball.style.left = ''+xpos+'px';
 	}
 	if (ymove<1 && ymove>0){
-		sussy=ymove*3;
 		ypos=ypos-ymove*3;
 		ball.style.top = ''+ypos+'px';
 		ball.style.left = ''+xpos+'px';
