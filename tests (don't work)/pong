@@ -153,11 +153,11 @@ function bounce(){
 function colliding(){
     if (xpos < p1xpos + 20 && xpos + 30 > p1xpos && ypos < p1ypos + 100 && ypos + 30 > p1ypos) {
         xmove=xmove*-1;
-	playerspeed=playerspeed+0.5;
+	ballspeed=ballspeed+0.5;
     }
     if (xpos < p2xpos + 20 && xpos + 30 > p2xpos && ypos < p2ypos + 100 && ypos + 30 > p2ypos) {
         xmove=xmove*-1;
-	playerspeed=playerspeed+0.5;
+	ballspeed=ballspeed+0.5;
     }
 }
 
@@ -187,7 +187,7 @@ window.addEventListener("keyup", function(event) {
 
 
 function movep2(){
-	if (xpos>900){
+	if (xpos>750){
 		if (ypos<p2ypos){
 			if (p2ypos != ypos){
 				p2ymove=-1;
