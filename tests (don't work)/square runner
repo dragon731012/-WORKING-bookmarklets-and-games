@@ -76,13 +76,17 @@ var scorecount=0;
 	you.style.display = 'block';
 	you.innerText = '';
         function moveleft(){
-            xpos=xpos-playerspeed;
-            you.style.left = ''+xpos+'px';
+		    if (xpos>=0 && xpos<=300){
+   	    	     xpos=xpos-playerspeed;
+        		 you.style.left = ''+xpos+'px';
+			}
         }
 	function moveright(){
+		if (xpos>=0 && xpos<=300){
             xpos=xpos+playerspeed;
             you.style.left = ''+xpos+'px';
-        }
+		}
+    }
         window.addEventListener("keydown",function(event){
             if(event.key=="ArrowLeft"){
                 moveleft();
