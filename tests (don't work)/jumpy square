@@ -1,3 +1,4 @@
+alert("--JUMPY SQUARE-- rules: press the up arrow to dodge the red squares and get points! jump speeds up at 5 points. please check out my github profile and star some resporitories. thanks!");
 javascript:(function(){var me=document.createElement('div');var body=document.getElementsByTagName('body')[0];body.appendChild(me);me.style.position='fixed';me.style.bottom='0px';me.style.right='0px';me.style.margin='0px';me.style.paddingTop='0px';me.style.width='1366px';me.style.height='20px';me.style.zIndex=10000;me.style.opacity=0.8;me.style.color='white';me.style.backgroundColor='black';me.style.border='0px solid black';me.style.textAlign='center';me.style.cursor='pointer';me.id='me';me.style.display='circle';me.innerText='by dragonmaster73101';document.getElementById('me').addEventListener('click',function(){window.open('https://github.com/dragon731012');});}());
 
 var xpos = 70;
@@ -165,7 +166,7 @@ setInterval(move, 20);
 
 function colliding() {
 	if (xpos < enemyxpos + enemywidth && xpos + 70 > enemyxpos && ypos < enemyypos + 60 && ypos + 70 > enemyypos) {
-    	alert("game over. your score was "+scorecount+".");
+    	alert("Game over. Your score was "+scorecount+".");
 		xpos=xpos-99999999999999999999999999999999999999999999999999999999999999999999999;
 		clearInterval(colliding);
 		clearInterval(tick);
