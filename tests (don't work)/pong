@@ -6,7 +6,7 @@ var ballspeed=3;
 var p1ypos=665/2;
 var p1xpos=80;
 var p1ymove=0;
-var playerspeed=2;
+var playerspeed=6;
 
 (function () {
 	var ball = document.createElement('div');
