@@ -128,8 +128,8 @@ function move() {
 setInterval(move, 20);
 
 function colliding(){
-	var pngObject1Element = document.getElementById( "png-object-1" );
-	var pngObject2Element = document.getElementById( "png-object-2" );
+	var pngObject1Element = document.getElementById( "you" );
+	var pngObject2Element = document.getElementById( "enemy" );
 	var object1HitTest = new HitTest( pngObject1Element );
 	if( object1HitTest.toObject( pngObject2Element ) ) {
     	alert("game over");
