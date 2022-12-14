@@ -98,14 +98,16 @@ function ai(){
 	if (ballxpos>1366-400){
 		if (ballypos>p2ypos){
 			while (ypos != ballypos){
-				p2ypos=p2ypos+playerspeed;
+				p2ymove=1;
 			}
 		}
 		if (ballypos<p2ypos){
 			while (ypos != ballypos){
-				p2ypos=p2ypos-playerspeed;
+				p2ymove=-1;
 			}
 		}
+		if (ballypos==p2ypos){
+			p2ymove=0;
 	}
 }
 
