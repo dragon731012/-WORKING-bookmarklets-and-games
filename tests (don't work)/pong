@@ -1,5 +1,5 @@
-var xmove=1;
-var ymove=1;
+var xmove=0;
+var ymove=0;
 var width = screen.width;
 var height = screen.height;
 var xpos=width/2;
