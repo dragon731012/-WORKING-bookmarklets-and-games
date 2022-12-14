@@ -4,6 +4,13 @@ var enemyspeed = 8;
 var enemyxpos = -40;
 var enemyypos = 420;
 var jumping=0;
+var pright=enemyxpos;
+var pcleft=ypos;
+var pcright=xpos+1366+70;
+var ptop=enemyypos;
+var pctop=ypos;
+var pbottom=enemyypos+665+60;
+var pcbottom=ypos+665+60;
 
 function makeyou() {
 	var you = document.createElement('div');
@@ -126,6 +133,8 @@ function move() {
 	}
 }
 setInterval(move, 20);
+
+var pleft=enemyxpos+1366+enemywidth;
 
 function colliding(){
 	pright=enemyxpos;
