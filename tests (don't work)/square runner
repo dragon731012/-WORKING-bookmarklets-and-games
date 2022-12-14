@@ -108,8 +108,7 @@ makeenemy();
 
 function colliding() { 
 if (xpos < enemyxpos + 70 && xpos + 70 > enemyxpos && ypos < enemyypos + 120 && ypos + 120 > enemyypos) {
-		alert("Game over");
-		enemyypos=enemyypos+9999999999999999999999999999999999999999999;
+		clearInterval(colliding);
 		clearInterval(enemymove);
 		document.getElementById("enemy");
 		enemy.parentNode.removeChild(enemy);
@@ -117,7 +116,7 @@ if (xpos < enemyxpos + 70 && xpos + 70 > enemyxpos && ypos < enemyypos + 120 && 
 		you.parentNode.removeChild(you);
 		document.getElementById("bg");
 		bg.parentNode.removeChild(bg);
-		clearInterval(colliding);
+		alert("Game over");
 	} 
 }
 setInterval(colliding,5);
