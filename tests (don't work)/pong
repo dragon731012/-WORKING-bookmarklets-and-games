@@ -83,7 +83,7 @@ var p2xpos=1366-80;
 	p2.innerText = '';
 }());
 
-function aimove(){
+function move(){
 	if (p2ymove==1){
 		p2ypos=p2ypos+playerspeed;
 		p2.style.top = ''+p2ypos+'px';
@@ -92,9 +92,6 @@ function aimove(){
 		p2ypos=p1ypos-playerspeed;
 		p2.style.top = ''+p2ypos+'px';
 	}
-}
-
-function move(){
 	if (p1ymove==1){
 		p1ypos=p1ypos+playerspeed;
 		p1.style.top = ''+p1ypos+'px';
