@@ -7,7 +7,7 @@ alert("by dragonmaster73101");
 
 	green.style.position = 'fixed';
 	green.style.top = '0px';
-	green.style.right = '0px';
+	green.style.left = '0px';
 	green.style.margin = '10px';
 	green.style.paddingTop = '40px';
 	green.style.width = '100px';
@@ -15,7 +15,7 @@ alert("by dragonmaster73101");
 	green.style.zIndex = 10000;
 	green.style.opacity = '0.8px';
 	green.style.color = 'black';
-	green.style.backgroundColor = 'greed';
+	green.style.backgroundColor = 'green';
 	green.style.border = '0px solid white';
 	green.style.textAlign = 'center';
 	green.style.cursor = 'pointer';
