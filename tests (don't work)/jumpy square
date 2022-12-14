@@ -164,7 +164,7 @@ setInterval(move, 20);
 
 function colliding() {
 	if (xpos < enemyxpos + enemywidth && xpos + 70 > enemyxpos && ypos < enemyypos + 60 && ypos + 70 > enemyypos) {
-    	alert("game over");
+    	alert("game over. your score was "+scorecount+".");
 		xpos=xpos-99999999999999999999999999999999999999999999999999999999999999999999999;
 		clearInterval(colliding);
 		clearInterval(tick);
@@ -176,6 +176,8 @@ function colliding() {
 		ground.parentNode.removeChild(ground);
 		document.getElementById("me");
 		me.parentNode.removeChild(me);
+		document.getElementById("score");
+		score.parentNode.removeChild(score);
 	}
 }
 
