@@ -13,7 +13,7 @@ alert("by dragonmaster73101");
 	green.style.width = '100px';
 	green.style.height = '100px';
 	green.style.zIndex = 10000;
-	green.style.opacity = '0.8px';
+	green.style.opacity = 0.8;
 	green.style.color = 'black';
 	green.style.backgroundColor = 'green';
 	green.style.border = '0px solid white';
