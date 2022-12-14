@@ -95,7 +95,18 @@ function aimove(){
 }
 
 function ai(){
-	
+	if (ballxpos>1366-400){
+		if (ballypos>p2ypos){
+			while (ypos != ballypos){
+				p2ypos=p2ypos+playerspeed;
+			}
+		}
+		if (ballypos<p2ypos){
+			while (ypos != ballypos){
+				p2ypos=p2ypos-playerspeed;
+			}
+		}
+	}
 }
 
 function move(){
