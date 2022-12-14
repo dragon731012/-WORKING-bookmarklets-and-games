@@ -59,13 +59,11 @@ var playerspeed=2;
 function move(){
 	if (p1ymove=1){
 		p1ypos=p1ypos+playerspeed;
-		p1.style.top = ''+ypos+'px';
-		p1.style.left = ''+xpos+'px';
+		p1.style.top = ''+p1ypos+'px';
 	}
 	if (p1ymove=-1){
 		p1ypos=p1ypos-playerspeed;
-		p1.style.top = ''+ypos+'px';
-		p1.style.left = ''+xpos+'px';
+		p1.style.top = ''+p1ypos+'px';
 	}
 	if (xmove==1){
 		xpos=xpos+ballspeed;
