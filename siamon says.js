@@ -7,7 +7,7 @@ var start = 0;
 
 	me.style.position = 'fixed';
 	me.style.top = '215px';
-	me.style.left = '125px';
+	me.style.left = '0px';
 	me.style.margin = '10px';
 	me.style.paddingTop = '10px';
 	me.style.width = '210px';
@@ -22,7 +22,7 @@ var start = 0;
 	me.id = 'me';
 	me.style.display = 'block';
 	me.innerText = 'by dragonmaster73101';
-	me.style.fontSize = '8px';
+	me.style.fontSize = '15px';
 	document.getElementById('me').addEventListener('click', function() {
 		window.open('https://github.com/dragon731012');
 	});
@@ -47,10 +47,7 @@ var start = 0;
 	start.style.display = 'block';
 	start.innerText = 'start';
 	document.getElementById('start').addEventListener('click', function() {
-		start.style.left = '-999999px';
-		me.style.width = '210px';
-		me.style.left = '0px';
-		me.style.fontSize = '15px';
+		start.parentNode.removeChild(start);
 	});
 	var green = document.createElement('div');
 	body.appendChild(green);
