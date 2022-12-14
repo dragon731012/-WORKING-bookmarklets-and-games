@@ -123,7 +123,7 @@ function makeenemy() {
 makeenemy();
 function move() {
 	document.getElementById("enemy");
-	enemyxpos = enemyxpos + enemyspeed;
+	enemyxpos = enemyxpos - enemyspeed;
 	enemy.style.left = '' + enemyxpos + 'px';
 	if (enemyxpos >= 1366) {
 		document.getElementById("enemy");
@@ -134,8 +134,6 @@ function move() {
 	}
 }
 setInterval(move, 20);
-
-var pleft=enemyxpos+1366+enemywidth;
 
 function colliding(){
 	x_pos_sq_1=xpos;
