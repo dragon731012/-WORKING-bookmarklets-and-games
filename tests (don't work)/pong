@@ -181,7 +181,7 @@ function movep2(){
 			}
 		}
 	}
-	else{
+	if (xpos<=900){
 		p2move=0;
 	}
 }
