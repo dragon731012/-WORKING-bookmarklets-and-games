@@ -29,3 +29,93 @@ alert("by dragonmaster73101");
 		}, 500);
 	});
 }());
+
+(function () {
+	var red = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(red);
+
+	red.style.position = 'fixed';
+	red.style.top = '0px';
+	red.style.left = '110px';
+	red.style.margin = '10px';
+	red.style.paddingTop = '40px';
+	red.style.width = '100px';
+	red.style.height = '100px';
+	red.style.zIndex = 10000;
+	red.style.opacity = 0.8;
+	red.style.color = 'black';
+	red.style.backgroundColor = 'green';
+	red.style.border = '0px solid white';
+	red.style.textAlign = 'center';
+	red.style.cursor = 'pointer';
+	red.id = 'red';
+	red.style.display = 'block';
+	red.innerText = 'red';
+	document.getElementById('red').addEventListener('click', function() {
+		red.style.opacity = 1;
+		setTimeout(function() {
+			red.style.opacity = 0.8;
+		}, 500);
+	});
+}());
+
+(function () {
+	var yellow = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(yellow);
+
+	yellow.style.position = 'fixed';
+	yellow.style.top = '110px';
+	yellow.style.left = '0px';
+	yellow.style.margin = '10px';
+	yellow.style.paddingTop = '40px';
+	yellow.style.width = '100px';
+	yellow.style.height = '100px';
+	yellow.style.zIndex = 10000;
+	yellow.style.opacity = 0.8;
+	yellow.style.color = 'black';
+	yellow.style.backgroundColor = 'green';
+	yellow.style.border = '0px solid white';
+	yellow.style.textAlign = 'center';
+	yellow.style.cursor = 'pointer';
+	yellow.id = 'yellow';
+	yellow.style.display = 'block';
+	yellow.innerText = 'yellow';
+	document.getElementById('yellow').addEventListener('click', function() {
+		yellow.style.opacity = 1;
+		setTimeout(function() {
+			yellow.style.opacity = 0.8;
+		}, 500);
+	});
+}());
+
+(function () {
+	var blue = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(blue);
+
+	blue.style.position = 'fixed';
+	blue.style.top = '110px';
+	blue.style.left = '0px';
+	blue.style.margin = '10px';
+	blue.style.paddingTop = '40px';
+	blue.style.width = '100px';
+	blue.style.height = '100px';
+	blue.style.zIndex = 10000;
+	blue.style.opacity = 0.8;
+	blue.style.color = 'black';
+	blue.style.backgroundColor = 'green';
+	blue.style.border = '0px solid white';
+	blue.style.textAlign = 'center';
+	blue.style.cursor = 'pointer';
+	blue.id = 'blue';
+	blue.style.display = 'block';
+	blue.innerText = 'blue';
+	document.getElementById('blue').addEventListener('click', function() {
+		blue.style.opacity = 1;
+		setTimeout(function() {
+			blue.style.opacity = 0.8;
+		}, 500);
+	});
+}());
