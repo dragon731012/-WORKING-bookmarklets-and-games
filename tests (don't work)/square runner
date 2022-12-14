@@ -94,7 +94,7 @@ function makeenemy(){
 	enemy.style.display = 'block';
 	enemy.innerText = '';
 	function enemymove(){
-		if (enemyspeed != 8){
+		if (enemyspeed != 7){
 		    enemyypos=enemyypos+enemyspeed;
 		    enemy.style.top = ''+enemyypos+'px';
 	    }
