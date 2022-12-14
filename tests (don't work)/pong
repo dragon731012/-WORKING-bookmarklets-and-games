@@ -1,5 +1,6 @@
 var xmove=1;
-var startnum=Math.random();
+var startnum=Math.floor(Math.random()*(10-1+1)+1);
+startnum=startnum/10;
 var ymove=startnum;
 var xpos=1366/2;
 var ypos=665/2;
