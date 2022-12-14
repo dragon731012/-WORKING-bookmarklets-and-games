@@ -149,6 +149,8 @@ function colliding() {
 		you.parentNode.removeChild(you);
 		document.getElementById("ground");
 		ground.parentNode.removeChild(ground);
+		document.getElementById("me");
+		me.parentNode.removeChild(me);
 	}
 }
 
