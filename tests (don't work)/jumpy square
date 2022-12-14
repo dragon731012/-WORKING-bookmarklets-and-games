@@ -125,7 +125,7 @@ function move() {
 	document.getElementById("enemy");
 	enemyxpos = enemyxpos - enemyspeed;
 	enemy.style.left = '' + enemyxpos + 'px';
-	if (enemyxpos <= 0) {
+	if (enemyxpos <= 0-enemywidth) {
 		document.getElementById("enemy");
 		enemy.parentNode.removeChild(enemy);
 		enemyxpos = 1406;
@@ -136,25 +136,7 @@ function move() {
 setInterval(move, 20);
 
 function colliding(){
-	x_pos_sq_1=xpos;
-	y_pos_sq_1=ypos;
-	square_1_height=70;
-	square_1_width=70;
 	
-	x_pos_sq_2=enemyxpos;
-	y_pos_sq_2=enemyypos;
-	square_2_height=60;
-	square_2_width=enemywidth;
-	
-	let leftPos = x_pos_sq_1 + square_1_width > x_pos_sq_2 - square_2_width;
-   	let rightPos = x_pos_sq_1 - square_1_width < x_pos_sq_2 + square_2_width;
-	
-    let topPos = y_pos_sq_1 + square_1_height > y_pos_sq_2 - square_2_height;
-   	let bottomPos = y_pos_sq_1 - square_1_height < y_pos_sq_2 + square_2_height;
-
-	if(leftPos && rightPos && topPos && bottomPos){
-       	alert("game over");
-    }
 }
 
 setInterval(colliding,15);
