@@ -13,6 +13,7 @@ var p2ymove=0;
 var p2ypos=665/2;
 var p2xpos=1366-80;
 var sussy=0;
+var ailevel=400;
 
 (function () {
 	var ball = document.createElement('div');
@@ -187,7 +188,7 @@ window.addEventListener("keyup", function(event) {
 
 
 function movep2(){
-	if (xpos>400){
+	if (xpos>alilevel){
 		if (ypos<p2ypos){
 			if (p2ypos != ypos){
 				p2ymove=-1;
@@ -199,7 +200,7 @@ function movep2(){
 			}
 		}
 	}
-	if (xpos<=900){
+	if (xpos<=ailevel){
 		p2ymove=0;
 	}
 }
