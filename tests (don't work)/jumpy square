@@ -128,6 +128,7 @@ function move() {
 	if (enemyxpos <= -160) {
 		speedup=speedup+1;
 		scorecount=scorecount+1;
+		score.innerText='score: '+scorecount+'';
 		document.getElementById("enemy");
 		enemy.parentNode.removeChild(enemy);
 		enemyxpos = 1406;
