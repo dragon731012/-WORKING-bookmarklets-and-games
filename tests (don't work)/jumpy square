@@ -139,6 +139,8 @@ function colliding() {
 	if (xpos < enemyxpos + enemywidth && xpos + 70 > enemyxpos && ypos < enemyypos + 60 && ypos + 70 > enemyypos) {
     	alert("game over");
 		xpos=xpos-99999999999999999999999999999999999999999999999999999999999999999999999;
+		clearInterval(colliding);
+		clearInterval(tick);
 		document.getElementById("enemy");
 		enemy.parentNode.removeChild(enemy);
 		document.getElementById("you");
