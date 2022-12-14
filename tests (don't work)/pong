@@ -50,4 +50,21 @@ function move(){
 		ball.style.left = ''+xpos+'px';
 	}
 }
+
+function bounce(){
+	if (xpos>=1366){
+		xmove=-1;
+	}
+	if (xpos<=0){
+		xmove=1;
+	}
+	if (ypos>=665){
+		ymove=-1;
+	}
+	if (ypos<=0){
+		ymove=1;
+	}
+}
+
 setInterval(move,15);
+setInterval(bounce,5);
