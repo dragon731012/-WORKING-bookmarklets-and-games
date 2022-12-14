@@ -145,28 +145,26 @@ function move(){
 
 function bounce(){
 	if (xpos>=1336){
-		p1xpos=-99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
-		p2xpos=-99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+		xpos=-99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
 		clearInterval(bounce);
-		alert("game over. you win");
 		ball.parentNode.removeChild(ball);
 		p1.parentNode.removeChild(p1);
 		p2.parentNode.removeChild(p2);
 		clearInterval(move);
 		clearInterval(movep2);
 		clearInterval(colliding);
+		alert("game over. you win");
 	}
 	if (xpos<=0){
-		p1xpos=-99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
-		p2xpos=-99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+		xpos=99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
 		clearInterval(bounce);
-		alert("game over. you lose");
 		ball.parentNode.removeChild(ball);
 		p1.parentNode.removeChild(p1);
 		p2.parentNode.removeChild(p2);
 		clearInterval(move);
 		clearInterval(movep2);
 		clearInterval(colliding);
+		alert("game over. you lose");
 	}
 	if (ypos>=635){
 		ymove=ymove*-1;
