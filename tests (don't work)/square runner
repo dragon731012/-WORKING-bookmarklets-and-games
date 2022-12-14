@@ -120,7 +120,6 @@ function makeenemy(){
 	    }
 	}
 	setInterval(enemymove,50);
-	setInterval(lose,50);
 }());
 }
 makeenemy();
@@ -130,4 +129,4 @@ if (xpos < enemyxpos + 70 && xpos + 70 > enemyxpos && ypos < enemyypos + 120 && 
 		alert("Game over");
 	} 
 }
-setInterval(colliding,3);
+setInterval(colliding,5);
