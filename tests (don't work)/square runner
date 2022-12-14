@@ -2,7 +2,7 @@ var xpos=80;
 var ypos=350;
 var enemyxpos=0;
 var enemyypos=-120;
-var enemyspeed=2;
+var enemyspeed=2.5;
 var playerspeed=12;
 var scorecount=0;
 
@@ -36,7 +36,7 @@ var scorecount=0;
 	body.appendChild(score);
 
 	score.style.position = 'fixed';
-	score.style.top = '0px';
+	score.style.top = '300px';
 	score.style.left = '0px';
 	score.style.margin = '0px';
 	score.style.paddingTop = '10px';
