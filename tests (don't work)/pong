@@ -40,4 +40,5 @@ var ypos=height/2;
 			ypos=ypos+5;
 		}
 	}
+	setInterval(move,15);
 }());
