@@ -122,6 +122,7 @@ function makeenemy(){
 		enemyypos=enemyypos+enemyspeed;
 		enemy.style.top = ''+enemyypos+'px';
 		if (enemyypos>380){
+			enemyypos=-9999999999999999999999999999999999;
 			scorecount=scorecount+1;
 			score.innerText = 'score: '+scorecount+'';
 	        	enemy.parentNode.removeChild(enemy);
