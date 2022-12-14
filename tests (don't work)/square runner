@@ -3,7 +3,7 @@ var ypos=350;
 var enemyxpos=0;
 var enemyypos=-120;
 var enemyspeed=3;
-var playerspeed=10;
+var playerspeed=12;
 
 (function () {
 	var bg = document.createElement('div');
@@ -58,13 +58,6 @@ var playerspeed=10;
             xpos=xpos+playerspeed;
             you.style.left = ''+xpos+'px';
         }
-	function moveup(){
-            ypos=ypos-playerspeed;
-            you.style.top = ''+ypos+'px';
-        }
-	function movedown(){
-            ypos=ypos+playerspeed;
-            you.style.top = ''+ypos+'px';
         }
         window.addEventListener("keydown",function(event){
             if(event.key=="ArrowLeft"){
@@ -74,16 +67,6 @@ var playerspeed=10;
 	window.addEventListener("keydown",function(event){
             if(event.key=="ArrowRight"){
                 moveright();
-            }
-        });
-	window.addEventListener("keydown",function(event){
-            if(event.key=="ArrowUp"){
-                moveup();
-            }
-        });
-	window.addEventListener("keydown",function(event){
-            if(event.key=="ArrowDown"){
-                movedown();
             }
         });
 }());
@@ -127,6 +110,11 @@ makeenemy();
 function colliding() { 
 if (xpos < enemyxpos + 70 && xpos + 70 > enemyxpos && ypos < enemyypos + 120 && ypos + 120 > enemyypos) {
 		alert("Game over");
+		clearInterval(enemymove);
+		enemy.parentNode.removeChild(enemy);
+		you.parentNode.removeChild(you);
+		bg.parentNode.removeChild(bg);
+		clearInterval(colliding);
 	} 
 }
 setInterval(colliding,5);
