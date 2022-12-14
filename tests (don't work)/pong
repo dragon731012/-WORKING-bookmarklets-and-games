@@ -8,8 +8,8 @@
 	ball.style.right = '0px';
 	ball.style.margin = '10px';
 	ball.style.paddingTop = '10px';
-	ball.style.width = '200px';
-	ball.style.height = '40px';
+	ball.style.width = '30px';
+	ball.style.height = '30px';
 	ball.style.zIndex = 10000;
 	ball.style.opacity = 0.9;
 	ball.style.color = 'white';
