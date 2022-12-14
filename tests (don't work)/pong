@@ -169,18 +169,20 @@ window.addEventListener("keyup", function(event) {
 
 
 function movep2(){
-	if (ypos<p2ypos){
-		if (p2ypos != ypos){
-			p2ymove=-1;
+	if (xpos>900){
+		if (ypos<p2ypos){
+			if (p2ypos != ypos){
+				p2ymove=-1;
+			}
 		}
-	}
-	if (ypos>p2ypos){
-		if (p2ypos != ypos){
-			p2ymove=1;
+		if (ypos>p2ypos){
+			if (p2ypos != ypos){
+				p2ymove=1;
+			}
 		}
-	}
-	if (ypos==p2ypos){
-		p2move=0;
+		if (ypos==p2ypos){
+			p2move=0;
+		}
 	}
 }
 
