@@ -4,14 +4,8 @@ var enemyspeed = 8;
 var enemyxpos = 1406;
 var enemyypos = 420;
 var jumping=0;
-var x_pos_sq_1=xpos;
-var y_pos_sq_1=ypos;
-var square_1_height=70;
-var square_1_width=70;	
-var x_pos_sq_2=enemyxpos;
-var y_pos_sq_2=enemyypos;
-var square_2_height=60;
-var square_2_width=40;
+var playerspeed=2.5;
+var speedup=0;
 
 function makeyou() {
 	var you = document.createElement('div');
@@ -39,7 +33,7 @@ function makeyou() {
 				if (jumping==0){
 					if (ypos != 220){
 						if (jumping==0){
-							ypos=ypos-2.5;
+							ypos=ypos-playerspeed;
 							you.style.top = '' + ypos + 'px';
 						}
 					}
@@ -51,7 +45,7 @@ function makeyou() {
 				if (jumping==1){
 			    	if (ypos != 400){
 						if (jumping==1){
-					   		ypos=ypos+2.5;
+					   		ypos=ypos+playerspeed;
 					    	you.style.top = '' + ypos + 'px';
 				    	}
 					}
@@ -126,6 +120,10 @@ function move() {
 	enemyxpos = enemyxpos - enemyspeed;
 	enemy.style.left = '' + enemyxpos + 'px';
 	if (enemyxpos <= -160) {
+		speedup=speedup+1;
+		if (speedup==5){
+			playerspeed=playerspeed+2.5;
+		}
 		document.getElementById("enemy");
 		enemy.parentNode.removeChild(enemy);
 		enemyxpos = 1406;
