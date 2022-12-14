@@ -111,9 +111,6 @@ function makeenemy(){
 	enemy.id = 'enemy';
 	enemy.style.display = 'block';
 	enemy.innerText = '';
-	function lose(){
-	    if xpos
-	}
 	function enemymove(){
 	    enemyypos=enemyypos+enemyspeed;
 	    enemy.style.top = ''+enemyypos+'px';
