@@ -128,12 +128,6 @@ function move() {
 setInterval(move, 20);
 
 function colliding(){
-	if (xpos==enemyxpos+40){
-		if (ypos==enemyypos-20){
-			alert("game over");
-		}
-	}
-	
 	if (xpos < enemyxpos + enemywidth && xpos + 70 > enemyxpos && ypos < enemyypos + 60 && 70 + ypos > enemyypos) {
 	    alert("game over");
 	}
