@@ -15,7 +15,7 @@
 	char.style.color = 'black';
 	char.style.backgroundColor = 'black';
 	char.style.border = '0px solid white';
-	char.style.textAlign = 'center'
+	char.style.textAlign = 'center';
 	char.id = 'char';
 	char.style.display = 'block';
 }());
