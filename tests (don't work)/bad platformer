@@ -91,23 +91,23 @@ function move(){
 		}
 	}
 }
-
+function godown(){
+	jumpspeed=2;
+	if (ypos>=300){
+		ypos=ypos+jumpspeed;
+		jumpspeed=jumpspeed+0.04;
+	}
+	else{
+		clearInterval(godown);
+		return;
+	}
+}
 function jump(){
 	function goup(){
 		ypos=ypos-jumpspeed;
 		jumpspeed=jumpspeed-0.04;
 		if (jumpspeed<=0){
 			clearInterval(goup);
-			jumpspeed=2;
-			function godown(){
-				if (ypos>=300){
-					ypos=ypos+jumpspeed;
-					jumpspeed=jumpspeed+0.04;
-				}
-				else{
-					clearInterval(godown);
-				}
-			}
 			setInterval(godown,15);
 			return;
 		}
