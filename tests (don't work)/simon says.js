@@ -187,7 +187,6 @@ maxcount=1;
 
 function show(){
 	if (counted<maxcount){
-		counted=counted+1;
 		num=Math.floor(Math.random()*(4-1+1)+1);
 		list.push(num);
 		if (list[counted]==1){
@@ -214,6 +213,7 @@ function show(){
 				blue.style.opacity = 0.6;
 			}, 500);
 		}
+		counted=counted+1;
 	}
 
 }
