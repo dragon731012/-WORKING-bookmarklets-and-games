@@ -74,12 +74,20 @@ var ypos=235;
 
 function move(){
 	if (right==1){
-		xpos=xpos+playerspeed;
-		char.style.left = ''+xpos+'px';
+		if (xpos+playerspeed>=300){
+		}
+		else{
+			xpos=xpos+playerspeed;
+			char.style.left = ''+xpos+'px';
+		}
 	}	
 	if (left==1){
-		xpos=xpos-playerspeed;
-		char.style.left = ''+xpos+'px';
+		if (xpos-playerspeed<=0){
+		}
+		else{
+			xpos=xpos-playerspeed;
+			char.style.left = ''+xpos+'px';
+		}
 	}
 }
 
