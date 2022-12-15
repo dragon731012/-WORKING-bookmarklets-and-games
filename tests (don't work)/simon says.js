@@ -247,6 +247,7 @@ function checkifallclicked(){
 			counted=0;
 			allclicked=0;
 		}
+	}
 	if (clicked>=maxcount){
 		allclicked=1;
 	}
