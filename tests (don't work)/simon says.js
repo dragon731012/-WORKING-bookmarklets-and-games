@@ -190,7 +190,6 @@ function show(){
 		counted=counted+1;
 		num=Math.floor(Math.random()*(4-1+1)+1);
 		list.push(num);
-		alert(num);
 		if (list[counted]==1){
 			green.style.opacity = 1;
 			setTimeout(function() {
