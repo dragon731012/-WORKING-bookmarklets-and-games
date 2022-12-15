@@ -2,6 +2,9 @@ var left=0;
 var right=0;
 var down=0;
 var up=0;
+var playerspeed=5;
+var xpos=10;
+var ypos=235;
 
 (function () {
 	var sky = document.createElement('div');
@@ -31,8 +34,8 @@ var up=0;
 	body.appendChild(char);
 
 	char.style.position = 'fixed';
-	char.style.top = '235px';
-	char.style.left = '10px';
+	char.style.top = ''+ypos+'px';
+	char.style.left = ''+xpos+'10px';
 	char.style.margin = '10px';
 	char.style.paddingTop = '10px';
 	char.style.width = '15px';
@@ -68,6 +71,17 @@ var up=0;
 	ground.id = 'ground';
 	ground.style.display = 'block';
 }());
+
+function move(){
+	if (right==1){
+		xpos=xpos+playerspeed;
+		char.style.left = ''+xpos+'10px';
+	}	
+	if (left==1){
+		xpos=xpos-playerspeed;
+		char.style.left = ''+xpos+'10px';
+	}	
+}
 
 window.addEventListener("keydown",function(event){ 
 	if(event.key=="ArrowRight"){ 
