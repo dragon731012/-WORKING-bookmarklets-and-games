@@ -5,6 +5,7 @@ var up=0;
 var playerspeed=3;
 var xpos=10;
 var ypos=235;
+var jumpspeed=2;
 
 (function () {
 	var sky = document.createElement('div');
@@ -91,12 +92,27 @@ function move(){
 	}
 }
 
+function jump(){
+	function goup(){
+		ypos=ypos+jumpspeed;
+		jumpspeed=jumpspeed-0.1;
+		if (jumpspeed<=0){
+			clearInterval(goup);
+		}
+		ground.style.top = '250px';
+	}
+	setInterval(goup);
+}
+
 window.addEventListener("keydown",function(event){ 
 	if(event.key=="ArrowRight"){ 
 		right=1; 
 	}
 	if(event.key=="ArrowLeft"){ 
 		left=1; 
+	}
+	if(event.key=="ArrowUp"){ 
+		jump();
 	}
 });
 
