@@ -2,7 +2,7 @@ var left=0;
 var right=0;
 var down=0;
 var up=0;
-var playerspeed=1;
+var playerspeed=3;
 var xpos=10;
 var ypos=235;
 
