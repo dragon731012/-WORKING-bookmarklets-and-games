@@ -95,9 +95,20 @@ function move(){
 function jump(){
 	function goup(){
 		ypos=ypos-jumpspeed;
-		jumpspeed=jumpspeed-0.03;
+		jumpspeed=jumpspeed-0.04;
 		if (jumpspeed<=0){
 			clearInterval(goup);
+			jumpspeed=2;
+			function godown(){
+				if (ypos>=300){
+					ypos=ypos+jumpspeed;
+					jumpspeed=jumpspeed+0.04;
+				}
+				else{
+					clearInterval(godown);
+				}
+			}
+			setInterval(godown,15);
 			return;
 		}
 		char.style.top = ''+ypos+'px';
