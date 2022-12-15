@@ -1,3 +1,35 @@
 let width = screen.width; 
-let height = screen.width;
+let height = screen.height;
 
+(function () {
+	var screen = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(screen);
+
+	screen.style.position = 'fixed';
+	screen.style.top = '0px';
+	screen.style.right = '0px';
+	screen.style.margin = '10px';
+	screen.style.paddingTop = '10px';
+	screen.style.width = '200px';
+	screen.style.height = '40px';
+	screen.style.zIndex = 10000;
+	screen.style.opacity = 0.9;
+	screen.style.color = 'white';
+	screen.style.backgroundColor = 'black';
+	screen.style.border = '1px solid white';
+	screen.style.textAlign = 'center';
+	screen.style.cursor = 'pointer';
+	screen.id = 'screen';
+	screen.style.display = 'block';
+	screen.innerText = 'your screen width is '+width+'x'+height+'';
+
+}());
+
+function update(){
+	width = screen.width; 
+	height = screen.height;
+	screen.innerText = 'your screen width is '+width+'x'+height+'';
+}
+
+setInterval(update,5);
