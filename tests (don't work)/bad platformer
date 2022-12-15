@@ -100,6 +100,7 @@ function godown(){
 		}
 		else{
 			clearInterval(godown);
+			down=0;
 			return;
 		}
 	}
@@ -111,6 +112,7 @@ function jump(){
 		if (jumpspeed<=0){
 			clearInterval(goup);
 			setInterval(godown,15);
+			down=1;
 			return;
 		}
 		char.style.top = ''+ypos+'px';
