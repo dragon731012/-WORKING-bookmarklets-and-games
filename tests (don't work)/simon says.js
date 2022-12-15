@@ -183,6 +183,7 @@ while (counted<maxcount){
 	counted=counted+1;
 	num=Math.floor(Math.random()*(4-1+1)+1);
 	list.push(num);
+	alert(num);
 }
 		
 counted=0;
