@@ -75,12 +75,12 @@ var ypos=235;
 function move(){
 	if (right==1){
 		xpos=xpos+playerspeed;
-		char.style.left = ''+xpos+'10px';
+		char.style.left = ''+xpos+'px';
 	}	
 	if (left==1){
 		xpos=xpos-playerspeed;
-		char.style.left = ''+xpos+'10px';
-	}	
+		char.style.left = ''+xpos+'px';
+	}
 }
 
 window.addEventListener("keydown",function(event){ 
@@ -101,4 +101,4 @@ window.addEventListener("keyup",function(event){
 	}
 });
 
-setInterval(move,100);
+setInterval(move,15);
