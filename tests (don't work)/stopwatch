@@ -34,15 +34,15 @@ var milliseconds=0;
 })();
 
 (function() {
-	window.setTimeout( function() {
-	if (milliseconds+1 != 1000){
-			milliseconds=milliseconds+1;
-			stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
+	window.setTimeout(function() {
+		if (milliseconds+1 != 1000){
+				milliseconds=milliseconds+1;
+				stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
+			}
+			else{
+				milliseconds=0;
+				stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
+			}
 		}
-		else{
-			milliseconds=0;
-			stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
-		}
-	}
 	},1);
 })();
