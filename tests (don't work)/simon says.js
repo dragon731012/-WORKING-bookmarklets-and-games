@@ -215,7 +215,13 @@ function show(){
 			}, 500);
 		}
 		counted=counted+1;
+		
+		if (counted=maxcount){
+			if (allclicked==1){
+			}
+		}
 	}
+
 }
 
 setInterval(show,1000)
