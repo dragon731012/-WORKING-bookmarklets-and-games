@@ -57,7 +57,7 @@
 	ground.style.zIndex = 10000;
 	ground.style.opacity = 1;
 	ground.style.color = 'blue';
-	ground.style.backgroundColor = 'blue';
+	ground.style.backgroundColor = 'green';
 	ground.style.border = '0px solid white';
 	ground.style.textAlign = 'center';
 	ground.id = 'ground';
