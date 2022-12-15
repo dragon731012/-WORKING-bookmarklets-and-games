@@ -101,4 +101,4 @@ window.addEventListener("keyup",function(event){
 	}
 });
 
-setInterval(move,5);
+setInterval(move,20);
