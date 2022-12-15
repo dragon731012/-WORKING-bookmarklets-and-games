@@ -28,21 +28,21 @@ var milliseconds=0;
 
 }());
 
-function sectrack(){
-	seconds=seconds+1;
-	stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
-}
+(function() {
+    window.setTimeout( function() {seconds=seconds+1;stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
+	}, 1000 );
+})();
 
-function millisectrack(){
-	if (milliseconds+1 != 500){
-		milliseconds=milliseconds+1;
-		stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
+(function() {
+	window.setTimeout( function() {
+	if (milliseconds+1 != 1000){
+			milliseconds=milliseconds+1;
+			stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
+		}
+		else{
+			milliseconds=0;
+			stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
+		}
 	}
-	else{
-		milliseconds=0;
-		stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
-	}
-}
-
-setInterval(millisectrack,1);
-setInterval(sectrack,1000);
+	},1);
+})();
