@@ -26,18 +26,15 @@ var milliseconds=0;
 
 }());
 
-window.setTimeout( function() {
-    seconds=seconds+1;stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
-}, 1000 );
-
-window.setTimeout(function() {
+function stopwatch(){
 	if (milliseconds+1 != 1000){
 			milliseconds=milliseconds+1;
 			stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
 		}
 		else{
+			seconds=seconds+1;
 			milliseconds=0;
 			stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
 		}
 	}
-},1);
+}
