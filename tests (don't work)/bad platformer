@@ -98,6 +98,7 @@ function jump(){
 		jumpspeed=jumpspeed-0.1;
 		if (jumpspeed<=0){
 			clearInterval(goup);
+			return;
 		}
 		char.style.top = ''+ypos+'px';
 	}
