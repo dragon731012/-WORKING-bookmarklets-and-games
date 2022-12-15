@@ -1,0 +1,48 @@
+var hours=0;
+var minutes=0;
+var seconds=0;
+var milliseconds=0;
+
+(function () {
+	var stopwatch = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(stopwatch);
+
+	stopwatch.style.position = 'fixed';
+	stopwatch.style.top = '0px';
+	stopwatch.style.right = '0px';
+	stopwatch.style.margin = '10px';
+	stopwatch.style.paddingTop = '10px';
+	stopwatch.style.width = '200px';
+	stopwatch.style.height = '40px';
+	stopwatch.style.zIndex = 10000;
+	stopwatch.style.opacity = 0.9;
+	stopwatch.style.color = 'white';
+	stopwatch.style.backgroundColor = 'black';
+	stopwatch.style.border = '1px solid white';
+	stopwatch.style.textAlign = 'center';
+	stopwatch.style.cursor = 'pointer';
+	stopwatch.id = 'stopwatch';
+	stopwatch.style.display = 'block';
+	stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
+
+}());
+
+function sectrack(){
+	seconds=seconds+1;
+	stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
+}
+
+function millisectrack(){
+	if (milliseconds+1 != 100){
+		milliseconds=milliseconds+1;
+		stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
+	}
+	else{
+		milliseconds=0;
+		stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
+	}
+}
+
+setInterval(sectrack,1000);
+setInterval(millisectrack,1);
