@@ -1,5 +1,3 @@
-var hours=0;
-var minutes=0;
 var seconds=0;
 var milliseconds=0;
 
@@ -28,21 +26,18 @@ var milliseconds=0;
 
 }());
 
-(function() {
-    window.setTimeout( function() {seconds=seconds+1;stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
-	}, 1000 );
-})();
+window.setTimeout( function() {
+    seconds=seconds+1;stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
+}, 1000 );
 
-(function() {
-	window.setTimeout(function() {
-		if (milliseconds+1 != 1000){
-				milliseconds=milliseconds+1;
-				stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
-			}
-			else{
-				milliseconds=0;
-				stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
-			}
+window.setTimeout(function() {
+	if (milliseconds+1 != 1000){
+			milliseconds=milliseconds+1;
+			stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
 		}
-	},1);
-})();
+		else{
+			milliseconds=0;
+			stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
+		}
+	}
+},1);
