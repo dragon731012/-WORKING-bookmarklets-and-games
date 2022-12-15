@@ -5,7 +5,7 @@
 
 	char.style.position = 'fixed';
 	char.style.top = '0px';
-	char.style.right = '0px';
+	char.style.left = '0px';
 	char.style.margin = '10px';
 	char.style.paddingTop = '10px';
 	char.style.width = '15px';
