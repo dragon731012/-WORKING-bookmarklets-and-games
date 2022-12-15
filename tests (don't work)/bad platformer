@@ -74,7 +74,7 @@ var ypos=235;
 
 function move(){
 	if (right==1){
-		if (xpos+playerspeed>=300){
+		if (xpos+playerspeed>=285){
 		}
 		else{
 			xpos=xpos+playerspeed;
