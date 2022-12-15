@@ -182,7 +182,7 @@ maxcount=1;
 while (counted<maxcount){
 	counted=counted+1;
 	num=Math.floor(Math.random()*(4-1+1)+1);
-	alert(num);
+	list.push(num);
 }
 		
 counted=0;
@@ -216,6 +216,8 @@ function show(){
 		counted=counted+1;
 	}
 }
+
+setInterval(show,1000)
 		
 });
 }());
