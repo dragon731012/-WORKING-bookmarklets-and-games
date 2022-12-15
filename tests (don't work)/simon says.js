@@ -185,15 +185,6 @@ me.style.top='220px';
 counted=0;
 maxcount=1;
 
-while (counted<maxcount){
-	counted=counted+1;
-	num=Math.floor(Math.random()*(4-1+1)+1);
-	list.push(num);
-	alert(num);
-}
-		
-counted=0;
-
 function show(){
 	if (counted<maxcount){
 		counted=counted+1;
