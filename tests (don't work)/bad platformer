@@ -130,7 +130,7 @@ window.addEventListener("keydown",function(event){
 		left=1; 
 	}
 	if(event.key=="ArrowUp"){ 
-		jump();
+		jump=1;
 	}
 });
 
@@ -144,3 +144,4 @@ window.addEventListener("keyup",function(event){
 });
 
 setInterval(move,15);
+jump();
