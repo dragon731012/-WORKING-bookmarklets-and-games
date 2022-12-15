@@ -150,6 +150,7 @@ var counted=0;
 var maxcount=4;
 
 while (counted>maxcount){
+	counted=counted+1;
 	alert("hi");	
 }
 		
