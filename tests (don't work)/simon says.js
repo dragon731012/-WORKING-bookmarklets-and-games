@@ -186,7 +186,7 @@ counted=0;
 maxcount=1;
 
 function show(){
-	if (counted<=maxcount){
+	if (counted<maxcount){
 		counted=counted+1;
 		num=Math.floor(Math.random()*(4-1+1)+1);
 		list.push(num);
@@ -225,7 +225,7 @@ setInterval(show,1000);
 
 function checkifallclicked(){
 	if (counted>=maxcount){
-		if (clicked>=maxcount+1){
+		if (clicked>=maxcount){
 			clicked=0;
 			maxcount=maxcount+1;
 			counted=0;
