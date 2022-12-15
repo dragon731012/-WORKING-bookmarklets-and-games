@@ -234,7 +234,7 @@ function show(){
 
 }
 
-setInterval(show,1000)
+setInterval(show,1000);
 		
 });
 }());
