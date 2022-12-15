@@ -13,6 +13,7 @@ function gameover(){
 	yellow.parentNode.removeChild(yellow);
 	red.parentNode.removeChild(red);
 	me.parentNode.removeChild(me);
+	scorer.parentNode.removeChild(scorer);
 }
 
 (function () {
