@@ -1,10 +1,18 @@
 # how to use:
 
-1.highlight all of the text
+1. highlight all of the text
 
-2.drag it to your bookmarks bar
+2. drag it to your bookmarks bar
 
-3.click it when you want to run it
+3. click it when you want to run it
+
+OR
+
+1. copy whole thing.
+
+2. type javascript: into your url bar.
+
+3. paste it
 
 # my and my contributor's involvement with these
 
