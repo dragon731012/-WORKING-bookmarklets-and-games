@@ -78,7 +78,7 @@ window.addEventListener("keydown",function(event){
 	}
 });
 
-window.addEventListener("keyUp",function(event){ 
+window.addEventListener("keyup",function(event){ 
 	if(event.key=="ArrowRight"){ 
 		right=0; 
 	}
