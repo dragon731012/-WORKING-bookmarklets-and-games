@@ -222,7 +222,7 @@ function show(){
 		}
 		counted=counted+1;
 		
-		if (counted=maxcount){
+		if (counted==maxcount){
 			if (allclicked==1){
 				clicked=0;
 				maxcount=maxcount+1;
@@ -240,7 +240,7 @@ setInterval(show,1000);
 }());
 
 function checkifallclicked(){
-	if (counted=maxcount){
+	if (counted==maxcount){
 		if (allclicked==1){
 			clicked=0;
 			maxcount=maxcount+1;
