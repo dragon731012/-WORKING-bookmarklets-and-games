@@ -240,6 +240,13 @@ setInterval(show,1000);
 }());
 
 function checkifallclicked(){
+	if (counted=maxcount){
+		if (allclicked==1){
+			clicked=0;
+			maxcount=maxcount+1;
+			counted=0;
+			allclicked=0;
+		}
 	if (clicked>=maxcount){
 		allclicked=1;
 	}
