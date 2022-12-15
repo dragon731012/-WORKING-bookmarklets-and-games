@@ -33,10 +33,10 @@ function gameover(){
 	green.innerText = 'green';
 	document.getElementById('green').addEventListener('click', function() {
 		green.style.opacity = 1;
-		clicked=clicked+1;
 		if (list[clicked] != 1){
 			gameover();
 		}
+		clicked=clicked+1;
 		setTimeout(function() {
 			green.style.opacity = 0.6;
 		}, 500);
@@ -67,10 +67,10 @@ function gameover(){
 	red.innerText = 'red';
 	document.getElementById('red').addEventListener('click', function() {
 		red.style.opacity = 1;
-		clicked=clicked+1;
 		if (list[clicked] != 2){
 			gameover();
 		}
+		clicked=clicked+1;
 		setTimeout(function() {
 			red.style.opacity = 0.6;
 		}, 500);
@@ -101,10 +101,10 @@ function gameover(){
 	yellow.innerText = 'yellow';
 	document.getElementById('yellow').addEventListener('click', function() {
 		yellow.style.opacity = 1;
-		clicked=clicked+1;
 		if (list[clicked] != 3){
 			gameover();
 		}
+		clicked=clicked+1;
 		setTimeout(function() {
 			yellow.style.opacity = 0.6;
 		}, 500);
@@ -135,10 +135,10 @@ function gameover(){
 	blue.innerText = 'blue';
 	document.getElementById('blue').addEventListener('click', function() {
 		blue.style.opacity = 1;
-		clicked=clicked+1;
 		if (list[clicked] != 4){
 			gameover();
 		}
+		clicked=clicked+1;
 		setTimeout(function() {
 			blue.style.opacity = 0.6;
 		}, 500);
