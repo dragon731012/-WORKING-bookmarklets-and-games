@@ -226,10 +226,13 @@ setInterval(show,1000);
 function checkifallclicked(){
 	if (counted==maxcount){
 		if (allclicked==1){
-			clicked=0;
-			maxcount=maxcount+1;
-			counted=0;
-			allclicked=0;
+			function restart(){
+				clicked=0;
+				maxcount=maxcount+1;
+				counted=0;
+				allclicked=0;
+			}
+			setTimeout(restart,500);
 		}
 	}
 	if (clicked>=maxcount){
