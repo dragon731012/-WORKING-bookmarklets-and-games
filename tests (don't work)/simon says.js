@@ -177,12 +177,44 @@ var num=0;
 start.style.left='-99999999999999999999999999999px';
 me.style.top='220px';
 counted=0;
-maxcount=4;
+maxcount=1;
 
 while (counted<maxcount){
 	counted=counted+1;
 	num=Math.floor(Math.random()*(4-1+1)+1);
-	alert(num);	
+	alert(num);
+}
+		
+counted=0;
+
+function show(){
+	if (counted<maxcount){
+		if (list[counted]==1){
+			green.style.opacity = 1;
+			setTimeout(function() {
+				green.style.opacity = 0.6;
+			}, 500);
+		}
+		if (list[counted]==2){
+			red.style.opacity = 1;
+			setTimeout(function() {
+				red.style.opacity = 0.6;
+			}, 500);
+		}
+		if (list[counted]==3){
+			yellow.style.opacity = 1;
+			setTimeout(function() {
+				yellow.style.opacity = 0.6;
+			}, 500);
+		}
+		if (list[counted]==4){
+			blue.style.opacity = 1;
+			setTimeout(function() {
+				blue.style.opacity = 0.6;
+			}, 500);
+		}
+		counted=counted+1;
+	}
 }
 		
 });
