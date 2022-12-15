@@ -1,0 +1,21 @@
+(function () {
+	var char = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(char);
+
+	char.style.position = 'fixed';
+	char.style.top = '0px';
+	char.style.right = '0px';
+	char.style.margin = '10px';
+	char.style.paddingTop = '10px';
+	char.style.width = '15px';
+	char.style.height = '15px';
+	char.style.zIndex = 10000;
+	char.style.opacity = 1;
+	char.style.color = 'black';
+	char.style.backgroundColor = 'black';
+	char.style.border = '0px solid white';
+	char.style.textAlign = 'center'
+	char.id = 'char';
+	char.style.display = 'block';
+}());
