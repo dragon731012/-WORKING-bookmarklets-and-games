@@ -100,3 +100,5 @@ window.addEventListener("keyup",function(event){
 		left=0; 
 	}
 });
+
+setInterval(move,5);
