@@ -121,6 +121,33 @@ const list=[];
 }());
 
 (function () {
+	var me = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(me);
+
+	me.style.position = 'fixed';
+	me.style.top = '260px';
+	me.style.left = '0px';
+	me.style.margin = '10px';
+	me.style.paddingTop = '0px';
+	me.style.width = '210px';
+	me.style.height = '30px';
+	me.style.zIndex = 10000;
+	me.style.opacity = 1;
+	me.style.color = 'black';
+	me.style.backgroundColor = 'white';
+	me.style.border = '4px solid black';
+	me.style.textAlign = 'center';
+	me.style.cursor = 'pointer';
+	me.id = 'me';
+	me.style.display = 'block';
+	me.innerText = 'by dragonmaster73101';
+	document.getElementById('me').addEventListener('click', function() {
+		window.open("https://github.com/dragon731012");
+	});
+}());
+
+(function () {
 	var start = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(start);
@@ -157,29 +184,3 @@ while (counted>maxcount){
 });
 }());
 
-(function () {
-	var me = document.createElement('div');
-	var body = document.getElementsByTagName('body')[0];
-	body.appendChild(me);
-
-	me.style.position = 'fixed';
-	me.style.top = '260px';
-	me.style.left = '0px';
-	me.style.margin = '10px';
-	me.style.paddingTop = '0px';
-	me.style.width = '210px';
-	me.style.height = '30px';
-	me.style.zIndex = 10000;
-	me.style.opacity = 1;
-	me.style.color = 'black';
-	me.style.backgroundColor = 'white';
-	me.style.border = '4px solid black';
-	me.style.textAlign = 'center';
-	me.style.cursor = 'pointer';
-	me.id = 'me';
-	me.style.display = 'block';
-	me.innerText = 'by dragonmaster73101';
-	document.getElementById('me').addEventListener('click', function() {
-		window.open("https://github.com/dragon731012");
-	});
-}());
