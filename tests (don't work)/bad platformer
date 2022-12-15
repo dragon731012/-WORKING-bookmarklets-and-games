@@ -26,8 +26,8 @@
 	body.appendChild(char);
 
 	char.style.position = 'fixed';
-	char.style.top = '0px';
-	char.style.left = '0px';
+	char.style.top = '220px';
+	char.style.left = '10px';
 	char.style.margin = '10px';
 	char.style.paddingTop = '10px';
 	char.style.width = '15px';
