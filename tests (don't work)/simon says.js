@@ -225,7 +225,7 @@ setInterval(show,1000);
 
 function checkifallclicked(){
 	if (counted>=maxcount){
-		if (clicked>=maxcount){
+		if (clicked>=maxcount+1){
 			clicked=0;
 			maxcount=maxcount+1;
 			counted=0;
