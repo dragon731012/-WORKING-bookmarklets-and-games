@@ -2,7 +2,7 @@ var left=0;
 var right=0;
 var down=0;
 var up=0;
-var playerspeed=5;
+var playerspeed=1;
 var xpos=10;
 var ypos=235;
 
@@ -35,7 +35,7 @@ var ypos=235;
 
 	char.style.position = 'fixed';
 	char.style.top = ''+ypos+'px';
-	char.style.left = ''+xpos+'10px';
+	char.style.left = ''+xpos+'px';
 	char.style.margin = '10px';
 	char.style.paddingTop = '10px';
 	char.style.width = '15px';
