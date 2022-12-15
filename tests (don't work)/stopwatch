@@ -34,7 +34,7 @@ function sectrack(){
 }
 
 function millisectrack(){
-	if (milliseconds+1 != 100){
+	if (milliseconds+1 != 1000){
 		milliseconds=milliseconds+1;
 		stopwatch.innerText = ''+seconds+'.'+milliseconds+'';
 	}
