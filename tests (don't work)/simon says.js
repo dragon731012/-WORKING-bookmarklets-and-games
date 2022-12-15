@@ -4,9 +4,14 @@ var maxcount=4;
 var num=0;
 var allclicked=0;
 var clicked=0;
+var score=0;
 
 function gameover(){
-	alert("game over");
+	alert("game over. your score was "+score+".");
+	green.parentNode.removeChild(green);
+	blue.parentNode.removeChild(blue);
+	yellow.parentNode.removeChild(yellow);
+	red.parentNode.removeChild(red);
 }
 
 (function () {
@@ -242,6 +247,7 @@ setInterval(show,1000);
 function checkifallclicked(){
 	if (counted>=maxcount){
 		if (clicked>=maxcount){
+			score=score+1;
 			clicked=0;
 			maxcount=maxcount+1;
 			counted=0;
