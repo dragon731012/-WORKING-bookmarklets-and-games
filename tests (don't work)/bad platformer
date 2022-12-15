@@ -115,7 +115,11 @@ function jump(){
 		}
 		char.style.top = ''+ypos+'px';
 	}
-	setInterval(goup,15);
+	
+	if (up==1){
+		setInterval(goup,15);
+		up=0;
+	}
 }
 
 window.addEventListener("keydown",function(event){ 
