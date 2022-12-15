@@ -5,6 +5,10 @@ var num=0;
 var allclicked=0;
 var clicked=0;
 
+function gameover(){
+	alert("game over");
+}
+
 (function () {
 	var green = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -30,6 +34,9 @@ var clicked=0;
 	document.getElementById('green').addEventListener('click', function() {
 		green.style.opacity = 1;
 		clicked=clicked+1;
+		if (list[clicked] != 1){
+			gameover();
+		}
 		setTimeout(function() {
 			green.style.opacity = 0.6;
 		}, 500);
@@ -61,6 +68,9 @@ var clicked=0;
 	document.getElementById('red').addEventListener('click', function() {
 		red.style.opacity = 1;
 		clicked=clicked+1;
+		if (list[clicked] != 2){
+			gameover();
+		}
 		setTimeout(function() {
 			red.style.opacity = 0.6;
 		}, 500);
@@ -92,6 +102,9 @@ var clicked=0;
 	document.getElementById('yellow').addEventListener('click', function() {
 		yellow.style.opacity = 1;
 		clicked=clicked+1;
+		if (list[clicked] != 3){
+			gameover();
+		}
 		setTimeout(function() {
 			yellow.style.opacity = 0.6;
 		}, 500);
@@ -123,6 +136,9 @@ var clicked=0;
 	document.getElementById('blue').addEventListener('click', function() {
 		blue.style.opacity = 1;
 		clicked=clicked+1;
+		if (list[clicked] != 4){
+			gameover();
+		}
 		setTimeout(function() {
 			blue.style.opacity = 0.6;
 		}, 500);
