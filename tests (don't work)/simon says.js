@@ -215,16 +215,6 @@ function show(){
 				blue.style.opacity = 0.6;
 			}, 500);
 		}
-		counted=counted+1;
-		
-		if (counted==maxcount){
-			if (allclicked==1){
-				clicked=0;
-				maxcount=maxcount+1;
-				counted=0;
-				allclicked=0;
-			}
-		}
 	}
 
 }
