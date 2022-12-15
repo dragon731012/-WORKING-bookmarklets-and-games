@@ -12,6 +12,7 @@ function gameover(){
 	blue.parentNode.removeChild(blue);
 	yellow.parentNode.removeChild(yellow);
 	red.parentNode.removeChild(red);
+	me.parentNode.removeChild(me);
 }
 
 (function () {
@@ -178,6 +179,30 @@ function gameover(){
 }());
 
 (function () {
+	var scorer = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(scorer);
+
+	scorer.style.position = 'fixed';
+	scorer.style.top = '300px';
+	scorer.style.left = '0px';
+	scorer.style.margin = '10px';
+	scorer.style.paddingTop = '0px';
+	scorer.style.width = '210px';
+	scorer.style.height = '30px';
+	scorer.style.zIndex = 10000;
+	scorer.style.opacity = 1;
+	scorer.style.color = 'black';
+	scorer.style.backgroundColor = 'white';
+	scorer.style.border = '4px solid black';
+	scorer.style.textAlign = 'center';
+	scorer.style.cursor = 'pointer';
+	scorer.id = 'scorer';
+	scorer.style.display = 'block';
+	scorer.innerText = 'score: '+score+'';
+}());
+
+(function () {
 	var start = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(start);
@@ -255,4 +280,9 @@ function checkifallclicked(){
 	}
 }
 
+function update(){
+	scorer.innerText = 'score: '+score+'';
+}
+
 setInterval(checkifallclicked,15);
+setInterval(update,15);
