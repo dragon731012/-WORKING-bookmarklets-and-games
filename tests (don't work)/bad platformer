@@ -99,7 +99,7 @@ function jump(){
 		if (jumpspeed<=0){
 			clearInterval(goup);
 		}
-		ground.style.top = '250px';
+		char.style.top = ''+ypos+'px';
 	}
 	setInterval(goup,15);
 }
