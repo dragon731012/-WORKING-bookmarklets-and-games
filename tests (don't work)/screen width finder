@@ -1,0 +1,3 @@
+let width = screen.width; 
+let height = screen.width;
+
