@@ -1,6 +1,7 @@
 const list=[];
 var counted=0;
 var maxcount=4;
+var num=0;
 
 (function () {
 	var green = document.createElement('div');
@@ -180,7 +181,8 @@ maxcount=4;
 
 while (counted<maxcount){
 	counted=counted+1;
-	alert("hi");	
+	num=Math.floor(Math.random()*(4-1+1)+1);
+	alert(num);	
 }
 		
 });
