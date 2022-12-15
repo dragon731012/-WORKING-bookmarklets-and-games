@@ -13,7 +13,7 @@ alert("by dragonmaster73101");
 	green.style.width = '100px';
 	green.style.height = '100px';
 	green.style.zIndex = 10000;
-	green.style.opacity = 0.8;
+	green.style.opacity = 0.6;
 	green.style.color = 'black';
 	green.style.backgroundColor = 'green';
 	green.style.border = '0px solid white';
@@ -25,7 +25,7 @@ alert("by dragonmaster73101");
 	document.getElementById('green').addEventListener('click', function() {
 		green.style.opacity = 1;
 		setTimeout(function() {
-			green.style.opacity = 0.8;
+			green.style.opacity = 0.6;
 		}, 500);
 	});
 }());
@@ -43,7 +43,7 @@ alert("by dragonmaster73101");
 	red.style.width = '100px';
 	red.style.height = '100px';
 	red.style.zIndex = 10000;
-	red.style.opacity = 0.8;
+	red.style.opacity = 0.6;
 	red.style.color = 'black';
 	red.style.backgroundColor = 'red';
 	red.style.border = '0px solid white';
@@ -55,7 +55,7 @@ alert("by dragonmaster73101");
 	document.getElementById('red').addEventListener('click', function() {
 		red.style.opacity = 1;
 		setTimeout(function() {
-			red.style.opacity = 0.8;
+			red.style.opacity = 0.6;
 		}, 500);
 	});
 }());
@@ -73,7 +73,7 @@ alert("by dragonmaster73101");
 	yellow.style.width = '100px';
 	yellow.style.height = '100px';
 	yellow.style.zIndex = 10000;
-	yellow.style.opacity = 0.8;
+	yellow.style.opacity = 0.6;
 	yellow.style.color = 'black';
 	yellow.style.backgroundColor = 'yellow';
 	yellow.style.border = '0px solid white';
@@ -85,7 +85,7 @@ alert("by dragonmaster73101");
 	document.getElementById('yellow').addEventListener('click', function() {
 		yellow.style.opacity = 1;
 		setTimeout(function() {
-			yellow.style.opacity = 0.8;
+			yellow.style.opacity = 0.6;
 		}, 500);
 	});
 }());
@@ -103,7 +103,7 @@ alert("by dragonmaster73101");
 	blue.style.width = '100px';
 	blue.style.height = '100px';
 	blue.style.zIndex = 10000;
-	blue.style.opacity = 0.8;
+	blue.style.opacity = 0.6;
 	blue.style.color = 'black';
 	blue.style.backgroundColor = 'blue';
 	blue.style.border = '0px solid white';
@@ -115,7 +115,7 @@ alert("by dragonmaster73101");
 	document.getElementById('blue').addEventListener('click', function() {
 		blue.style.opacity = 1;
 		setTimeout(function() {
-			blue.style.opacity = 0.8;
+			blue.style.opacity = 0.6;
 		}, 500);
 	});
 }());
