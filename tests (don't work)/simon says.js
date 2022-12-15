@@ -144,7 +144,8 @@ alert("by dragonmaster73101");
 	start.innerText = 'start';
 	document.getElementById('start').addEventListener('click', function() {
 
-
+start.style.left='-99999999999999999999999999999px';
+me.style.top='220px';
 
 });
 }());
