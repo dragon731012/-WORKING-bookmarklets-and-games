@@ -92,14 +92,16 @@ function move(){
 	}
 }
 function godown(){
-	jumpspeed=2;
-	if (ypos>=300){
-		ypos=ypos+jumpspeed;
-		jumpspeed=jumpspeed+0.04;
-	}
-	else{
-		clearInterval(godown);
-		return;
+	if (down==1){
+		jumpspeed=2;
+		if (ypos>=300){
+			ypos=ypos+jumpspeed;
+			jumpspeed=jumpspeed+0.04;
+		}
+		else{
+			clearInterval(godown);
+			return;
+		}
 	}
 }
 function jump(){
