@@ -178,7 +178,7 @@ me.style.top='220px';
 counted=0;
 maxcount=4;
 
-while (counted>maxcount){
+while (counted<maxcount){
 	counted=counted+1;
 	alert("hi");	
 }
