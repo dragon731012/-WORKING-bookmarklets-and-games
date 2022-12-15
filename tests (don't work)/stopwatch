@@ -44,5 +44,5 @@ function millisectrack(){
 	}
 }
 
-setInterval(sectrack,1000);
 setInterval(millisectrack,1);
+setInterval(sectrack,1000);
