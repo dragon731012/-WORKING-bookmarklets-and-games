@@ -226,6 +226,7 @@ function gameover(){
 	start.innerText = 'start';
 	document.getElementById('start').addEventListener('click', function() {
 
+scorer.style.top = '260px';
 start.style.left='-99999999999999999999999999999px';
 me.style.top='220px';
 counted=0;
