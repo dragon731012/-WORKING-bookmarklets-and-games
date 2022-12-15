@@ -2,6 +2,8 @@ const list=[];
 var counted=0;
 var maxcount=4;
 var num=0;
+var allclicked=0;
+var clicked=0;
 
 (function () {
 	var green = document.createElement('div');
@@ -27,6 +29,7 @@ var num=0;
 	green.innerText = 'green';
 	document.getElementById('green').addEventListener('click', function() {
 		green.style.opacity = 1;
+		clicked=clicked+1;
 		setTimeout(function() {
 			green.style.opacity = 0.6;
 		}, 500);
@@ -57,6 +60,7 @@ var num=0;
 	red.innerText = 'red';
 	document.getElementById('red').addEventListener('click', function() {
 		red.style.opacity = 1;
+		clicked=clicked+1;
 		setTimeout(function() {
 			red.style.opacity = 0.6;
 		}, 500);
@@ -87,6 +91,7 @@ var num=0;
 	yellow.innerText = 'yellow';
 	document.getElementById('yellow').addEventListener('click', function() {
 		yellow.style.opacity = 1;
+		clicked=clicked+1;
 		setTimeout(function() {
 			yellow.style.opacity = 0.6;
 		}, 500);
@@ -117,6 +122,7 @@ var num=0;
 	blue.innerText = 'blue';
 	document.getElementById('blue').addEventListener('click', function() {
 		blue.style.opacity = 1;
+		clicked=clicked+1;
 		setTimeout(function() {
 			blue.style.opacity = 0.6;
 		}, 500);
@@ -218,6 +224,10 @@ function show(){
 		
 		if (counted=maxcount){
 			if (allclicked==1){
+				clicked=0;
+				maxcount=maxcount+1;
+				counted=0;
+				allclicked=0;
 			}
 		}
 	}
@@ -229,3 +239,10 @@ setInterval(show,1000)
 });
 }());
 
+function checkifallclicked(){
+	if (clicked>=maxcount){
+		allclicked=1;
+	}
+}
+
+setInterval(checkifallclicked,15);
