@@ -21,28 +21,6 @@
 }());
 
 (function () {
-	var ground = document.createElement('div');
-	var body = document.getElementsByTagName('body')[0];
-	body.appendChild(ground);
-
-	ground.style.position = 'fixed';
-	ground.style.top = '250px';
-	ground.style.left = '0px';
-	ground.style.margin = '10px';
-	ground.style.paddingTop = '10px';
-	ground.style.width = '300px';
-	ground.style.height = '50px';
-	ground.style.zIndex = 10000;
-	ground.style.opacity = 1;
-	ground.style.color = 'blue';
-	ground.style.backgroundColor = 'blue';
-	ground.style.border = '0px solid white';
-	ground.style.textAlign = 'center';
-	ground.id = 'ground';
-	ground.style.display = 'block';
-}());
-
-(function () {
 	var char = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(char);
@@ -62,4 +40,26 @@
 	char.style.textAlign = 'center';
 	char.id = 'char';
 	char.style.display = 'block';
+}());
+
+(function () {
+	var ground = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(ground);
+
+	ground.style.position = 'fixed';
+	ground.style.top = '250px';
+	ground.style.left = '0px';
+	ground.style.margin = '10px';
+	ground.style.paddingTop = '10px';
+	ground.style.width = '300px';
+	ground.style.height = '50px';
+	ground.style.zIndex = 10000;
+	ground.style.opacity = 1;
+	ground.style.color = 'blue';
+	ground.style.backgroundColor = 'blue';
+	ground.style.border = '0px solid white';
+	ground.style.textAlign = 'center';
+	ground.id = 'ground';
+	ground.style.display = 'block';
 }());
