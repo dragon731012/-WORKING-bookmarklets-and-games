@@ -1,4 +1,4 @@
-alert("by dragonmaster73101");
+const list=[];
 
 (function () {
 	var green = document.createElement('div');
@@ -146,7 +146,13 @@ alert("by dragonmaster73101");
 
 start.style.left='-99999999999999999999999999999px';
 me.style.top='220px';
+var counted=0;
+var maxcount=4;
 
+while (counted>maxcount){
+	alert("hi");	
+}
+		
 });
 }());
 
