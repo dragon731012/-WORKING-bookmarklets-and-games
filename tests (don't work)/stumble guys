@@ -1,0 +1,55 @@
+ <html lang="en"><head><title>Play Stumble Guys Game Online !</title><meta charset="utf-8"><meta name="robots" content="noindex, nofollow, noodp, noydir"><meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui"><meta http-equiv="X-UA-Compatible" content="requiresActiveX=true,IE=Edge,chrome=1"><meta http-equiv="Content-Language" content="en-US"><style>* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif; } #missing-flash { display: none; text-align: center } .fl-wrap { margin: 0 auto; background-color: #FFF; padding: 20px; position: absolute; height: 100%; width: 100%; z-index: 9999; } .fl-content { color: #fff } .fl-game { display: flex; height: 95%; justify-content: center; align-items: center; } .fl-game a{ position: absolute; z-index: 9999; text-decoration: none } .fl-game span{ color: #FFF; background-color: #3281ff; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; text-transform: uppercase; } .fl-game span:hover{ background-color: #009cff } .missing-flash-bg{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; -webkit-filter: blur(0.8em); filter: blur(0.8em); opacity: 0.25; }
+ * { margin: 0; padding: 0; box-sizing: border-box; } html, body { background-color: rgba(0, 0, 0, 0.4); } .a0 { position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 1; } .a1 { display: table; width: 100%; height: 100%; text-align: center; } .a2 { display: table-cell; vertical-align: middle; } .a3 { height: 30px; position: fixed; bottom: 0; left: 0; transition: all .3s; } .o1 { background-color: #002b50; width: 100%; z-index: 2; } .o2 { background-color: #009cff; width: 0%; z-index: 3; }
+				.enable_flash{ color: #FFF; background-color: #3281ff; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; text-transform: uppercase; position: absolute; top: 200px; left: 50%; transform: translateX(-50%); color: #fff900 !important;} .bt{ position: absolute; left: 50%; transform: translateX(-50%); bottom: -50px;}
+				.adobetext{ top: 250px;width: 100%;}
+				.btnstart {
+						background: hsl(340deg 100% 32%);
+						border-radius: 12px;
+						border: none;
+						padding: 0;
+						cursor: pointer;
+						outline-offset: 4px;
+						width: 190px;
+						margin: auto;
+						text-align: center;
+					}
+					.btnfront {
+						display: block;
+						padding: 11px;
+						border-radius: 12px;
+						font-size: 1.25rem;
+						background: hsl(345deg 100% 47%);
+						color: white;
+						transform: translateY(-6px);
+					}
+					.btnstart:active .btnfront {
+						transform: translateY(-2px);
+					}
+					.box-start img{
+						margin: 15px;
+						border-radius: 11px;
+						width: 50%;
+					}
+					.box-start{
+						width: auto;
+						margin: 0;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						-ms-transform: translate(-50%, -50%);
+						transform: translate(-50%, -50%);
+						background: #000;
+					}
+					.box-start-img{
+						width: fit-content;
+						margin: auto;
+						text-align: center;
+					}
+					#play_box{
+						position: relative;
+						width: 100%;
+						height: 100%;
+						background: #000;
+					}</style>
+</head><body><iframe id="iframehtml5" width="100%" height="100%" src="https://app-171648.games-storage.yandex.net/171648/8m7rqwjtd4mauzwhqcwk3bjf7rd2ovi4/index.html#origin=https%3A%2F%2Fyandex.com&amp;yandexapp=false&amp;expBoxesCrypted=im8ClOwL-uJ2w5aMkvA-Joiid0-mO1CAw8S4Q4ERn2l2TMlqOHTg8mWEFeE9w5tKZ-PowZ_rQPWGnviJdiad7g%2C%2C&amp;experiments=%7B%22invalidate_games_cache_from%22%3A9952209%2C%22homeland_currency_basket%22%3Atrue%2C%22no_ads%22%3Atrue%2C%22azure_mirror%22%3A%22all%22%2C%22recovery_code%22%3Atrue%2C%22merge_conflicts%22%3Atrue%2C%22payments_igames%22%3Atrue%2C%22new_unauthorized_cookie%22%3Atrue%2C%22dj_experiment_param%22%3A%224%22%2C%22send_shown_game_cards%22%3Atrue%7D&amp;app-id=171648" frameborder="0" border="0" scrolling="no" class="iframe-default " allowfullscreen></iframe>
+</body></html>
