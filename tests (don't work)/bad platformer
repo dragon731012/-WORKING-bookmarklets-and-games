@@ -94,7 +94,7 @@ function move(){
 function godown(){
 	if (down==1){
 		jumpspeed=2;
-		if (ypos>=300){
+		if (ypos<=300){
 			ypos=ypos+jumpspeed;
 			jumpspeed=jumpspeed+0.04;
 		}
@@ -148,4 +148,4 @@ window.addEventListener("keyup",function(event){
 
 setInterval(move,15);
 jumping=1;
-jump();
+setInterval(jump,5);
