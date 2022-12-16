@@ -146,4 +146,5 @@ window.addEventListener("keyup",function(event){
 });
 
 setInterval(move,15);
+jumping=1;
 jump();
