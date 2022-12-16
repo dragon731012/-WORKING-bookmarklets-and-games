@@ -24,7 +24,7 @@ for html (ones with .html):
 
 3. click save as
 
-4. click fole when you want to play
+4. click file when you want to play
 
 # my and my contributor's involvement with these
 
