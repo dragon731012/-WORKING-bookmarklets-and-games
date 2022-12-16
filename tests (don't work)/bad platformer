@@ -132,6 +132,7 @@ window.addEventListener("keydown",function(event){
 		left=1; 
 	}
 	if(event.key=="ArrowUp"){ 
+		jump();
 		jump=1;
 	}
 });
