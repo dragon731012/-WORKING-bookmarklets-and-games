@@ -1,5 +1,7 @@
 # how to use:
 
+for bookmarklets (the ones without .html):
+
 1. highlight all of the text
 
 2. drag it to your bookmarks bar
@@ -13,6 +15,16 @@ OR
 2. type javascript: into your url bar.
 
 3. paste it
+
+for html (ones with .html):
+
+1. if view raw option avalible, click it.
+
+2. right click over raw space.
+
+3. click save as
+
+4. click fole when you want to play
 
 # my and my contributor's involvement with these
 
