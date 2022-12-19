@@ -138,9 +138,13 @@ function moveplayer(){
 window.addEventListener("keydown", function(event) { 
 	if (event.key == "ArrowLeft") { 
 		playerxmove=-1; 
+		ball.style.top = ''+ballypos+'px';
+   	    ball.style.left = ''+ballxpos+'px';
 	} 
 	if (event.key == "ArrowRight") { 
 		playerxmove=1; 
+		ball.style.top = ''+ballypos+'px';
+   	    ball.style.left = ''+ballxpos+'px';
 	} 
 });
 
