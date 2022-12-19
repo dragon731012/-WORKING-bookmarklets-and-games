@@ -4,6 +4,8 @@ var ballypos=384;
 var ballchangex=1;
 var ballchangey=1;
 var ballspeed=5;
+var xpos=683;
+var ypos=635;
 
 (function () {
  	var you = document.createElement('div');
@@ -11,8 +13,8 @@ var ballspeed=5;
     body.appendChild(you);
 
     you.style.position = 'fixed';
-    you.style.top = ''+ballypos+'px';
-    you.style.left = ''+ballxpos+'px';
+    you.style.top = ''+ypos+'px';
+    you.style.left = ''+xpos+'px';
    	you.style.margin = '0px';
    	you.style.width = '200px';
    	you.style.height = '30px';
