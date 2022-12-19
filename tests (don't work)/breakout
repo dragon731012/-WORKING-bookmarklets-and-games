@@ -15,7 +15,7 @@ function makesquare(squarexpos,squareypos,squarehits){
     	square.style.opacity = 0.9;
     	square.style.color = 'black';
     	square.style.backgroundColor = 'orange';
-    	square.style.border = '3px solid black';
+    	square.style.border = '2px solid black';
 	    square.style.textAlign = 'center';
 	    square.style.cursor = 'pointer';
 	    square.id = 'block';
