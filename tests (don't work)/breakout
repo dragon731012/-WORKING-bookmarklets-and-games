@@ -5,7 +5,7 @@ var ballchangex=1;
 var ballchangey=1;
 var ballspeed=5;
 var xpos=683;
-var ypos=635;
+var ypos=605;
 
 (function () {
  	var you = document.createElement('div');
