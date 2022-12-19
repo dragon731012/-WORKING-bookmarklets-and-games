@@ -6,6 +6,27 @@ var ballchangey=1;
 var ballspeed=5;
 
 (function () {
+ 	var you = document.createElement('div');
+    var body = document.getElementsByTagName('body')[0];
+    body.appendChild(you);
+
+    you.style.position = 'fixed';
+    you.style.top = ''+ballypos+'px';
+    you.style.left = ''+ballxpos+'px';
+   	you.style.margin = '0px';
+   	you.style.width = '200px';
+   	you.style.height = '30px';
+   	you.style.zIndex = 10000;
+   	you.style.opacity = 1;
+   	you.style.color = 'black';
+   	you.style.backgroundColor = 'white';
+   	you.style.border = '2px solid black';
+    you.style.textAlign = 'center';
+    you.id = 'you';
+    you.style.display = 'block';
+}());
+
+(function () {
  	var ball = document.createElement('div');
     var body = document.getElementsByTagName('body')[0];
     body.appendChild(ball);
