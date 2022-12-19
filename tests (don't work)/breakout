@@ -8,7 +8,7 @@ function makesquare(squarexpos,squareypos,squarehits){
 	    square.style.top = ''+squareypos+'px';
 	    square.style.left = ''+squarexpos+'px';
     	square.style.margin = '0px';
-	    square.style.paddingTop = '5px';
+	    square.style.paddingTop = '8px';
     	square.style.width = '180px';
     	square.style.height = '40px';
     	square.style.zIndex = 10000;
