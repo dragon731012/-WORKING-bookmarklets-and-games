@@ -129,9 +129,14 @@ function level2(){
 function moveplayer(){
 	if (playerxmove==1){
 		xpos=xpos+playerspeed;
+		ball.style.top = ''+ballypos+'px';
+   	    ball.style.left = ''+ballxpos+'px';
 	}
 	if (playerxmove==-1){
 		xpos=xpos-playerspeed;
+		ball.style.top = ''+ballypos+'px';
+   	    ball.style.left = ''+ballxpos+'px';
+		
 	}
 }
 
