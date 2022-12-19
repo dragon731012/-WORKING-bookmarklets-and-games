@@ -116,10 +116,10 @@ function bounce(){
 }
 
 if (level==1){
-	makesquare(200,10,2);
-	makesquare(390,10,2);
-	makesquare(580,10,2);
-	makesquare(770,10,2);
+	makesquare(200,10,2,s1);
+	makesquare(390,10,2,s2);
+	makesquare(580,10,2,s3);
+	makesquare(770,10,2,s4);
 }
 
 function level2(){
@@ -162,6 +162,7 @@ window.addEventListener("keyup", function(event) {
 });
 
 function colliding(){
+    //s1 collide detect
     if (ballxpos < 200 + 180 && ballxpos + 50 > 200 && ballypos < 10 + 40 && ballypos + 50 > 10) {
         alert("hi");
     }
