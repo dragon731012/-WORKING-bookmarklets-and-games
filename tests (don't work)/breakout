@@ -7,7 +7,7 @@ var ballspeed=5;
 var xpos=683;
 var ypos=605;
 var playerxmove=0;
-var playerspeed=4;
+var playerspeed=5;
 
 (function () {
  	var you = document.createElement('div');
