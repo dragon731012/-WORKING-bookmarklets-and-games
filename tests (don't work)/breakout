@@ -9,13 +9,13 @@ function makesquare(squarexpos,squareypos,squarehits){
 	    square.style.right = ''+squarexpos+'px';
     	square.style.margin = '0px';
 	    square.style.paddingTop = '10px';
-    	square.style.width = '220px';
+    	square.style.width = '180px';
     	square.style.height = '40px';
     	square.style.zIndex = 10000;
     	square.style.opacity = 0.9;
-    	square.style.color = 'white';
+    	square.style.color = 'black';
     	square.style.backgroundColor = 'orange';
-    	square.style.border = '0px solid white';
+    	square.style.border = '3px solid black';
 	    square.style.textAlign = 'center';
 	    square.style.cursor = 'pointer';
 	    square.id = 'block';
