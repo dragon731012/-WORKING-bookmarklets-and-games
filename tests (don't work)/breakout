@@ -53,7 +53,7 @@ var playerspeed=5;
 
 function makesquare(squarexpos,squareypos,squarehits,name){
     (function () {
-        name = document.createElement('div');
+        var name = document.createElement('div');
 	    var body = document.getElementsByTagName('body')[0];
 	    body.appendChild(name);
 
@@ -116,10 +116,10 @@ function bounce(){
 }
 
 if (level==1){
-	makesquare(200,10,2,s1);
-	makesquare(390,10,2,s2);
-	makesquare(580,10,2,s3);
-	makesquare(770,10,2,s4);
+	makesquare(200,10,2);
+	makesquare(390,10,2);
+	makesquare(580,10,2);
+	makesquare(770,10,2);
 }
 
 function level2(){
