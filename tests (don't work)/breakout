@@ -1,2 +1,28 @@
 function makesquare(squarexpos,squareypos,squarehits){
+    (function () {
+        var square = document.createElement('div');
+	    var body = document.getElementsByTagName('body')[0];
+	    body.appendChild(elem);
+
+	    square.style.position = 'fixed';
+	    square.style.top = ''+squareypos+'px';
+	    square.style.right = ''+squarexpos+'px';
+    	square.style.margin = '0px';
+	    square.style.paddingTop = '10px';
+    	square.style.width = '220px';
+    	square.style.height = '40px';
+    	square.style.zIndex = 10000;
+    	square.style.opacity = 0.9;
+    	square.style.color = 'white';
+    	square.style.backgroundColor = 'orange';
+    	square.style.border = '0px solid white';
+	    square.style.textAlign = 'center';
+	    square.style.cursor = 'pointer';
+	    square.id = 'block';
+	    square.style.display = 'block';
+	    square.innerText = ''+squarehits+'';
+
+}());
 }
+
+makesquare(0,0,2);
