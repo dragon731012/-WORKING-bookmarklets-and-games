@@ -1,3 +1,5 @@
+var level=1;
+
 function makesquare(squarexpos,squareypos,squarehits){
     (function () {
         var square = document.createElement('div');
@@ -25,4 +27,14 @@ function makesquare(squarexpos,squareypos,squarehits){
 }());
 }
 
-makesquare(0,0,2);
+if (level==1){
+}
+
+function level2(){
+   if (Level==2){
+   	//level 2 code
+	clearInterval(level2);
+   }
+}
+
+setInterval(level2,10);
