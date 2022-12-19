@@ -76,6 +76,7 @@ function moveball(){
 }
 
 if (level==1){
+	makesquare(0,0,2);
 }
 
 function level2(){
