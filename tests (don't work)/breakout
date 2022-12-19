@@ -14,7 +14,6 @@ var ballspeed=10;
     ball.style.top = ''+ballypos+'px';
     ball.style.left = ''+ballxpos+'px';
    	ball.style.margin = '0px';
-    ball.style.paddingTop = '8px';
    	ball.style.width = '50px';
    	ball.style.height = '50px';
    	ball.style.zIndex = 10000;
@@ -81,7 +80,7 @@ if (level==1){
 
 function level2(){
    if (level==2){
-   	//level 2 code
+   	makesquare(0,0,2);
 	clearInterval(level2);
    }
 }
