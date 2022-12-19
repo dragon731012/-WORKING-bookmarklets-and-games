@@ -51,28 +51,28 @@ var playerspeed=5;
     ball.style.display = 'block';
 }());
 
-function makesquare(squarexpos,squareypos,squarehits){
+function makesquare(squarexpos,squareypos,squarehits,name){
     (function () {
-        var square = document.createElement('div');
+        var name = document.createElement('div');
 	    var body = document.getElementsByTagName('body')[0];
-	    body.appendChild(square);
+	    body.appendChild(name);
 
-	    square.style.position = 'fixed';
-	    square.style.top = ''+squareypos+'px';
-	    square.style.left = ''+squarexpos+'px';
-    	square.style.margin = '0px';
-	    square.style.paddingTop = '8px';
-    	square.style.width = '180px';
-    	square.style.height = '40px';
-    	square.style.zIndex = 10000;
-    	square.style.opacity = 0.9;
-    	square.style.color = 'black';
-    	square.style.backgroundColor = 'orange';
-    	square.style.border = '2px solid black';
-	    square.style.textAlign = 'center';
-	    square.id = 'square';
-	    square.style.display = 'block';
-	    square.innerText = ''+squarehits+'';
+	    name.style.position = 'fixed';
+	    name.style.top = ''+squareypos+'px';
+	    name.style.left = ''+squarexpos+'px';
+    	name.style.margin = '0px';
+	    name.style.paddingTop = '8px';
+    	name.style.width = '180px';
+    	name.style.height = '40px';
+    	name.style.zIndex = 10000;
+    	name.style.opacity = 0.9;
+    	name.style.color = 'black';
+    	name.style.backgroundColor = 'orange';
+    	name.style.border = '2px solid black';
+	    name.style.textAlign = 'center';
+	    name.id = 'square';
+	    name.style.display = 'block';
+	    name.innerText = ''+squarehits+'';
 
 	}());
 }
@@ -162,8 +162,8 @@ window.addEventListener("keyup", function(event) {
 });
 
 function colliding(){
-    if (ballxpos < 200 + rect2.width && ballxpos + 50 > rect2.x && ballypos < rect2.y + rect2.height && ballypos + 50 > rect2.y) {
-        // collision detected!
+    if (ballxpos < 200 + 180 && ballxpos + 50 > 200 && ballypos < 10 + 40 && ballypos + 50 > 10) {
+        alert("hi");
     }
 }
 
