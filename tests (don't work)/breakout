@@ -85,7 +85,7 @@ function bounce(){
 	if (ballypos<=0){
 		ballchangey=ballchangey=1;
 	}
-	if (ballxpos>=718){
+	if (ballxpos>=615){
 		ballchangey=ballchangey=-1;
 	}
 }
