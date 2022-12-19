@@ -129,27 +129,23 @@ function level2(){
 function moveplayer(){
 	if (playerxmove==1){
 		xpos=xpos+playerspeed;
-		ball.style.top = ''+ballypos+'px';
-   	    ball.style.left = ''+ballxpos+'px';
+		you.style.top = ''+ypos+'px';
+   	    you.style.left = ''+xpos+'px';
 	}
 	if (playerxmove==-1){
 		xpos=xpos-playerspeed;
-		ball.style.top = ''+ballypos+'px';
-   	    ball.style.left = ''+ballxpos+'px';
+		you.style.top = ''+ypos+'px';
+   	    you.style.left = ''+xpos+'px';
 		
 	}
 }
 
 window.addEventListener("keydown", function(event) { 
 	if (event.key == "ArrowLeft") { 
-		playerxmove=-1; 
-		ball.style.top = ''+ballypos+'px';
-   	    ball.style.left = ''+ballxpos+'px';
+		playerxmove=-1;
 	} 
 	if (event.key == "ArrowRight") { 
 		playerxmove=1; 
-		ball.style.top = ''+ballypos+'px';
-   	    ball.style.left = ''+ballxpos+'px';
 	} 
 });
 
@@ -165,4 +161,4 @@ window.addEventListener("keyup", function(event) {
 setInterval(level2,10);
 setInterval(moveball,15);
 setInterval(bounce,3);
-setInterval(moveplayer,5);
+setInterval(moveplayer,15);
