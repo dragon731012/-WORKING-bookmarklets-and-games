@@ -2,7 +2,7 @@ function makesquare(squarexpos,squareypos,squarehits){
     (function () {
         var square = document.createElement('div');
 	    var body = document.getElementsByTagName('body')[0];
-	    body.appendChild(elem);
+	    body.appendChild(square);
 
 	    square.style.position = 'fixed';
 	    square.style.top = ''+squareypos+'px';
