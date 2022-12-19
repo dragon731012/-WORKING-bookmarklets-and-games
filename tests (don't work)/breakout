@@ -76,7 +76,7 @@ function moveball(){
 }
 
 function bounce(){
-	if (ballxpos>=1316){
+	if (ballxpos>=615){
 		ballchangex=ballchangex=-1;
 	}
 	if (ballxpos<=0){
@@ -85,7 +85,7 @@ function bounce(){
 	if (ballypos<=0){
 		ballchangey=ballchangey=1;
 	}
-	if (ballxpos>=615){
+	if (ballxpos>=1316){
 		ballchangey=ballchangey=-1;
 	}
 }
