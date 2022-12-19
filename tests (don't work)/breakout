@@ -1,4 +1,31 @@
 var level=1;
+var ballxpos=1366/2;
+var ballypos=768/2;
+var ballchangex=1;
+var ballchangey=1;
+var ballspeed=10;
+
+(function () {
+ 	var ball = document.createElement('div');
+    var body = document.getElementsByTagName('body')[0];
+    body.appendChild(ball);
+
+    ball.style.position = 'fixed';
+    ball.style.top = ''+ballypos+'px';
+    ball.style.left = ''+ballxpos+'px';
+   	ball.style.margin = '0px';
+    ball.style.paddingTop = '8px';
+   	ball.style.width = '180px';
+   	ball.style.height = '40px';
+   	ball.style.zIndex = 10000;
+   	ball.style.opacity = 0.9;
+   	ball.style.color = 'black';
+   	ball.style.backgroundColor = 'white';
+   	ball.style.border = '2px solid black';
+    ball.style.textAlign = 'center';
+    ball.id = 'ball';
+    ball.style.display = 'block';
+}());
 
 function makesquare(squarexpos,squareypos,squarehits){
     (function () {
@@ -19,12 +46,34 @@ function makesquare(squarexpos,squareypos,squarehits){
     	square.style.backgroundColor = 'orange';
     	square.style.border = '2px solid black';
 	    square.style.textAlign = 'center';
-	    square.style.cursor = 'pointer';
-	    square.id = 'block';
+	    square.id = 'square';
 	    square.style.display = 'block';
 	    square.innerText = ''+squarehits+'';
 
-}());
+	}());
+}
+
+function moveball(){
+	if (ballchangex==1){
+		ballxpos=ballxpos+ballspeed;
+		ball.style.top = ''+ballypos+'px';
+   	    ball.style.left = ''+ballxpos+'px';
+	}
+	if (ballchangey==1){
+		ballypos=ballypos+ballspeed;
+		ball.style.top = ''+ballypos+'px';
+   	    ball.style.left = ''+ballxpos+'px';
+	}
+	if (ballchangex==-1){
+		ballxpos=ballxpos-ballspeed;
+		ball.style.top = ''+ballypos+'px';
+   	    ball.style.left = ''+ballxpos+'px';
+	}
+	if (ballchangey==1){
+		ballypos=ballypos-ballspeed;
+		ball.style.top = ''+ballypos+'px';
+   	    ball.style.left = ''+ballxpos+'px';
+	}
 }
 
 if (level==1){
