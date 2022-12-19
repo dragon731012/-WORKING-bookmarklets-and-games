@@ -116,7 +116,10 @@ function bounce(){
 }
 
 if (level==1){
-	makesquare(0,0,2);
+	makesquare(200,10,2);
+	makesquare(390,10,2);
+	makesquare(580,10,2);
+	makesquare(770,10,2);
 }
 
 function level2(){
@@ -158,6 +161,13 @@ window.addEventListener("keyup", function(event) {
 	} 
 });
 
+function colliding(){
+    if (ballxpos < rect2.x + rect2.width && ballxpos + 50 > rect2.x && ballypos < rect2.y + rect2.height && ballypos + 50 > rect2.y) {
+        // collision detected!
+    }
+}
+
+setInterval(colliding,5);
 setInterval(level2,10);
 setInterval(moveball,15);
 setInterval(bounce,3);
