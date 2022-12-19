@@ -1,6 +1,6 @@
 var level=1;
-var ballxpos=1366/2;
-var ballypos=768/2;
+var ballxpos=683;
+var ballypos=384;
 var ballchangex=1;
 var ballchangey=1;
 var ballspeed=10;
@@ -69,7 +69,7 @@ function moveball(){
 		ball.style.top = ''+ballypos+'px';
    	    ball.style.left = ''+ballxpos+'px';
 	}
-	if (ballchangey==1){
+	if (ballchangey==-1){
 		ballypos=ballypos-ballspeed;
 		ball.style.top = ''+ballypos+'px';
    	    ball.style.left = ''+ballxpos+'px';
