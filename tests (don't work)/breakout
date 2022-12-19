@@ -3,7 +3,7 @@ var ballxpos=683;
 var ballypos=384;
 var ballchangex=1;
 var ballchangey=1;
-var ballspeed=10;
+var ballspeed=5;
 
 (function () {
  	var ball = document.createElement('div');
@@ -75,16 +75,32 @@ function moveball(){
 	}
 }
 
+function bounce(){
+	if (ballxpos>=1366){
+		ballchangex=ballchangex*-1;
+	}
+	if (ballxpos<=0){
+		ballchangex=ballchangex*-1;
+	}
+	if (ballypos<=0){
+		ballchangex=ballchangex*-1;
+	}
+	if (ballxpos>=768){
+		ballchangex=ballchangex*-1;
+	}
+}
+
 if (level==1){
 	makesquare(0,0,2);
 }
 
 function level2(){
    if (level==2){
-   	makesquare(0,0,2);
-	clearInterval(level2);
+       makesquare(0,0,4);
+	   clearInterval(level2);
    }
 }
 
 setInterval(level2,10);
 setInterval(moveball,15);
+setInterval(bounce,15);
