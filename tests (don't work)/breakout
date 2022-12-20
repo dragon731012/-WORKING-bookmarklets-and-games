@@ -7,9 +7,18 @@ var xpos=683;
 var ypos=605;
 var playerxmove=0;
 var playerspeed=5;
+
 var s1hit=2;
+var s1xpos=683;
+var s1ypos=10;
+
 var s2hit=2;
+var s2xpos=493;
+var s2ypos=10;
+
 var s3hit=2;
+var s3xpos=873;
+var s3ypos=10;
 
 (function () {
  	var you = document.createElement('div');
@@ -58,8 +67,8 @@ var s3hit=2;
     var body = document.getElementsByTagName('body')[0];
 	body.appendChild(s1);
 	s1.style.position = 'fixed';
-    s1.style.top = '10px';
-    s1.style.left = '683px';
+    s1.style.top = ''+s1ypos+'px';
+    s1.style.left = ''+s1xpos+'px';
    	s1.style.margin = '0px';
 	s1.style.paddingTop = '8px';
    	s1.style.width = '180px';
@@ -80,8 +89,8 @@ var s3hit=2;
     var body = document.getElementsByTagName('body')[0];
 	body.appendChild(s2);
 	s2.style.position = 'fixed';
-    s2.style.top = '10px';
-    s2.style.left = '493px';
+    s2.style.top = ''+s2ypos+'px';
+    s2.style.left = ''+s2xpos+'px';
    	s2.style.margin = '0px';
 	s2.style.paddingTop = '8px';
    	s2.style.width = '180px';
@@ -102,8 +111,8 @@ var s3hit=2;
     var body = document.getElementsByTagName('body')[0];
 	body.appendChild(s3);
 	s3.style.position = 'fixed';
-    s3.style.top = '10px';
-    s3.style.left = '873px';
+    s3.style.top = ''+s3ypos+'px';
+    s3.style.left = ''+s3xpos+'px';
    	s3.style.margin = '0px';
 	s3.style.paddingTop = '8px';
    	s3.style.width = '180px';
