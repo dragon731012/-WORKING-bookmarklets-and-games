@@ -51,7 +51,7 @@ var playerspeed=5;
     ball.style.display = 'block';
 }());
 
-function makesquare(squarexpos,squareypos,squarehits,name){
+function makesquare(squarexpos,squareypos,squarehits,called){
     (function () {
         var name = document.createElement('div');
 	    var body = document.getElementsByTagName('body')[0];
@@ -70,7 +70,7 @@ function makesquare(squarexpos,squareypos,squarehits,name){
     	name.style.backgroundColor = 'orange';
     	name.style.border = '2px solid black';
 	    name.style.textAlign = 'center';
-	    name.id = 'square';
+	    name.id = called;
 	    name.style.display = 'block';
 	    name.innerText = ''+squarehits+'';
 
