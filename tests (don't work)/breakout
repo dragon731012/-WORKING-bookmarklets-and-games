@@ -804,6 +804,7 @@ function next(){
 		clearInterval(bounce);
 		clearInterval(moveplayer);
 		start();
+		done=0;
 	}
 }
 
