@@ -130,21 +130,25 @@ var s3ypos=10;
 
 function moveball(){
 	if (ballchangex==1){
+		var ball=document.getElementById(ball);
 		ballxpos=ballxpos+ballspeed;
 		ball.style.top = ''+ballypos+'px';
    	    ball.style.left = ''+ballxpos+'px';
 	}
 	if (ballchangey==1){
+		var ball=document.getElementById(ball);
 		ballypos=ballypos+ballspeed;
 		ball.style.top = ''+ballypos+'px';
    	    ball.style.left = ''+ballxpos+'px';
 	}
 	if (ballchangex==-1){
+		var ball=document.getElementById(ball);
 		ballxpos=ballxpos-ballspeed;
 		ball.style.top = ''+ballypos+'px';
    	    ball.style.left = ''+ballxpos+'px';
 	}
 	if (ballchangey==-1){
+		var ball=document.getElementById(ball);
 		ballypos=ballypos-ballspeed;
 		ball.style.top = ''+ballypos+'px';
    	    ball.style.left = ''+ballxpos+'px';
@@ -168,11 +172,13 @@ function bounce(){
 
 function moveplayer(){
 	if (playerxmove==1){
+		var you=document.getElementById(you);
 		xpos=xpos+playerspeed;
 		you.style.top = ''+ypos+'px';
    	    you.style.left = ''+xpos+'px';
 	}
 	if (playerxmove==-1){
+		var you=document.getElementById(you);
 		xpos=xpos-playerspeed;
 		you.style.top = ''+ypos+'px';
    	    you.style.left = ''+xpos+'px';
