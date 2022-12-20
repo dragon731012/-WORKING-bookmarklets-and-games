@@ -116,13 +116,13 @@ s6ypos=s6ypos+s6height+10;
 
 
 (function () {
- 	var s1 = document.createElement('div');
+ 	var s6 = document.createElement('div');
     var body = document.getElementsByTagName('body')[0];
-    body.appendChild(s1);
+    body.appendChild(s6);
 
-    s1.style.position = 'fixed';
-    s1.style.top = ''+s1ypos+'px';
-    s1.style.left = ''+s1xpos+'px';
+    s6.style.position = 'fixed';
+    s6.style.top = ''+s6ypos+'px';
+    s6.style.left = ''+s6xpos+'px';
    	s1.style.margin = '0px';
    	s1.style.width = ''+s1width+'px';
    	s1.style.height = ''+s1height+'px';
