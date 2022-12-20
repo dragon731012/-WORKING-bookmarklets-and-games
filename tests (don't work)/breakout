@@ -532,6 +532,8 @@ function bounce(){
 		ball.parentNode.removeChild(ball);
 		ballxpos=-9999999999999999999;
 		ballypos=9999999999999999999999999;
+		ballchangex=0;
+		ballchangey=0;
 		scorer.parentNode.removeChild(scorer);
 		me.parentNode.removeChild(me);
 	}
