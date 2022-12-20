@@ -11,7 +11,7 @@ var playerspeed=10;
 var s1width=180;
 var s1height=40;
 var s1xpos=1366/2;
-s1xpos=s1xpos-s1width;
+s1xpos=s1xpos-s1width/2;
 var s1ypos=10;
 
 (function () {
