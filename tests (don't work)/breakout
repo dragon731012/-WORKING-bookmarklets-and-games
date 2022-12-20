@@ -464,6 +464,7 @@ function bounce(){
 		clearInterval(moveball);
 		clearInterval(colliding);
 		alert("game over. your score was "+score+".");
+		window.location.reload(1);
 		s1.parentNode.removeChild(s1);
 		s1width=0;
 		s1height=0;
