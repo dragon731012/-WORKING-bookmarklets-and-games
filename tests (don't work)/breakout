@@ -44,6 +44,7 @@ s5ypos=s5ypos+s5height+10;
 var s6width=180;
 var s6height=40;
 var s6xpos=1366/2;
+s6xpos=s6pos-s6width;
 var s6ypos=10;
 s6ypos=s6ypos+s6height+10;
 
