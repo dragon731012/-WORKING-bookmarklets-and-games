@@ -27,6 +27,20 @@ var s3xpos=1366/2;
 s3xpos=s3xpos-s3width/2-s3width-10;
 var s3ypos=10;
 
+var s4width=180;
+var s4height=40;
+var s4xpos=1366/2;
+s4xpos=s4xpos-s4width/2-s4width-10;
+var s4ypos=10;
+s4ypos=s4ypos+s4height+10;
+
+var s5width=180;
+var s5height=40;
+var s5xpos=1366/2;
+s5xpos=s5xpos-s5width/2+s5width+10;
+var s5ypos=10;
+s5ypos=s5ypos+s5height+10;
+
 (function () {
  	var s1 = document.createElement('div');
     var body = document.getElementsByTagName('body')[0];
@@ -41,7 +55,7 @@ var s3ypos=10;
    	s1.style.zIndex = 10000;
    	s1.style.opacity = 1;
    	s1.style.color = 'black';
-   	s1.style.backgroundColor = 'orange';
+   	s1.style.backgroundColor = 'green';
 	s1.style.paddingTop = '5px';
    	s1.style.border = '3px solid black';
     s1.style.textAlign = 'center';
@@ -64,7 +78,7 @@ var s3ypos=10;
    	s2.style.zIndex = 10000;
    	s2.style.opacity = 1;
    	s2.style.color = 'black';
-   	s2.style.backgroundColor = 'orange';
+   	s2.style.backgroundColor = 'green';
 	s2.style.paddingTop = '5px';
    	s2.style.border = '3px solid black';
     s2.style.textAlign = 'center';
@@ -86,12 +100,80 @@ var s3ypos=10;
    	s3.style.zIndex = 10000;
    	s3.style.opacity = 1;
    	s3.style.color = 'black';
-   	s3.style.backgroundColor = 'orange';
+   	s3.style.backgroundColor = 'green';
 	s3.style.paddingTop = '5px';
    	s3.style.border = '3px solid black';
     s3.style.textAlign = 'center';
     s3.id = 's3';
     s3.style.display = 'block';
+}());
+
+
+(function () {
+ 	var s1 = document.createElement('div');
+    var body = document.getElementsByTagName('body')[0];
+    body.appendChild(s1);
+
+    s1.style.position = 'fixed';
+    s1.style.top = ''+s1ypos+'px';
+    s1.style.left = ''+s1xpos+'px';
+   	s1.style.margin = '0px';
+   	s1.style.width = ''+s1width+'px';
+   	s1.style.height = ''+s1height+'px';
+   	s1.style.zIndex = 10000;
+   	s1.style.opacity = 1;
+   	s1.style.color = 'black';
+   	s1.style.backgroundColor = 'green';
+	s1.style.paddingTop = '5px';
+   	s1.style.border = '3px solid black';
+    s1.style.textAlign = 'center';
+    s1.id = 's1';
+    s1.style.display = 'block';
+}());
+
+
+(function () {
+ 	var s5 = document.createElement('div');
+    var body = document.getElementsByTagName('body')[0];
+    body.appendChild(s5);
+
+    s5.style.position = 'fixed';
+    s5.style.top = ''+s5ypos+'px';
+    s5.style.left = ''+s5xpos+'px';
+   	s5.style.margin = '0px';
+   	s5.style.width = ''+s5width+'px';
+   	s5.style.height = ''+s5height+'px';
+   	s5.style.zIndex = 10000;
+   	s5.style.opacity = 1;
+   	s5.style.color = 'black';
+   	s5.style.backgroundColor = 'green';
+	s5.style.paddingTop = '5px';
+   	s5.style.border = '3px solid black';
+    s5.style.textAlign = 'center';
+    s5.id = 's5';
+    s5.style.display = 'block';
+}());
+
+(function () {
+ 	var s4 = document.createElement('div');
+    var body = document.getElementsByTagName('body')[0];
+    body.appendChild(s4);
+
+    s4.style.position = 'fixed';
+    s4.style.top = ''+s4ypos+'px';
+    s4.style.left = ''+s4xpos+'px';
+   	s4.style.margin = '0px';
+   	s4.style.width = ''+s4width+'px';
+   	s4.style.height = ''+s4height+'px';
+   	s4.style.zIndex = 10000;
+   	s4.style.opacity = 1;
+   	s4.style.color = 'black';
+   	s4.style.backgroundColor = 'green';
+	s4.style.paddingTop = '5px';
+   	s4.style.border = '3px solid black';
+    s4.style.textAlign = 'center';
+    s4.id = 's4';
+    s4.style.display = 'block';
 }());
 
 (function () {
@@ -214,35 +296,47 @@ function colliding(){
 	}
 	if (ballxpos < s1xpos + s1width && ballxpos + 50 > s1xpos && ballypos < s1ypos + s1height && ballypos + 50 > s1ypos) {
 		score=score+1;
-		if (s1hit<=0){
-			s1.parentNode.removeChild(s1);
-			s1width=0;
-			s1height=0;
-			s1xpos=-999999;
-			s1ypos=-999999;
-		}
+		s1.parentNode.removeChild(s1);
+		s1width=0;
+		s1height=0;
+		s1xpos=-999999;
+		s1ypos=-999999;
 		ballchangey=ballchangey*-1;
     }
 	if (ballxpos < s2xpos + s2width && ballxpos + 50 > s2xpos && ballypos < s2ypos + s2height && ballypos + 50 > s2ypos) {
 		score=score+1;
-		if (s2hit<=0){
-			s2.parentNode.removeChild(s2);
-			s2width=0;
-			s2height=0;
-			s2xpos=-999999;
-			s2ypos=-999999;
-		}
+		s2.parentNode.removeChild(s2);
+		s2width=0;
+		s2height=0;
+		s2xpos=-999999;
+		s2ypos=-999999;
 		ballchangey=ballchangey*-1;
     }
 	if (ballxpos < s3xpos + s3width && ballxpos + 50 > s3xpos && ballypos < s3ypos + s3height && ballypos + 50 > s3ypos) {
 		score=score+1;
-		if (s3hit<=0){
-			s3.parentNode.removeChild(s3);
-			s3width=0;
-			s3height=0;
-			s3xpos=-999999;
-			s3ypos=-999999;
-		}
+		s3.parentNode.removeChild(s3);
+		s3width=0;
+		s3height=0;
+		s3xpos=-999999;
+		s3ypos=-999999;
+		ballchangey=ballchangey*-1;
+    }
+	if (ballxpos < s4xpos + s4width && ballxpos + 50 > s4xpos && ballypos < s4ypos + s4height && ballypos + 50 > s4ypos) {
+		score=score+1;
+		s4.parentNode.removeChild(s3);
+		s4width=0;
+		s4height=0;
+		s4xpos=-999999;
+		s4ypos=-999999;
+		ballchangey=ballchangey*-1;
+    }
+	if (ballxpos < s5xpos + s5width && ballxpos + 50 > s5xpos && ballypos < s5ypos + s5height && ballypos + 50 > s5ypos) {
+		score=score+1;
+		s5.parentNode.removeChild(s3);
+		s5width=0;
+		s5height=0;
+		s5xpos=-999999;
+		s5ypos=-999999;
 		ballchangey=ballchangey*-1;
     }
 }
