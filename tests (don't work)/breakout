@@ -157,6 +157,18 @@ function colliding(){
 		ballchangey=-1;
 		ballspeed=ballspeed+0.07;
 	}
+	if (ballxpos < s1xpos + s1width && ballxpos + 50 > s1xpos && ballypos < s1ypos + s1height && ballypos + 50 > s1ypos) {
+        s1hit=s1hit-1;
+		if (s1hit==0){
+			s1.parentNode.removeChild(s1);
+			s1width=0;
+			s1height=0;
+			s1xpos=-999999;
+			s1ypos=-999999;
+			s1hit=-9999999;
+		}
+		s1.innerText = ''+s1hit+'';
+    }
 }
 
 setInterval(colliding,5);
