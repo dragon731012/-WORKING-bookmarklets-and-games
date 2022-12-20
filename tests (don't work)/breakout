@@ -51,7 +51,7 @@ var playerspeed=5;
     ball.style.display = 'block';
 }());
 
-function makesquare(squarexpos,squareypos,squarehits,called){
+function makesquare(squarexpos,squareypos,squarehits,squarename){
     (function () {
         var name = document.createElement('div');
 	    var body = document.getElementsByTagName('body')[0];
@@ -70,7 +70,7 @@ function makesquare(squarexpos,squareypos,squarehits,called){
     	name.style.backgroundColor = 'orange';
     	name.style.border = '2px solid black';
 	    name.style.textAlign = 'center';
-	    name.id = called;
+	    name.id = squarename;
 	    name.style.display = 'block';
 	    name.innerText = ''+squarehits+'';
 
@@ -116,10 +116,10 @@ function bounce(){
 }
 
 if (level==1){
-	makesquare(200,10,2,'s1');
-	makesquare(390,10,2,'s2');
-	makesquare(580,10,2,'s3');
-	makesquare(770,10,2,'s4');
+	makesquare(200,10,2,'one');
+	makesquare(390,10,2,'two');
+	makesquare(580,10,2,'three');
+	makesquare(770,10,2,'four');
 }
 
 function level2(){
