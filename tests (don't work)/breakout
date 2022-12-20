@@ -90,6 +90,32 @@ s12xpos=s12xpos-s12width/2;
 var s12ypos=10;
 s12ypos=s12ypos+s12height+10+s12height+10+s12height+10;
 
+
+
+(function () {
+ 	var scorer = document.createElement('div');
+    var body = document.getElementsByTagName('body')[0];
+    body.appendChild(scorer);
+
+    scorer.style.position = 'fixed';
+    scorer.style.top = ''+s1ypos+'px';
+    scorer.style.left = ''+s1xpos+'px';
+   	scorer.style.margin = '0px';
+   	scorer.style.width = '100px';
+   	scorer.style.height = '40px';
+   	scorer.style.zIndex = 10000;
+   	scorer.style.opacity = 1;
+   	scorer.style.color = 'black';
+   	scorer.style.backgroundColor = 'white';
+	scorer.style.paddingTop = '5px';
+   	scorer.style.border = '3px solid black';
+    scorer.style.textAlign = 'center';
+    scorer.id = 'scorer';
+    scorer.style.display = 'block';
+}());
+
+
+
 (function () {
  	var s1 = document.createElement('div');
     var body = document.getElementsByTagName('body')[0];
