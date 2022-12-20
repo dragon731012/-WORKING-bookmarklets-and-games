@@ -169,9 +169,7 @@ function colliding(){
 			s1ypos=-999999;
 			s1hit=9999999;
 		}
-		else{
-			ballchangey=ballchangey*-1;
-		}
+		ballchangey=ballchangey*-1;
 		s1.innerText = ''+s1hit+'';
     }
 }
