@@ -799,10 +799,6 @@ start();
 
 function next(){
 	if (done>=12){
-		clearInterval(colliding);
-		clearInterval(moveball);
-		clearInterval(bounce);
-		clearInterval(moveplayer);
 		start();
 		done=0;
 	}
