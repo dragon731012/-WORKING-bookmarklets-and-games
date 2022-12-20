@@ -123,7 +123,7 @@ window.addEventListener("keyup", function(event) {
 
 function colliding(){
     if (xpos < ballxpos + 50 && xpos + 200 > ballxpos && ypos < ballypos + 50 && ypos + 30 > ballypos) {
-		alert("game over");
+		ballchangey=-1;
 	}
 }
 
