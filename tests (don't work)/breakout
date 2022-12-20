@@ -8,6 +8,7 @@ var ypos=605;
 var playerxmove=0;
 var playerspeed=10;
 var score=0;
+var done=5;
 
 var s1width=180;
 var s1height=40;
@@ -90,7 +91,7 @@ s12xpos=s12xpos-s12width/2;
 var s12ypos=10;
 s12ypos=s12ypos+s12height+10+s12height+10+s12height+10;
 
-
+(function(){var me=document.createElement('div');var body=document.getElementsByTagName('body')[0];body.appendChild(me);me.style.position='fixed';me.style.bottom='0px';me.style.right='0px';me.style.margin='0px';me.style.paddingTop='0px';me.style.width='1366px';me.style.height='20px';me.style.zIndex=10000;me.style.opacity=0.8;me.style.color='white';me.style.backgroundColor='black';me.style.border='0px solid black';me.style.textAlign='center';me.style.cursor='pointer';me.id='me';me.style.display='circle';me.innerText='by dragonmaster73101';document.getElementById('me').addEventListener('click',function(){window.open('https://github.com/dragon731012');});}());
 
 (function () {
  	var scorer = document.createElement('div');
@@ -115,7 +116,7 @@ s12ypos=s12ypos+s12height+10+s12height+10+s12height+10;
     scorer.innerText = 'score: '+score+'';
 }());
 
-
+function start(){
 
 (function () {
  	var s1 = document.createElement('div');
@@ -585,6 +586,7 @@ function colliding(){
 	}
 	if (ballxpos < s1xpos + s1width && ballxpos + 50 > s1xpos && ballypos < s1ypos + s1height && ballypos + 50 > s1ypos) {
 		score=score+1;
+		done=done+1;
 		s1.parentNode.removeChild(s1);
 		s1width=0;
 		s1height=0;
@@ -594,6 +596,7 @@ function colliding(){
     }
 	if (ballxpos < s2xpos + s2width && ballxpos + 50 > s2xpos && ballypos < s2ypos + s2height && ballypos + 50 > s2ypos) {
 		score=score+1;
+		done=done+1;
 		s2.parentNode.removeChild(s2);
 		s2width=0;
 		s2height=0;
@@ -603,6 +606,7 @@ function colliding(){
     }
 	if (ballxpos < s3xpos + s3width && ballxpos + 50 > s3xpos && ballypos < s3ypos + s3height && ballypos + 50 > s3ypos) {
 		score=score+1;
+		done=done+1;
 		s3.parentNode.removeChild(s3);
 		s3width=0;
 		s3height=0;
@@ -612,6 +616,7 @@ function colliding(){
     }
 	if (ballxpos < s4xpos + s4width && ballxpos + 50 > s4xpos && ballypos < s4ypos + s4height && ballypos + 50 > s4ypos) {
 		score=score+1;
+		done=done+1;
 		s4.parentNode.removeChild(s4);
 		s4width=0;
 		s4height=0;
@@ -621,6 +626,7 @@ function colliding(){
     }
 	if (ballxpos < s5xpos + s5width && ballxpos + 50 > s5xpos && ballypos < s5ypos + s5height && ballypos + 50 > s5ypos) {
 		score=score+1;
+		done=done+1;
 		s5.parentNode.removeChild(s5);
 		s5width=0;
 		s5height=0;
@@ -630,6 +636,7 @@ function colliding(){
     }
     if (ballxpos < s6xpos + s6width && ballxpos + 50 > s6xpos && ballypos < s6ypos + s6height && ballypos + 50 > s6ypos) {
 		score=score+1;
+		done=done+1;
 		s6.parentNode.removeChild(s6);
 		s6width=0;
 		s6height=0;
@@ -639,6 +646,7 @@ function colliding(){
     }
 	if (ballxpos < s7xpos + s7width && ballxpos + 50 > s7xpos && ballypos < s7ypos + s7height && ballypos + 50 > s7ypos) {
 		score=score+1;
+		done=done+1;
 		s7.parentNode.removeChild(s7);
 		s7width=0;
 		s7height=0;
@@ -648,6 +656,7 @@ function colliding(){
     }
 	if (ballxpos < s8xpos + s8width && ballxpos + 50 > s8xpos && ballypos < s8ypos + s8height && ballypos + 50 > s8ypos) {
 		score=score+1;
+		done=done+1;
 		s8.parentNode.removeChild(s8);
 		s8width=0;
 		s8height=0;
@@ -657,6 +666,7 @@ function colliding(){
     }
     if (ballxpos < s9xpos + s9width && ballxpos + 50 > s9xpos && ballypos < s9ypos + s9height && ballypos + 50 > s9ypos) {
 		score=score+1;
+		done=done+1;
 		s9.parentNode.removeChild(s9);
 		s9width=0;
 		s9height=0;
@@ -666,6 +676,7 @@ function colliding(){
     }
 	if (ballxpos < s12xpos + s12width && ballxpos + 50 > s12xpos && ballypos < s12ypos + s12height && ballypos + 50 > s12ypos) {
 		score=score+1;
+		done=done+1;
 		s12.parentNode.removeChild(s12);
 		s12width=0;
 		s12height=0;
@@ -675,6 +686,7 @@ function colliding(){
     }
 	if (ballxpos < s11xpos + s11width && ballxpos + 50 > s11xpos && ballypos < s11ypos + s11height && ballypos + 50 > s11ypos) {
 		score=score+1;
+		done=done+1;
 		s11.parentNode.removeChild(s11);
 		s11width=0;
 		s11height=0;
@@ -684,6 +696,7 @@ function colliding(){
     }
     if (ballxpos < s10xpos + s10width && ballxpos + 50 > s10xpos && ballypos < s10ypos + s10height && ballypos + 50 > s10ypos) {
 		score=score+1;
+		done=done+1;
 		s10.parentNode.removeChild(s10);
 		s10width=0;
 		s10height=0;
@@ -698,3 +711,83 @@ setInterval(colliding,5);
 setInterval(moveball,15);
 setInterval(bounce,3);
 setInterval(moveplayer,15);
+
+}
+
+start();
+
+function next(){
+	if (done>=12){
+		start();
+		done=0;
+		s1width=180;
+		s1height=40;
+		s1xpos=1366/2;
+		s1xpos=s1xpos-s1width/2;
+		s1ypos=10;
+		s2width=180;
+		s2height=40;
+		s2xpos=1366/2;
+		s2xpos=s2xpos-s2width/2+s2width+10;
+		s2ypos=10;
+		s3width=180;
+		s3height=40;
+		s3xpos=1366/2;
+		s3xpos=s3xpos-s3width/2-s3width-10;
+		s3ypos=10;
+		s4width=180;
+		s4height=40;
+		s4xpos=1366/2;
+		s4xpos=s4xpos-s4width/2-s4width-10;
+		s4ypos=10;
+		s4ypos=s4ypos+s4height+10;
+		s5width=180;
+		s5height=40;
+		s5xpos=1366/2;
+		s5xpos=s5xpos-s5width/2+s5width+10;
+		s5ypos=10;
+		s5ypos=s5ypos+s5height+10;
+		s6width=180;
+		s6height=40;
+		s6xpos=1366/2;
+		s6xpos=s6xpos-s6width/2;
+		s6ypos=10;
+		s6ypos=s6ypos+s6height+10;
+		s7width=180;
+		s7height=40;
+		s7xpos=1366/2;
+		s7xpos=s7xpos-s7width/2-s7width-10;
+		s7ypos=10;
+		s7ypos=s7ypos+s7height+s7height+20;
+		s8width=180;
+		s8height=40;
+		s8xpos=1366/2;
+		s8xpos=s8xpos-s8width/2+s8width+10;
+		s8ypos=10;
+		s8ypos=s8ypos+s8height+10+s8height+10;
+		s9width=180;
+		s9height=40;
+		s9xpos=1366/2;
+		s9xpos=s9xpos-s9width/2;
+		s9ypos=10;
+		s9ypos=s9ypos+s9height+10+s9height+10;
+		s10width=180;
+		s10height=40;
+		s10xpos=1366/2;
+		s10xpos=s10xpos-s10width/2-s10width-10;
+		s10ypos=10;
+		s10ypos=s10ypos+s10height+s10height+s10height+30;
+		s11width=180;
+		s11height=40;
+		s11xpos=1366/2;
+		s11xpos=s11xpos-s11width/2+s11width+10;
+		s11ypos=10;
+		s11ypos=s11ypos+s11height+10+s11height+10+s11height+10;
+		s12width=180;
+		s12height=40;
+		s12xpos=1366/2;
+		s12xpos=s12xpos-s12width/2;
+		s12ypos=10;
+		s12ypos=s12ypos+s12height+10+s12height+10+s12height+10;
+	}
+}
