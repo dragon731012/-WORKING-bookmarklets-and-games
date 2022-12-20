@@ -121,6 +121,13 @@ window.addEventListener("keyup", function(event) {
 	} 
 });
 
+function colliding(){
+    if (xpos < ballxpos + 50 && xpos + 200 > ballxpos && ypos < ballypos + 50 && ypos + 30 > ballypos) {
+		alert("game over");
+	}
+}
+
+setInterval(colliding,5);
 setInterval(moveball,15);
 setInterval(bounce,3);
 setInterval(moveplayer,15);
