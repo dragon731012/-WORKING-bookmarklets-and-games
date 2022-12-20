@@ -58,7 +58,7 @@ var s1hit=2;
 	body.appendChild(s1);
 	s1.style.position = 'fixed';
     s1.style.top = '10px';
-    s1.style.left = '200px';
+    s1.style.left = '683px';
    	s1.style.margin = '0px';
 	s1.style.paddingTop = '8px';
    	s1.style.width = '180px';
@@ -72,6 +72,50 @@ var s1hit=2;
 	s1.id = 's1';
     s1.style.display = 'block';
 	s1.innerText = ''+s1hit+'';
+}());
+
+(function () {
+    var s2 = document.createElement('div');
+    var body = document.getElementsByTagName('body')[0];
+	body.appendChild(s2);
+	s2.style.position = 'fixed';
+    s2.style.top = '10px';
+    s2.style.left = '493px';
+   	s2.style.margin = '0px';
+	s2.style.paddingTop = '8px';
+   	s2.style.width = '180px';
+   	s2.style.height = '40px';
+   	s2.style.zIndex = 10000;
+   	s2.style.opacity = 0.9;
+	s2.style.color = 'black';
+   	s2.style.backgroundColor = 'orange';
+   	s2.style.border = '2px solid black';
+    s2.style.textAlign = 'center';
+	s2.id = 's2';
+    s2.style.display = 'block';
+	s2.innerText = ''+s3hit+'';
+}());
+
+(function () {
+    var s3 = document.createElement('div');
+    var body = document.getElementsByTagName('body')[0];
+	body.appendChild(s3);
+	s3.style.position = 'fixed';
+    s3.style.top = '10px';
+    s3.style.left = '873px';
+   	s3.style.margin = '0px';
+	s3.style.paddingTop = '8px';
+   	s3.style.width = '180px';
+   	s3.style.height = '40px';
+   	s3.style.zIndex = 10000;
+   	s3.style.opacity = 0.9;
+	s3.style.color = 'black';
+   	s3.style.backgroundColor = 'orange';
+   	s3.style.border = '2px solid black';
+    s3.style.textAlign = 'center';
+	s3.id = 's3';
+    s3.style.display = 'block';
+	s3.innerText = ''+s3hit+'';
 }());
 
 function moveball(){
@@ -110,20 +154,6 @@ function bounce(){
 	if (ballxpos>=1316){
 		ballchangex=-1;
 	}
-}
-
-if (level==1){
-	makesquare(200,10,2,1);
-	makesquare(390,10,2,2);
-	makesquare(580,10,2,3);
-	makesquare(770,10,2,4);
-}
-
-function level2(){
-   if (level==2){
-       makesquare(0,0,4);
-	   clearInterval(level2);
-   }
 }
 
 function moveplayer(){
