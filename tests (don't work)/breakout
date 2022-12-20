@@ -23,6 +23,13 @@ s2xpos=s2xpos-s2width/2+s2width+10;
 var s2ypos=10;
 var s2hit=1;
 
+var s3width=180;
+var s3height=40;
+var s3xpos=1366/2;
+s3xpos=s3xpos-s3width/2-s3width-10;
+var s3ypos=10;
+var s3hit=1;
+
 (function () {
  	var s1 = document.createElement('div');
     var body = document.getElementsByTagName('body')[0];
@@ -68,6 +75,29 @@ var s2hit=1;
     s2.innerText = ''+s2hit+'';
     s2.id = 's2';
     s2.style.display = 'block';
+}());
+
+(function () {
+ 	var s3 = document.createElement('div');
+    var body = document.getElementsByTagName('body')[0];
+    body.appendChild(s3);
+
+    s3.style.position = 'fixed';
+    s3.style.top = ''+s3ypos+'px';
+    s3.style.left = ''+s3xpos+'px';
+   	s3.style.margin = '0px';
+   	s3.style.width = ''+s3width+'px';
+   	s3.style.height = ''+s3height+'px';
+   	s3.style.zIndex = 10000;
+   	s3.style.opacity = 1;
+   	s3.style.color = 'black';
+   	s3.style.backgroundColor = 'orange';
+	s3.style.paddingTop = '5px';
+   	s3.style.border = '3px solid black';
+    s3.style.textAlign = 'center';
+    s3.innerText = ''+s3hit+'';
+    s3.id = 's3';
+    s3.style.display = 'block';
 }());
 
 (function () {
@@ -215,6 +245,20 @@ function colliding(){
 		}
 		ballchangey=ballchangey*-1;
 		s2.innerText = ''+s2hit+'';
+    }
+	if (ballxpos < s3xpos + s3width && ballxpos + 50 > s3xpos && ballypos < s3ypos + s3height && ballypos + 50 > s3ypos) {
+		s3hit=s3hit-1;
+		score=score+1;
+		if (s3hit<=0){
+			s3.parentNode.removeChild(s3);
+			s3width=0;
+			s3height=0;
+			s3xpos=-999999;
+			s3ypos=-999999;
+			s3hit=9999999;
+		}
+		ballchangey=ballchangey*-1;
+		s3.innerText = ''+s3hit+'';
     }
 }
 
