@@ -8,6 +8,7 @@ var xpos=683;
 var ypos=605;
 var playerxmove=0;
 var playerspeed=5;
+var s1hit=2;
 
 (function () {
  	var you = document.createElement('div');
@@ -51,31 +52,27 @@ var playerspeed=5;
     ball.style.display = 'block';
 }());
 
-function makesquare(squarexpos,squareypos,squarehits,squarename){
-    (function () {
-        var name = document.createElement('div');
-	    var body = document.getElementsByTagName('body')[0];
-	    body.appendChild(name);
-
-	    name.style.position = 'fixed';
-	    name.style.top = ''+squareypos+'px';
-	    name.style.left = ''+squarexpos+'px';
-    	name.style.margin = '0px';
-	    name.style.paddingTop = '8px';
-    	name.style.width = '180px';
-    	name.style.height = '40px';
-    	name.style.zIndex = 10000;
-    	name.style.opacity = 0.9;
-    	name.style.color = 'black';
-    	name.style.backgroundColor = 'orange';
-    	name.style.border = '2px solid black';
-	    name.style.textAlign = 'center';
-	    name.id = squarename;
-	    name.style.display = 'block';
-	    name.innerText = ''+squarehits+'';
-
-	}());
-}
+(function () {
+    var s1 = document.createElement('div');
+    var body = document.getElementsByTagName('body')[0];
+	body.appendChild(s1);
+	s1.style.position = 'fixed';
+    s1.style.top = '10px';
+    s1.style.left = '200px';
+   	s1.style.margin = '0px';
+	s1.style.paddingTop = '8px';
+   	s1.style.width = '180px';
+   	s1.style.height = '40px';
+   	s1.style.zIndex = 10000;
+   	s1.style.opacity = 0.9;
+	s1.style.color = 'black';
+   	s1.style.backgroundColor = 'orange';
+   	s1.style.border = '2px solid black';
+    s1.style.textAlign = 'center';
+	s1.id = 's1';
+    s1.style.display = 'block';
+	s1.innerText = ''+s1hit+'';
+}());
 
 function moveball(){
 	if (ballchangex==1){
