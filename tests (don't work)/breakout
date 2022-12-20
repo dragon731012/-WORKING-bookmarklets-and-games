@@ -727,7 +727,6 @@ start();
 
 function next(){
 	if (done>=12){
-		done=0;
 		ballxpos=683;
 		ballypos=384;
 		s1width=180;
@@ -804,6 +803,7 @@ function next(){
 		clearInterval(bounce);
 		clearInterval(moveplayer);
 		start();
+		done=0;
 	}
 }
 
