@@ -116,10 +116,10 @@ function bounce(){
 }
 
 if (level==1){
-	makesquare(200,10,2,'one');
-	makesquare(390,10,2,'two');
-	makesquare(580,10,2,'three');
-	makesquare(770,10,2,'four');
+	makesquare(200,10,2,1);
+	makesquare(390,10,2,2);
+	makesquare(580,10,2,3);
+	makesquare(770,10,2,4);
 }
 
 function level2(){
