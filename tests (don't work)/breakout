@@ -719,6 +719,8 @@ start();
 
 function next(){
 	if (done>=12){
+		ballxpos=683;
+		ballypos=384;
 		s1width=180;
 		s1height=40;
 		s1xpos=1366/2;
