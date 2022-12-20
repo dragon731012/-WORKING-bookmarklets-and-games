@@ -796,6 +796,7 @@ start();
 function next(){
 	if (done>=12){
 		start();
+		speed=speed/2;
 		done=0;
 	}
 }
