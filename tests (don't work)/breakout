@@ -717,6 +717,10 @@ start();
 
 function next(){
 	if (done>=12){
+		clearInterval(colliding);
+		clearInterval(moveball);
+		clearInterval(bounce);
+		clearInterval(moveplayer);
 		ballxpos=683;
 		ballypos=384;
 		s1width=180;
