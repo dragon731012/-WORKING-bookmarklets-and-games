@@ -457,6 +457,7 @@ function moveball(){
 
 function bounce(){
 	if (ballypos>=615){
+		alert("game over. your score was "+score+".");
 		s1.parentNode.removeChild(s1);
 		s1width=0;
 		s1height=0;
@@ -535,7 +536,6 @@ function bounce(){
 		ballypos=9999999999999999999999999;
 		scorer.parentNode.removeChild(scorer);
 		me.parentNode.removeChild(me);
-		alert("game over. your score was "+score+".");
 	}
 	if (ballxpos<=0){
 		ballchangex=1;
