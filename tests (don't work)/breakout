@@ -202,6 +202,20 @@ function colliding(){
 		ballchangey=ballchangey*-1;
 		s1.innerText = ''+s1hit+'';
     }
+	if (ballxpos < s2xpos + s2width && ballxpos + 50 > s2xpos && ballypos < s2ypos + s2height && ballypos + 50 > s2ypos) {
+		s2hit=s2hit-1;
+		score=score+1;
+		if (s2hit<=0){
+			s2.parentNode.removeChild(s2);
+			s2width=0;
+			s2height=0;
+			s2xpos=-999999;
+			s2ypos=-999999;
+			s2hit=9999999;
+		}
+		ballchangey=ballchangey*-1;
+		s2.innerText = ''+s2hit+'';
+    }
 }
 
 setInterval(colliding,5);
