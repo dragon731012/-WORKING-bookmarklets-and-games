@@ -8,7 +8,7 @@ var ypos=605;
 var playerxmove=0;
 var playerspeed=10;
 var score=0;
-var done=5;
+var done=0;
 
 var s1width=180;
 var s1height=40;
