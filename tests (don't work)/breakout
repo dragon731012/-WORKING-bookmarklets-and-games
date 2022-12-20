@@ -112,6 +112,7 @@ s12ypos=s12ypos+s12height+10+s12height+10+s12height+10;
     scorer.style.textAlign = 'center';
     scorer.id = 'scorer';
     scorer.style.display = 'block';
+    scorer.innerText = 'score: '+score+'';
 }());
 
 
@@ -613,6 +614,7 @@ function colliding(){
 		s10ypos=-999999;
 		ballchangey=ballchangey*-1;
     }
+    scorer.innerText = 'score: '+score+'';
 }
 
 setInterval(colliding,5);
