@@ -13,6 +13,7 @@ var s1height=40;
 var s1xpos=1366/2;
 s1xpos=s1xpos-s1width/2;
 var s1ypos=10;
+var s1hit=2;
 
 (function () {
  	var s1 = document.createElement('div');
@@ -31,6 +32,7 @@ var s1ypos=10;
    	s1.style.backgroundColor = 'orange';
    	s1.style.border = '3px solid black';
     s1.style.textAlign = 'center';
+    s1.innerText = ''+s1hit+'';
     s1.id = 's1';
     s1.style.display = 'block';
 }());
