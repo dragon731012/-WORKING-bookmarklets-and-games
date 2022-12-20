@@ -661,10 +661,6 @@ window.addEventListener("keyup", function(event) {
 });
 
 function colliding(){
-    if (xpos < ballxpos + 50 && xpos + 200 > ballxpos && ypos < ballypos + 50 && ypos + 30 > ballypos) {
-		ballchangey=-1;
-		ballspeed=ballspeed+0.07;
-	}
 	if (ballxpos < s1xpos + s1width && ballxpos + 50 > s1xpos && ballypos < s1ypos + s1height && ballypos + 50 > s1ypos) {
 		score=score+1;
 		done=done+1;
@@ -804,4 +800,12 @@ function next(){
 	}
 }
 
+function hit(){
+if (xpos < ballxpos + 50 && xpos + 200 > ballxpos && ypos < ballypos + 50 && ypos + 30 > ballypos) {
+		ballchangey=-1;
+		ballspeed=ballspeed+0.07;
+	}
+}
+
 setInterval(next,2);
+setInterval(hit,2);
