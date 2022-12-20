@@ -323,7 +323,7 @@ function colliding(){
     }
 	if (ballxpos < s4xpos + s4width && ballxpos + 50 > s4xpos && ballypos < s4ypos + s4height && ballypos + 50 > s4ypos) {
 		score=score+1;
-		s4.parentNode.removeChild(s3);
+		s4.parentNode.removeChild(s4);
 		s4width=0;
 		s4height=0;
 		s4xpos=-999999;
@@ -332,7 +332,7 @@ function colliding(){
     }
 	if (ballxpos < s5xpos + s5width && ballxpos + 50 > s5xpos && ballypos < s5ypos + s5height && ballypos + 50 > s5ypos) {
 		score=score+1;
-		s5.parentNode.removeChild(s3);
+		s5.parentNode.removeChild(s5);
 		s5width=0;
 		s5height=0;
 		s5xpos=-999999;
