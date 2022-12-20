@@ -124,17 +124,17 @@ s6ypos=s6ypos+s6height+10;
     s6.style.top = ''+s6ypos+'px';
     s6.style.left = ''+s6xpos+'px';
    	s6.style.margin = '0px';
-   	s6.style.width = ''+s1width+'px';
-   	s6.style.height = ''+s1height+'px';
+   	s6.style.width = ''+s6width+'px';
+   	s6.style.height = ''+s6height+'px';
    	s6.style.zIndex = 10000;
-   	s1.style.opacity = 1;
-   	s1.style.color = 'black';
-   	s1.style.backgroundColor = 'orange';
-	s1.style.paddingTop = '5px';
-   	s1.style.border = '3px solid black';
-    s1.style.textAlign = 'center';
-    s1.id = 's1';
-    s1.style.display = 'block';
+   	s6.style.opacity = 1;
+   	s6.style.color = 'black';
+   	s6.style.backgroundColor = 'orange';
+	s6.style.paddingTop = '5px';
+   	s6.style.border = '3px solid black';
+    s6.style.textAlign = 'center';
+    s6.id = 's6';
+    s6.style.display = 'block';
 }());
 
 
@@ -343,6 +343,15 @@ function colliding(){
 		s5height=0;
 		s5xpos=-999999;
 		s5ypos=-999999;
+		ballchangey=ballchangey*-1;
+    }
+    if (ballxpos < s6xpos + s6width && ballxpos + 50 > s6xpos && ballypos < s6ypos + s6height && ballypos + 50 > s6ypos) {
+		score=score+1;
+		s6.parentNode.removeChild(s6);
+		s6width=0;
+		s6height=0;
+		s6xpos=-999999;
+		s6ypos=-999999;
 		ballchangey=ballchangey*-1;
     }
 }
