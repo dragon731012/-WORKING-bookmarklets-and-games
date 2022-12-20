@@ -532,6 +532,7 @@ function bounce(){
 		ball.parentNode.removeChild(ball);
 		ballxpos=-9999999999999999999;
 		ballypos=9999999999999999999999999;
+		scorer.parentNode.removeChild(scorer);
 		alert("game over. your score was "+score+".");
 	}
 	if (ballxpos<=0){
