@@ -455,6 +455,10 @@ function moveball(){
 
 function bounce(){
 	if (ballypos>=615){
+		clearInterval(bounce);
+		clearInterval(moveplayer);
+		clearInterval(moveball);
+		clearInterval(colliding);
 		alert("game over. your score was "+score+".");
 		s1.parentNode.removeChild(s1);
 		s1width=0;
