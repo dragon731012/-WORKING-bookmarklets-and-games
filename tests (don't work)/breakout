@@ -14,21 +14,18 @@ var s1height=40;
 var s1xpos=1366/2;
 s1xpos=s1xpos-s1width/2;
 var s1ypos=10;
-var s1hit=1;
 
 var s2width=180;
 var s2height=40;
 var s2xpos=1366/2;
 s2xpos=s2xpos-s2width/2+s2width+10;
 var s2ypos=10;
-var s2hit=1;
 
 var s3width=180;
 var s3height=40;
 var s3xpos=1366/2;
 s3xpos=s3xpos-s3width/2-s3width-10;
 var s3ypos=10;
-var s3hit=1;
 
 (function () {
  	var s1 = document.createElement('div');
@@ -48,7 +45,6 @@ var s3hit=1;
 	s1.style.paddingTop = '5px';
    	s1.style.border = '3px solid black';
     s1.style.textAlign = 'center';
-    s1.innerText = ''+s1hit+'';
     s1.id = 's1';
     s1.style.display = 'block';
 }());
@@ -72,7 +68,6 @@ var s3hit=1;
 	s2.style.paddingTop = '5px';
    	s2.style.border = '3px solid black';
     s2.style.textAlign = 'center';
-    s2.innerText = ''+s2hit+'';
     s2.id = 's2';
     s2.style.display = 'block';
 }());
@@ -95,7 +90,6 @@ var s3hit=1;
 	s3.style.paddingTop = '5px';
    	s3.style.border = '3px solid black';
     s3.style.textAlign = 'center';
-    s3.innerText = ''+s3hit+'';
     s3.id = 's3';
     s3.style.display = 'block';
 }());
@@ -219,7 +213,6 @@ function colliding(){
 		ballspeed=ballspeed+0.07;
 	}
 	if (ballxpos < s1xpos + s1width && ballxpos + 50 > s1xpos && ballypos < s1ypos + s1height && ballypos + 50 > s1ypos) {
-		s1hit=s1hit-1;
 		score=score+1;
 		if (s1hit<=0){
 			s1.parentNode.removeChild(s1);
@@ -227,13 +220,10 @@ function colliding(){
 			s1height=0;
 			s1xpos=-999999;
 			s1ypos=-999999;
-			s1hit=9999999;
 		}
 		ballchangey=ballchangey*-1;
-		s1.innerText = ''+s1hit+'';
     }
 	if (ballxpos < s2xpos + s2width && ballxpos + 50 > s2xpos && ballypos < s2ypos + s2height && ballypos + 50 > s2ypos) {
-		s2hit=s2hit-1;
 		score=score+1;
 		if (s2hit<=0){
 			s2.parentNode.removeChild(s2);
@@ -241,13 +231,10 @@ function colliding(){
 			s2height=0;
 			s2xpos=-999999;
 			s2ypos=-999999;
-			s2hit=9999999;
 		}
 		ballchangey=ballchangey*-1;
-		s2.innerText = ''+s2hit+'';
     }
 	if (ballxpos < s3xpos + s3width && ballxpos + 50 > s3xpos && ballypos < s3ypos + s3height && ballypos + 50 > s3ypos) {
-		s3hit=s3hit-1;
 		score=score+1;
 		if (s3hit<=0){
 			s3.parentNode.removeChild(s3);
@@ -255,10 +242,8 @@ function colliding(){
 			s3height=0;
 			s3xpos=-999999;
 			s3ypos=-999999;
-			s3hit=9999999;
 		}
 		ballchangey=ballchangey*-1;
-		s3.innerText = ''+s3hit+'';
     }
 }
 
