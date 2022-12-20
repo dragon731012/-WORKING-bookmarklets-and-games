@@ -16,6 +16,13 @@ s1xpos=s1xpos-s1width/2;
 var s1ypos=10;
 var s1hit=1;
 
+var s2width=180;
+var s2height=40;
+var s2xpos=1366/2;
+s2xpos=s2xpos-s2width/2+s2width+10;
+var s2ypos=10;
+var s2hit=1;
+
 (function () {
  	var s1 = document.createElement('div');
     var body = document.getElementsByTagName('body')[0];
@@ -39,6 +46,29 @@ var s1hit=1;
     s1.style.display = 'block';
 }());
 
+
+(function () {
+ 	var s2 = document.createElement('div');
+    var body = document.getElementsByTagName('body')[0];
+    body.appendChild(s2);
+
+    s2.style.position = 'fixed';
+    s2.style.top = ''+s2ypos+'px';
+    s2.style.left = ''+s2xpos+'px';
+   	s2.style.margin = '0px';
+   	s2.style.width = ''+s2width+'px';
+   	s2.style.height = ''+s2height+'px';
+   	s2.style.zIndex = 10000;
+   	s2.style.opacity = 1;
+   	s2.style.color = 'black';
+   	s2.style.backgroundColor = 'orange';
+	s2.style.paddingTop = '5px';
+   	s2.style.border = '3px solid black';
+    s2.style.textAlign = 'center';
+    s2.innerText = ''+s2hit+'';
+    s2.id = 's2';
+    s2.style.display = 'block';
+}());
 
 (function () {
  	var you = document.createElement('div');
