@@ -8,13 +8,12 @@ var ypos=605;
 var playerxmove=0;
 var playerspeed=10;
 
-var s1ready=1;
 var s1width=180;
 var s1height=40;
 var s1xpos=1366/2;
 s1xpos=s1xpos-s1width/2;
 var s1ypos=10;
-var s1hit=2;
+var s1hit=1;
 
 (function () {
  	var s1 = document.createElement('div');
@@ -158,8 +157,7 @@ function colliding(){
 		ballchangey=-1;
 		ballspeed=ballspeed+0.07;
 	}
-	if (ballxpos < s1xpos + s1width && ballxpos + 50 > s1xpos && ballypos < s1ypos + s1height && ballypos + 50 > s1ypos && s1ready==1) {
-        s1ready=0;
+	if (ballxpos < s1xpos + s1width && ballxpos + 50 > s1xpos && ballypos < s1ypos + s1height && ballypos + 50 > s1ypos) {
 		s1hit=s1hit-1;
 		if (s1hit<=0){
 			s1.parentNode.removeChild(s1);
@@ -174,9 +172,6 @@ function colliding(){
 		}
 		s1.innerText = ''+s1hit+'';
     }
-	else{
-		s1ready=1;
-	}
 }
 
 setInterval(colliding,5);
