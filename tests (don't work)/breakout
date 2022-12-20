@@ -726,7 +726,7 @@ setInterval(moveplayer,15);
 start();
 
 function next(){
-	if (done>=12){
+	if (done>=11){
 		clearInterval(colliding);
 		clearInterval(moveball);
 		clearInterval(bounce);
