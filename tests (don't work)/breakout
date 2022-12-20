@@ -540,6 +540,7 @@ function bounce(){
 		ballchangey=0;
 		scorer.parentNode.removeChild(scorer);
 		me.parentNode.removeChild(me);
+		return;
 	}
 	if (ballxpos<=0){
 		ballchangex=1;
