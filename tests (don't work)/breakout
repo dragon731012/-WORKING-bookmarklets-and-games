@@ -798,8 +798,8 @@ function next(){
 		s12xpos=s12xpos-s12width/2;
 		s12ypos=10;
 		s12ypos=s12ypos+s12height+10+s12height+10+s12height+10;
-		var ballchangex=1;
-		var ballchangey=1;
+		ballchangex=1;
+		ballchangey=1;
 		clearInterval(colliding);
 		clearInterval(moveball);
 		clearInterval(bounce);
