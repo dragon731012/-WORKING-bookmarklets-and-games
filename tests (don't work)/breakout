@@ -461,84 +461,78 @@ function bounce(){
 		s1height=0;
 		s1xpos=-999999;
 		s1ypos=-999999;
-		ballchangey=ballchangey*-1;
 		
 		s2.parentNode.removeChild(s2);
 		s2width=0;
 		s2height=0;
 		s2xpos=-999999;
 		s2ypos=-999999;
-		ballchangey=ballchangey*-1;
 		
 		s3.parentNode.removeChild(s3);
 		s3width=0;
 		s3height=0;
 		s3xpos=-999999;
 		s3ypos=-999999;
-		ballchangey=ballchangey*-1;
 		
 		s4.parentNode.removeChild(s4);
 		s4width=0;
 		s4height=0;
 		s4xpos=-999999;
 		s4ypos=-999999;
-		ballchangey=ballchangey*-1;
 		
 		s5.parentNode.removeChild(s5);
 		s5width=0;
 		s5height=0;
 		s5xpos=-999999;
 		s5ypos=-999999;
-		ballchangey=ballchangey*-1;
 		
 		s6.parentNode.removeChild(s6);
 		s6width=0;
 		s6height=0;
 		s6xpos=-999999;
 		s6ypos=-999999;
-		ballchangey=ballchangey*-1;
 		
 		s7.parentNode.removeChild(s7);
 		s7width=0;
 		s7height=0;
 		s7xpos=-999999;
 		s7ypos=-999999;
-		ballchangey=ballchangey*-1;
 		
 		s8.parentNode.removeChild(s8);
 		s8width=0;
 		s8height=0;
 		s8xpos=-999999;
 		s8ypos=-999999;
-		ballchangey=ballchangey*-1;
 		
 		s9.parentNode.removeChild(s9);
 		s9width=0;
 		s9height=0;
 		s9xpos=-999999;
 		s9ypos=-999999;
-		ballchangey=ballchangey*-1;
 		
 		s10.parentNode.removeChild(s10);
 		s10width=0;
 		s10height=0;
 		s10xpos=-999999;
 		s10ypos=-999999;
-		ballchangey=ballchangey*-1;
 		
 		s11.parentNode.removeChild(s11);
 		s11width=0;
 		s11height=0;
 		s11xpos=-999999;
 		s11ypos=-999999;
-		ballchangey=ballchangey*-1;
 		
 		s12.parentNode.removeChild(s12);
 		s12width=0;
 		s12height=0;
 		s12xpos=-999999;
 		s12ypos=-999999;
-		ballchangey=ballchangey*-1;
+		
+		you.parentNode.removeChild(you);
+		ball.parentNode.removeChild(ball);
+		ballxpos=-9999999999999999999;
+		ballypos=9999999999999999999999999;
+		alert("game over. your score was "+score+".");
 	}
 	if (ballxpos<=0){
 		ballchangex=1;
