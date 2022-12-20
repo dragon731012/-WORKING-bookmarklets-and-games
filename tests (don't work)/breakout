@@ -534,6 +534,7 @@ function bounce(){
 		ballxpos=-9999999999999999999;
 		ballypos=9999999999999999999999999;
 		scorer.parentNode.removeChild(scorer);
+		me.parentNode.removeChild(me);
 		alert("game over. your score was "+score+".");
 	}
 	if (ballxpos<=0){
@@ -718,8 +719,6 @@ start();
 
 function next(){
 	if (done>=12){
-		start();
-		done=0;
 		s1width=180;
 		s1height=40;
 		s1xpos=1366/2;
@@ -789,5 +788,9 @@ function next(){
 		s12xpos=s12xpos-s12width/2;
 		s12ypos=10;
 		s12ypos=s12ypos+s12height+10+s12height+10+s12height+10;
+		start();
+		done=0;
 	}
 }
+
+setInterval(next,2);
