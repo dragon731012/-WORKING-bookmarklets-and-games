@@ -8,6 +8,31 @@ var ypos=605;
 var playerxmove=0;
 var playerspeed=5;
 
+var s1xpos=1366/2;
+var s1ypos=10;
+
+(function () {
+ 	var s1 = document.createElement('div');
+    var body = document.getElementsByTagName('body')[0];
+    body.appendChild(s1);
+
+    s1.style.position = 'fixed';
+    s1.style.top = ''+s1ypos+'px';
+    s1.style.left = ''+s1xpos+'px';
+   	s1.style.margin = '0px';
+   	s1.style.width = '200px';
+   	s1.style.height = '30px';
+   	s1.style.zIndex = 10000;
+   	s1.style.opacity = 1;
+   	s1.style.color = 'black';
+   	s1.style.backgroundColor = 'white';
+   	s1.style.border = '2px solid black';
+    s1.style.textAlign = 'center';
+    s1.id = 's1';
+    s1.style.display = 'block';
+}());
+
+
 (function () {
  	var you = document.createElement('div');
     var body = document.getElementsByTagName('body')[0];
