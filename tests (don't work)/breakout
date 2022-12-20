@@ -8,6 +8,8 @@ var ypos=605;
 var playerxmove=0;
 var playerspeed=10;
 
+var s1width=180;
+var s1height=40;
 var s1xpos=1366/2;
 var s1ypos=10;
 
@@ -25,8 +27,8 @@ var s1ypos=10;
    	s1.style.zIndex = 10000;
    	s1.style.opacity = 1;
    	s1.style.color = 'black';
-   	s1.style.backgroundColor = 'white';
-   	s1.style.border = '2px solid black';
+   	s1.style.backgroundColor = 'orange';
+   	s1.style.border = '3px solid black';
     s1.style.textAlign = 'center';
     s1.id = 's1';
     s1.style.display = 'block';
@@ -149,7 +151,7 @@ window.addEventListener("keyup", function(event) {
 function colliding(){
     if (xpos < ballxpos + 50 && xpos + 200 > ballxpos && ypos < ballypos + 50 && ypos + 30 > ballypos) {
 		ballchangey=-1;
-		ballspeed=ballspeed+0.1;
+		ballspeed=ballspeed+0.07;
 	}
 }
 
