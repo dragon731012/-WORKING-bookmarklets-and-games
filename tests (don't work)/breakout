@@ -456,7 +456,7 @@ function moveball(){
 
 function bounce(){
 	if (ballypos>=615){
-		alert("game over. your score was "+score+".");
+	
 	}
 	if (ballxpos<=0){
 		ballchangex=1;
