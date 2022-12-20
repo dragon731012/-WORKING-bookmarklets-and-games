@@ -802,7 +802,6 @@ function next(){
 		clearInterval(moveball);
 		clearInterval(bounce);
 		clearInterval(moveplayer);
-		done=0;
 		start();
 	}
 }
