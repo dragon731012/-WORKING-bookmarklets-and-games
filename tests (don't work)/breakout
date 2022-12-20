@@ -30,6 +30,7 @@ var s1hit=2;
    	s1.style.opacity = 1;
    	s1.style.color = 'black';
    	s1.style.backgroundColor = 'orange';
+	s1.style.paddingTop = '10px';
    	s1.style.border = '3px solid black';
     s1.style.textAlign = 'center';
     s1.innerText = ''+s1hit+'';
