@@ -98,8 +98,8 @@ s12ypos=s12ypos+s12height+10+s12height+10+s12height+10;
     body.appendChild(scorer);
 
     scorer.style.position = 'fixed';
-    scorer.style.top = ''+s1ypos+'px';
-    scorer.style.left = ''+s1xpos+'px';
+    scorer.style.top = '10px';
+    scorer.style.left = '10px';
    	scorer.style.margin = '0px';
    	scorer.style.width = '100px';
    	scorer.style.height = '40px';
