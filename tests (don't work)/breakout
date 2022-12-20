@@ -6,7 +6,7 @@ var ballspeed=5;
 var xpos=683;
 var ypos=605;
 var playerxmove=0;
-var playerspeed=5;
+var playerspeed=10;
 
 var s1xpos=1366/2;
 var s1ypos=10;
@@ -149,7 +149,7 @@ window.addEventListener("keyup", function(event) {
 function colliding(){
     if (xpos < ballxpos + 50 && xpos + 200 > ballxpos && ypos < ballypos + 50 && ypos + 30 > ballypos) {
 		ballchangey=-1;
-		ballspeed=ballspeed+0.2;
+		ballspeed=ballspeed+0.1;
 	}
 }
 
