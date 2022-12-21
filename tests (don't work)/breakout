@@ -11,11 +11,11 @@ if (randomnum==2){
 }
 
 var ballchangey=1;
-var ballspeed=4;
+var ballspeed=3;
 var xpos=683;
 var ypos=605;
 var playerxmove=0;
-var playerspeed=6;
+var playerspeed=5;
 var score=0;
 var done=0;
 
@@ -169,6 +169,8 @@ s12ypos=s12ypos+s12height+10+s12height+10+s12height+10;
 }());
 
 function start(){
+		ballspeed=ballspeed+1;
+		playerspeed=playerspeed+1;
 		s1width=180;
 		s1height=40;
 		s1xpos=1366/2;
@@ -809,8 +811,6 @@ start();
 function next(){
 	if (done>=12){
 		start();
-		ballspeed=ballspeed+1;
-		playerspeed=playerspeed+1;
 		done=0;
 	}
 }
