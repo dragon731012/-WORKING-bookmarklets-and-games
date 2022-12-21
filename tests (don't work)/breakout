@@ -630,7 +630,7 @@ function bounce(){
 
 function moveplayer(){
 	if (playerxmove==1){
-		if (xpos+playerspeed>=1366){
+		if (xpos+playerspeed>=1366-200){
 		}
 		else{
 			xpos=xpos+playerspeed;
@@ -639,7 +639,7 @@ function moveplayer(){
 		}
 	}
 	if (playerxmove==-1){
-		if (xpos+playerspeed-200<=0){
+		if (xpos+playerspeed<=0){
 		}
 		else{
 			xpos=xpos-playerspeed;
