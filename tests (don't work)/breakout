@@ -2,11 +2,11 @@ var ballxpos=683;
 var ballypos=384;
 var ballchangex=1;
 var ballchangey=1;
-var ballspeed=5;
+var ballspeed=4;
 var xpos=683;
 var ypos=605;
 var playerxmove=0;
-var playerspeed=7;
+var playerspeed=6;
 var score=0;
 var done=0;
 
@@ -797,6 +797,7 @@ function next(){
 	if (done>=12){
 		start();
 		ballspeed=ballspeed/2;
+		playerspeed=playerspeed/2;
 		done=0;
 	}
 }
