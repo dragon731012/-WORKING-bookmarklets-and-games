@@ -169,8 +169,8 @@ s12ypos=s12ypos+s12height+10+s12height+10+s12height+10;
 }());
 
 function start(){
-		ballspeed=ballspeed+1;
-		playerspeed=playerspeed+1;
+		ballspeed=ballspeed+0.3;
+		playerspeed=playerspeed+0.3;
 		s1width=180;
 		s1height=40;
 		s1xpos=1366/2;
