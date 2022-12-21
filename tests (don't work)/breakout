@@ -13,7 +13,7 @@ if (randomnum==2){
 var ballchangey=1;
 var ballspeed=4;
 var xpos=683;
-var ypos=605;
+var ypos=500;
 var playerxmove=0;
 var playerspeed=6;
 var score=0;
