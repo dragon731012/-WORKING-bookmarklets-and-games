@@ -26,6 +26,14 @@ for html (ones with .html):
 
 4. click file when you want to play
 
+for zip ones (ones with .zip):
+
+1. download
+
+2. double click file until you see main.html or index.html
+
+3. play it
+
 # my and my contributor's involvement with these
 
 I only made some of these, and I am not responsible for any of them.
