@@ -1,6 +1,15 @@
 var ballxpos=683;
 var ballypos=384;
-var ballchangex=1;
+var randomnum=Math.floor(Math.random()*(2-1+1)+1);
+
+if (randomnum==1){
+	var ballchangex=1;
+}
+
+if (randomnum==2){
+	var ballchangex=-1;
+}
+
 var ballchangey=1;
 var ballspeed=4;
 var xpos=683;
