@@ -1,5 +1,5 @@
 var ballxpos=683;
-var ballypos=284;
+var ballypos=200;
 var randomnum=Math.floor(Math.random()*(2-1+1)+1);
 
 if (randomnum==1){
@@ -171,7 +171,7 @@ s12ypos=s12ypos+s12height+10+s12height+10+s12height+10;
 function start(){
 
 		ballxpos=683;
-		ballypos=284;
+		ballypos=200;
 		s1width=180;
 		s1height=40;
 		s1xpos=1366/2;
