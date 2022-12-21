@@ -1,6 +1,5 @@
 var ballxpos=683;
 var ballypos=200;
-var num=0;
 var randomnum=Math.floor(Math.random()*(2-1+1)+1);
 
 if (randomnum==1){
@@ -812,7 +811,6 @@ function next(){
 		start();
 		ballspeed=ballspeed/2;
 		playerspeed=playerspeed/2;
-		num=num+1;
 		done=0;
 	}
 }
