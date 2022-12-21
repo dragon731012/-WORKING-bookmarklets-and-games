@@ -809,8 +809,8 @@ start();
 function next(){
 	if (done>=12){
 		start();
-		ballspeed=ballspeed/2;
-		playerspeed=playerspeed/2;
+		ballspeed=ballspeed+1.5;
+		playerspeed=playerspeed+1.5;
 		done=0;
 	}
 }
@@ -818,8 +818,6 @@ function next(){
 function hit(){
 if (xpos < ballxpos + 50 && xpos + 200 > ballxpos && ypos < ballypos + 50 && ypos + 30 > ballypos) {
 		ballchangey=-1;
-		ballspeed=ballspeed+0.07;
-                playerspeed=playerspeed+0.07;
 	}
 }
 
