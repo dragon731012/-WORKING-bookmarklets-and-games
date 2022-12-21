@@ -1,3 +1,4 @@
+javascript:alert("--BREAKOUT-- hit the ball to break all the blocks! speeds up every time you break all of them! by dragonmaster73101 a school student who got bored"); 
 var ballxpos=683;
 var ballypos=200;
 var randomnum=Math.floor(Math.random()*(2-1+1)+1);
