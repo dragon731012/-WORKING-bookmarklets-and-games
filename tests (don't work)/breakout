@@ -630,15 +630,22 @@ function bounce(){
 
 function moveplayer(){
 	if (playerxmove==1){
-		xpos=xpos+playerspeed;
-		you.style.top = ''+ypos+'px';
-   	    you.style.left = ''+xpos+'px';
+		if (xpos+playerspeed>=1366){
+		}
+		else{
+			xpos=xpos+playerspeed;
+			you.style.top = ''+ypos+'px';
+   	    	you.style.left = ''+xpos+'px';
+		}
 	}
 	if (playerxmove==-1){
-		xpos=xpos-playerspeed;
-		you.style.top = ''+ypos+'px';
-   	    you.style.left = ''+xpos+'px';
-		
+		if (xpos+playerspeed<=0){
+		}
+		else{
+			xpos=xpos-playerspeed;
+			you.style.top = ''+ypos+'px';
+   	   	    you.style.left = ''+xpos+'px';
+		}
 	}
 }
 
