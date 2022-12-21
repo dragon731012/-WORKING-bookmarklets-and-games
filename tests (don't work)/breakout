@@ -639,7 +639,7 @@ function moveplayer(){
 		}
 	}
 	if (playerxmove==-1){
-		if (xpos+playerspeed<=0){
+		if (xpos+playerspeed-200<=0){
 		}
 		else{
 			xpos=xpos-playerspeed;
