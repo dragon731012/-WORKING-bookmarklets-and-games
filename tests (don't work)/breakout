@@ -171,7 +171,7 @@ s12ypos=s12ypos+s12height+10+s12height+10+s12height+10;
 function start(){
 
 		ballxpos=683;
-		ballypos=384;
+		ballypos=284;
 		s1width=180;
 		s1height=40;
 		s1xpos=1366/2;
