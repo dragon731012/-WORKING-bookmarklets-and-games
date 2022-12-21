@@ -809,8 +809,8 @@ start();
 function next(){
 	if (done>=12){
 		start();
-		ballspeed=ballspeed+1.5;
-		playerspeed=playerspeed+1.5;
+		ballspeed=ballspeed+1;
+		playerspeed=playerspeed+1;
 		done=0;
 	}
 }
