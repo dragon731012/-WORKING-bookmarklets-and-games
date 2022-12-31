@@ -2,6 +2,11 @@ var x=window.innerWidth;
 var y=window.innerHeight;
 x=x/2;
 y=y-100;
+var up=0;
+var down=0;
+var left=0;
+var right=0;
+var playerspeed=6;
 
 (function () {
 	var you = document.createElement('div');
@@ -27,3 +32,56 @@ y=y-100;
 	you.innerText = '';
 }());
 
+window.addEventListener("keydown", function(event) { 
+    if (event.key == "ArrowUp") {
+        up=1;
+    }
+	if (event.key == "ArrowDown") {
+        down=1;
+    }
+	if (event.key == "ArrowLeft") {
+        left=1;
+    }
+	if (event.key == "ArrowRight") {
+        right=1;
+    }
+}
+
+window.addEventListener("keyup", function(event) { 
+    if (event.key == "ArrowUp") {
+        up=0;
+    }
+	if (event.key == "ArrowDown") {
+        down=0;
+    }
+	if (event.key == "ArrowLeft") {
+        left=0;
+    }
+	if (event.key == "ArrowRight") {
+        right=0;
+    }
+}
+
+function move(){
+if (up==1){
+	y=y-playerspeed;
+	you.style.top = ''+y+'px';
+	you.style.left = ''+x+'px';
+}
+if (down==1){
+    y=y+playerspeed;
+	you.style.top = ''+y+'px';
+	you.style.left = ''+x+'px';
+}
+if (left==1){
+    x=x-playerspeed;
+	you.style.top = ''+y+'px';
+	you.style.left = ''+x+'px';
+}
+if (up==1){
+    x=x+playerspeed;
+	you.style.top = ''+y+'px';
+	you.style.left = ''+x+'px';
+}
+}
+setInterval(move,15);
