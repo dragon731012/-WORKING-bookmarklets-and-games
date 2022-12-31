@@ -13,10 +13,10 @@ y=y-100;
 	you.style.left = ''+x+'px';
 	you.style.margin = '10px';
 	you.style.paddingTop = '10px';
-	you.style.width = '200px';
-	you.style.height = '40px';
+	you.style.width = '50px';
+	you.style.height = '50px';
 	you.style.zIndex = 10000;
-	you.style.opacity = 0.9;
+	you.style.opacity = 1;
 	you.style.color = 'white';
 	you.style.backgroundColor = 'black';
 	you.style.border = '1px solid white';
@@ -25,5 +25,5 @@ y=y-100;
 	you.id = 'you';
 	you.style.display = 'block';
 	you.innerText = '';
-
 }());
+
