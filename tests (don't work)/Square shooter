@@ -88,35 +88,3 @@ if (up==1){
 }
 }
 setInterval(move,15);
-
-
-//enemy
-
-
-
-(function () {
-	var enemy = document.createElement('div');
-	var body = document.getElementsByTagName('body')[0];
-	body.appendChild(enemy);
-	enemy.style.position = 'fixed';
-	enemy.style.top = ''+enemyy+'px';
-	enemy.style.left = ''+enemyx+'px';
-	enemy.style.paddingTop = '10px';
-	enemy.style.width = '50px';
-	enemy.style.height = '50px';
-	enemy.style.zIndex = 10000;
-	enemy.style.opacity = 1;
-	enemy.style.color = 'white';
-	enemy.style.backgroundColor = 'black';
-	enemy.style.border = '0px solid white';
-	enemy.style.textAlign = 'center';
-	enemy.style.cursor = 'pointer';
-	enemy.id = 'you';
-	enemy.style.display = 'block';
-	enemy.innerText = '';
-
-   function moveenemy(){
-      enemyy=enemyy+playerspeed;
-      enemy.style.top = ''+enemyy+'px';
-   }
-}());
