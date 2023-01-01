@@ -1,12 +1,15 @@
+//player
+
 var x=window.innerWidth;
 var y=window.innerHeight;
-x=x/2;
+x=x/2-25;
 y=y-100;
 var up=0;
 var down=0;
 var left=0;
 var right=0;
 var playerspeed=6;
+var enemyx=-50;
 
 (function () {
 	var you = document.createElement('div');
@@ -16,7 +19,6 @@ var playerspeed=6;
 	you.style.position = 'fixed';
 	you.style.top = ''+y+'px';
 	you.style.left = ''+x+'px';
-	you.style.margin = '10px';
 	you.style.paddingTop = '10px';
 	you.style.width = '50px';
 	you.style.height = '50px';
@@ -24,7 +26,7 @@ var playerspeed=6;
 	you.style.opacity = 1;
 	you.style.color = 'white';
 	you.style.backgroundColor = 'black';
-	you.style.border = '1px solid white';
+	you.style.border = '0px solid white';
 	you.style.textAlign = 'center';
 	you.style.cursor = 'pointer';
 	you.id = 'you';
@@ -85,3 +87,34 @@ if (up==1){
 }
 }
 setInterval(move,15);
+
+
+//enemy
+
+
+
+(function () {
+	var enemy = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(enemy);
+	enemy.style.position = 'fixed';
+	enemy.style.top = ''+enemyy+'px';
+	enemy.style.left = ''+enemyx+'px';
+	enemy.style.paddingTop = '10px';
+	enemy.style.width = '50px';
+	enemy.style.height = '50px';
+	enemy.style.zIndex = 10000;
+	enemy.style.opacity = 1;
+	enemy.style.color = 'white';
+	enemy.style.backgroundColor = 'black';
+	enemy.style.border = '0px solid white';
+	enemy.style.textAlign = 'center';
+	enemy.style.cursor = 'pointer';
+	enemy.id = 'you';
+	enemy.style.display = 'block';
+	enemy.innerText = '';
+
+   function moveenemy(){
+      
+   }
+}());
