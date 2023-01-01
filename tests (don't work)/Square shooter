@@ -74,6 +74,83 @@ if (down==1){
     y=y+playerspeed;
 	you.style.top = ''+y+'px';
 	you.style.left = ''+x+'px';
+//player
+
+var x=window.innerWidth;
+var y=window.innerHeight;
+x=x/2-25;
+y=y-100;
+var up=0;
+var down=0;
+var left=0;
+var right=0;
+var playerspeed=6;
+var enemyx=0;
+var enemyy=-50;
+
+(function () {
+	var you = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(you);
+
+	you.style.position = 'fixed';
+	you.style.top = ''+y+'px';
+	you.style.left = ''+x+'px';
+	you.style.paddingTop = '10px';
+	you.style.width = '50px';
+	you.style.height = '50px';
+	you.style.zIndex = 10000;
+	you.style.opacity = 1;
+	you.style.color = 'white';
+	you.style.backgroundColor = 'black';
+	you.style.border = '0px solid white';
+	you.style.textAlign = 'center';
+	you.style.cursor = 'pointer';
+	you.id = 'you';
+	you.style.display = 'block';
+	you.innerText = '';
+}());
+
+window.addEventListener("keydown", function(event) { 
+    if (event.key == "ArrowUp") {
+        up=1;
+    }
+	if (event.key == "ArrowDown") {
+        down=1;
+    }
+	if (event.key == "ArrowLeft") {
+        left=1;
+    }
+	if (event.key == "ArrowRight") {
+        right=1;
+    }
+});
+
+window.addEventListener("keyup", function(event) { 
+    if (event.key == "ArrowUp") {
+        up=0;
+    }
+	if (event.key == "ArrowDown") {
+        down=0;
+    }
+	if (event.key == "ArrowLeft") {
+        left=0;
+    }
+	if (event.key == "ArrowRight") {
+        right=0;
+    }
+});
+
+function move(){
+if (up==1){
+	y=y-playerspeed;
+	you.style.top = ''+y+'px';
+	you.style.left = ''+x+'px';
+}
+if (down==1){
+    y=y+playerspeed;
+	you.style.top = ''+y+'px';
+	you.style.left = ''+x+'px';
 }
 if (left==1){
     x=x-playerspeed;
