@@ -115,6 +115,7 @@ setInterval(move,15);
 	enemy.innerText = '';
 
    function moveenemy(){
-      
+      enemyy=enemyy+playerspeed;
+      enemy.style.top = ''+enemyy+'px';
    }
 }());
