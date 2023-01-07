@@ -21,7 +21,7 @@ function mousemove(event){
         elem.style.border='0px solid white';
         elem.style.textAlign='center';
         elem.id='trail';
-        elem.style.display='block';
+        elem.style.display='circle';
         elem.innerText='';
     }());
 }
