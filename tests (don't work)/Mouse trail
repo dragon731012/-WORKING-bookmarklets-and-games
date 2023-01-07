@@ -1,7 +1,10 @@
 var clr='blue';
+var x=event.clientX;
+var y=event.clientY;
+
 function mousemove(event){
-    var x=event.clientX;
-    var y=event.clientY;
+    x=event.clientX;
+    y=event.clientY;
     var opt=1;
     (function(){
         var elem=document.createElement('div');
