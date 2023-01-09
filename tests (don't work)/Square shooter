@@ -87,7 +87,7 @@ if (right==1){
 setInterval(move,15);
 
 window.addEventListener("keyup", function(event) {
-if (event.key == "space") {
+if (event.key == "Space") {
 (function () {
 	var bullet = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
