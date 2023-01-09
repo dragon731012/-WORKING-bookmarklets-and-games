@@ -154,14 +154,14 @@ if (enemymake==1){
 	enemyullet.style.display = 'block';
 	enemy.innerText = '';
 	
-	function moveup(){
+	function movedown(){
 		enemyy=enemyy+6;
-		enemy.style.top = ''+a+'px';
+		enemy.style.top = ''+enemyy+'px';
 		if (a<=0){
 			enemymake=1;
 		}
 	}
-	setInterval(moveup,15);
+	setInterval(movedown,15);
 	enemymake=0;
 }());
 }
