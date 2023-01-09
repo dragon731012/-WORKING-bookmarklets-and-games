@@ -87,7 +87,7 @@ if (right==1){
 setInterval(move,15);
 
 window.addEventListener("keyup", function(event) {
-if (event.key == "Space") {
+if (event.key == "space") {
 (function () {
 	var bullet = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -98,8 +98,8 @@ if (event.key == "Space") {
 	var z=x-32;
 	bullet.style.left = ''+z+'px';
 	bullet.style.paddingTop = '10px';
-	bullet.style.width = '50px';
-	bullet.style.height = '50px';
+	bullet.style.width = '7px';
+	bullet.style.height = '10px';
 	bullet.style.zIndex = 10000;
 	bullet.style.opacity = 1;
 	bullet.style.color = 'red';
