@@ -94,8 +94,9 @@ if (event.key == "s") {
 	body.appendChild(bullet);
 
 	bullet.style.position = 'fixed';
-	bullet.style.top = ''+y+'px';
-	var z=x-32;
+	var a=y-10;
+	bullet.style.top = ''+a+'px';
+	var z=x+25-7;
 	bullet.style.left = ''+z+'px';
 	bullet.style.paddingTop = '10px';
 	bullet.style.width = '7px';
