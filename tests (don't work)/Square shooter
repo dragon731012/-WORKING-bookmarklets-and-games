@@ -1,5 +1,3 @@
-//player
-
 var x=window.innerWidth;
 var y=window.innerHeight;
 x=x/2-25;
@@ -29,7 +27,6 @@ var enemyy=-50;
 	you.style.backgroundColor = 'black';
 	you.style.border = '0px solid white';
 	you.style.textAlign = 'center';
-	you.style.cursor = 'pointer';
 	you.id = 'you';
 	you.style.display = 'block';
 	you.innerText = '';
