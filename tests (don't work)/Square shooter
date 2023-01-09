@@ -119,7 +119,7 @@ if (bulletshoot==1){
 	bullet.innerText = '';
 	
 	function moveup(){
-		a=a+6;
+		a=a-6;
 		bullet.style.top = ''+a+'px';
 		if (a<=0){
 			bulletshoot=1;
