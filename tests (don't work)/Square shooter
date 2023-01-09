@@ -85,3 +85,25 @@ if (right==1){
 }
 }
 setInterval(move,15);
+
+(function () {
+	var bullet = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(you);
+
+	bullet.style.position = 'fixed';
+	bullet.style.top = ''+y+'px';
+	bullet.style.left = ''+x-30+'px';
+	bullet.style.paddingTop = '10px';
+	bullet.style.width = '5px';
+	bullet.style.height = '10px';
+	bullet.style.zIndex = 10000;
+	bullet.style.opacity = 1;
+	bullet.style.color = 'red';
+	bullet.style.backgroundColor = 'red';
+	bullet.style.border = '0px solid white';
+	bullet.style.textAlign = 'center';
+	bullet.id = 'bullet';
+	bullet.style.display = 'block';
+	bullet.innerText = '';
+}());
