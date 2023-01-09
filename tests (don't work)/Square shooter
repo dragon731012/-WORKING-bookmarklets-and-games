@@ -139,6 +139,7 @@ if (bulletshoot==1){
 function makeenemy(){
 if (enemymake==1){
 (function () {
+	enemymake=0;
 	var enemy = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(enemy);
