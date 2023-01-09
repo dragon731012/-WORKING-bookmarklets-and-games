@@ -164,6 +164,7 @@ function makeenemy(){
 		enemy.style.top = ''+enemyy+'px';
 		if (enemyy>=height){
 			enemyy=-50;
+			clearInterval(movedown);
 			enem=document.getElementById('enemy'+count+'');
 			enem.parentNode.removeChild(enem);
 		}
