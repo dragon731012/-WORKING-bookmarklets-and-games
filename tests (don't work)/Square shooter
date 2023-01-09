@@ -171,4 +171,4 @@ if (enemymake==1){
 }());
 }
 }
-setInterval(makeenemy,2000);
+setInterval(makeenemy,15);
