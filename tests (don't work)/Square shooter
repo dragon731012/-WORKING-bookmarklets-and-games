@@ -95,7 +95,8 @@ if (event.key == "Space") {
 
 	bullet.style.position = 'fixed';
 	bullet.style.top = ''+y+'px';
-	bullet.style.left = ''+x-32+'px';
+	z=x-32;
+	bullet.style.left = ''+z+'px';
 	bullet.style.paddingTop = '10px';
 	bullet.style.width = '7px';
 	bullet.style.height = '10px';
