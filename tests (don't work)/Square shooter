@@ -91,7 +91,7 @@ if (event.key == "Space") {
 (function () {
 	var bullet = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
-	body.appendChild(you);
+	body.appendChild(bullet);
 
 	bullet.style.position = 'fixed';
 	bullet.style.top = ''+y+'px';
