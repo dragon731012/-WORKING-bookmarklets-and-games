@@ -13,7 +13,6 @@ var enemyx=0;
 var enemyy=-50;
 var bulletchangey=1;
 var bulletshoot=1;
-var enemymake=1;
 var enemyy=-50;
 var enemyx=-50;
 
@@ -138,7 +137,6 @@ if (bulletshoot==1){
 
 function makeenemy(){
 (function () {
-	enemymake=0;
 	var enemy = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(enemy);
@@ -164,7 +162,6 @@ function makeenemy(){
 		enemy.style.top = ''+enemyy+'px';
 	}
 	setInterval(movedown,15);
-	enemymake=0;
 }());
 }
 setInterval(makeenemy,2000);
