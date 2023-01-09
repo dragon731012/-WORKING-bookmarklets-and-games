@@ -134,32 +134,29 @@ if (bulletshoot==1){
 });
 if (enemymake==1){
 (function () {
-	var bullet = document.createElement('div');
+	var enemy = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
-	body.appendChild(bullet);
+	body.appendChild(enemy);
 
-	bullet.style.position = 'fixed';
-	var a=y-10;
-	var bulletypos=a;
-	bullet.style.top = ''+a+'px';
-	var z=x+25-7;
-	bullet.style.left = ''+z+'px';
-	bullet.style.paddingTop = '10px';
-	bullet.style.width = '7px';
-	bullet.style.height = '10px';
-	bullet.style.zIndex = 10000;
-	bullet.style.opacity = 1;
-	bullet.style.color = 'red';
-	bullet.style.backgroundColor = 'red';
-	bullet.style.border = '0px solid white';
-	bullet.style.textAlign = 'center';
-	bullet.id = 'bullet';
-	bullet.style.display = 'block';
-	bullet.innerText = '';
+	enemy.style.position = 'fixed';
+	enemy.style.top = '-50px';
+	enemy.style.left = ''+enemyx+'px';
+	enemy.style.paddingTop = '10px';
+	enemy.style.width = '50px';
+	enemy.style.height = '50px';
+	enemy.style.zIndex = 10000;
+	enemy.style.opacity = 1;
+	enemy.style.color = 'red';
+	enemy.style.backgroundColor = 'red';
+	enemy.style.border = '0px solid white';
+	enemy.style.textAlign = 'center';
+	enemy.id = 'enemy';
+	enemyullet.style.display = 'block';
+	enemy.innerText = '';
 	
 	function moveup(){
-		a=a-6;
-		bullet.style.top = ''+a+'px';
+		enemyy=enemyy+6;
+		enemy.style.top = ''+a+'px';
 		if (a<=0){
 			enemymake=1;
 		}
