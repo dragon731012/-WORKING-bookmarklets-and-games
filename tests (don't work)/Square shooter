@@ -15,6 +15,7 @@ var bulletchangey=1;
 var bulletshoot=1;
 var enemyy=-50;
 var enemyx=-50;
+var count=0;
 
 (function () {
 	var you = document.createElement('div');
@@ -153,13 +154,17 @@ function makeenemy(){
 	enemy.style.backgroundColor = 'blue';
 	enemy.style.border = '0px solid white';
 	enemy.style.textAlign = 'center';
-	enemy.id = 'enemy';
+	count=count+1;
+	enemy.id = 'enemy'+count+'';
 	enemy.style.display = 'block';
 	enemy.innerText = '';
 	
 	function movedown(){
 		enemyy=enemyy+6;
 		enemy.style.top = ''+enemyy+'px';
+		if (enemyy>=height){
+			
+		}
 	}
 	setInterval(movedown,15);
 }());
