@@ -164,7 +164,7 @@ function makeenemy(){
 		enemy.style.top = ''+enemyy+'px';
 		if (enemyy>=height){
 			enem=document.getElementById('enemy'+count+'');
-			
+			enem.parentNode.removeChild(enem);
 		}
 	}
 	setInterval(movedown,15);
