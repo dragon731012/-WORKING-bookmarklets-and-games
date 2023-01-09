@@ -135,6 +135,8 @@ if (bulletshoot==1){
 }
 }
 });
+
+function makeenemy(){
 if (enemymake==1){
 (function () {
 	var enemy = document.createElement('div');
@@ -168,3 +170,5 @@ if (enemymake==1){
 	enemymake=0;
 }());
 }
+}
+setInterval(makeenemy,2000);
