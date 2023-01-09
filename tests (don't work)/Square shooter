@@ -98,8 +98,8 @@ if (event.key == "Space") {
 	var z=x-32;
 	bullet.style.left = ''+z+'px';
 	bullet.style.paddingTop = '10px';
-	bullet.style.width = '7px';
-	bullet.style.height = '10px';
+	bullet.style.width = '50px';
+	bullet.style.height = '50px';
 	bullet.style.zIndex = 10000;
 	bullet.style.opacity = 1;
 	bullet.style.color = 'red';
