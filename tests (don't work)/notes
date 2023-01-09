@@ -1,0 +1,8 @@
+var pick=prompt(“do you want to clear your notes or continue writing? clear=c continue=w”);
+if (pick==w){
+var note=prompt("notes",document.cookie); 
+document.cookie=””+note+”; expires=Thu, 18 Dec 9013 12:00:00 UTC”;
+}
+if (pick==c){
+	document.cookie =”cleared; expires=Thu, 01 Jan 1970 12:00:00 UTC;";
+}
