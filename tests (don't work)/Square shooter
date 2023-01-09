@@ -10,6 +10,7 @@ var playerspeed=6;
 var enemyx=0;
 var enemyy=-50;
 var bulletchangey=1;
+var bulletshoot=1;
 
 (function () {
 	var you = document.createElement('div');
@@ -92,6 +93,7 @@ setInterval(move,15);
 
 window.addEventListener("keyup", function(event) {
 if (event.key == "s") {
+if (bulletshoot==1){
 (function () {
 	var bullet = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -115,11 +117,17 @@ if (event.key == "s") {
 	bullet.id = 'bullet';
 	bullet.style.display = 'block';
 	bullet.innerText = '';
+	
 	function moveup(){
 		a=a+6;
 		bullet.style.top = ''+a+'px';
+		if (a<=0){
+			bulletshoot=1;
+		}
 	}
 	setInterval(moveup,15);
+	bulletshoot=0;
 }());
+}
 }
 });
