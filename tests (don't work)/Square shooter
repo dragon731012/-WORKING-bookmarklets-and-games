@@ -1,5 +1,7 @@
 var x=window.innerWidth;
+var width=x;
 var y=window.innerHeight;
+var height=y;
 x=x/2-25;
 y=y-100;
 var up=0;
