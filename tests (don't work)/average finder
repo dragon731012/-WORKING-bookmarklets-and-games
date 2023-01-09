@@ -1,1 +1,1 @@
-javascript:var many=prompt("how many numbers do you want to find the average of?");var count=0;const list=[];while (count<many){var num=prompt("what is one of the numbers?");list.push(num);count=count+1;}alert(list);
+javascript:var many=prompt("how many numbers do you want to find the average of?");var count=0;const list=[];while (count<many){var num=prompt("what is one of the numbers?");list.push(num);count=count+1;}var count2=0;var sum=0;while (count2<many){sum=sum+list[count2];count2=count2+1;}var final=sum/many; alert(final);
