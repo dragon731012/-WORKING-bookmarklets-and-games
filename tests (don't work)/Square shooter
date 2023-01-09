@@ -78,7 +78,7 @@ if (left==1){
 	you.style.top = ''+y+'px';
 	you.style.left = ''+x+'px';
 }
-if (up==1){
+if (right==1){
     x=x+playerspeed;
 	you.style.top = ''+y+'px';
 	you.style.left = ''+x+'px';
