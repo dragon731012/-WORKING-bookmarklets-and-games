@@ -11,6 +11,7 @@ var enemyx=0;
 var enemyy=-50;
 var bulletchangey=1;
 var bulletshoot=1;
+var enemymake=1;
 
 (function () {
 	var you = document.createElement('div');
@@ -131,3 +132,40 @@ if (bulletshoot==1){
 }
 }
 });
+if (enemymake==1){
+(function () {
+	var bullet = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(bullet);
+
+	bullet.style.position = 'fixed';
+	var a=y-10;
+	var bulletypos=a;
+	bullet.style.top = ''+a+'px';
+	var z=x+25-7;
+	bullet.style.left = ''+z+'px';
+	bullet.style.paddingTop = '10px';
+	bullet.style.width = '7px';
+	bullet.style.height = '10px';
+	bullet.style.zIndex = 10000;
+	bullet.style.opacity = 1;
+	bullet.style.color = 'red';
+	bullet.style.backgroundColor = 'red';
+	bullet.style.border = '0px solid white';
+	bullet.style.textAlign = 'center';
+	bullet.id = 'bullet';
+	bullet.style.display = 'block';
+	bullet.innerText = '';
+	
+	function moveup(){
+		a=a-6;
+		bullet.style.top = ''+a+'px';
+		if (a<=0){
+			enemymake=1;
+		}
+	}
+	setInterval(moveup,15);
+	enemymake=0;
+}());
+}
+}
