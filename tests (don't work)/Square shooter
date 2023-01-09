@@ -106,7 +106,6 @@ if (bulletshoot==1){
 
 	bullet.style.position = 'fixed';
 	var a=y-10;
-	var bulletypos=a;
 	bullet.style.top = ''+a+'px';
 	var z=x+25-7;
 	bullet.style.left = ''+z+'px';
@@ -155,7 +154,7 @@ if (enemymake==1){
 	enemy.style.border = '0px solid white';
 	enemy.style.textAlign = 'center';
 	enemy.id = 'enemy';
-	enemyullet.style.display = 'block';
+	enemy.style.display = 'block';
 	enemy.innerText = '';
 	
 	function movedown(){
@@ -168,5 +167,4 @@ if (enemymake==1){
 	setInterval(movedown,15);
 	enemymake=0;
 }());
-}
 }
