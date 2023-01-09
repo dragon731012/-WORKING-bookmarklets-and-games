@@ -139,7 +139,7 @@ if (enemymake==1){
 	var enemy = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(enemy);
-
+	enemyx=Math.floor(Math.random()*(width-0+1)+0);
 	enemy.style.position = 'fixed';
 	enemy.style.top = ''+enemyy+'px';
 	enemy.style.left = ''+enemyx+'px';
