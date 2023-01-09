@@ -162,11 +162,9 @@ function makeenemy(){
 	function movedown(){
 		enemyy=enemyy+6;
 		enemy.style.top = ''+enemyy+'px';
-		}
 	}
 	setInterval(movedown,15);
 	enemymake=0;
 }());
-}
 }
 setInterval(makeenemy,2000);
