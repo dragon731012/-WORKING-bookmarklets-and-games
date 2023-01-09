@@ -12,6 +12,8 @@ var enemyy=-50;
 var bulletchangey=1;
 var bulletshoot=1;
 var enemymake=1;
+var enemyy=-50;
+var enemyx=-50;
 
 (function () {
 	var you = document.createElement('div');
@@ -139,15 +141,15 @@ if (enemymake==1){
 	body.appendChild(enemy);
 
 	enemy.style.position = 'fixed';
-	enemy.style.top = '-50px';
+	enemy.style.top = ''+enemyy+'px';
 	enemy.style.left = ''+enemyx+'px';
 	enemy.style.paddingTop = '10px';
 	enemy.style.width = '50px';
 	enemy.style.height = '50px';
 	enemy.style.zIndex = 10000;
 	enemy.style.opacity = 1;
-	enemy.style.color = 'red';
-	enemy.style.backgroundColor = 'red';
+	enemy.style.color = 'blue';
+	enemy.style.backgroundColor = 'blue';
 	enemy.style.border = '0px solid white';
 	enemy.style.textAlign = 'center';
 	enemy.id = 'enemy';
@@ -157,7 +159,7 @@ if (enemymake==1){
 	function movedown(){
 		enemyy=enemyy+6;
 		enemy.style.top = ''+enemyy+'px';
-		if (a<=0){
+		if (enemyy<=0){
 			enemymake=1;
 		}
 	}
