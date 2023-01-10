@@ -1,8 +1,14 @@
-javascript:function bluron() {
+javascript:
+
+var howfast=prompt("how fast do you want to blur and unblur the screen in milliseconds?");
+var bluroffspeed=howfast;
+var bluronspeed=howfast*2;
+
+function bluron() {
     (function () { document.body.style.filter = 'blur(5px)'; })();
     function bluroff(){
         (function () { document.body.style.filter = 'blur(0px)'; })();
     }
-    setTimeout(bluroff,1000);
+    setTimeout(bluroff,bluroffspeed);
 }
-setInterval(bluron,2000);
+setInterval(bluron,bluronspeed);
