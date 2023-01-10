@@ -1,5 +1,5 @@
-var width=window.innerWidth;
-var height=window.innerHeight;
+var width=400;
+var height=600;
 (function () {
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -8,7 +8,7 @@ var height=window.innerHeight;
 	elem.style.position = 'fixed';
 	elem.style.top = '0px';
 	elem.style.left = '0px';
-	elem.style.margin = '10px';
+	elem.style.margin = '0px';
 	elem.style.paddingTop = '10px';
 	elem.style.width = ''+width+'px';
 	elem.style.height = ''+height+'px';
