@@ -29,8 +29,8 @@ var y=event.clientY;
 		elem.style.top=""+y+"px";
 		elem.style.left=""+x+"px";
     }
-	if (el.addEventListener) {
-  		el.addEventListener("click", function() {
+	if (elem.addEventListener) {
+  		elem.addEventListener("click", function() {
         	setInterval(draggable,15);
    		}, false);
 	}
