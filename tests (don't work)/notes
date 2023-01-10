@@ -13,7 +13,7 @@ if (choose==1){
     var called=prompt("what is your old note called? write exactly how you did the first time");
     var getcookievalue = get_cookie(""+called+""); 
     var note=prompt("- notes - do not press cancel - only works if you use on same website -",getcookievalue); 
-    document.cookie=""+called+"="+note+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; window.location.reload(1);
+    document.cookie=""+called+"="+note+"; expires=Thu, 18 Dec 9013 12:00:00 UTC";
 }
 
 if (choose==2){
