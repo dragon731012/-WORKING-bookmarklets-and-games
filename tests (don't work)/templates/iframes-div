@@ -18,7 +18,7 @@
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
 	elem.id = 'elem';
-	elem.contenteditable="true"
+	elem.contenteditable="true";
 	elem.style.display = 'block';
 	elem.innerText = 'hi';
 
