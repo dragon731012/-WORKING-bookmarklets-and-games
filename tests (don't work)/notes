@@ -25,6 +25,7 @@ if (choose==2){
 
 if (choose==3){
     var deleted=prompt("what note do you want to be deleted?");
+    alert("deleted.");
     document.cookie=""+deleted+"=; expires=Thu, 18 Dec 1913 12:00:00 UTC"; 
     window.location.reload(1);
 }
