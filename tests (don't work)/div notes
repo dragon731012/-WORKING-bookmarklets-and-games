@@ -28,11 +28,5 @@ var y=event.clientY;
 	function draggable(){
 		elem.style.top=""+y+"px";
 		elem.style.left=""+x+"px";
-    }
-	var elementIsClicked = false; 
-	function clickHandler(){ 
-	  elementIsClicked = true;
-	  alert("clicked");
-	} 
-	elem.addEventListener('click', clickHandler);
+	}
 }());
