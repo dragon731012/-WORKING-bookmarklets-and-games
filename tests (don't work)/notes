@@ -1,19 +1,22 @@
 javascript:
 
 alert("by dragonmaster73101");
+alert("uses cookies. use at your own risk.");
 
 function get_cookie(cookie_name) { 
     const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); 
 } 
 
-var choose=prompt("do you want to clear your notes or continue editing? continue=1 clear=2");
+var choose=prompt("do you want to make a new note or continue editing? continue=1 new=2");
 
 if (choose==1){
-    var getcookievalue = get_cookie("notes"); 
+    var called=prompt("what is your old note called? write exactly how you did the first time");
+    var getcookievalue = get_cookie(""+called+""); 
     var note=prompt("- notes - do not press cancel - only works if you use on same website -",getcookievalue); 
-    document.cookie="notes="+note+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; window.location.reload(1);
+    document.cookie=""+called+"="+note+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; window.location.reload(1);
 }
 
 if (choose==2){
-    var numCookies=0; var cookieArray=document.cookie.split("; "); for(var i=0; i<cookieArray.length && cookieArray[i]; i++) {numCookies++; for(var subDomain= "." + location.host; subDomain; subDomain=subDomain.replace(/^(?:%5C.|[^%5C.]+)/, "")){ for(var curPath =location.pathname; curPath; curPath=curPath.replace(/.$/,"")){document.cookie=(cookieArray[i] + "; domain=" + subDomain + "; path=" + curPath + "; expires="+new Date((new Date()).getTime()-1e11).toGMTString());}}} window.location.href = "http://" + window.location.host + window.location.pathname;
+    var newnote=prompt("what do you want it to be called? do not forget name");
+    document.cookie=""+newnote+"="; expires=Thu, 18 Dec 9013 12:00:00 UTC"; window.location.reload(1);
 }
