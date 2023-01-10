@@ -16,6 +16,7 @@ var bulletshoot=1;
 var enemyy=-50;
 var enemyx=-50;
 var count=0;
+var enemyspeed=6;
 
 (function () {
 	var you = document.createElement('div');
@@ -160,7 +161,7 @@ function makeenemy(){
 	enemy.innerText = '';
 	
 	function movedown(){
-		enemyy=enemyy+6;
+		enemyy=enemyy/enemyspeed+0.2;
 		enemy.style.top = ''+enemyy+'px';
 		if (enemyy>=height){
 			clearInterval(movedown);
