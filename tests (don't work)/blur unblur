@@ -1,7 +1,7 @@
 javascript:function bluron() {
     (function () { document.body.style.filter = 'blur(5px)'; })();
     function bluroff(){
-        (function () { document.body.style.filter = 'blur(5px)'; })();
+        (function () { document.body.style.filter = 'blur(0px)'; })();
     }
     setTimeout(bluroff,1000);
 }
