@@ -1,1 +1,1 @@
-javascript:function a(e){var n=e.childNodes;for(var i in n){a(n[i]);if(n[i].style) n[i].style.backgroundImage="url(http://redroom.org/wp-content/uploads/2016/11/optical-gifs-my-eyes-my-eyessssssssss.gif)";}};a(document);
+javascript:function a(e){var n=e.childNodes;for(var i in n){a(n[i]);if(n[i].style) n[i].style.backgroundImage="url(https://i.chzbgr.com/full/5759452672/h934FBF16/my-eyes-my-eyessssssssss)";}};a(document);
