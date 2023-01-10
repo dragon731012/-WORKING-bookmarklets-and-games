@@ -18,7 +18,7 @@ function mousemove(event){
         elem.style.width='10px';
         elem.style.height='10px';
         elem.style.zIndex=10000;
-        elem.style.opacity=opt;
+        elem.style.opacity=''+opt+'';
         elem.style.color=''+clr+'';
         elem.style.backgroundColor=''+clr+'';
         elem.style.border='0px solid white';
