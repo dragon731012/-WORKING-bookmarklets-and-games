@@ -33,8 +33,6 @@ var y=event.clientY;
 	function clickHandler(){ 
 	  elementIsClicked = true;
 	  alert("clicked");
-	}
-
-	var element = document.getElementById('elem'); 
-	element.addEventListener('click', clickHandler);
+	} 
+	elem.addEventListener('click', clickHandler);
 }());
