@@ -20,5 +20,5 @@
 	elem.id = 'elem';
 	elem.style.display = 'block';
 	elem.innerText = 'hi';
-
+	document.getElementById('elem').contentEditable = true;
 }());
