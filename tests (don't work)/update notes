@@ -23,6 +23,9 @@ if (choose==3){
 }
 if (choose==4){
     var transfer=prompt("what note do you want to transfer to a new website? type exactly how you did the first time");
+    var website=prompt("what website do you want to transfer it to? include https:// at beginning");
     var getcookievalue = get_cookie(""+called+"");
-    
+    window.location.href = website;
+    document.cookie=""+transfer+"="+getcookievalue+"; expires=Thu, 18 Dec 9013 12:00:00 UTC";
+    alert("transfered");
 }
