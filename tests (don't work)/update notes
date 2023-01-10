@@ -26,6 +26,9 @@ if (choose==4){
     var website=prompt("what website do you want to transfer it to? include https:// at beginning");
     var getcookievalue = get_cookie(""+called+"");
     window.location.href = website;
-    document.cookie=""+transfer+"="+getcookievalue+"; expires=Thu, 18 Dec 9013 12:00:00 UTC";
-    alert("transfered");
+    function loadin(){
+        document.cookie=""+transfer+"="+getcookievalue+"; expires=Thu, 18 Dec 9013 12:00:00 UTC";
+        alert("transfered");
+    }
+    setTimeout(loadin,4000);
 }
