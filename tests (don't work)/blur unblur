@@ -1,1 +1,8 @@
-javascript:function bluron() {document.body.style.filter = 'blur(5px)'; })(); function bluroff(){document.body.style.filter = 'blur(0px)'; })();}setTimeout(bluroff,1000);} setInterval(bluron,2000);
+javascript:function bluron() {
+    (function () { document.body.style.filter = 'blur(5px)'; })();
+    function bluroff(){
+        (function () { document.body.style.filter = 'blur(5px)'; })();
+    }
+    setTimeout(bluroff,1000);
+}
+setInterval(bluron,2000);
