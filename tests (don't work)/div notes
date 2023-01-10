@@ -1,5 +1,7 @@
 var width=350;
 var height=350;
+var x=event.clientX;
+var y=event.clientY;
 (function () {
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -24,6 +26,7 @@ var height=350;
 	elem.innerText = '';
 	document.getElementById('elem').contentEditable = true;
 	function draggable(){
-		elem.style.top=""++"px";
-		elem.style.width=""++"px";
+		elem.style.top=""+y+"px";
+		elem.style.left=""+x+"px";
+        }
 }());
