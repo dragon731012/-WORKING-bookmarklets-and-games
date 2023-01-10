@@ -1,5 +1,6 @@
+window.localStorage.setItem("hi","hi");
 var called=prompt("what is your note called?");
-var value=localStorage.getItem(called);
+var value=window.localStorage.getItem(called);
 window.localStorage.setItem(called,value);
 var note=prompt("notes",value);
 window.localStorage.setItem(called,value);
