@@ -1,0 +1,3 @@
+var called=prompt("what is your note called?");
+localStorage.setItem(,);
+localStorage.getItem();
