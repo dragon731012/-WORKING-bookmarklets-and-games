@@ -1,4 +1,4 @@
-var width=200;
+var width=250;
 var height=400;
 (function () {
 	var elem = document.createElement('div');
