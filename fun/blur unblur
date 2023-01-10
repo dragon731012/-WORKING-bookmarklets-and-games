@@ -1,14 +1,1 @@
-javascript:
-
-var howfast=prompt("how fast do you want to blur and unblur the screen in milliseconds?");
-var bluroffspeed=howfast;
-var bluronspeed=howfast*2;
-
-function bluron() {
-    (function () { document.body.style.filter = 'blur(5px)'; })();
-    function bluroff(){
-        (function () { document.body.style.filter = 'blur(0px)'; })();
-    }
-    setTimeout(bluroff,bluroffspeed);
-}
-setInterval(bluron,bluronspeed);
+javascript: var howfast=prompt("how fast do you want to blur and unblur the screen in milliseconds?"); var bluroffspeed=howfast; var bluronspeed=howfast*2; function bluron() { (function () { document.body.style.filter = 'blur(5px)'; })(); function bluroff(){ (function () { document.body.style.filter = 'blur(0px)'; })(); } setTimeout(bluroff,bluroffspeed); } setInterval(bluron,bluronspeed);
