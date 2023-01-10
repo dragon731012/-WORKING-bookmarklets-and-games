@@ -18,5 +18,6 @@ if (choose==1){
 
 if (choose==2){
     var newnote=prompt("what do you want it to be called? do not forget name");
-    document.cookie=""+newnote+"="; expires=Thu, 18 Dec 9013 12:00:00 UTC"; window.location.reload(1);
+    document.cookie=""+newnote+"=; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
+    window.location.reload(1);
 }
