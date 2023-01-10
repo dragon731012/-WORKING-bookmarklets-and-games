@@ -29,9 +29,4 @@ var y=event.clientY;
 		elem.style.top=""+y+"px";
 		elem.style.left=""+x+"px";
     }
-	if (elem.addEventListener) {
-  		elem.addEventListener("click", function() {
-        	setInterval(draggable,15);
-   		}, false);
-	}
 }());
