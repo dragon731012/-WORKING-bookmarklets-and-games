@@ -1,5 +1,12 @@
-var called=prompt("what is your note called?");
-var value=window.localStorage.getItem(called);
-window.localStorage.setItem(called,value);
-var note=prompt("notes",value);
-window.localStorage.setItem(""+called+"",""+value+"");
+var choose=prompt("do you want to make a new note or continue one? new=1 continue=2");
+
+if (choose==1){
+    var newcalled=prompt("what do you want your new note to be called?");
+    window.localStorage.setItem(""+newcalled+"","");
+}
+if (choose==2){
+    var called=prompt("what is your note called?");
+    var value=window.localStorage.getItem(called);
+    var note=prompt("notes",value);
+    window.localStorage.setItem(called,value);
+}
