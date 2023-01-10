@@ -17,7 +17,8 @@
 	elem.style.border = '1px solid white';
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
-	elem.id = 'myTimer';
+	elem.id = 'elem';
+	elem.contenteditable="true"
 	elem.style.display = 'block';
 	elem.innerText = 'hi';
 
