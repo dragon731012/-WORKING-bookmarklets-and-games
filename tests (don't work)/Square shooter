@@ -161,10 +161,11 @@ function makeenemy(){
 	enemy.innerText = '';
 	
 	function movedown(){
-		enemyy=enemyy/enemyspeed+0.2;
+		enemyy=enemyy+enemyspeed;
 		enemy.style.top = ''+enemyy+'px';
 		if (enemyy>=height){
 			clearInterval(movedown);
+			enemyspeed=enemyspeed/2;
 			enem=document.getElementById('enemy'+count+'');
 			enem.parentNode.removeChild(enem);
 			enemyy=-50;
