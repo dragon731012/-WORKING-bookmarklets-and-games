@@ -22,5 +22,6 @@ var height=window.innerHeight;
 	elem.id = 'elem';
 	elem.style.display = 'block';
 	elem.innerText = '';
+	document.getElementById('elem').draggable=true;
 	document.getElementById('elem').contentEditable = true;
 }());
