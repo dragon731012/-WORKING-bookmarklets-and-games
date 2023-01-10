@@ -15,5 +15,5 @@ if (choose==1){
 }
 
 if (choose==2){
-    var numCookies=0; var cookieArray=document.cookie.split("; "); for(var i=0; i<cookieArray.length && cookieArray[i]; i++) {numCookies++; for(var subDomain= "." + location.host; subDomain; subDomain=subDomain.replace(/^(?:%5C.|[^%5C.]+)/,%20%22%22)){%20for(var%20curPath%20=location.pathname;%20curPath;%20curPath=curPath.replace(/.$/,%22%22)){document.cookie=(cookieArray[i]%20+%20%22;%20domain=%22%20+%20subDomain%20+%20%22;%20path=%22%20+%20curPath%20+%20%22;%20expires=%22+new%20Date((new%20Date()).getTime()-1e11).toGMTString());}}}%20window.location.href%20=%20%22http://%22%20+%20window.location.host%20+%20window.location.pathname;
+    var numCookies=0; var cookieArray=document.cookie.split("; "); for(var i=0; i<cookieArray.length && cookieArray[i]; i++) {numCookies++; for(var subDomain= "." + location.host; subDomain; subDomain=subDomain.replace(/^(?:%5C.|[^%5C.]+)/, "")){ for(var curPath =location.pathname; curPath; curPath=curPath.replace(/.$/,"")){document.cookie=(cookieArray[i] + "; domain=" + subDomain + "; path=" + curPath + "; expires="+new Date((new Date()).getTime()-1e11).toGMTString());}}} window.location.href = "http://" + window.location.host + window.location.pathname;
 }
