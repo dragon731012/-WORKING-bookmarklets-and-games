@@ -17,12 +17,11 @@ var height=400;
 	elem.style.color = 'black';
 	elem.style.backgroundColor = 'white';
 	elem.style.border = '4px solid black';
-	elem.style.textAlign = 'center';
+	elem.style.textAlign = 'left';
 	elem.style.cursor = 'pointer';
 	elem.id = 'elem';
 	elem.style.display = 'block';
 	elem.innerText = '';
-	document.getElementById('elem').draggable=true;
 	document.getElementById('elem').contentEditable = true;
 	function drag_start(event) {
     		var style = window.getComputedStyle(event.target, null);
