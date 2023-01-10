@@ -29,4 +29,11 @@ var y=event.clientY;
 		elem.style.top=""+y+"px";
 		elem.style.left=""+x+"px";
     }
+	var elementIsClicked = false; 
+	function clickHandler(){ 
+	  elementIsClicked = true;
+	}
+
+	var element = document.getElementById('elem'); 
+	element.addEventListener('click', clickHandler);
 }());
