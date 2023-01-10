@@ -1,22 +1,22 @@
-var width=400;
-var height=600;
+var width=200;
+var height=400;
 (function () {
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(elem);
 
 	elem.style.position = 'fixed';
-	elem.style.top = '0px';
-	elem.style.left = '0px';
+	elem.style.top = '100px';
+	elem.style.left = '300px';
 	elem.style.margin = '0px';
 	elem.style.paddingTop = '10px';
 	elem.style.width = ''+width+'px';
 	elem.style.height = ''+height+'px';
 	elem.style.zIndex = 10000;
-	elem.style.opacity = 0.6;
-	elem.style.color = 'white';
+	elem.style.opacity = 1;
+	elem.style.color = 'black';
 	elem.style.backgroundColor = 'white';
-	elem.style.border = '0px solid white';
+	elem.style.border = '4px solid black';
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
 	elem.id = 'elem';
