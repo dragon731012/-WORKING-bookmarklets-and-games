@@ -1,5 +1,5 @@
 var width=250;
-var height=400;
+var height=350;
 (function () {
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
