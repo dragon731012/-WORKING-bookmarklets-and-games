@@ -1,1 +1,19 @@
-javascript:alert("by dragonmaster73101");function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); } var getcookievalue = get_cookie("notes"); var note=prompt("- notes - do not press cancel - only works if you use on same website -",getcookievalue); document.cookie="notes="+note+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; window.location.reload(1);
+javascript:
+
+alert("by dragonmaster73101");
+
+function get_cookie(cookie_name) { 
+    const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); 
+} 
+
+var choose=prompt("do you want to clear your notes or continue editing? continue=1 clear=2");
+
+if (choose==1){
+    var getcookievalue = get_cookie("notes"); 
+    var note=prompt("- notes - do not press cancel - only works if you use on same website -",getcookievalue); 
+    document.cookie="notes="+note+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; window.location.reload(1);
+}
+
+if (choose==2){
+    var numCookies=0; var cookieArray=document.cookie.split("; "); for(var i=0; i<cookieArray.length && cookieArray[i]; i++) {numCookies++; for(var subDomain= "." + location.host; subDomain; subDomain=subDomain.replace(/^(?:%5C.|[^%5C.]+)/,%20%22%22)){%20for(var%20curPath%20=location.pathname;%20curPath;%20curPath=curPath.replace(/.$/,%22%22)){document.cookie=(cookieArray[i]%20+%20%22;%20domain=%22%20+%20subDomain%20+%20%22;%20path=%22%20+%20curPath%20+%20%22;%20expires=%22+new%20Date((new%20Date()).getTime()-1e11).toGMTString());}}}%20window.location.href%20=%20%22http://%22%20+%20window.location.host%20+%20window.location.pathname;
+}
