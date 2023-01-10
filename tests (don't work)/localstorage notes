@@ -6,7 +6,7 @@ if (choose==1){
 }
 if (choose==2){
     var called=prompt("what is your note called?");
-    var value=window.localStorage.getItem(called);
-    var note=prompt("notes",value);
+    let value=window.localStorage.getItem(called);
+    var note=prompt(called,value);
     window.localStorage.setItem(called,value);
 }
