@@ -1,5 +1,6 @@
 var width=350;
 var height=350;
+var over=0;
 
 (function () {
 	var elem = document.createElement('div');
@@ -27,7 +28,10 @@ var height=350;
 	elem.innerText = '';
 	document.getElementById('elem').contentEditable = true;
 	elem.onmouseover = function(event) {
-		alert("hi");
+		over=1;
+	};
+	elem.onmouseout = function(event) {
+		over=0;
 	};
 }());
 
