@@ -9,6 +9,7 @@ function makenote(name,value){
 	var d=0;
 	var e=0;
 	var f=0;
+	var nameover=0;
 
 	(function () {
 		var elem = document.createElement('div');
@@ -77,6 +78,12 @@ function makenote(name,value){
 			name1.style.top = ''+d+'px';
 			name1.style.left = ''+c+'px';
 		}
+		name1.onmouseover = function(event) {
+			nameover=1;
+		};
+		name1.onmouseout = function(event) {
+			nameover=0;
+		};
 		setInterval(update,5);
 	}());
 
