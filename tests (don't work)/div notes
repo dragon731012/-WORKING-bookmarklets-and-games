@@ -133,7 +133,6 @@ function mousemove2(event){
 	if (overdone==1){
 		if (clicked==1){
 			note=elem.innerText;
-			window.localStorage.setItem(""+name+"",""+note+""); 
 			alert(note);
 		}
 	}
