@@ -32,6 +32,7 @@ var d=0;
 	elem.style.display = 'block';
 	elem.innerText = '';
 	document.getElementById('elem').contentEditable = true;
+	document.getElementById("elem").style.overflow='auto';
 	elem.onmouseover = function(event) {
 		over=1;
 	};
