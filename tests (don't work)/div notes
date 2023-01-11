@@ -54,7 +54,7 @@ var d=0;
 	name.style.paddingLeft = '10px';
 	name.style.paddingRight = '10px';
 	name.style.width = ''+width+'px';
-	name.style.height = '30px';
+	name.style.height = '40px';
 	name.style.zIndex = 10000;
 	name.style.opacity = 1;
 	name.style.color = 'black';
@@ -67,7 +67,7 @@ var d=0;
 	name.innerText = '';
 	function update(){
 		c=a;
-		d=b-20;
+		d=b-40;
 		name.style.top = ''+d+'px';
 		name.style.left = ''+c+'px';
 	}
