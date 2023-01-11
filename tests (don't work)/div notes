@@ -2,10 +2,6 @@ var width=350;
 var height=350;
 var over=0;
 var clicked=0;
-var a=300;
-var b=100;
-var c=0;
-var d=0;
 
 (function () {
 	var elem = document.createElement('div');
@@ -51,7 +47,6 @@ function mousemove(event){
 	}
 }
 
-setInterval(update,15);
 function click(event) {
 	if (event.button == 0) {
         	clicked=1;
