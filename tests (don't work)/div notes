@@ -134,6 +134,7 @@ function mousemove2(event){
 		if (clicked==1){
 			note=elem.innerText;
 			window.localStorage.setItem(""+name+"",""+note+""); 
+			alert(note);
 		}
 	}
 }
