@@ -103,7 +103,8 @@ function makenote(name,value){
 			if (clicked==1){
 				width=prompt("how wide do you want it to be?");
 				height=prompt("what do you want the height to be?");
-				
+				elem.style.width = ''+width+'px';
+				elem.style.height = ''+height+'px';
 			}
 		}
 	}
