@@ -115,3 +115,23 @@ function autobackup(){
 
 }
 
+var choose=prompt("do you want to make a new note, continue, or delete one? new=1 continue=2 delete=3 delete all=4 only works on same domain"); 
+if (choose==1){ 
+	var newcalled=prompt("what do you want your new note to be called? make sure you remember what you call it"); 
+	window.localStorage.setItem(""+newcalled+"",""); 
+	alert("note added. run again to edit."); 
+} 
+if (choose==2){ 
+	var called=prompt("what is your note called? type exactly how you did the first time."); 
+	let value=window.localStorage.getItem(called); 
+	makenote(called,value); 
+} 
+if (choose==3){
+	var whatdelete=prompt("what note do you want to delete? type exactly how you did the first time."); 
+	localStorage.removeItem(whatdelete); 
+	alert("note deleted."); 
+} 
+if (choose==4){ 
+	localStorage.clear(); 
+	alert("all notes cleared."); 
+}
