@@ -48,15 +48,7 @@ window.addEventListener('mousemove',mousemove);
 
 function click(event) {
 	if (event.button == 0) {
-		if (over==1){
-			moving=true;
-		}
-		else{
-			moving=false;
-		}
-	}
-	else{
-		moving=false;
+		alert("hi");
 	}
 }
 setInterval(click,5);
