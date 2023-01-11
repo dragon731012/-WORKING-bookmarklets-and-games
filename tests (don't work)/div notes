@@ -39,10 +39,10 @@ function makenote(name,value){
 		document.getElementById("elem").style.overflow='auto';
 		elem.onmouseover = function(event) {
 			over=1;
-		};
+		}
 		elem.onmouseout = function(event) {
 			over=0;
-		};
+		}
 	}());
 
 
@@ -70,6 +70,7 @@ function makenote(name,value){
 		name1.id = 'name1';
 		name1.style.display = 'block';
 		name1.innerText = ''+name+'';
+		document.getElementById("elem").style.overflow='auto';
 		function update(){
 			c=a;
 			d=b-30;
@@ -80,10 +81,10 @@ function makenote(name,value){
 		}
 		name1.onmouseover = function(event) {
 			nameover=1;
-		};
+		}
 		name1.onmouseout = function(event) {
 			nameover=0;
-		};
+		}
 		setInterval(update,5);
 	}());
 
