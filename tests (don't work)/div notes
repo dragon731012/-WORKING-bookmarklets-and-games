@@ -1,7 +1,5 @@
 var width=350;
 var height=350;
-let X = event.clientX;
-let Y = event.clientY;
 
 (function () {
 	var elem = document.createElement('div');
