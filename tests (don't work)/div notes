@@ -26,4 +26,10 @@ var height=350;
 	elem.style.display = 'block';
 	elem.innerText = '';
 	document.getElementById('elem').contentEditable = true;
+	drag(event){
+		var x=event.clientX;
+		var y=event.clientY;
+		elem.style.top=""+y+"px";
+		elem.style.left=""+x+"px";
+	}
 }());
