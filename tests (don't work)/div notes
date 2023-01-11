@@ -107,4 +107,11 @@ function clickup(event) {
 document.onmouseup = clickup;
 
 window.addEventListener('mousemove',mousemove);
+
+function autobackup(){
+	var note=elem.innerText;
+	window.localStorage.setItem(name,note);
 }
+
+}
+
