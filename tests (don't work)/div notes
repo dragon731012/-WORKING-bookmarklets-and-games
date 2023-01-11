@@ -39,10 +39,10 @@ function makenote(name,value){
 		document.getElementById("elem").style.overflow='auto';
 		elem.onmouseover = function(event) {
 			over=1;
-		}
+		};
 		elem.onmouseout = function(event) {
 			over=0;
-		}
+		};
 	}());
 
 
@@ -79,13 +79,13 @@ function makenote(name,value){
 			name1.style.top = ''+d+'px';
 			name1.style.left = ''+c+'px';
 		}
+		setInterval(update,5);
 		name1.onmouseover = function(event) {
 			nameover=1;
-		}
+		};
 		name1.onmouseout = function(event) {
 			nameover=0;
-		}
-		setInterval(update,5);
+		};
 	}());
 
 
