@@ -47,6 +47,6 @@ window.addEventListener('mousemove',mousemove);
 
 function click(event) {
 	if (event.button == 0) {
-		alert("hi"):
+		alert("hi");
 	}
 }
