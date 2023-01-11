@@ -4,6 +4,8 @@ var over=0;
 var clicked=0;
 var a=0;
 var b=0;
+var c=0;
+var d=0;
 
 (function () {
 	var elem = document.createElement('div');
@@ -38,6 +40,34 @@ var b=0;
 	};
 }());
 
+
+(function () {
+	var name = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(name);
+
+	name.style.position = 'fixed';
+	name.style.top = '100px';
+	name.style.left = '300px';
+	name.style.margin = '0px';
+	name.style.paddingTop = '10px';
+	name.style.paddingLeft = '10px';
+	name.style.paddingRight = '10px';
+	name.style.width = ''+width+'px';
+	name.style.height = ''+height+'px';
+	name.style.zIndex = 10000;
+	name.style.opacity = 1;
+	name.style.color = 'black';
+	name.style.backgroundColor = 'white';
+	name.style.border = '4px solid black';
+	name.style.textAlign = 'left';
+	name.style.cursor = 'pointer';
+	name.id = 'name';
+	name.style.display = 'block';
+	name.innerText = '';
+}());
+
+
 function mousemove(event){
 	if (over==1){
 		if (clicked==1){
@@ -47,6 +77,10 @@ function mousemove(event){
 			b=y-175;
 			elem.style.top = ''+b+'px';
 			elem.style.left = ''+a+'px';
+			c=a;
+			d=b-20;
+			name.style.top = ''+d+'px';
+			name.style.left = ''+c+'px';
 		}
 	}
 }
