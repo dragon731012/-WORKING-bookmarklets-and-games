@@ -25,6 +25,7 @@ function makenote(name,value){
 			x.style.zIndex = 10000;
 			x.style.opacity = 1;
 			x.style.color = 'white';
+			x.style.fontSize = '12px';
 			x.style.backgroundColor = 'red';
 			x.style.border = '0px solid black';
 			x.style.textAlign = 'center';
