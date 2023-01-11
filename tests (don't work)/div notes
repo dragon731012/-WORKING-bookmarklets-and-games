@@ -1,161 +1,165 @@
 function makenote(name,value){
-var width=350;
-var height=350;
-var over=0;
-var overdone=0;
-var clicked=0;
-var a=0;
-var b=0;
-var c=0;
-var d=0;
-var e=0;
-var f=0;
+	var width=350;
+	var height=350;
+	var over=0;
+	var overdone=0;
+	var clicked=0;
+	var a=0;
+	var b=0;
+	var c=0;
+	var d=0;
+	var e=0;
+	var f=0;
 
-(function () {
-	var done = document.createElement('div');
-	var body = document.getElementsByTagName('body')[0];
-	body.appendChild(done);
+	(function () {
+		var done = document.createElement('div');
+		var body = document.getElementsByTagName('body')[0];
+		body.appendChild(done);
 
-	done.style.position = 'fixed';
-	done.style.top = '450px';
-	done.style.left = '300px';
-	done.style.margin = '0px';
-	done.style.paddingTop = '5px';
-	done.style.paddingLeft = '10px';
-	done.style.paddingRight = '10px';
-	done.style.width = ''+width+'px';
-	done.style.height = '30px';
-	done.style.zIndex = 10000;
-	done.style.opacity = 1;
-	done.style.color = 'black';
-	done.style.backgroundColor = 'white';
-	done.style.border = '4px solid black';
-	done.style.textAlign = 'center';
-	done.style.cursor = 'pointer';
-	done.id = 'done';
-	done.style.display = 'block';
-	done.innerText = 'done';
-	done.onmouseover = function(event) {
-		overdone=1;
-	};
-	done.onmouseout = function(event) {
-		overdone=0;
-	};
-}());
+		done.style.position = 'fixed';
+		done.style.top = '450px';
+		done.style.left = '300px';
+		done.style.margin = '0px';
+		done.style.paddingTop = '5px';
+		done.style.paddingLeft = '10px';
+		done.style.paddingRight = '10px';
+		done.style.width = ''+width+'px';
+		done.style.height = '30px';
+		done.style.zIndex = 10000;
+		done.style.opacity = 1;
+		done.style.color = 'black';
+		done.style.backgroundColor = 'white';
+		done.style.border = '4px solid black';
+		done.style.textAlign = 'center';
+		done.style.cursor = 'pointer';
+		done.id = 'done';
+		done.style.display = 'block';
+		done.innerText = 'done';
+		done.onmouseover = function(event) {
+			overdone=1;
+		};
+		done.onmouseout = function(event) {
+			overdone=0;
+		};
+	}());
 
-(function () {
-	var elem = document.createElement('div');
-	var body = document.getElementsByTagName('body')[0];
-	body.appendChild(elem);
+	(function () {
+		var elem = document.createElement('div');
+		var body = document.getElementsByTagName('body')[0];
+		body.appendChild(elem);
 
-	elem.style.position = 'fixed';
-	elem.style.top = '100px';
-	elem.style.left = '300px';
-	elem.style.margin = '0px';
-	elem.style.paddingTop = '10px';
-	elem.style.paddingLeft = '10px';
-	elem.style.paddingRight = '10px';
-	elem.style.width = ''+width+'px';
-	elem.style.height = ''+height+'px';
-	elem.style.zIndex = 10000;
-	elem.style.opacity = 1;
-	elem.style.color = 'black';
-	elem.style.backgroundColor = 'white';
-	elem.style.border = '4px solid black';
-	elem.style.textAlign = 'left';
-	elem.style.cursor = 'pointer';
-	elem.id = 'elem';
-	elem.style.display = 'block';
-	elem.innerText = ''+value+'';
-	document.getElementById('elem').contentEditable = true;
-	document.getElementById("elem").style.overflow='auto';
-	elem.onmouseover = function(event) {
-		over=1;
-	};
-	elem.onmouseout = function(event) {
-		over=0;
-	};
-}());
-
-
-(function () {
-	var name = document.createElement('div');
-	var body = document.getElementsByTagName('body')[0];
-	body.appendChild(name);
-
-	name.style.position = 'fixed';
-	name.style.top = '100px';
-	name.style.left = '300px';
-	name.style.margin = '0px';
-	name.style.paddingTop = '10px';
-	name.style.paddingLeft = '10px';
-	name.style.paddingRight = '10px';
-	name.style.width = ''+width+'px';
-	name.style.height = '35px';
-	name.style.zIndex = 10000;
-	name.style.opacity = 1;
-	name.style.color = 'black';
-	name.style.backgroundColor = 'white';
-	name.style.border = '4px solid black';
-	name.style.textAlign = 'center';
-	name.style.cursor = 'pointer';
-	name.id = 'name';
-	name.style.display = 'block';
-	name.innerText = ''+name+'';
-	function update(){
-		c=a;
-		d=b-30;
-		e=a;
-		f=b+345;
-		name.style.top = ''+d+'px';
-		name.style.left = ''+c+'px';
-		done.style.top = ''+f+'px';
-		done.style.left = ''+e+'px';
-	}
-	setInterval(update,5);
-}());
+		elem.style.position = 'fixed';
+		elem.style.top = '100px';
+		elem.style.left = '300px';
+		elem.style.margin = '0px';
+		elem.style.paddingTop = '10px';
+		elem.style.paddingLeft = '10px';
+		elem.style.paddingRight = '10px';
+		elem.style.width = ''+width+'px';
+		elem.style.height = ''+height+'px';
+		elem.style.zIndex = 10000;
+		elem.style.opacity = 1;
+		elem.style.color = 'black';
+		elem.style.backgroundColor = 'white';
+		elem.style.border = '4px solid black';
+		elem.style.textAlign = 'left';
+		elem.style.cursor = 'pointer';
+		elem.id = 'elem';
+		elem.style.display = 'block';
+		elem.innerText = ''+value+'';
+		document.getElementById('elem').contentEditable = true;
+		document.getElementById("elem").style.overflow='auto';
+		elem.onmouseover = function(event) {
+			over=1;
+		};
+		elem.onmouseout = function(event) {
+			over=0;
+		};
+	}());
 
 
-function mousemove(event){
-	if (over==1){
-		if (clicked==1){
-			var x=event.clientX;
-			a=x-175;
-			var y=event.clientY;
-			b=y-175;
-			elem.style.top = ''+b+'px';
-			elem.style.left = ''+a+'px';
+	(function () {
+		var name = document.createElement('div');
+		var body = document.getElementsByTagName('body')[0];
+		body.appendChild(name);
+
+		name.style.position = 'fixed';
+		name.style.top = '100px';
+		name.style.left = '300px';
+		name.style.margin = '0px';
+		name.style.paddingTop = '10px';
+		name.style.paddingLeft = '10px';
+		name.style.paddingRight = '10px';
+		name.style.width = ''+width+'px';
+		name.style.height = '35px';
+		name.style.zIndex = 10000;
+		name.style.opacity = 1;
+		name.style.color = 'black';
+		name.style.backgroundColor = 'white';
+		name.style.border = '4px solid black';
+		name.style.textAlign = 'center';
+		name.style.cursor = 'pointer';
+		name.id = 'name';
+		name.style.display = 'block';
+		name.innerText = ''+name+'';
+		function update(){
+			c=a;
+			d=b-30;
+			e=a;
+			f=b+345;
+			name.style.top = ''+d+'px';
+			name.style.left = ''+c+'px';
+			done.style.top = ''+f+'px';
+			done.style.left = ''+e+'px';
+		}
+		setInterval(update,5);
+	}());
+
+
+	function mousemove(event){
+		if (over==1){
+			if (clicked==1){
+				var x=event.clientX;
+				a=x-175;
+				var y=event.clientY;
+				b=y-175;
+				elem.style.top = ''+b+'px';
+				elem.style.left = ''+a+'px';
+			}
 		}
 	}
-}
 
-function mousemove2(event){
-	if (overdone==1){
-		if (clicked==1){
-			alert("hi");
+	function mousemove2(event){
+		if (overdone==1){
+			if (clicked==1){
+				alert("hi");
+			}
 		}
 	}
-}
 
-function click(event) {
-	if (event.button == 0) {
-        	clicked=1;
-        }
-}
+	function click(event) {
+		if (event.button == 0) {
+			clicked=1;
+		}
+	}
 
-document.onmousedown = click;
+	document.onmousedown = click;
 
-function clickup(event) {
-	if (event.button == 0) {
-        	clicked=0;
-        }
-}
+	function clickup(event) {
+		if (event.button == 0) {
+			clicked=0;
+		}
+	}
 
-document.onmouseup = clickup;
+	document.onmouseup = clickup;
 
-window.addEventListener('mousemove',mousemove);
-window.addEventListener('mousemove2',mousemove);
+	window.addEventListener('mousemove',mousemove);
+	window.addEventListener('mousemove2',mousemove);
 
+	function backup(){
+		var text = document.getElementById("elem").textContent;
+		alert(text);
+	}
 }
 
 var choose=prompt("do you want to make a new note, continue, or delete one? new=1 continue=2 delete=3 delete all=4 only works on same domain"); 
