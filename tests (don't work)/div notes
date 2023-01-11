@@ -52,5 +52,5 @@ function click(event) {
         }
 }
 
-document.onmousedown = click
+document.onmousedown = click;
 window.addEventListener('mousemove',mousemove);
