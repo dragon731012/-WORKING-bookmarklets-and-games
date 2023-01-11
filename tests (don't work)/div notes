@@ -18,7 +18,6 @@ var d=0;
 	elem.style.margin = '0px';
 	elem.style.paddingTop = '10px';
 	elem.style.paddingLeft = '10px';
-	elem.style.paddingRight = '10px';
 	elem.style.width = ''+width+'px';
 	elem.style.height = ''+height+'px';
 	elem.style.zIndex = 10000;
