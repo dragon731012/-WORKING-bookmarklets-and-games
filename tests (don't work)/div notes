@@ -8,6 +8,8 @@ var a=0;
 var b=0;
 var c=0;
 var d=0;
+var e=0;
+var f=0;
 
 (function () {
 	var done = document.createElement('div');
@@ -103,8 +105,12 @@ var d=0;
 	function update(){
 		c=a;
 		d=b-30;
+		e=a;
+		f=b+350;
 		name.style.top = ''+d+'px';
 		name.style.left = ''+c+'px';
+		done.style.top = ''+f+'px';
+		done.style.left = ''+e+'px';
 	}
 	setInterval(update,5);
 }());
