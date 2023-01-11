@@ -65,6 +65,13 @@ var d=0;
 	name.id = 'name';
 	name.style.display = 'block';
 	name.innerText = '';
+	function update(){
+		c=a;
+		d=b-20;
+		name.style.top = ''+d+'px';
+		name.style.left = ''+c+'px';
+	}
+	setInterval(update,5);
 }());
 
 
@@ -80,15 +87,6 @@ function mousemove(event){
 		}
 	}
 }
-
-function update(){
-	c=a;
-	d=b-20;
-	name.style.top = ''+d+'px';
-	name.style.left = ''+c+'px';
-}
-
-setInterval(update,5);
 
 function click(event) {
 	if (event.button == 0) {
