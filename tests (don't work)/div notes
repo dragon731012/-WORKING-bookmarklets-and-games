@@ -1,5 +1,6 @@
 var width=350;
 var height=350;
+var moving=false;
 
 (function () {
 	var elem = document.createElement('div');
@@ -27,3 +28,32 @@ var height=350;
 	elem.innerText = '';
 	document.getElementById('elem').contentEditable = true;
 }());
+
+window.addEventListener("keydown",function(event){
+    if (event.key=="ArrowLeft"){
+        if (moving==true){
+	
+	}
+    }
+});
+window.addEventListener("keydown",function(event){
+    if (event.key=="ArrowRight"){
+        if (moving==true){
+	
+	}
+    }
+});
+window.addEventListener("keydown",function(event){
+    if (event.key=="ArrowUp"){
+        if (moving==true){
+	
+	}
+    }
+});
+window.addEventListener("keydown",function(event){
+    if (event.key=="ArrowDown"){
+        if (moving==true){
+	
+	}
+    }
+});
