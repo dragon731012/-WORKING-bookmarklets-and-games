@@ -15,14 +15,14 @@ var d=0;
 	body.appendChild(done);
 
 	done.style.position = 'fixed';
-	done.style.top = '100px';
+	done.style.top = '450px';
 	done.style.left = '300px';
 	done.style.margin = '0px';
 	done.style.paddingTop = '10px';
 	done.style.paddingLeft = '10px';
 	done.style.paddingRight = '10px';
 	done.style.width = ''+width+'px';
-	done.style.height = ''+height+'px';
+	done.style.height = '30px';
 	done.style.zIndex = 10000;
 	done.style.opacity = 1;
 	done.style.color = 'black';
