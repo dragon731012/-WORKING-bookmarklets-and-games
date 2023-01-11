@@ -1,7 +1,7 @@
 var width=350;
 var height=350;
 var over=0;
-var moving=false;
+var clicked=0;
 
 (function () {
 	var elem = document.createElement('div');
@@ -37,20 +37,31 @@ var moving=false;
 }());
 
 function mousemove(event){
-	if (moving==true){
-		var x=event.clientX;
-		var y=event.clientY;
-		elem.style.top = ''+y+'px';
-		elem.style.left = ''+x+'px';
+	if (over==1){
+		if (clicked==1){
+			var x=event.clientX;
+			var y=event.clientY;
+			elem.style.top = ''+y+'px';
+			elem.style.left = ''+x+'px';
+		}
 	}
 }
 
                
 function click(event) {
 	if (event.button == 0) {
-        	alert("Left click not allowed");
+        	clicked=1;
         }
 }
 
 document.onmousedown = click;
+
+function clickup(event) {
+	if (event.button == 0) {
+        	clicked=0;
+        }
+}
+
+document.onmouseup = clickup;
+
 window.addEventListener('mousemove',mousemove);
