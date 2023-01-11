@@ -45,12 +45,12 @@ function mousemove(event){
 	}
 }
 
-document.onmousedown = click
                
-            // click function called
 function click(event) {
 	if (event.button == 0) {
         	alert("Left click not allowed");
         }
 }
+
+document.onmousedown = click
 window.addEventListener('mousemove',mousemove);
