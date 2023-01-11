@@ -105,13 +105,13 @@ function makenote(name,value){
 	function resize(){
 		if (nameover==1){
 			if (clicked==1){
+				clicked=0;
+				nameover=0;
 				width=prompt("how wide do you want it to be?");
 				height=prompt("what do you want the height to be?");
 				elem.style.width = ''+width+'px';
 				elem.style.height = ''+height+'px';
 				name.style.width = ''+width+'px';
-				clicked=0;
-				nameover=0;
 			}
 		}
 	}
