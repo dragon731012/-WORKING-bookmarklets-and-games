@@ -51,7 +51,7 @@ function mousemove(event){
 					elem.style.left = ''+x+'px';
 				}
 			}
-			setInterval(waiting,5);
+			setInterval(waiting,100);
 		}
 	}
 }
