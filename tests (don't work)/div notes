@@ -54,7 +54,7 @@ function makenote(name,value){
 		name1.style.top = '100px';
 		name1.style.left = '300px';
 		name1.style.margin = '0px';
-		name1.style.paddingTop = '10px';
+		name1.style.paddingTop = '5px';
 		name1.style.paddingLeft = '10px';
 		name1.style.paddingRight = '10px';
 		name1.style.width = ''+width+'px';
@@ -74,8 +74,8 @@ function makenote(name,value){
 			d=b-30;
 			e=a;
 			f=b+345;
-			name.style.top = ''+d+'px';
-			name.style.left = ''+c+'px';
+			name1.style.top = ''+d+'px';
+			name1.style.left = ''+c+'px';
 		}
 		setInterval(update,5);
 	}());
