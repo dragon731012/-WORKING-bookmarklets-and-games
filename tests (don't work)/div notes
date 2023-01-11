@@ -1,5 +1,7 @@
 var width=350;
 var height=350;
+var x=event.clientX;
+var y=event.clientY;
 
 (function () {
 	var elem = document.createElement('div');
@@ -27,8 +29,8 @@ var height=350;
 	elem.innerText = '';
 	document.getElementById('elem').contentEditable = true;
 	function drag(event){
-		var x=event.clientX;
-		var y=event.clientY;
+		x=event.clientX;
+		y=event.clientY;
 		elem.style.top=""+y+"px";
 		elem.style.left=""+x+"px";
 	}
