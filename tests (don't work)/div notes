@@ -2,11 +2,44 @@ function makenote(name,value){
 var width=350;
 var height=350;
 var over=0;
+var overdone=0;
 var clicked=0;
 var a=0;
 var b=0;
 var c=0;
 var d=0;
+
+(function () {
+	var done = document.createElement('div');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(done);
+
+	done.style.position = 'fixed';
+	done.style.top = '100px';
+	done.style.left = '300px';
+	done.style.margin = '0px';
+	done.style.paddingTop = '10px';
+	done.style.paddingLeft = '10px';
+	done.style.paddingRight = '10px';
+	done.style.width = ''+width+'px';
+	done.style.height = ''+height+'px';
+	done.style.zIndex = 10000;
+	done.style.opacity = 1;
+	done.style.color = 'black';
+	done.style.backgroundColor = 'white';
+	done.style.border = '4px solid black';
+	done.style.textAlign = 'left';
+	done.style.cursor = 'pointer';
+	done.id = 'done';
+	done.style.display = 'block';
+	done.innerText = 'done';
+	done.onmouseover = function(event) {
+		overdone=1;
+	};
+	done.onmouseout = function(event) {
+		overdone=0;
+	};
+}());
 
 (function () {
 	var elem = document.createElement('div');
@@ -90,6 +123,15 @@ function mousemove(event){
 	}
 }
 
+function mousemove2(event){
+	if (overdone==1){
+		if (clicked==1){
+			note=elem.innerText;
+			window.localStorage.setItem(""+name+"",""+note+""); 
+		}
+	}
+}
+
 function click(event) {
 	if (event.button == 0) {
         	clicked=1;
@@ -107,11 +149,7 @@ function clickup(event) {
 document.onmouseup = clickup;
 
 window.addEventListener('mousemove',mousemove);
-
-function autobackup(){
-	var text=elem.innerText;
-	window.localStorage.setItem(name,text);
-}
+window.addEventListener('mousemove2',mousemove);
 
 }
 
