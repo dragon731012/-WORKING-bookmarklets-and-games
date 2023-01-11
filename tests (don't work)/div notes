@@ -95,8 +95,8 @@ function makenote(name,value){
 		function update(){
 			c=a;
 			d=b-30;
-			e=a+width/1.08;
-			f=b+2;
+			e=a+width/1.1;
+			f=d+3;
 			name1.style.top = ''+d+'px';
 			name1.style.left = ''+c+'px';
 			x.style.top = ''+f+'px';
