@@ -29,22 +29,6 @@ var moving=false;
 	document.getElementById('elem').contentEditable = true;
 }());
 
-
-document.body.onmousedown = function() { 
-	alert("down");
-}
-document.body.onmouseup = function() { 
-	alert("up");
-
-}
-
-
-
-
-
-
-
-
 function mousemove(event){
 	if (moving==true){
 		var x=event.clientX;
