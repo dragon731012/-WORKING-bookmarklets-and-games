@@ -99,6 +99,13 @@ function makenote(name,value){
 				elem.style.left = ''+a+'px';
 			}
 		}
+		if (nameover==1){
+			if (clicked==1){
+				width=prompt("how wide do you want it to be?");
+				height=prompt("what do you want the height to be?");
+				
+			}
+		}
 	}
 
 	function click(event) {
