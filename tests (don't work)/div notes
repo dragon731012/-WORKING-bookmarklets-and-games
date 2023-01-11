@@ -31,7 +31,7 @@ function makenote(name,value){
 			x.style.cursor = 'pointer';
 			x.id = 'x';
 			x.style.display = 'block';
-			elem.style.paddingBottom = '3px';
+			x.style.paddingBottom = '3px';
 			x.innerText = 'x';
 		}());
 	}
@@ -101,7 +101,7 @@ function makenote(name,value){
 		function update(){
 			c=a;
 			d=b-30;
-			e=a+width*0.95;
+			e=a+width*0.92;
 			f=b-27;
 			name1.style.top = ''+d+'px';
 			name1.style.left = ''+c+'px';
