@@ -32,4 +32,5 @@ var height=350;
 		elem.style.top=""+y+"px";
 		elem.style.left=""+x+"px";
 	}
+	setInterval(drag,15);
 }());
