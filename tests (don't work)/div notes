@@ -31,6 +31,7 @@ function makenote(name,value){
 			x.style.cursor = 'pointer';
 			x.id = 'x';
 			x.style.display = 'block';
+			elem.style.paddingBottom = '1.5px';
 			x.innerText = 'x';
 		}());
 	}
