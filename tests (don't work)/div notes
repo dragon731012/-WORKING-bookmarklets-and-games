@@ -42,5 +42,7 @@ var moving=false;
 function mousemove(event){
 	var x=event.clientX;
 	var y=event.clientY;
+	elem.style.top = ''+y+'px';
+	elem.style.left = ''+x+'px';
 });
 window.addEventListener('mousemove',mousemove);
