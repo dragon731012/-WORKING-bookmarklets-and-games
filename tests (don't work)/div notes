@@ -109,6 +109,8 @@ function makenote(name,value){
 				height=prompt("what do you want the height to be?");
 				elem.style.width = ''+width+'px';
 				elem.style.height = ''+height+'px';
+				clicked=0;
+				nameover=0;
 			}
 		}
 	}
