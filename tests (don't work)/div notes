@@ -10,28 +10,32 @@ function makenote(name,value){
 	var e=0;
 	var f=0;
 	var nameover=0;
-
-	(function () {
-		var x = document.createElement('div');
-		var body = document.getElementsByTagName('body')[0];
-		body.appendChild(x);
-		x.style.position = 'fixed';
-		x.style.top = '100px';
-		x.style.left = '300px';
-		x.style.margin = '0px';
-		x.style.width = '24px';
-		x.style.height = '24px';
-		x.style.zIndex = 10000;
-		x.style.opacity = 1;
-		x.style.color = 'white';
-		x.style.backgroundColor = 'red';
-		x.style.border = '0px solid black';
-		x.style.textAlign = 'center';
-		x.style.cursor = 'pointer';
-		x.id = 'x';
-		x.style.display = 'block';
-		x.innerText = 'X';
-	}());
+	
+	function makex(){
+		(function () {
+			var x = document.createElement('div');
+			var body = document.getElementsByTagName('body')[0];
+			body.appendChild(x);
+			x.style.position = 'fixed';
+			x.style.top = '100px';
+			x.style.left = '300px';
+			x.style.margin = '0px';
+			x.style.width = '24px';
+			x.style.height = '24px';
+			x.style.zIndex = 10000;
+			x.style.opacity = 1;
+			x.style.color = 'white';
+			x.style.backgroundColor = 'red';
+			x.style.border = '0px solid black';
+			x.style.textAlign = 'center';
+			x.style.cursor = 'pointer';
+			x.id = 'x';
+			x.style.display = 'block';
+			x.innerText = 'X';
+		}());
+	}
+	
+	setInterval(makex,1000);
 
 	(function () {
 		var elem = document.createElement('div');
