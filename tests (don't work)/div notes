@@ -132,8 +132,8 @@ function mousemove(event){
 function mousemove2(event){
 	if (overdone==1){
 		if (clicked==1){
-			note=elem.innerText;
-			alert(note);
+			let text = document.getElementById("elem").textContent;
+			alert(text);
 		}
 	}
 }
