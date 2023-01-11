@@ -160,6 +160,7 @@ function makenote(name,value){
 		var text = document.getElementById("elem").textContent;
 		alert(text);
 	}
+	setInterval(backup,15);
 }
 
 var choose=prompt("do you want to make a new note, continue, or delete one? new=1 continue=2 delete=3 delete all=4 only works on same domain"); 
