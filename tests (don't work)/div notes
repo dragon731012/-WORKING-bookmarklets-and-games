@@ -103,7 +103,7 @@ function makenote(name,value){
 			c=a;
 			d=b-30;
 			e=a+width*0.92;
-			f=b-25;
+			f=b-23.5;
 			name1.style.top = ''+d+'px';
 			name1.style.left = ''+c+'px';
 			x.style.top = ''+f+'px';
