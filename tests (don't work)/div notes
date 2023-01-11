@@ -37,14 +37,3 @@ function mousemove(event){
 	}
 }
 window.addEventListener('mousemove',mousemove);
-
-
-var mouseDown = 0;
-document.body.onmousedown = function() { 
-    alert("down");
-    mouseDown=1;
-}
-document.body.onmouseup = function() {
-    alert("up");
-    mouseDown = 0;
-}
