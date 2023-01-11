@@ -43,15 +43,15 @@ var d=0;
 function mousemove(event){
 	if (over==1){
 		if (clicked==1){
-			while (clicked==1){
-				function waiting(){
+			function waiting(){
+				if (clicked==1){
 					var x=event.clientX;
 					var y=event.clientY;
 					elem.style.top = ''+y+'px';
 					elem.style.left = ''+x+'px';
 				}
-				setTimeout(waiting,5);
 			}
+			setInterval(waiting,5);
 		}
 	}
 }
