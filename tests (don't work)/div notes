@@ -132,8 +132,7 @@ function mousemove(event){
 function mousemove2(event){
 	if (overdone==1){
 		if (clicked==1){
-			let text = document.getElementById("elem").textContent;
-			alert(text);
+			alert("hi");
 		}
 	}
 }
