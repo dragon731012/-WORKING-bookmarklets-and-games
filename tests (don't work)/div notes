@@ -39,8 +39,10 @@ var clicked=0;
 function mousemove(event){
 	if (over==1){
 		if (clicked==1){
-			var x=event.clientX+175;
-			var y=event.clientY+175;
+			var x=event.clientX;
+			x=x+175;
+			var y=event.clientY;
+			y=y+175;
 			elem.style.top = ''+y+'px';
 			elem.style.left = ''+x+'px';
 		}
