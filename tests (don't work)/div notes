@@ -53,8 +53,8 @@ function makenote(name,value){
 		x.style.top = '100px';
 		x.style.left = '300px';
 		x.style.margin = '0px';
-		x.style.width = '32px';
-		x.style.height = '32px';
+		x.style.width = '27px';
+		x.style.height = '27px';
 		x.style.zIndex = 10000;
 		x.style.opacity = 1;
 		x.style.color = 'white';
@@ -96,7 +96,7 @@ function makenote(name,value){
 			c=a;
 			d=b-30;
 			e=a+width/0.5;
-			f=b+1;
+			f=b+5;
 			name1.style.top = ''+d+'px';
 			name1.style.left = ''+c+'px';
 			x.style.top = ''+f+'px';
