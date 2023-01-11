@@ -46,29 +46,29 @@ function makenote(name,value){
 
 
 	(function () {
-		var name = document.createElement('div');
+		var name1 = document.createElement('div');
 		var body = document.getElementsByTagName('body')[0];
-		body.appendChild(name);
+		body.appendChild(name1);
 
-		name.style.position = 'fixed';
-		name.style.top = '100px';
-		name.style.left = '300px';
-		name.style.margin = '0px';
-		name.style.paddingTop = '10px';
-		name.style.paddingLeft = '10px';
-		name.style.paddingRight = '10px';
-		name.style.width = ''+width+'px';
-		name.style.height = '35px';
-		name.style.zIndex = 10000;
-		name.style.opacity = 1;
-		name.style.color = 'black';
-		name.style.backgroundColor = 'white';
-		name.style.border = '4px solid black';
-		name.style.textAlign = 'center';
-		name.style.cursor = 'pointer';
-		name.id = 'name';
-		name.style.display = 'block';
-		name.innerText = ''+name+'';
+		name1.style.position = 'fixed';
+		name1.style.top = '100px';
+		name1.style.left = '300px';
+		name1.style.margin = '0px';
+		name1.style.paddingTop = '10px';
+		name1.style.paddingLeft = '10px';
+		name1.style.paddingRight = '10px';
+		name1.style.width = ''+width+'px';
+		name1.style.height = '35px';
+		name1.style.zIndex = 10000;
+		name1.style.opacity = 1;
+		name1.style.color = 'black';
+		name1.style.backgroundColor = 'white';
+		name1.style.border = '4px solid black';
+		name1.style.textAlign = 'center';
+		name1.style.cursor = 'pointer';
+		name1.id = 'name1';
+		name1.style.display = 'block';
+		name1.innerText = ''+name+'';
 		function update(){
 			c=a;
 			d=b-30;
