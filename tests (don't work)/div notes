@@ -4,6 +4,8 @@ var over=0;
 var clicked=0;
 var a=300;
 var b=100;
+var c=0;
+var d=0;
 
 (function () {
 	var elem = document.createElement('div');
@@ -43,8 +45,8 @@ function mousemove(event){
 		if (clicked==1){
 			var x=event.clientX;
 			var y=event.clientY;
-			a=x-a;
-			b=y-b;
+			c=x-a;
+			d=y-b;
 			elem.style.top = ''+b+'px';
 			elem.style.left = ''+a+'px';
 		}
