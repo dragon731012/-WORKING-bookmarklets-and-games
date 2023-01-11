@@ -55,7 +55,7 @@ function update(){
 	a=x+175;
 	b=y+175;
 }
-
+setInterval(update,15);
 function click(event) {
 	if (event.button == 0) {
         	clicked=1;
