@@ -1,7 +1,5 @@
 var width=350;
 var height=350;
-var x=event.clientX;
-var y=event.clientY;
 
 (function () {
 	var elem = document.createElement('div');
@@ -28,11 +26,4 @@ var y=event.clientY;
 	elem.style.display = 'block';
 	elem.innerText = '';
 	document.getElementById('elem').contentEditable = true;
-	function drag(event){
-		x=event.clientX;
-		y=event.clientY;
-		elem.style.top=""+y+"px";
-		elem.style.left=""+x+"px";
-	}
-	setInterval(drag,15);
 }());
