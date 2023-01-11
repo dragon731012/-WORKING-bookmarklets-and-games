@@ -100,6 +100,9 @@ function makenote(name,value){
 				elem.style.left = ''+a+'px';
 			}
 		}
+	}
+
+	function resize(){
 		if (nameover==1){
 			if (clicked==1){
 				width=prompt("how wide do you want it to be?");
