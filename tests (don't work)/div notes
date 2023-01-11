@@ -45,6 +45,27 @@ function makenote(name,value){
 		};
 	}());
 
+	(function () {
+		var x = document.createElement('div');
+		var body = document.getElementsByTagName('body')[0];
+		body.appendChild(x);
+		x.style.position = 'fixed';
+		x.style.top = '100px';
+		x.style.left = '300px';
+		x.style.margin = '0px';
+		x.style.width = '32px';
+		x.style.height = '32px';
+		x.style.zIndex = 10000;
+		x.style.opacity = 1;
+		x.style.color = 'white';
+		x.style.backgroundColor = 'red';
+		x.style.border = '0px solid black';
+		x.style.textAlign = 'center';
+		x.style.cursor = 'pointer';
+		x.id = 'x';
+		x.style.display = 'block';
+		x.innerText = 'X';
+	}());
 
 	(function () {
 		var name1 = document.createElement('div');
@@ -74,10 +95,12 @@ function makenote(name,value){
 		function update(){
 			c=a;
 			d=b-30;
-			e=a;
-			f=b+345;
+			e=a+width/0.5;
+			f=b+1;
 			name1.style.top = ''+d+'px';
 			name1.style.left = ''+c+'px';
+			x.style.top = ''+f+'px';
+			x.style.left = ''+e+'px';	
 		}
 		setInterval(update,5);
 		name1.onmouseover = function(event) {
