@@ -49,6 +49,8 @@ function mousemove(event){
 			b=y-boxy;
 			elem.style.top = ''+b+'px';
 			elem.style.left = ''+a+'px';
+			boxx=a;
+			boxy=b;
 		}
 	}
 }
