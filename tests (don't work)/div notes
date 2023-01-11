@@ -111,7 +111,7 @@ function makenote(name,value){
 				height=prompt("what do you want the height to be?");
 				elem.style.width = ''+width+'px';
 				elem.style.height = ''+height+'px';
-				name.style.width = ''+width+'px';
+				name1.style.width = ''+width+'px';
 			}
 		}
 	}
