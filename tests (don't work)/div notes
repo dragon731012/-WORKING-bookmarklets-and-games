@@ -20,8 +20,8 @@ function makenote(name,value){
 			x.style.top = '100px';
 			x.style.left = '300px';
 			x.style.margin = '0px';
-			x.style.width = '20px';
-			x.style.height = '20px';
+			x.style.width = '17px';
+			x.style.height = '17px';
 			x.style.zIndex = 10000;
 			x.style.opacity = 1;
 			x.style.color = 'white';
@@ -31,7 +31,7 @@ function makenote(name,value){
 			x.style.cursor = 'pointer';
 			x.id = 'x';
 			x.style.display = 'block';
-			x.innerText = 'X';
+			x.innerText = 'x';
 		}());
 	}
 	
