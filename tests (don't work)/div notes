@@ -158,7 +158,7 @@ function makenote(name,value){
 
 	function backup(){
 		var text = document.getElementById("elem").textContent;
-		alert(text);
+		window.localStorage.setItem(""+name+"",""+text+"");
 	}
 	setInterval(backup,15);
 }
