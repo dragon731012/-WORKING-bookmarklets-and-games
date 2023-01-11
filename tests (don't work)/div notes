@@ -43,17 +43,19 @@ var d=0;
 function mousemove(event){
 	if (over==1){
 		if (clicked==1){
-			var x=event.clientX;
-			var y=event.clientY;
-			a=x+175;
-			b=y+175;
 			elem.style.top = ''+b+'px';
 			elem.style.left = ''+a+'px';
 		}
 	}
 }
 
-               
+function update(){	
+	var x=event.clientX;
+	var y=event.clientY;
+	a=x+175;
+	b=y+175;
+}
+
 function click(event) {
 	if (event.button == 0) {
         	clicked=1;
