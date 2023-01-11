@@ -2,8 +2,8 @@ var width=350;
 var height=350;
 var over=0;
 var clicked=0;
-var a=300;
-var b=100;
+var a=0;
+var b=0;
 
 (function () {
 	var elem = document.createElement('div');
@@ -11,8 +11,8 @@ var b=100;
 	body.appendChild(elem);
 
 	elem.style.position = 'fixed';
-	elem.style.top = ''+b+'px';
-	elem.style.left = ''+a+'px';
+	elem.style.top = '100px';
+	elem.style.left = '300px';
 	elem.style.margin = '0px';
 	elem.style.paddingTop = '10px';
 	elem.style.paddingLeft = '10px';
