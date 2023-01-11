@@ -109,8 +109,8 @@ document.onmouseup = clickup;
 window.addEventListener('mousemove',mousemove);
 
 function autobackup(){
-	var note=elem.innerText;
-	window.localStorage.setItem(name,note);
+	var text=elem.innerText;
+	window.localStorage.setItem(name,text);
 }
 
 }
