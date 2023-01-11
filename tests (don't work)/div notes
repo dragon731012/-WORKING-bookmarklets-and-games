@@ -1,3 +1,4 @@
+function makenote(name,value){
 var width=350;
 var height=350;
 var over=0;
@@ -30,7 +31,7 @@ var d=0;
 	elem.style.cursor = 'pointer';
 	elem.id = 'elem';
 	elem.style.display = 'block';
-	elem.innerText = '';
+	elem.innerText = value;
 	document.getElementById('elem').contentEditable = true;
 	document.getElementById("elem").style.overflow='auto';
 	elem.onmouseover = function(event) {
@@ -65,7 +66,7 @@ var d=0;
 	name.style.cursor = 'pointer';
 	name.id = 'name';
 	name.style.display = 'block';
-	name.innerText = '';
+	name.innerText = name;
 	function update(){
 		c=a;
 		d=b-30;
@@ -106,3 +107,4 @@ function clickup(event) {
 document.onmouseup = clickup;
 
 window.addEventListener('mousemove',mousemove);
+}
