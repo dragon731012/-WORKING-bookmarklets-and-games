@@ -35,7 +35,7 @@ function makenote(name,value){
 		}());
 	}
 	
-	setInterval(makex,1000);
+	setTimeout(makex,1000);
 
 	(function () {
 		var elem = document.createElement('div');
