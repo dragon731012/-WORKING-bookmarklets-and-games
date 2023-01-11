@@ -1,6 +1,7 @@
 var width=350;
 var height=350;
 var over=0;
+var moving=false;
 
 (function () {
 	var elem = document.createElement('div');
