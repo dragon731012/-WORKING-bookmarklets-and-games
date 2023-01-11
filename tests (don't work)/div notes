@@ -30,6 +30,12 @@ var moving=false;
 }());
 
 
+document.body.onmousedown = function() { 
+	alert("down");
+}
+document.body.onmouseup = function() { 
+	alert("up");
+
 
 
 
