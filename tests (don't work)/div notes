@@ -14,7 +14,6 @@ function makenote(name,value){
 	
 	(function(){var me=document.createElement('div');var body=document.getElementsByTagName('body')[0];body.appendChild(me);me.style.position='fixed';me.style.bottom='0px';me.style.right='0px';me.style.margin='0px';me.style.paddingTop='0px';me.style.width='1366px';me.style.height='20px';me.style.zIndex=10000;me.style.opacity=0.8;me.style.color='white';me.style.backgroundColor='black';me.style.border='0px solid black';me.style.textAlign='center';me.style.cursor='pointer';me.id='me';me.style.display='circle';me.innerText='by dragonmaster73101';document.getElementById('me').addEventListener('click',function(){window.open('https://github.com/dragon731012');});}());
 	
-	function makex(){
 		(function () {
 			var x = document.createElement('div');
 			var body = document.getElementsByTagName('body')[0];
@@ -44,7 +43,6 @@ function makenote(name,value){
 				xover=0;
 			};
 		}());
-	}
 	
 	setTimeout(makex,1000);
 
@@ -153,19 +151,6 @@ function makenote(name,value){
 				elem.style.height = ''+height+'px';
 				name1.style.width = ''+width+'px';
 				x.style.zIndex = 20000;
-				makex();
-				function update(){
-					c=a;
-					d=b-30;
-					e=a+width-28;
-					f=b-23.5;
-					name1.style.top = ''+d+'px';
-					name1.style.left = ''+c+'px';
-					x.style.top = ''+f+'px';
-					x.style.left = ''+e+'px';
-					x.style.zIndex = 20000;
-				}
-				setInterval(update,5);
 			}
 		}
 		if (xover==1){
