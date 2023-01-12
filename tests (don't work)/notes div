@@ -207,7 +207,7 @@ function makenote(name,value){
 		}
 		if (cookiesorlocal==1){
 			var text = document.getElementById("elem").textContent;
-			window.localStorage.setItem(""+called+"",""+text+"");
+			document.cookie=""+name+"="+text+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
 		}
 	}
 	setInterval(backup,15);
