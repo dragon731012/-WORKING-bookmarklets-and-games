@@ -232,7 +232,9 @@ function local(){
 }
 
 function cookies(){
-	var choose=prompt("do you want to make a new note, continue, or delete one? new=1 continue=2 delete=3 only works on same domain. resize deletes the delete button, so just reload"); 
+	function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); } 
+
+	var choose=prompt("do you want to make a new note, continue, or delete one? new=1 continue=2 delete=3 only works on same website. resize deletes the delete button, so just reload"); 
 	if (choose==1){ 
 		var newcalled=prompt("what do you want your new note to be called? make sure you remember what you call it"); 
 		window.localStorage.setItem(""+newcalled+"",""); 
@@ -240,7 +242,7 @@ function cookies(){
 	} 
 	if (choose==2){ 
 		var called=prompt("what is your note called? type exactly how you did the first time."); 
-		let value=window.localStorage.getItem(called); 
+		var value = get_cookie(""+called+"");
 		makenote(called,value); 
 		alert("instructions: drag to move. click to edit. click name to resize.");
 	} 
@@ -250,3 +252,11 @@ function cookies(){
 		alert("note deleted."); 
 	} 
 }
+
+
+javascript: 
+
+function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); } 
+
+var choose=prompt("notes only work if you use on same website. do you want to make a new note, continue editing or delete a note? continue=1 new=2 delete=3"); 
+if (choose==1){ var called=prompt("what is your old note called? write exactly how you did the first time"); var getcookievalue = get_cookie(""+called+""); var note=prompt("- notes - do not press cancel - only works if you use on same website -",getcookievalue); document.cookie=""+called+"="+note+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; window.location.reload(1); } if (choose==2){ var newnote=prompt("what do you want it to be called? do not forget name. once you create run again to edit. if you name two things the same thing, the one you made before will be deleted."); document.cookie=""+newnote+"=; expires=Thu, 18 Dec 9013 12:00:00 UTC"; window.location.reload(1); } if (choose==3){ var deleted=prompt("what note do you want to be deleted?"); alert("deleted."); document.cookie=""+deleted+"=; expires=Thu, 18 Dec 1913 12:00:00 UTC"; window.location.reload(1); }
