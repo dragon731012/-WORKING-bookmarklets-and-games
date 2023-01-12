@@ -10,6 +10,7 @@ function makenote(name,value){
 	var e=0;
 	var f=0;
 	var nameover=0;
+	var xover=0;
 	
 	function makex(){
 		(function () {
@@ -34,6 +35,12 @@ function makenote(name,value){
 			x.style.display = 'block';
 			x.style.paddingBottom = '3px';
 			x.innerText = 'x';
+			elem.onmouseover = function(event) {
+				xover=1;
+			};
+			elem.onmouseout = function(event) {
+				xover=0;
+			};
 		}());
 	}
 	
@@ -142,6 +149,12 @@ function makenote(name,value){
 				elem.style.width = ''+width+'px';
 				elem.style.height = ''+height+'px';
 				name1.style.width = ''+width+'px';
+			}
+		}
+		if (xover==1){
+			if (clicked==1){
+				xover=0;
+				clicked=0;
 			}
 		}
 	}
