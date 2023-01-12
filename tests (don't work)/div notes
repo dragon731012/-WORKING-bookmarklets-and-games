@@ -156,7 +156,7 @@ function makenote(name,value){
 				xover=0;
 				clicked=0;
 				x.parentNode.removeChild(x);
-				name.parentNode.removeChild(name1);
+				name1.parentNode.removeChild(name1);
 				elem.parentNode.removeChild(elem);
 			}
 		}
