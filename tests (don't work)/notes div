@@ -209,6 +209,11 @@ function makenote(name,value){
 			var text = document.getElementById("elem").textContent;
 			document.cookie=""+name+"="+text+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
 		}
+		if (cookiesorlocal==3){
+			var text = document.getElementById("elem").textContent;
+			document.cookie=""+name+"="+text+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
+			window.localStorage.setItem(""+name+"",""+text+"");
+		}
 	}
 	setInterval(backup,15);
 }
@@ -255,6 +260,32 @@ function cookies(){
 	if (choose==3){
 		var deleted=prompt("what note do you want to be deleted?"); 
 		alert("deleted."); 
+		document.cookie=""+deleted+"=; expires=Thu, 18 Dec 1913 12:00:00 UTC"; 
+		window.location.reload(1); 
+	} 
+}
+
+function both(){
+	var choose=prompt("do you want to make a new note, continue, or delete one? new=1 continue=2 delete=3 only works on same website. resize deletes the delete button, so just reload"); 
+	if (choose==1){ 
+		var newnote=prompt("what do you want it to be called? do not forget name. once you create run again to edit. if you name two things the same thing, the one you made before will be deleted."); 
+		document.cookie=""+newnote+"=; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
+		window.localStorage.setItem(""+newnote+"","");
+		window.location.reload(1);
+	} 
+	if (choose==2){ 
+		var called=prompt("what is your note called? type exactly how you did the first time."); 
+		var value = get_cookie(""+called+"");
+		if (value==null){
+			value=window.localStorage.getItem(called); 
+		}
+		makenote(called,value); 
+		alert("instructions: drag to move. click to edit. click name to resize.");
+	} 
+	if (choose==3){
+		var deleted=prompt("what note do you want to be deleted?"); 
+		alert("deleted."); 
+		localStorage.removeItem(whatdelete);
 		document.cookie=""+deleted+"=; expires=Thu, 18 Dec 1913 12:00:00 UTC"; 
 		window.location.reload(1); 
 	} 
