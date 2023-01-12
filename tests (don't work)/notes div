@@ -275,7 +275,7 @@ function both(){
 	if (choose==2){ 
 		var called=prompt("what is your note called? type exactly how you did the first time."); 
 		var value = get_cookie(""+called+"");
-		value2=window.localStorage.getItem(called); 
+		var value2=window.localStorage.getItem(called); 
 		if (value==value2){
 			makenote(called,value); 
 			alert("instructions: drag to move. click to edit. click name to resize.");
