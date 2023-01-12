@@ -151,6 +151,12 @@ function makenote(name,value){
 				elem.style.width = ''+width+'px';
 				elem.style.height = ''+height+'px';
 				name1.style.width = ''+width+'px';
+				a=0;
+				b=0;
+				c=0;
+				d=0;
+				e=0;
+				f=0;
 				x.parentNode.removeChild(x);
 				me.parentNode.removeChild(me);
 				setTimeout(makex,1000);
