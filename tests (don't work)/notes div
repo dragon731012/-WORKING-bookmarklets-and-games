@@ -1,5 +1,3 @@
-javascript:
-
 function makenote(name,value){
 	var width=350;
 	var height=350;
@@ -266,6 +264,7 @@ function cookies(){
 }
 
 function both(){
+    function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); } 
 	var choose=prompt("do you want to make a new note, continue, or delete one? new=1 continue=2 delete=3 only works on same website. resize deletes the delete button, so just reload"); 
 	if (choose==1){ 
 		var newnote=prompt("what do you want it to be called? do not forget name. once you create run again to edit. if you name two things the same thing, the one you made before will be deleted."); 
@@ -285,17 +284,20 @@ function both(){
 	if (choose==3){
 		var deleted=prompt("what note do you want to be deleted?"); 
 		alert("deleted."); 
-		localStorage.removeItem(whatdelete);
+		localStorage.removeItem(deleted);
 		document.cookie=""+deleted+"=; expires=Thu, 18 Dec 1913 12:00:00 UTC"; 
 		window.location.reload(1); 
 	} 
 }
 
-var cookiesorlocal=prompt("do you want to use cookies or local storage? they do not cross save. ex: saves in cookies. does not work in local storage cookies=1 local=2");
+var cookiesorlocal=prompt("do you want to use cookies, local storage, or both? they do not cross save, unless you choose both. ex: saves in cookies. does not work in local storage cookies=1 local=2 both=3");
 
 if (cookiesorlocal==1){
 	cookies();
 }
 if (cookiesorlocal==2){
 	local();
+}
+if (cookiesorlocal==3){
+	both();
 }
