@@ -79,52 +79,54 @@ function makenote(name,value){
 		};
 	}());
 
+	function makename(){
+		(function () {
+			var name1 = document.createElement('div');
+			var body = document.getElementsByTagName('body')[0];
+			body.appendChild(name1);
 
-	(function () {
-		var name1 = document.createElement('div');
-		var body = document.getElementsByTagName('body')[0];
-		body.appendChild(name1);
+			name1.style.position = 'fixed';
+			name1.style.top = '100px';
+			name1.style.left = '300px';
+			name1.style.margin = '0px';
+			name1.style.paddingTop = '5px';
+			name1.style.paddingLeft = '10px';
+			name1.style.paddingRight = '10px';
+			name1.style.width = ''+width+'px';
+			name1.style.height = '35px';
+			name1.style.zIndex = 10000;
+			name1.style.opacity = 1;
+			name1.style.color = 'black';
+			name1.style.backgroundColor = 'white';
+			name1.style.border = '4px solid black';
+			name1.style.textAlign = 'center';
+			name1.style.cursor = 'pointer';
+			name1.id = 'name1';
+			name1.style.display = 'block';
+			name1.innerText = ''+name+'';
+			document.getElementById("elem").style.overflow='auto';
+			function update(){
+				c=a;
+				d=b-30;
+				e=a+width-28;
+				f=b-23.5;
+				name1.style.top = ''+d+'px';
+				name1.style.left = ''+c+'px';
+				x.style.top = ''+f+'px';
+				x.style.left = ''+e+'px';
+				x.style.zIndex = 20000;
+			}
+			setInterval(update,5);
+			name1.onmouseover = function(event) {
+				nameover=1;
+			};
+			name1.onmouseout = function(event) {
+				nameover=0;
+			};
+		}());
+	}
 
-		name1.style.position = 'fixed';
-		name1.style.top = '100px';
-		name1.style.left = '300px';
-		name1.style.margin = '0px';
-		name1.style.paddingTop = '5px';
-		name1.style.paddingLeft = '10px';
-		name1.style.paddingRight = '10px';
-		name1.style.width = ''+width+'px';
-		name1.style.height = '35px';
-		name1.style.zIndex = 10000;
-		name1.style.opacity = 1;
-		name1.style.color = 'black';
-		name1.style.backgroundColor = 'white';
-		name1.style.border = '4px solid black';
-		name1.style.textAlign = 'center';
-		name1.style.cursor = 'pointer';
-		name1.id = 'name1';
-		name1.style.display = 'block';
-		name1.innerText = ''+name+'';
-		document.getElementById("elem").style.overflow='auto';
-		function update(){
-			c=a;
-			d=b-30;
-			e=a+width-28;
-			f=b-23.5;
-			name1.style.top = ''+d+'px';
-			name1.style.left = ''+c+'px';
-			x.style.top = ''+f+'px';
-			x.style.left = ''+e+'px';
-			x.style.zIndex = 20000;
-		}
-		setInterval(update,5);
-		name1.onmouseover = function(event) {
-			nameover=1;
-		};
-		name1.onmouseout = function(event) {
-			nameover=0;
-		};
-	}());
-
+	setTimeout(makename,1000);
 
 	function mousemove(event){
 		if (over==1){
