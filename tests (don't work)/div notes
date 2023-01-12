@@ -1,3 +1,5 @@
+javascript:
+
 function makenote(name,value){
 	var width=350;
 	var height=350;
@@ -205,7 +207,7 @@ function makenote(name,value){
 	setInterval(backup,15);
 }
 
-var choose=prompt("do you want to make a new note, continue, or delete one? new=1 continue=2 delete=3 delete all=4 only works on same domain"); 
+var choose=prompt("do you want to make a new note, continue, or delete one? new=1 continue=2 delete=3 delete all=4 only works on same domain. resize deletes the delete button, so just reload"); 
 if (choose==1){ 
 	var newcalled=prompt("what do you want your new note to be called? make sure you remember what you call it"); 
 	window.localStorage.setItem(""+newcalled+"",""); 
