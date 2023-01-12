@@ -152,7 +152,9 @@ function makenote(name,value){
 				elem.style.height = ''+height+'px';
 				name1.style.width = ''+width+'px';
 				x.parentNode.removeChild(x);
+				me.parentNode.removeChild(me);
 				setTimeout(makex,1000);
+				setTimeout(makename,1000);
 			}
 		}
 		if (xover==1){
