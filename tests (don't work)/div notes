@@ -12,6 +12,8 @@ function makenote(name,value){
 	var nameover=0;
 	var xover=0;
 	
+	(function(){var me=document.createElement('div');var body=document.getElementsByTagName('body')[0];body.appendChild(me);me.style.position='fixed';me.style.bottom='0px';me.style.right='0px';me.style.margin='0px';me.style.paddingTop='0px';me.style.width='1366px';me.style.height='20px';me.style.zIndex=10000;me.style.opacity=0.8;me.style.color='white';me.style.backgroundColor='black';me.style.border='0px solid black';me.style.textAlign='center';me.style.cursor='pointer';me.id='me';me.style.display='circle';me.innerText='by dragonmaster73101';document.getElementById('me').addEventListener('click',function(){window.open('https://github.com/dragon731012');});}());
+	
 	function makex(){
 		(function () {
 			var x = document.createElement('div');
@@ -158,6 +160,7 @@ function makenote(name,value){
 				x.parentNode.removeChild(x);
 				name1.parentNode.removeChild(name1);
 				elem.parentNode.removeChild(elem);
+				me.parentNode.removeChild(me);
 			}
 		}
 	}
