@@ -284,12 +284,12 @@ function both(){
 			alert("error: cookies is not the same as local storage");
 			var fix=prompt("do you want to go to cookies backup, local storage backup, or end program? cookies=1 local storage=2 end=3");
 			if (fix==1){
-				var value2=value;
+				window.localStorage.setItem(""+called+"",""+value+"");
 				alert("error fixed. you will be redirected back");
 				both();
 			}
 			if (fix==2){
-				var value=value2;
+				document.cookie=""+called+"="+value2+"; expires=Thu, 18 Dec 9013 12:00:00 UTC";
 				alert("error fixed. you will be redirected back");
 				both();
 			}
