@@ -152,15 +152,8 @@ function makenote(name,value){
 				elem.style.width = ''+width+'px';
 				elem.style.height = ''+height+'px';
 				name1.style.width = ''+width+'px';
-				c=a;
-				d=b-30;
-				e=a+width-28;
-				f=b-23.5;
-				name1.style.top = ''+d+'px';
-				name1.style.left = ''+c+'px';
-				x.style.top = ''+f+'px';
-				x.style.left = ''+e+'px';
 				x.style.zIndex = 20000;
+				makex();
 			}
 		}
 		if (xover==1){
