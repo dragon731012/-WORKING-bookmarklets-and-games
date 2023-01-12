@@ -157,6 +157,10 @@ function makenote(name,value){
 				d=0;
 				e=0;
 				f=0;
+				over=0;
+				clicked=0;
+				nameover=0;
+				xover=0;
 				x.parentNode.removeChild(x);
 				me.parentNode.removeChild(me);
 				setTimeout(makex,1000);
