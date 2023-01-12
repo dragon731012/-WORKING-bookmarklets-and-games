@@ -35,10 +35,10 @@ function makenote(name,value){
 			x.style.display = 'block';
 			x.style.paddingBottom = '3px';
 			x.innerText = 'x';
-			elem.onmouseover = function(event) {
+			x.onmouseover = function(event) {
 				xover=1;
 			};
-			elem.onmouseout = function(event) {
+			x.onmouseout = function(event) {
 				xover=0;
 			};
 		}());
