@@ -43,9 +43,6 @@ function makenote(name,value){
 				xover=0;
 			};
 		}());
-	
-	setTimeout(makex,1000);
-
 	(function () {
 		var elem = document.createElement('div');
 		var body = document.getElementsByTagName('body')[0];
