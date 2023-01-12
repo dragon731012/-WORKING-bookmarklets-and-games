@@ -154,6 +154,18 @@ function makenote(name,value){
 				name1.style.width = ''+width+'px';
 				x.style.zIndex = 20000;
 				makex();
+				function update(){
+					c=a;
+					d=b-30;
+					e=a+width-28;
+					f=b-23.5;
+					name1.style.top = ''+d+'px';
+					name1.style.left = ''+c+'px';
+					x.style.top = ''+f+'px';
+					x.style.left = ''+e+'px';
+					x.style.zIndex = 20000;
+				}
+				setInterval(update,5);
 			}
 		}
 		if (xover==1){
