@@ -284,12 +284,12 @@ function both(){
 			alert("error: cookies is not the same as local storage");
 			var fix=prompt("do you want to go to cookies backup, local storage backup, or end program? cookies=1 local storage=2 end=3");
 			if (fix==1){
-				value2=value;
+				var value2=value;
 				alert("error fixed. you will be redirected back");
 				both();
 			}
 			if (fix==2){
-				value=value2;
+				var value=value2;
 				alert("error fixed. you will be redirected back");
 				both();
 			}
