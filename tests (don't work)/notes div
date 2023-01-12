@@ -201,8 +201,14 @@ function makenote(name,value){
 
 	window.addEventListener('mousemove',mousemove);
 	function backup(){
-		var text = document.getElementById("elem").textContent;
-		window.localStorage.setItem(""+name+"",""+text+"");
+		if (cookiesorlocal==2){
+			var text = document.getElementById("elem").textContent;
+			window.localStorage.setItem(""+name+"",""+text+"");
+		}
+		if (cookiesorlocal==1){
+			var text = document.getElementById("elem").textContent;
+			window.localStorage.setItem(""+called+"",""+text+"");
+		}
 	}
 	setInterval(backup,15);
 }
@@ -255,3 +261,10 @@ function cookies(){
 }
 
 var cookiesorlocal=prompt("do you want to use cookies or local storage? they do not cross save. ex: saves in cookies. does not work in local storage cookies=1 local=2");
+
+if (cookiesorlocal==1){
+	cookies();
+}
+if (cookiesorlocal==2){
+	local();
+}
