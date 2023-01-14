@@ -43,4 +43,7 @@ If you have any issues or ideas, please tell me in discussions (https://github.c
 
 Please enter my code 8B6M1B on fetch and get $2 worth of gift cards! https://referral.fetch.com/vvv3/referraltext?code=8B6M1B
 
+Join my discord here! (Sorry it's bad it's in progress)
+https://discord.gg/5R5Px5sv
+
 Here is some Html Test https://github.com/Rubiksdude27/Html-Tests
