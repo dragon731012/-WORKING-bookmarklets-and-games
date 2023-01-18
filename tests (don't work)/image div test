@@ -19,7 +19,5 @@
 	elem.style.cursor = 'pointer';
 	elem.id = 'elem';
 	elem.style.display = 'block';
-	elem.innerText = 'hi';
-	document.getElementById('elem').contentEditable = true;
-  document.getElementById('elem').src='https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec';
+  	document.getElementById('elem').src='https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.625/c_scale,w_400/ncom/en_US/games/switch/a/among-us-switch/description-image';
 }());
