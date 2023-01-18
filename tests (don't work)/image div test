@@ -11,7 +11,6 @@
 	elem.style.width = '200px';
 	elem.style.height = '40px';
 	elem.style.zIndex = 10000;
-	elem.style.opacity = 0.9;
 	elem.style.color = 'white';
 	elem.style.backgroundColor = 'black';
 	elem.style.border = '1px solid white';
@@ -19,5 +18,5 @@
 	elem.style.cursor = 'pointer';
 	elem.id = 'elem';
 	elem.style.display = 'block';
-  	document.getElementById('elem').src='https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.625/c_scale,w_400/ncom/en_US/games/switch/a/among-us-switch/description-image';
+  	elem.style.src='https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.625/c_scale,w_400/ncom/en_US/games/switch/a/among-us-switch/description-image';
 }());
