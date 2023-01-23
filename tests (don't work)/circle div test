@@ -13,7 +13,7 @@
 	elem.style.zIndex = 10000;
 	elem.style.opacity = 0.9;
 	elem.style.color = 'white';
-	elem.style.border-radius='50%';
+	elem.style.border-radius=50%;
 	elem.style.backgroundColor = 'black';
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
