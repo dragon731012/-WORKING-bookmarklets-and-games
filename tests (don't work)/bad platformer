@@ -106,8 +106,8 @@ function jump(){
 }
 
 function stay(){
-	char.style.top = '0px';
-	char.style.left = '0px';
+	char.style.top = ''+ypos+'px';
+	char.style.left = ''+xpos+'px';
 	if (ypos>=250){
 		ypos=250;
 	}
