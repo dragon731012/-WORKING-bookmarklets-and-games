@@ -18,6 +18,5 @@
 	elem.style.cursor = 'pointer';
 	elem.id = 'elem';
 	elem.style.display = 'block';
+	elem.style.backgroundImage="url(http://bgreco.net/rainbowbg.gif)";
 }());
-
-elem.style.backgroundImage="url(http://bgreco.net/rainbowbg.gif)";
