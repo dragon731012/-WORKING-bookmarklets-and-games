@@ -19,5 +19,5 @@
 	elem.style.cursor = 'pointer';
 	elem.id = 'elem';
 	elem.style.display = 'dot';
-	elem.style.backgroundImage="url(//image here");
+	elem.style.backgroundImage="urlhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfP7ogtNTBQxfwZyLNlESAa0wBFvt6ZvOgEZXfom1BA&s");
 }());
