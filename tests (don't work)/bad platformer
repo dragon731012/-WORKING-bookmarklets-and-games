@@ -115,6 +115,8 @@ function stay(){
 	}
 }
 
+setInterval(stay,0);
+
 window.addEventListener("keydown",function(event){ 
 	if(event.key=="ArrowRight"){ 
 		right=1; 
