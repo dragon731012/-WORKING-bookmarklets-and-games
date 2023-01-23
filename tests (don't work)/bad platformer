@@ -100,10 +100,19 @@ function jump(){
 		char.style.left = ''+xpos+'px';
 		if (jumpspeed<=0){
 			clearInterval(moveup);
-			jumpspeed=2;
 		}
 	}
 	setInterval(moveup,15);
+}
+
+function stay(){
+	char.style.top = '0px';
+	char.style.left = '0px';
+	if (ypos>=250){
+		ypos=250;
+		char.style.top = '0px';
+		char.style.left = '0px';
+	}
 }
 
 window.addEventListener("keydown",function(event){ 
