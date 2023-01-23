@@ -11,12 +11,12 @@
 	elem.style.width = '200px';
 	elem.style.height = '40px';
 	elem.style.zIndex = 10000;
-	elem.style.opacity = 0.9;
+	elem.style.opacity = 1;
 	elem.style.color = 'white';
 	elem.style.backgroundColor = 'black';
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
 	elem.id = 'elem';
 	elem.style.display = 'block';
-	elem.style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfP7ogtNTBQxfwZyLNlESAa0wBFvt6ZvOgEZXfom1BA&s)";
+	elem.style.backgroundImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfP7ogtNTBQxfwZyLNlESAa0wBFvt6ZvOgEZXfom1BA&s";
 }());
