@@ -96,6 +96,8 @@ function godown(){
 		jumpspeed=2;
 		if (ypos<=300){
 			ypos=ypos+jumpspeed;
+			char.style.top = ''+ypos+'px';
+			char.style.left = ''+xpos+'px';
 			jumpspeed=jumpspeed+0.04;
 		}
 		else{
@@ -105,23 +107,18 @@ function godown(){
 		}
 	}
 }
+
 function jump(){
-	function goup(){
+	function moveup(){
 		ypos=ypos-jumpspeed;
-		jumpspeed=jumpspeed-0.04;
-		if (jumpspeed<=0){
-			clearInterval(goup);
-			setInterval(godown,15);
-			down=1;
-			return;
-		}
+		jumpspeed=jumpspeed-0.2
 		char.style.top = ''+ypos+'px';
+		char.style.left = ''+xpos+'px';
+		if (jumpspeed<=0){
+			clearInterval(moveup)
+		}
 	}
-	
-	if (up==1){
-		setInterval(goup,15);
-		up=0;
-	}
+	setInterval(moveup,15)
 }
 
 window.addEventListener("keydown",function(event){ 
@@ -132,8 +129,7 @@ window.addEventListener("keydown",function(event){
 		left=1; 
 	}
 	if(event.key=="ArrowUp"){ 
-		jump();
-		jump=1;
+		//jump
 	}
 });
 
@@ -147,5 +143,3 @@ window.addEventListener("keyup",function(event){
 });
 
 setInterval(move,15);
-jumping=1;
-setInterval(jump,5);
