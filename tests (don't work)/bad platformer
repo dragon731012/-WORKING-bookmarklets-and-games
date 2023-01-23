@@ -98,7 +98,7 @@ function jump(){
 		jumpspeed=jumpspeed-0.2;
 		char.style.top = ''+ypos+'px';
 		char.style.left = ''+xpos+'px';
-		if (ypos>=250){
+		if (jumpspeed<=0){
 			clearInterval(moveup);
 		}
 	}
