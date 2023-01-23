@@ -13,11 +13,10 @@
 	elem.style.zIndex = 10000;
 	elem.style.opacity = 0.9;
 	elem.style.color = 'white';
-	elem.style.border-radius=50%;
 	elem.style.backgroundColor = 'black';
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
 	elem.id = 'elem';
-	elem.style.display = 'dot';
+	elem.style.display = 'block';
 	elem.style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfP7ogtNTBQxfwZyLNlESAa0wBFvt6ZvOgEZXfom1BA&s)";
 }());
