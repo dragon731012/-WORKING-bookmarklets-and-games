@@ -110,8 +110,6 @@ function stay(){
 	char.style.left = '0px';
 	if (ypos>=250){
 		ypos=250;
-		char.style.top = '0px';
-		char.style.left = '0px';
 	}
 }
 
