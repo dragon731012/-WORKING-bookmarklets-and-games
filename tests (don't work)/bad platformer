@@ -91,34 +91,18 @@ function move(){
 		}
 	}
 }
-function godown(){
-	if (down==1){
-		jumpspeed=2;
-		if (ypos<=300){
-			ypos=ypos+jumpspeed;
-			char.style.top = ''+ypos+'px';
-			char.style.left = ''+xpos+'px';
-			jumpspeed=jumpspeed+0.04;
-		}
-		else{
-			clearInterval(godown);
-			down=0;
-			return;
-		}
-	}
-}
 
 function jump(){
 	function moveup(){
 		ypos=ypos-jumpspeed;
-		jumpspeed=jumpspeed-0.2
+		jumpspeed=jumpspeed-0.2;
 		char.style.top = ''+ypos+'px';
 		char.style.left = ''+xpos+'px';
-		if (jumpspeed<=0){
-			clearInterval(moveup)
+		if (ypos>=250){
+			clearInterval(moveup);
 		}
 	}
-	setInterval(moveup,15)
+	setInterval(moveup,15);
 }
 
 window.addEventListener("keydown",function(event){ 
@@ -129,7 +113,7 @@ window.addEventListener("keydown",function(event){
 		left=1; 
 	}
 	if(event.key=="ArrowUp"){ 
-		//jump
+        jump();
 	}
 });
 
