@@ -18,4 +18,5 @@
 	elem.style.cursor = 'pointer';
 	elem.id = 'elem';
 	elem.style.display = 'dot';
+	elem.class='dot';
 }());
