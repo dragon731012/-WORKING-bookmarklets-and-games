@@ -113,7 +113,7 @@ function stay(){
 	}
 }
 
-setInterval(stay,0);
+setInterval(stay,1);
 
 window.addEventListener("keydown",function(event){ 
 	if(event.key=="ArrowRight"){ 
