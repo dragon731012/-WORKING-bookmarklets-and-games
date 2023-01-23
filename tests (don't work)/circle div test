@@ -19,5 +19,5 @@
 	elem.style.cursor = 'pointer';
 	elem.id = 'elem';
 	elem.style.display = 'dot';
-	elem.style.backgroundImage=url("");
+	elem.style.backgroundImage="url(//image here");
 }());
