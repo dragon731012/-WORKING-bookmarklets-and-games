@@ -93,7 +93,7 @@ function move(){
 }
 
 function jump(){
-	jumpspeed=2
+	jumpspeed=2;
 	function goup(){
 		ypos=ypos-jumpspeed;
 		if (jumpspeed<=0){
@@ -107,7 +107,7 @@ function update(){
 	char.style.top = ''+ypos+'px';
 	char.style.left = ''+xpos+'px';
 }
-
+setInterval(update,2)
 window.addEventListener("keydown",function(event){ 
 	if(event.key=="ArrowRight"){ 
 		right=1; 
