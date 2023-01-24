@@ -92,6 +92,22 @@ function move(){
 	}
 }
 
+function jump(){
+	jumpspeed=2
+	function goup(){
+		ypos=ypos-jumpspeed;
+		if (jumpspeed<=0){
+			clearInterval(goup);
+		}
+	}
+	setInterval(goup);
+}
+
+function update(){
+	char.style.top = ''+ypos+'px';
+	char.style.left = ''+xpos+'px';
+}
+
 window.addEventListener("keydown",function(event){ 
 	if(event.key=="ArrowRight"){ 
 		right=1; 
