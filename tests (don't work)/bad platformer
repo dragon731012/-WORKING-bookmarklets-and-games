@@ -99,6 +99,7 @@ function jump(){
 		jumpspeed=jumpspeed-0.2;
 		if (jumpspeed<=0){
 			clearInterval(goup);
+			jumpspeed=0;
 		}
 	}
 	setInterval(goup);
