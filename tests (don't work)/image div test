@@ -18,6 +18,6 @@
 	elem.style.cursor = 'pointer';
 	elem.id = 'elem';
 	elem.style.display = 'block';
-	function bg(){elem.style.backgroundImage="url(http://bgreco.net/rainbowbg.gif)";}}
+	function bg(){elem.style.backgroundImage="url(http://bgreco.net/rainbowbg.gif)";}
 	bg();
 }());
