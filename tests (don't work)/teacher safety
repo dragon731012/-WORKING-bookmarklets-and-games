@@ -8,6 +8,6 @@ window.addEventListener("keydown",function(event){
 
 (function(){
   window.addEventListener('beforeunload',function(){
-    window.open(safe);
+    window.open(safety);
   })
 })();
