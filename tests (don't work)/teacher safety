@@ -4,10 +4,7 @@ window.addEventListener("keydown",function(event){
   if (event.key=="s"){
     window.close();
   }
-});
-
-(function(){
-  window.addEventListener('beforeunload',function(){
+  if (event.key=="s"){
     window.open(safety);
-  })
-})();
+  }
+});
