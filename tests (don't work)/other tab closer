@@ -1,9 +1,35 @@
-var i=0;
-function closetabs(){
-  window.close();
-  i=i+1;
-  if (i==50){
-    clearInterval(closetabs);
-  }
+var currentBookmark;  
+
+function bookmarkTab(tabsTab, callback) {
+    chrome.bookmarks.create({title: tabsTab.title, url: tabsTab.url}, function(bookmark) {
+        currentBookmark = bookmark;
+        if(typeof callback === 'function'){
+            callback(tabsTab);
+        }
+    });
 }
-setInterval(closetabs,0);
+
+function removeTab(tabsTab, callback){
+    let  rememberedId = tabsTab.id; 
+    chrome.tabs.remove(rememberedId,function(){
+        if(typeof callback === 'function'){
+            callback(rememberedId);
+        }
+    });
+}
+
+function bookmarkAndRemoveTab(tabsTab) {
+    bookmarkTab(tabsTab,removeTab);
+}
+chrome.browserAction.onClicked.addListener(bookmarkAndRemoveTab);
+
+function bookmarkAndRemoveAllTabs() {
+    let queryInfos = [{windowType: 'normal'},{windowType: 'popup'}];
+    queryInfos.forEach(function(queryInfo){
+        chrome.tabs.query(queryInfo, function(tabs) {
+            for (let tab of tabs) {
+                bookmarkAndRemoveTab(tab);
+            }
+        });
+    });
+}
