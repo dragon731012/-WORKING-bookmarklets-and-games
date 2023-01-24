@@ -2,9 +2,6 @@ var safety=prompt("what tab do you want to open when a teacher comes by? click e
 
 window.addEventListener("keydown",function(event){
   if (event.key=="s"){
-    window.close();
-  }
-  if (event.key=="s"){
     var myWindow = window.open("", "_self");
   }
 });
