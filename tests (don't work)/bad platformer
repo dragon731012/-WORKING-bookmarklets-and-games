@@ -5,7 +5,7 @@ var up=0;
 var playerspeed=3;
 var xpos=10;
 var ypos=235;
-var jumpspeed=14;
+var jumpspeed=3;
 
 (function () {
 	var sky = document.createElement('div');
@@ -96,7 +96,7 @@ function jump(){
 	jumpspeed=2;
 	function goup(){
 		ypos=ypos-jumpspeed;
-		jumpspeed=jumpspeed-0.1;
+		jumpspeed=jumpspeed-0.025;
 		if (jumpspeed<=0){
 			clearInterval(goup);
 			jumpspeed=0;
