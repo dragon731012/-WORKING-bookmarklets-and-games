@@ -92,29 +92,6 @@ function move(){
 	}
 }
 
-function jump(){
-	function moveup(){
-		ypos=ypos-jumpspeed;
-		jumpspeed=jumpspeed-0.2;
-		char.style.top = ''+ypos+'px';
-		char.style.left = ''+xpos+'px';
-		if (jumpspeed<=0){
-			clearInterval(moveup);
-		}
-	}
-	setInterval(moveup,15);
-}
-
-function stay(){
-	char.style.top = ''+ypos+'px';
-	char.style.left = ''+xpos+'px';
-	if (ypos>=250){
-		ypos=250;
-	}
-}
-
-setInterval(stay,1);
-
 window.addEventListener("keydown",function(event){ 
 	if(event.key=="ArrowRight"){ 
 		right=1; 
