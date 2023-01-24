@@ -21,4 +21,6 @@
 	elem.style.display = 'block';
 	elem.innerText = 'hi';
 	document.getElementById('elem').contentEditable = true;
+	function bg(){elem.style.backgroundImage="url(http://bgreco.net/rainbowbg.gif)";}
+	bg();
 }());
