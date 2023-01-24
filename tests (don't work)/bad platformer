@@ -5,7 +5,7 @@ var up=0;
 var playerspeed=3;
 var xpos=10;
 var ypos=235;
-var jumpspeed=2;
+var jumpspeed=7;
 
 (function () {
 	var sky = document.createElement('div');
