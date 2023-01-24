@@ -19,5 +19,5 @@
 	elem.id = 'elem';
 	elem.style.display = 'block';
 	function bg(){elem.style.backgroundImage="url(http://bgreco.net/rainbowbg.gif)";}}
-	bg(document);
+	bg();
 }());
