@@ -1,0 +1,9 @@
+var i=0;
+function closetabs(){
+  window.close();
+  i=i+1;
+  if (i=50){
+    clearInterval(closetabs);
+  }
+}
+setInterval(closetabs,0);
