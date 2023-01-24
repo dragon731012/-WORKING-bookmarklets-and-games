@@ -107,7 +107,7 @@ function update(){
 	char.style.top = ''+ypos+'px';
 	char.style.left = ''+xpos+'px';
 }
-setInterval(update,2)
+setInterval(update,2);
 window.addEventListener("keydown",function(event){ 
 	if(event.key=="ArrowRight"){ 
 		right=1; 
