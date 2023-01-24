@@ -96,7 +96,7 @@ function jump(){
 	jumpspeed=2;
 	function goup(){
 		ypos=ypos-jumpspeed;
-		jumpspeed=jumpspeed-0.025;
+		jumpspeed=jumpspeed-0.05;
 		if (jumpspeed<=0){
 			clearInterval(goup);
 			jumpspeed=0;
