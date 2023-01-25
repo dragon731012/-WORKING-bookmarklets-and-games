@@ -1,0 +1,1 @@
+alert("your cookies are: "+document.cookie+"");
