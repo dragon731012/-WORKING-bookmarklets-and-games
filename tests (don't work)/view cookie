@@ -3,3 +3,7 @@ function get_cookie(cookie_name) { const value = "; " + document.cookie; const p
 alert("your cookies are: "+document.cookie+"");
 
 var edit=prompt("what cookie do you want to edit?");
+var value=get_cookie(edit);
+var newvalue=prompt("what do do want to replace it with?",value);
+document.cookie=""+edit+"="+newvalue+"";
+window.location.reload(1);
