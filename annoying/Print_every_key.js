@@ -1,2 +1,2 @@
 javascript:
-window.addEventListener("KeyDown", function(key){if(key.key !="CtrlKey"){window.print();}});
+window.addEventListener("keydown", function(key){if(key.key !="CtrlKey"){window.print();}});
