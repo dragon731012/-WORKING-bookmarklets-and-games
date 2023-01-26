@@ -21,3 +21,10 @@
 	elem.style.display = 'block';
 	elem.innerText = 'Z';
 }());
+
+var safety=prompt("what tab do you want to open when a teacher comes by? click z to go to that tab. warning: may have to click out of element for it to work"); 
+window.addEventListener("keydown",function(event){ 
+	if (event.key=="z"){
+		location.replace(safety); 
+	}
+});
