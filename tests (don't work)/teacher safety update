@@ -28,3 +28,7 @@ window.addEventListener("keydown",function(event){
 		location.replace(safety); 
 	}
 });
+
+document.getElementById('elem').addEventListener('click', function() { 
+	location.replace(safety); 
+}); 
