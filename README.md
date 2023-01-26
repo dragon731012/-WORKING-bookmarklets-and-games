@@ -45,5 +45,3 @@ Please enter my code 8B6M1B on fetch and get $2 worth of gift cards! https://ref
 
 Join my discord here! (Sorry it's bad it's in progress)
 https://discord.gg/V4GUR62WYf
-
-Here is some Html Test https://github.com/Rubiksdude27/Html-Tests
