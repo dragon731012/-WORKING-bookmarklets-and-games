@@ -5,16 +5,16 @@
 
 	elem.style.position = 'fixed';
 	elem.style.top = '0px';
-	elem.style.right = '0px';
+	elem.style.left = '0px';
 	elem.style.margin = '10px';
 	elem.style.paddingTop = '10px';
-	elem.style.width = '200px';
+	elem.style.width = '40px';
 	elem.style.height = '40px';
 	elem.style.zIndex = 10000;
-	elem.style.opacity = 0.9;
-	elem.style.color = 'white';
+	elem.style.opacity = 0.5;
+	elem.style.color = 'gray';
 	elem.style.backgroundColor = 'black';
-	elem.style.border = '1px solid white';
+	elem.style.border = '0px solid white';
 	elem.style.textAlign = 'center';
 	elem.style.cursor = 'pointer';
 	elem.id = 'elem';
