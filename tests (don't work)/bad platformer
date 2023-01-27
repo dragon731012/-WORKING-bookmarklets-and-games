@@ -100,19 +100,18 @@ function jump(){
 		if (jumpspeed<=0 && jumpspeed != -1444){
 			clearInterval(goup);
 			jumpspeed=0;
+			function godown(){
+				ypos=ypos+jumpspeed;
+				jumpspeed=jumpspeed+0.045;
+				if (jumpspeed>=0){
+					clearInterval(godown);
+					jumpspeed=0;
+				}
+			}
+			setInterval(godown);
 		}
 	}
 	setInterval(goup);
-	
-	function godown(){
-		ypos=ypos+jumpspeed;
-		jumpspeed=jumpspeed+0.045;
-		if (jumpspeed>=0){
-			clearInterval(godown);
-			jumpspeed=0;
-		}
-	}
-	setInterval(godown);
 }
 
 function update(){
