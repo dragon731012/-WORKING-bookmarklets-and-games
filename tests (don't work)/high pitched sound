@@ -1,0 +1,2 @@
+var sound=new Audio("");
+sound.play();
