@@ -1,1 +1,8 @@
-javascript:var s = "https://www.youtube.com/embed/ITyKEf4bu0I";((function(){var a,b,c;c=s,b=document.createElement("iframe"),b.setAttribute("src",c),b.setAttribute("id","rusic-modal"),b.setAttribute("style","position: fixed; z-index: 999999; width: 400px; height: 270px; left: 10px; window.addEventListener('keydown', function(event) { if (event.key == 'h') { left:-100000px;}}); top: 10px; border: 5px solid #009933; overflow: hidden; background-color: #fff;"),a=document.getElementsByTagName("body")[0],a.appendChild(b)})).call(this);
+javascript:var s = "https://www.youtube.com/embed/ITyKEf4bu0I";((function(){var a,b,c;c=s,b=document.createElement("iframe"),b.setAttribute("src",c),b.setAttribute("id","rusic-modal"),b.setAttribute("style","position: fixed; z-index: 999999; width: 400px; height: 270px; left: 10px; top: 10px; border: 5px solid #009933; overflow: hidden; background-color: #fff;"),a=document.getElementsByTagName("body")[0],a.appendChild(b);
+
+window.addEventListener('keydown', function(event) { 
+  if (event.key == 'h') { 
+    b.setAttribute("style","left:-100000px;");
+  }
+});
+})).call(this);
