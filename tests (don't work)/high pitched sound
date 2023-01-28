@@ -5,7 +5,7 @@ window.addEventListener('keydown', function(event) {
     b.setAttribute("style","left:-100000px;");
   }
   if (event.key == 's') { 
-    b.setAttribute("style","left:0px;");
+    b.setAttribute("style","left:10px;");
   }
 });
 })).call(this);
