@@ -1,7 +1,7 @@
 var clr='blue';
 var x=event.clientX;
 var y=event.clientY;
-var opt=0;
+var opt=1;
 
 function mousemove(event){
     x=event.clientX;
