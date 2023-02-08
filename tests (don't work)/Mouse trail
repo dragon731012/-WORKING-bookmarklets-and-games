@@ -4,9 +4,8 @@ var y=event.clientY;
 var opt=1;
 
 function mousemove(event){
-  var x=event.clientX;
-  var y=event.clientY;
-  x=x-9-size;y=y-12-size;
+  x=event.clientX;
+  y=event.clientY;
   (function(){
     var elem=document.createElement('div');
     var body=document.getElementsByTagName('body')[0];
@@ -16,8 +15,8 @@ function mousemove(event){
     elem.style.left=''+x+'px';
     elem.style.margin='10px';
     elem.style.paddingTop='10px';
-    elem.style.width=''+size+'px';
-    elem.style.height=''+size+'px';
+    elem.style.width='10px';
+    elem.style.height='10px';
     elem.style.zIndex=10000;
     elem.style.opacity=opt;
     elem.style.color=''+clr+'';
