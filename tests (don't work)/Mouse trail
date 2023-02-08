@@ -4,34 +4,30 @@ var y=event.clientY;
 var opt=1;
 
 function mousemove(event){
-    x=event.clientX;
-    y=event.clientY;
-    opt=1;
-    (function(){
-        var elem=document.createElement('div');
-        var body=document.getElementsByTagName('body')[0];
-        body.appendChild(elem);
-        elem.style.position='fixed';
-        elem.style.top=y+'px';
-        elem.style.left=x+'px';
-        elem.style.paddingTop='10px';
-        elem.style.width='10px';
-        elem.style.height='10px';
-        elem.style.opacity=opt;
-        elem.style.color=clr;
-        elem.style.backgroundColor=clr;
-        elem.style.border='0px solid white';
-        elem.style.textAlign='center';
-        elem.id='trail';
-        elem.style.display='circle';
-        elem.innerText='';
-    }());
+  var x=event.clientX;
+  var y=event.clientY;
+  x=x-9-size;y=y-12-size;
+  (function(){
+    var elem=document.createElement('div');
+    var body=document.getElementsByTagName('body')[0];
+    body.appendChild(elem);
+    elem.style.position='fixed';
+    elem.style.top=''+y+'px';
+    elem.style.left=''+x+'px';
+    elem.style.margin='10px';
+    elem.style.paddingTop='10px';
+    elem.style.width=''+size+'px';
+    elem.style.height=''+size+'px';
+    elem.style.zIndex=10000;
+    elem.style.opacity=opt;
+    elem.style.color=''+clr+'';
+    elem.style.backgroundColor=''+clr+'';
+    elem.style.border='0px solid white';
+    elem.style.textAlign='center';
+    elem.id='paint';
+    elem.style.display=''+pen+'';
+    elem.innerText='';
+  }());
 }
-
-window.addEventListener("keydown",function(event){
-    if (event.key=="c"){
-        clr=prompt("what color do you want? must be very broad, and with no caps or special characters. ex:blue");
-    }
-});
 
 window.addEventListener(%27mousemove%27,mousemove);
