@@ -23,10 +23,10 @@ function mousemove(event){
     elem.style.backgroundColor=''+clr+'';
     elem.style.border='0px solid white';
     elem.style.textAlign='center';
-    elem.id='paint';
-    elem.style.display=''+pen+'';
+    elem.id='trail';
+    elem.style.display='block';
     elem.innerText='';
   }());
 }
 
-window.addEventListener(%27mousemove%27,mousemove);
+window.addEventListener('mousemove',mousemove);
