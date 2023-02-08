@@ -34,4 +34,4 @@ window.addEventListener("keydown",function(event){
     }
 });
 
-setInterval(mousemove,2);
+window.addEventListener(%27mousemove%27,mousemove);
