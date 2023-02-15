@@ -1,4 +1,4 @@
-var opt=0.3;
+var opt=0.5;
 var pen='block';
 var size=10;
 var clr="blue";
@@ -29,4 +29,4 @@ function mousemove(event){
   }());
 }
 
-setInterval(mousemove,15);
+window.addEventListener('mousemove',mousemove);
