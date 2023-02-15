@@ -1,4 +1,4 @@
-var opt=0.5;
+var opt=0.1;
 var pen='block';
 var size=10;
 var clr="blue";
