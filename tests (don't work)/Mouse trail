@@ -2,6 +2,7 @@ var opt=0.1;
 var pen='block';
 var size=10;
 var clr="blue";
+var rate=0.03;
 
 function mousemove(event){
   var x=event.clientX;
@@ -27,6 +28,10 @@ function mousemove(event){
     elem.style.display=''+pen+'';
     elem.innerText='';
   }());
+}
+
+function repeat(){
+  elsem.style.opacity=elsem.style.opacity-rate;
 }
 
 window.addEventListener('mousemove',mousemove);
