@@ -1,6 +1,6 @@
 var opt = 0.1;
 var pen = 'block';
-var size = 15;
+var size = 10;
 var clr = "blue";
 var rate = 0.005;
 var userrate=5;
