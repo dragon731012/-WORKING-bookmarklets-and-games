@@ -2,7 +2,7 @@ var opt = 0.1;
 var pen = 'block';
 var size = 10;
 var clr = "blue";
-var rate = 9999;
+var rate = 0;
 var rate2=0.5;
 
 function mousemove(event) {
