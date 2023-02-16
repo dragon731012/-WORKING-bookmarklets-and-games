@@ -33,5 +33,6 @@ function mousemove(event){
 function repeat(){
   elem.style.opacity=elem.style.opacity-rate;
 }
+setInterval(repeat,15);
 
 window.addEventListener('mousemove',mousemove);
