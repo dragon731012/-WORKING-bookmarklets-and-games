@@ -34,10 +34,20 @@ function mousemove(event) {
 		function repeat() {
 			elem.style.opacity = elem.style.opacity - rate;
 			userrate=rate*1000;
+			rate=userrate/1000;
 		}
 		setInterval(repeat, 15);
 	}());
 
 }
+
+window.addEventListener("keydown", function(event) {
+	if (event.key == "r") {
+		var userrate=prompt("what do you want the rate to be? the lower the number, the faster the trail disappears. recommended: 5");
+	} 
+	if (event.key == "c") {
+		var userrate=prompt("what do you want the color to be? must be very broad. ex: blue");
+	} 
+});
 
 window.addEventListener('mousemove', mousemove);
