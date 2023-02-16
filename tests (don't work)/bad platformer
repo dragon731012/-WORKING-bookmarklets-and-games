@@ -99,15 +99,15 @@ function move(){
 }
 
 function jump(){
-	up=1;
+	up=-1;
 	function waiting(){
-		up=-1;
+		up=1;
 	}
-	setTimeout(waiting,500);
+	setTimeout(waiting,3000);
 	function waiting2(){
 		up=0;
 	}
-	setTimeout(waiting2,500);
+	setTimeout(waiting2,3000);
 }
 
 function update(){
