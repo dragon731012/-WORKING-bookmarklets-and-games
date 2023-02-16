@@ -10,7 +10,7 @@ alert("mouse trail. by dragonmaster73101. press c to change color and r to chang
 function mousemove(event) {
 	var x = event.clientX;
 	var y = event.clientY;
-	x=x-8;
+	x=x-18;
 	y=y-8;
 	(function() {
 		var elem = document.createElement('div');
