@@ -5,6 +5,8 @@ var clr = "blue";
 var rate = 0.005;
 var userrate=5;
 
+alert("mouse trail. by dragonmaster73101. press c to change color and r to change rate.");
+
 function mousemove(event) {
 	var x = event.clientX;
 	var y = event.clientY;
