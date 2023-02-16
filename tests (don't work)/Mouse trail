@@ -2,8 +2,8 @@ var opt = 0.1;
 var pen = 'block';
 var size = 10;
 var clr = "blue";
-var rate = 0;
-var rate2=0.5;
+var rate = 0.005;
+var userrate=5;
 
 function mousemove(event) {
 	var x = event.clientX;
@@ -33,7 +33,7 @@ function mousemove(event) {
 		
 		function repeat() {
 			elem.style.opacity = elem.style.opacity - rate;
-			elem.style.width=(elem.style.width+"px")-(rate2+"px");
+			userrate=rate*1000;
 		}
 		setInterval(repeat, 15);
 	}());
