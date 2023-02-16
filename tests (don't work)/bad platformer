@@ -97,18 +97,20 @@ function jump(){
 	function goup(){
 		ypos=ypos-jumpspeed;
 		jumpspeed=jumpspeed-0.045;
-		if (jumpspeed<=0 && jumpspeed != -1444){
-			clearInterval(goup);
-			jumpspeed=0;
-			function godown(){
-				ypos=ypos+jumpspeed;
-				jumpspeed=jumpspeed+0.045;
-				if (jumpspeed>=0){
-					clearInterval(godown);
-					jumpspeed=0;
+		if (jumpspeed<=0){
+		        if (jumpspeed != -1444){
+				clearInterval(goup);
+				jumpspeed=0;
+				function godown(){
+					ypos=ypos+jumpspeed;
+					jumpspeed=jumpspeed+0.045;
+					if (jumpspeed>=0){
+						clearInterval(godown);
+						jumpspeed=0;
+					}
 				}
+				setInterval(godown);
 			}
-			setInterval(godown);
 		}
 	}
 	setInterval(goup);
