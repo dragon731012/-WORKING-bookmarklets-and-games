@@ -27,6 +27,7 @@ function mousemove(event) {
 		elem.id = 'paint';
 		elem.style.display = '' + pen + '';
 		elem.innerText = '';
+		elem.src="https://osuskinner.com/elements/interface/cursortrail/76/738_thumb_small.png";
 
 		function repeat() {
 			elem.style.opacity = elem.style.opacity - rate;
