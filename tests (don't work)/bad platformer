@@ -5,7 +5,7 @@ var up=0;
 var playerspeed=3;
 var xpos=10;
 var ypos=235;
-var jumpspeed=1444;
+var jumpspeed=1;
 
 (function () {
 	var sky = document.createElement('div');
@@ -90,30 +90,24 @@ function move(){
 			char.style.left = ''+xpos+'px';
 		}
 	}
+	if (up==1){
+		ypos=ypos+jumpspeed;
+	}
+	if (up==-1){
+		ypos=ypos-jumpspeed;
+	}
 }
 
 function jump(){
-	jumpspeed=2;
-	function goup(){
-		ypos=ypos-jumpspeed;
-		jumpspeed=jumpspeed-0.045;
-		if (jumpspeed<=0){
-		        if (jumpspeed != -1444){
-				clearInterval(goup);
-				jumpspeed=0;
-				function godown(){
-					ypos=ypos+jumpspeed;
-					jumpspeed=jumpspeed+0.045;
-					if (jumpspeed>=0){
-						clearInterval(godown);
-						jumpspeed=0;
-					}
-				}
-				setInterval(godown);
-			}
-		}
+	up=1;
+	function waiting(){
+		up=-1;
 	}
-	setInterval(goup);
+	setTimeout(waiting,500);
+	function waiting2(){
+		up=0;
+	}
+	setTimeout(waiting2,500);
 }
 
 function update(){
