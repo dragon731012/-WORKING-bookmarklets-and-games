@@ -2,7 +2,7 @@ var opt = 0.1;
 var pen = 'block';
 var size = 10;
 var clr = "blue";
-var rate = 0.005;
+var rate = 9999;
 var rate2=0.5;
 
 function mousemove(event) {
@@ -33,6 +33,7 @@ function mousemove(event) {
 		
 		function repeat() {
 			elem.style.opacity = elem.style.opacity - rate;
+			elem.style.width=(elem.style.width+"px")-(rate2+"px");
 		}
 		setInterval(repeat, 15);
 	}());
