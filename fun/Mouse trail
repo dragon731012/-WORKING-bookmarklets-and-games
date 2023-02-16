@@ -1,6 +1,6 @@
 var opt = 0.1;
 var pen = 'block';
-var size = 10;
+var size = 15;
 var clr = "blue";
 var rate = 0.005;
 var userrate=5;
@@ -11,7 +11,7 @@ function mousemove(event) {
 	var x = event.clientX;
 	var y = event.clientY;
 	x=x-8;
-	y=y-10;
+	y=y-8;
 	(function() {
 		var elem = document.createElement('div');
 		var body = document.getElementsByTagName('body')[0];
