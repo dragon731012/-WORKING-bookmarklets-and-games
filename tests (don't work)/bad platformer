@@ -92,9 +92,16 @@ function move(){
 	}
 	if (up==1){
 		ypos=ypos+jumpspeed;
+		if (jumpspeed>=0){
+			jumpspeed=jumpspeed-0.05;
+		}
 	}
 	if (up==-1){
+		jumpspeed=0;
 		ypos=ypos-jumpspeed;
+		if (jumpspeed<=0){
+			jumpspeed=jumpspeed+0.05;
+		}
 	}
 }
 
