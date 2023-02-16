@@ -31,7 +31,7 @@ function mousemove(event){
 }
 
 function repeat(){
-  elsem.style.opacity=elsem.style.opacity-rate;
+  elem.style.opacity=elem.style.opacity-rate;
 }
 
 window.addEventListener('mousemove',mousemove);
