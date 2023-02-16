@@ -103,11 +103,11 @@ function jump(){
 	function waiting(){
 		up=1;
 	}
-	setTimeout(waiting,3000);
+	setTimeout(waiting,700);
 	function waiting2(){
 		up=0;
 	}
-	setTimeout(waiting2,3000);
+	setTimeout(waiting2,1400);
 }
 
 function update(){
