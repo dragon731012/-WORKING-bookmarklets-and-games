@@ -36,7 +36,7 @@ for zip ones (ones with .zip):
 
 # my and my contributor's involvement with these
 
-We only made some of these, and we are not responsible for any of them. By using these, you agree to those terms.
+We only made some of these, and we are not responsible for any of them. By using these, you agree to those terms. If you have a reasonable objection to something being on this respiratory, tell me and I'll remove it immediately.
 
 # other
 If you have any issues or ideas, please tell me in discussions (https://github.com/dragon731012/-WORKING-bookmarklets-and-games/discussions/2).
