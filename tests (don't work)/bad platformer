@@ -29,6 +29,11 @@ var jumpspeed=6;
 	sky.style.display = 'block';
 }());
 
+function colliding(rect1x,rect1y,rect1width,rect1height,rect2x,rect2y,rect2width,rect2height){
+    return (rect1x < rect2x + rect2width && rect1x + rect1width > rect2x && rect1y < rect2y + rect2height && rect1y + rect1height > rect2y);
+}
+
+setInterval(colliding,5);
 (function () {
 	var char = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
@@ -110,11 +115,20 @@ function jump(){
 	function waiting(){
 		up=1;
 	}
-	setTimeout(waiting,700);
+	waiting();
 	function waiting2(){
-		up=0;
+		up=-1;
+		function continue(){
+			colliding=colliding(xpos,ypos,15,15,0,250,300,50);
+			if (colliding){
+				up=0;
+				clearInterval(continue);
+			}
+		}
+		setInterval(continue,15);
 	}
-	setTimeout(waiting2,1400);
+
+	setTimeout(waiting2,700);
 }
 
 function update(){
