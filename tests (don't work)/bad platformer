@@ -118,14 +118,14 @@ function jump(){
 	waiting();
 	function waiting2(){
 		up=-1;
-		function continue(){
+		function continue1(){
 			colliding=colliding(xpos,ypos,15,15,0,250,300,50);
 			if (colliding){
 				up=0;
-				clearInterval(continue);
+				clearInterval(continue1);
 			}
 		}
-		setInterval(continue,15);
+		setInterval(continue1,15);
 	}
 
 	setTimeout(waiting2,700);
