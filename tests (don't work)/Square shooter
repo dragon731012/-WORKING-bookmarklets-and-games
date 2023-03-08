@@ -161,7 +161,6 @@ function makeenemy(){
 		enemylist.push(enemy.style.top);
 		enemylist.push(enemy.style.left);
 	}
-	alert(enemylist);
 	enemy.id = 'enemy'+count+'';
 	enemy.style.display = 'block';
 	enemy.innerText = '';
@@ -169,8 +168,13 @@ function makeenemy(){
 	function movedown(){
 		enemyy=enemyy+enemyspeed;
 		enemy.style.top = ''+enemyy+'px';
+		enemylist[count+1]=enemy.style.top;
+		enemylist[count]=enemy.style.left;
+		if (enemylist[count+1]==screen.height){
+			alert("dead");
+		}
 	}
 	setInterval(movedown,15);
 }());
 }
-setInterval(makeenemy,2000);
+setInterval(makeenemy,3000);
