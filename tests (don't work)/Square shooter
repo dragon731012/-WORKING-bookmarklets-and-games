@@ -168,7 +168,6 @@ function makeenemy(){
 			enemyspeed=enemyspeed/2;
 			enem=document.getElementById('enemy'+count+'');
 			enem.parentNode.removeChild(enem);
-			enemyy=-50;
 		}
 	}
 	setInterval(movedown,15);
