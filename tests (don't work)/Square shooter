@@ -170,7 +170,7 @@ function makeenemy(){
 		enemy.style.top = ''+enemyy+'px';
 		enemylist[count+1]=enemy.style.top;
 		enemylist[count]=enemy.style.left;
-		if (enemylist[count+1]==screen.height){
+		if (enemylist[count+1]==height){
 			alert("dead");
 		}
 	}
