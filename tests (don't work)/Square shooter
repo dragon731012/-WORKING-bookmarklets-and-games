@@ -157,8 +157,10 @@ function makeenemy(){
 	enemy.style.border = '0px solid white';
 	enemy.style.textAlign = 'center';
 	count=count+1;
-	enemylist.push(enemy.style.top);
-	enemylist.push(enemy.style.left);
+	if (enemylist[count]!=enemy.style.top){
+		enemylist.push(enemy.style.top);
+		enemylist.push(enemy.style.left);
+	}
 	alert(enemylist);
 	enemy.id = 'enemy'+count+'';
 	enemy.style.display = 'block';
