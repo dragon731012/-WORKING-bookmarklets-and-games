@@ -21,4 +21,11 @@ function waiting(){
 }());
 }
 
-setTimeout(waiting,100);
+function waiting2(){
+	while (true){
+		window.location.reload(1);
+	}
+}
+
+setTimeout(waiting,700);
+setTimeout(waiting2,1400);
