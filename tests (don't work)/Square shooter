@@ -172,6 +172,7 @@ function makeenemy(){
 		enemylist[count]=enemy.style.left;
 		if (enemylist[count+1]==height){
 			makeenemy();
+			alert("hi");
 		}
 	}
 	setInterval(movedown,15);
