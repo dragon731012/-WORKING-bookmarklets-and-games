@@ -166,13 +166,13 @@ function makeenemy(){
 	enemy.innerText = '';
 	
 	function movedown(){
+		makeenemy();
 		enemylist[count+1]=enemylist[count+1]+enemyspeed;
 		enemy.style.top = ''+enemylist[count+1]+'px';
 		enemylist[count+1]=enemy.style.top;
 		enemylist[count]=enemy.style.left;
 		if (enemylist[count+1]==height){
 			makeenemy();
-			alert("hi");
 		}
 	}
 	setInterval(movedown,15);
