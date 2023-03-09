@@ -171,10 +171,10 @@ function makeenemy(){
 		enemylist[count+1]=enemy.style.top;
 		enemylist[count]=enemy.style.left;
 		if (enemylist[count+1]==height){
-			alert("dead");
+			makeenemy();
 		}
 	}
 	setInterval(movedown,15);
 }());
 }
-setInterval(makeenemy,3000);
+makeenemy();
