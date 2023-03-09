@@ -18,7 +18,7 @@ function waiting(){
 	elem.style.color = 'red';
 	elem.id = 'elem';
 	elem.innerText = 'yOuvE BeEn HacKeD';
-	object.style.fontSize = "30%";
+	elem.style.fontSize = "30%";
 	elem.style.display = 'block';
 	function bg(){elem.style.backgroundImage="url(https://media.tenor.com/nlEH9PLmNVcAAAAd/my-hacker-screen-i-actualy-hacked.gif)";}
 	bg();
