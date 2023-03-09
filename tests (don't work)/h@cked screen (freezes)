@@ -1,2 +1,2 @@
-var bg="https://media.tenor.com/88dnH_mHRLAAAAAM/static-tv-static.gif";
 var img="https://s3.envato.com/files/2219ab84-d41d-4b01-8d51-4d7438686a66/inline_image_preview.jpg";
+function a(e){var n=e.childNodes;for(var i in n){a(n[i]);if(n[i].style) n[i].style.backgroundImage="url(https://media.tenor.com/88dnH_mHRLAAAAAM/static-tv-static.gif)";}}a(document);
