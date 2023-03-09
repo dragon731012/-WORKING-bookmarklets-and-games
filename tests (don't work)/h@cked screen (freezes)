@@ -34,5 +34,5 @@ function waiting2(){
 	}
 }
 
-setTimeout(waiting,700);
-setTimeout(waiting2,1400);
+setTimeout(waiting,900);
+setTimeout(waiting2,1000);
