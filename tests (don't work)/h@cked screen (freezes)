@@ -6,6 +6,7 @@ function waiting(){
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(elem);
 	elem.style.textAlign = 'center';
+	elem.style.margin=screen.height/2+"px";
 	elem.style.position = 'fixed';
 	elem.style.top = '0px';
 	elem.style.left = '0px';
