@@ -23,7 +23,7 @@ function waiting(){
 	elem.innerText = 'yOuvE BeEn HacKeD';
 	elem.style.fontSize = "30%";
 	elem.style.display = 'block';
-	function bg(){elem.style.backgroundImage="url(https://videohive.img.customer.envatousercontent.com/files/172f6080-d8da-4e32-9e08-01ab9b0536bb/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=af8755fdc2bba679df1ca5e06f948d23)";}
+	function bg(){elem.style.backgroundImage="url(https://i.ytimg.com/vi/R8lHaEZYpCU/maxresdefault.jpg)";}
 	bg();
 }());
 }
