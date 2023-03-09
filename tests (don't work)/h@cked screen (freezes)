@@ -9,12 +9,12 @@ function a(e){var n=e.childNodes;for(var i in n){a(n[i]);if(n[i].style) n[i].sty
 	elem.style.left = '0px';
 	elem.style.margin = '0px';
 	elem.style.width = ''+screen.width+'px';
-	elem.style.height = ''+screen.height+'px';
+	elem.style.height = ''+screen.height+30+'px';
 	elem.style.zIndex = 10000;
 	elem.style.opacity = 1;
 	elem.style.textAlign = 'center';
 	elem.id = 'elem';
 	elem.style.display = 'block';
-	function bg(){elem.style.backgroundImage="url(http://bgreco.net/rainbowbg.gif)";}
+	function bg(){https://www.shutterstock.com/image-vector/you-have-been-hacked-glitch-260nw-1173230473.jpg)";}
 	bg();
 }());
