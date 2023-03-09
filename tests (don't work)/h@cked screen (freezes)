@@ -5,6 +5,7 @@ function waiting(){
 	var elem = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(elem);
+	elem.style.textAlign = 'center';
 	elem.style.position = 'fixed';
 	elem.style.top = '0px';
 	elem.style.left = '0px';
@@ -17,6 +18,7 @@ function waiting(){
 	elem.style.color = 'red';
 	elem.id = 'elem';
 	elem.innerText = 'yOuvE BeEn HacKeD';
+	object.style.fontSize = "30%";
 	elem.style.display = 'block';
 	function bg(){elem.style.backgroundImage="url(https://media.tenor.com/nlEH9PLmNVcAAAAd/my-hacker-screen-i-actualy-hacked.gif)";}
 	bg();
