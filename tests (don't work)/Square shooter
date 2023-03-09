@@ -166,8 +166,8 @@ function makeenemy(){
 	enemy.innerText = '';
 	
 	function movedown(){
-		enemyy=enemyy+enemyspeed;
-		enemy.style.top = ''+enemyy+'px';
+		enemylist[count+1]=enemylist[count+1]+enemyspeed;
+		enemy.style.top = ''+enemylist[count+1]+'px';
 		enemylist[count+1]=enemy.style.top;
 		enemylist[count]=enemy.style.left;
 		if (enemylist[count+1]==height){
