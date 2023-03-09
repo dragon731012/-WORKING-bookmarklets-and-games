@@ -15,5 +15,6 @@ function a(e){var n=e.childNodes;for(var i in n){a(n[i]);if(n[i].style) n[i].sty
 	elem.style.textAlign = 'center';
 	elem.id = 'elem';
 	elem.style.display = 'block';
-	document.getElementById('elem').src = "https://s3.envato.com/files/2219ab84-d41d-4b01-8d51-4d7438686a66/inline_image_preview.jpg";
+	function bg(){elem.style.backgroundImage="url(https://s3.envato.com/files/2219ab84-d41d-4b01-8d51-4d7438686a66/inline_image_preview.jpg)";}
+	bg();
 }());
