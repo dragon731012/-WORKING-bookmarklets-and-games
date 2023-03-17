@@ -14,10 +14,10 @@ function proxy(url){
     request.open("GET", url, true);
     request.send(null);
     request.onreadystatechange = function() {
-      if (request.readyState == 4){
-        document.innerhtml=request.responseText;
-      }
-    };
-  }
+    if (request.readyState == 4){
+      return request.responseText;
+    }
+  };
+}
   var url2=prompt("what website do you want to view unblocked?");
-  proxy(url2);
+  document.innerhtml=proxy(url2);
