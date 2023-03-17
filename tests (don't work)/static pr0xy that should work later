@@ -15,9 +15,10 @@ function proxy(url){
     request.send(null);
     request.onreadystatechange = function() {
     if (request.readyState == 4){
-      return request.responseText;
+      var code=request.responseText;
+      document.innerhtml=code;
     }
   };
 }
   var url2=prompt("what website do you want to view unblocked?");
-  document.innerhtml=proxy(url2);
+  proxy(url2);
