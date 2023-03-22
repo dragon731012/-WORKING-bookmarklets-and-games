@@ -14,6 +14,7 @@ var url=prompt("what website do you want to view unblocked?");
 request.open("GET", url,true);
 request.send(null);
 request.onreadystatechange = function() {
-  if (request.readyState == 4)
-    document.innerhtml=String(request.responseText);
+  if (request.readyState == 4){
+    document.innerhtml=request.responseText;
+  }
 };
