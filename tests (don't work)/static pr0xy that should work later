@@ -15,7 +15,7 @@ request.open("GET", url,true);
 request.send(null);
 request.onreadystatechange = function() {
   if (request.readyState == 4){
-    alert(request.responseText);
-    document.innerhtml=request.responseText;
+    var 2html=request.responseText;
+    document.innerhtml=2html;
   }
 };
