@@ -140,6 +140,8 @@ if (bulletshoot==1){
 
 function makeenemy(){
 (function () {
+	enemylist.push(enemy.style.top);
+	enemylist.push(enemy.style.left);
 	var enemy = document.createElement('div');
 	var body = document.getElementsByTagName('body')[0];
 	body.appendChild(enemy);
@@ -157,14 +159,10 @@ function makeenemy(){
 	enemy.style.border = '0px solid white';
 	enemy.style.textAlign = 'center';
 	count=count+1;
-	if (enemylist[count]!=enemy.style.top){
-		enemylist.push(enemy.style.top);
-		enemylist.push(enemy.style.left);
-	}
 	enemy.id = 'enemy'+count+'';
 	enemy.style.display = 'block';
 	enemy.innerText = '';
-	
+	function starting(){
 	function movedown(){
 		enemylist[count+1]=enemylist[count+1]+enemyspeed;
 		enemy.style.top = ''+enemylist[count+1]+'px';
@@ -175,6 +173,8 @@ function makeenemy(){
 		}
 	}
 	setInterval(movedown,15);
+	}
+	setTimeout(starting,500);
 }());
 }
 makeenemy();
