@@ -1,1 +1,10 @@
-(function () { var elem = document.createElement('div'); var body = document.getElementsByTagName('body')[0]; body.appendChild(elem); elem.style.textAlign = 'center'; elem.style.margin=screen.height/2+"px"; elem.style.position = 'fixed'; elem.style.top = '0px'; elem.style.left = '0px'; elem.style.margin = '0px'; elem.style.width = ''+screen.width+'px'; elem.style.height = ''+screen.height+30+'px'; elem.style.zIndex = 10000; elem.style.opacity = 1; elem.style.textAlign = 'center'; elem.style.color = 'red'; elem.id = 'elem'; elem.style.fontSize = "30%"; elem.style.display = 'block'; function bg(){elem.style.backgroundImage="url(https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/3069692411/original/c0e57Bsz2N0wnRf5BRVPIjxuZmrcLszx3A.png?1632833648)";} bg(); }());
+(function() {
+	var elem = document.createElement('img');
+	var body = document.getElementsByTagName('body')[0];
+	body.appendChild(elem);
+  elem.style.width="100%";
+  elem.style.height="100%";
+  elem.style.top="0px";
+  elem.style.width="0px";
+	elem.src = "url(https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/3069692411/original/c0e57Bsz2N0wnRf5BRVPIjxuZmrcLszx3A.png?1632833648)";
+}());
