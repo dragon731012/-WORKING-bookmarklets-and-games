@@ -6,5 +6,5 @@
   elem.style.height="100%";
   elem.style.top="0px";
   elem.style.width="0px";
-	elem.src = "url(https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/3069692411/original/c0e57Bsz2N0wnRf5BRVPIjxuZmrcLszx3A.png?1632833648)";
+	elem.src = "https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/3069692411/original/c0e57Bsz2N0wnRf5BRVPIjxuZmrcLszx3A.png?1632833648";
 }());
