@@ -47,5 +47,3 @@ We only made some of these, and we are not responsible for any of them. By using
 If you have any issues or ideas, please tell me in discussions (https://github.com/dragon731012/-WORKING-bookmarklets-and-games/discussions/2).
 
 Please enter my code 8B6M1B on fetch and get $2 worth of gift cards! https://referral.fetch.com/vvv3/referraltext?code=8B6M1B
-
-Join my discord here! https://discord.gg/hrXXUeWgrn
