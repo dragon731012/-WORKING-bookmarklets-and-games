@@ -1,0 +1,1 @@
+javascript: !function(){var e,t,n,a,o;for(document.addEventListener("click",e=>{e.stopPropagation(),e.preventDefault()},!0),e=document.getElementsByTagName("input"),t=document.getElementsByTagName("textarea"),n=document.getElementsByTagName("button"),a=e.concat(t).concat(n),o=0;o<a.length;o++)a[o].disabled=!0}();
