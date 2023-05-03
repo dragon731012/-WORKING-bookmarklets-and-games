@@ -1,0 +1,1 @@
+javascript: Number.isInteger(parseFloat(prompt("Enter number:")))?alert("Yes"):alert("No");
