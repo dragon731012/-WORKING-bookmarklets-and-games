@@ -1,6 +1,7 @@
 # my server:
-
-[![my server](https://raw.githubusercontent.com/dragon731012/imgsforprofile/main/0.jpg)](https://discord.gg/hrXXUeWgrn)
+<a href="https://discord.gg/hrXXUeWgrn">
+  <img src="https://raw.githubusercontent.com/dragon731012/imgsforprofile/main/0.jpg" width="300px" height="100px"/>
+</a>
 
 # how to use:
 
