@@ -1,3 +1,7 @@
+# my server:
+
+[![my server](https://raw.githubusercontent.com/dragon731012/imgsforprofile/main/0.jpg)](https://discord.gg/hrXXUeWgrn)
+
 # how to use:
 
 for bookmarklets (the ones without .html):
