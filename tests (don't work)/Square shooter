@@ -152,7 +152,6 @@ function makeenemy(){
 	enemy.style.paddingTop = '10px';
 	enemy.style.width = '50px';
 	enemy.style.height = '50px';
-	enemy.style.zIndex = 10000;
 	enemy.style.opacity = 1;
 	enemy.style.color = 'blue';
 	enemy.style.backgroundColor = 'blue';
@@ -166,7 +165,7 @@ function makeenemy(){
 		enemylist[count+1]=enemylist[count+1]+enemyspeed;
 		enemy.style.top = ''+enemylist[count+1]+'px';
 		enemylist[count]=enemy.style.left;
-		if (enemylist[count+1]<=height){
+		if (enemylist[count+1]>=height){
 			makeenemy();
 		}
 	}
