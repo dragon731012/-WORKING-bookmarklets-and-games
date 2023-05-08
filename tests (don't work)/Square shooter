@@ -159,7 +159,7 @@ function makeenemy(){
 	enemy.style.border = '0px solid white';
 	enemy.style.textAlign = 'center';
 	count=count+1;
-	enemy.id = 'enemy'+count+'';
+	enemy.id = 'enemy'+count;
 	enemy.style.display = 'block';
 	enemy.innerText = '';
 	function starting(){
