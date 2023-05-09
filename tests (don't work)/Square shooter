@@ -157,6 +157,7 @@ function makeenemy(){
 	enemy.style.backgroundColor = 'blue';
 	enemy.style.border = '0px solid white';
 	enemy.style.textAlign = 'center';
+	count=count+1;
 	enemy.id = 'enemy'+count;
 	enemy.style.display = 'block';
 	enemy.innerText = '';
@@ -172,7 +173,6 @@ function makeenemy(){
 	setInterval(movedown,15);
 	}
 	setTimeout(starting,500);
-	count=count+1;
 }());
 }
 makeenemy();
