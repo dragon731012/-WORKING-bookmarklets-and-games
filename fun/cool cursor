@@ -46,5 +46,5 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
     setTimeout(waiting,15);
   });
 }
-document.onkeypress = function () {cursor1.style.display="none"; ring.style.display="none";}
+document.onkeypress = function () {cursor1.style.display="none"; ring.style.display="none";};
 function a(e){var n=e.childNodes;for(var i in n){a(n[i]);if(n[i].style) n[i].style.cursor="none";}};a(document);
