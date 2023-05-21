@@ -1,7 +1,7 @@
 # My discord server:
-<a href="https://discord.gg/hrXXUeWgrn">
+
   ![Discord](http://invidget.switchblade.xyz/Vd5sJVqVzH)
-</a>
+
 
 # How to use:
 
