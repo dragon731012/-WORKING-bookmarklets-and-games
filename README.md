@@ -1,5 +1,7 @@
 # My discord server:
 
+(https://discord.gg/Vd5sJVqVzH)
+
   ![Discord](http://invidget.switchblade.xyz/Vd5sJVqVzH)
 
 
