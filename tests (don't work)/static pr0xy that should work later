@@ -19,6 +19,7 @@ request.open("GET", url1, true);
 request.send(null);
 request.onreadystatechange = function() {
 	if (request.readyState == 4) {
+		var white = document.createElement('img');
 		white.style.cursor = "pointer";
 		white.style.position = "absolute";
 		white.style.width = "100%";
