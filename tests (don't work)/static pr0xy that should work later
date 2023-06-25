@@ -9,12 +9,12 @@ function makeHttpObject() {
   throw new Error("Could not create HTTP request object.");
 }
 
+var url1=prompt("what url?");
+
 var request = makeHttpObject();
-var url=prompt("what website do you want to view unblocked?");
-request.open("GET", url,true);
+request.open("GET", url1, true);
 request.send(null);
 request.onreadystatechange = function() {
-  if (request.readyState == 4){
-    document.innerhtml=request.responseText.toString();
-  }
+  if (request.readyState == 4)
+    document.innerhtml=request.responseText;
 };
