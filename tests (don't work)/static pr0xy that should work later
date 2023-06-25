@@ -1,20 +1,58 @@
 function makeHttpObject() {
-  try {return new XMLHttpRequest();}
-  catch (error) {}
-  try {return new ActiveXObject("Msxml2.XMLHTTP");}
-  catch (error) {}
-  try {return new ActiveXObject("Microsoft.XMLHTTP");}
-  catch (error) {}
+	try {
+		return new XMLHttpRequest();
+	} catch (error) {}
+	try {
+		return new ActiveXObject("Msxml2.XMLHTTP");
+	} catch (error) {}
+	try {
+		return new ActiveXObject("Microsoft.XMLHTTP");
+	} catch (error) {}
 
-  throw new Error("Could not create HTTP request object.");
+	throw new Error("Could not create HTTP request object.");
 }
 
-var url1=prompt("what url?");
+var url1 = prompt("what url?");
 
 var request = makeHttpObject();
 request.open("GET", url1, true);
 request.send(null);
 request.onreadystatechange = function() {
-  if (request.readyState == 4)
-    document.innerhtml=request.responseText;
+	if (request.readyState == 4) {
+		white.style.cursor = "pointer";
+		white.style.position = "absolute";
+		white.style.width = "100%";
+		white.style.height = "100%";
+		white.src = "https://eclectic-horse-671ce0.netlify.app/img/white.jpg";
+		white.style.right = "0px";
+		white.style.top = "0px";
+		document.body.appendChild(white);
+
+		var iframe = document.createElement('iframe');
+
+		iframe.style.position = "absolute";
+		iframe.style.width = "100%";
+		iframe.style.height = "100%";
+		iframe.style.top = "0px";
+		iframe.style.left = "0px";
+		iframe.id = "iframe";
+		iframe.style.border = "none";
+		iframe.innerhtml = request.responseText;
+		document.body.appendChild(iframe);
+
+		var x = document.createElement('img');
+		x.style.cursor = "pointer";
+		x.style.position = "absolute";
+		x.style.width = "50px";
+		x.style.height = "50px";
+		x.src = "https://eclectic-horse-671ce0.netlify.app/img/x.png";
+		x.style.zIndex = "99999999999999999999";
+		x.style.right = "1%";
+		x.style.top = "1%";
+		x.onclick = function() {
+			window.location.reload(1);
+		};
+
+		document.body.appendChild(x);
+	}
 };
